@@ -1,0 +1,201 @@
+body {
+    font-family: sans-serif;
+    background: url(../pozadina.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.centriraj {
+    display: none;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%
+}
+
+body::after {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: -moz-linear-gradient(top left, rgba(247, 249, 251, 0.75), rgba(250, 200, 190, 0.55));
+    background-image: -ms-linear-gradient(top left, rgba(247, 249, 251, 0.75), rgba(250, 200, 190, 0.55));
+    background-image: -webkit-linear-gradient(top left, rgba(247, 249, 251, 0.75), rgba(250, 200, 190, 0.55));
+    background-image: -o-linear-gradient(top left, rgba(247, 249, 251, 0.75), rgba(250, 200, 190, 0.55));
+    background-image: linear-gradient(to bottom right, rgba(247, 249, 251, 0.75), rgba(250, 200, 190, 0.55));
+    background-size: auto;
+}
+
+.krug {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin: 20px;
+    cursor: pointer;
+    caret-color: transparent;
+    -webkit-transition: 1background 0.5s ease;
+    /* Safari */
+    transition: background 0.5s ease;
+}
+
+.sekcija {
+    display: inline-block
+}
+
+.aktivno {
+    background: #ED1C24
+}
+
+.tocno {
+    color: rgb(0, 128, 0)
+}
+
+.netocno {
+    color: #bb422a
+}
+
+.slovo {
+    font-size: 3em;
+    margin: 0;
+    margin-bottom: 10px
+}
+
+.slikica {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block
+}
+
+.hint{font-size: 1.5em; cursor:pointer}
+
+.bodovi{font-size:24px; font-weight: 600}
+
+.tooltip {
+    position: relative;
+    display: inline-block;}
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.swal2-modal .swal2-content{color:black}
+
+/*  SECTIONS  */
+
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+    margin-left: 0;
+    font-size: 180px
+}
+.col:nth-child(2){ font-size: 180px}
+/*  GROUPING  */
+
+.group:before, .group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+    /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+
+.span_3_of_3 {
+    width: 100%;
+}
+
+.span_2_of_3 {
+    width: 66.13%;
+}
+
+.span_1_of_3 {
+    width: 32.26%;
+}
+
+
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+#znakovi{
+    background-color: rgb(235, 73, 71);
+border-left-color: rgb(235, 73, 71);
+border-right-color: rgb(235, 73, 71);
+}
+.mini{font-size: 18px!important}
+
+.mini img{max-height: 100px}
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+
+    .col:first-child, .col:nth-child(2), .mini2, .mini3{font-size: 40px!important}
+    .col:nth-child(2){display: none}
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+    .mini{font-size: 14px!important}
+    .span_3_of_3, .span_2_of_3, .span_1_of_3, .span_1_of_2  {
+        width: 100%;
+    }
+    .mini{width: 50%;}
+    .slikica{max-height: 120px;}
+}
+

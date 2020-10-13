@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prepoznaj brajicu</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <link href="css/sweetalert2.min.css" rel="stylesheet" type="text/css">
+    <link href="css/all.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/emoji.js" charset="utf-8"></script>
+    <script src="js/jquery.form.js"></script>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Brajica je pismo za slijepe i slabovidne osobe koje se sastoji od izbočenih točkica utisnutih u papir. Kviz je namijenjen osobama koje rade sa slijepima te žele naučiti slova brajice. Pritiskom popunite prazna polja kako biste dobili izbočene točkice te time predstavili određeno slovo ili znak. Za svaki odgovor imate 15 sekunda. Boduju se točnost odgovora te vrijeme potrebno za odgovor.">
+  <meta name="keywords" content="brajica, igra, kviz">
+  <meta name="author" content="Josip Mihaljević">
+
+  <meta property="og:title" content="Prepoznaj brajicu" />
+  <meta property="og:description" content="Brajica je pismo za slijepe i slabovidne osobe koje se sastoji od izbočenih točkica utisnutih u papir. Kviz je namijenjen osobama koje rade sa slijepima te žele naučiti slova brajice. Pritiskom popunite prazna polja kako biste dobili izbočene točkice te time predstavili određeno slovo ili znak. Za svaki odgovor imate 15 sekunda. Boduju se točnost odgovora te vrijeme potrebno za odgovor." />
+<meta property="og:image" content="og-slika.jpg" />
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <audio class="audios" id="tocno" preload="none">
+        <source src="zvuk/tocno.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="audios" id="krivo" preload="none">
+        <source src="zvuk/krivo.mp3" type="audio/mpeg">
+    </audio>
+
+    </audio>
+    <script>
+
+
+    </script>
+    <div class="centriraj">
+        <p class="broj"></p>
+        <p class="slovo"></p>
+        <section class="sekcija">
+            <div id="1" class="krug"></div>
+            <div id="2" class="krug"></div>
+            <div id="3" class="krug"></div>
+        </section>
+        <section class="sekcija">
+            <div id="4" class="krug"></div>
+            <div id="5" class="krug"></div>
+            <div id="6" class="krug"></div>
+        </section>
+        <div class="row begin-countdown">
+            <div class="col-md-12 text-center vrijeme">
+            </div>
+        </div>
+        <p class="hint tooltip" >
+                <span class="tooltiptext"></span> <i class="fas fa-info-circle info" ></i></p>
+    </div>
+    <script src="js/index.js"></script>
+
+    <script>
+       
+    </script>
+
+</body>
+
+</html>

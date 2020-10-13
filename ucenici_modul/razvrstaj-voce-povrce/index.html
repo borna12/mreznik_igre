@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Igra iz voća i povrća</title>
+  <meta name="description" content="Igra u kojoj trebate rasporediti voče i povrće.">
+  <meta name="keywords" content="planeti, učenje">
+  <meta name="author" content="Josip Mihaljević">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">  <link rel="stylesheet" href="css/style.css">
+  <script src='js/jquery.min.js'></script>
+  <script src='js/jquery-ui.min.js'></script>
+</head>
+
+<audio preload="none" id="zvuk">
+  <source src="zvukovi/planeti.mp3" type="audio/mpeg">
+</audio>
+
+<body>
+
+  <div class='overlay'></div>
+  <div class='timer'>0 sekundi</div>
+  <div class='intro modal'>
+    <div class='intro modal_inner'>
+      <div class='intro modal_inner__close c_modal st'>
+        x
+      </div>
+      <div class='intro modal_inner__title'>
+        <h2 class="naslov">Razvrstaj voće i povrće</h2>
+      </div>
+      <div class='intro modal_inner__text'>
+        <p class="opis"></p>
+        <p></p>
+      </div>
+      <div class='intro modal_inner__image' style="width: 100%;">
+        <img class="slika_planeta" src='planeti.gif'>
+      </div>
+      <div class='intro modal_inner__cta c_modal'>
+        <button class='st igraj'>IGRAJ</button>
+      </div>
+    </div>
+  </div>
+  <div class='winner modal'>
+    <div class='winner modal_inner'>
+      <div class='winner modal_inner__title'>
+        <h2>
+          Čestitam. Broj sekundi za završetak igre
+          <span class='t'>10.00</span>.
+        </h2>
+      </div>
+      <div class='winner modal_inner__text'>
+        <p></p>
+      </div>
+      <div class='winner modal_inner__cta'>
+        <button class='fb'>
+          Podijeli rezultata na Facebooku.
+        </button>
+        <button onclick="window.location.reload()">
+          Igraj novu igru!
+        </button>
+      </div>
+      <div class='winner modal_inner__restart'>
+      </div>
+    </div>
+  </div>
+  <div class='planets'>
+    <div class='planets_stars'></div>
+    <div class='planets_container'>
+      <div class='planets_container__title'>
+        <h1>Razvrstaj voće i povrće</h1>
+      </div>
+   
+      <div class='planets_container__planets'>
+
+      </div>
+
+      <script>
+          function shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+          
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+          
+              // Pick a remaining element...
+              randomIndex = Math.floor(Math.random() * currentIndex);
+              currentIndex -= 1;
+          
+              // And swap it with the current element.
+              temporaryValue = array[currentIndex];
+              array[currentIndex] = array[randomIndex];
+              array[randomIndex] = temporaryValue;
+            }
+          
+            return array;
+          }
+          
+        voce = [
+          ["kruška", "voce", "kruska",
+            "Kruška je sočni, mesnati i uglavnom izduženi, u donjemu dijelu trbušasti žuti, zeleni ili crvenkasti plod istoimene voćke."
+          ],
+          ["jabuka", "voce", "jabuka",
+            "Jabuka je ukusan sočan jestiv i okrugao plod te voćke s crvenom, žutom ili zelenom korom i s košticama u sredini."
+          ],
+          ["jagoda", "voce", "jagoda", "Jagoda je jestiv sladak crven plod te biljke."],
+          ["banana", "voce", "banana", "Banana je duguljasti jestivi plod te voćke koji ima debelu žutu koru."],
+          ["borovnica", "voce", "borovnica", "Borovnica je slatka jestiva tamnoplava bobica, plod te biljke."],
+          ["grožđe", "voce", "grozde", "Grožđe je plod vinove loze, sočne bobice koje rastu na peteljci."],
+          ["kokos", "voce", "kokos", "Kokos je plod istoimene palme tvrde smeđe ljudske i bijela sočna mesa."],
+          ["lubenica", "voce", "lubenica",
+            "Lubenica je velik okrugao sočan jestiv i sladak plod istoimene biljke, zelene ili prugaste kore i crvena mesa s crnim sjemenkama."
+          ],
+          ["naranča", "voce", "naranca", "Naranča je okrugao mesnat slatkokiseo narančast plod istoimene voćke."],
+          
+          ["badem", "voce", "badem", "Badem je drvenasti plod te voćke s ukusnom jezgrom."],
+          ["dunja", "voce", "dunja", "Dunja je žutozeleni plod te voćke koji dozrijeva ujesen."],
+          ["mandarina", "voce", "mandarina", "Mandarina je tropsko voće manje od naranče narančaste boje i okrugla oblika."],
+          ["marelica", "voce", "marelica", "Marelica je voće narančaste boje i okruglog oblika."],
+          ["orah", "voce", "orah", "Orah je voće u tvrdoj drvenastoj ljusci."],
+          ["smokva", "voce", "smokva", "Smokva je jestiv sočni mesnati slatki kruškolik plod istoimene biljke koji je izvana zelen ili ljubičast, a iznutra crven."],
+          ["šljiva", "voce", "sljiva", "Šljiva je voće ljubičaste ili plave boje duguljastoga oblika."],
+          ["trešnja", "voce", "tresnja", "Trešnja je plod istoimene voćke, slatka sočna jestiva i okrugla crvena boba s košticom u sredini."],
+          ["višnja", "voce", "visnja", "Višnja je kiselkasta sočna jestiva i okrugla tamnocrvena boba, plod istoimene voćke s košticom u sredini."],
+          ["malina", "voce", "malina", "Malina je aromatičan jestiv ukusan plod istoimenoga grma u obliku svjetlocrvene grozdaste bobe."],
+          ["kupina", "voce", "kupina", "Kupina je sladak jestiv plod te biljke u obliku tamne bobice."],
+          ["dinja", "voce", "dinja", "Dinja je slatki jestivi mesnati žuti plod te biljke s bijelim košticama."],
+          ["ananas", "voce", "ananas", "Ananas je sočan, mesnat i jestiv plod te voćke."],
+          ["datulja", "voce", "datulja", "Datulja je sladak jestivi plod istoimene voćke."],
+          ["grejp", "voce", "grejp", "Grejp je velik okruglast mesnati kiseli žuti ili narančasti plod istoimene voćke."],
+          ["kivi", "voce", "kivi", "Kivi je smeđ dlakav sočan jestiv plod kivike zelenoga mesa bogat vitaminom C."],
+          ["lješnjak", "voce", "ljesnjak", "Lješnjak je plod lijeske koji se sastoji od tvrde glatke okruglaste smećkaste ljuske u kojoj se nalazi tvrda jestiva jezgra bjelkaste boje obavijena tankom smećkastom opnom."]
+
+        ]
+        voce = shuffle(voce)
+
+        voce=voce.slice(0,10)
+        
+        povrce = [
+          ["patlidžan", "povrce", "patlidan",
+            "Patlidžan je jestivi mesnati višesjemeni plod ovalna ili okrugla oblika, najčešće tamnoljubičaste boje i glatke površine."
+          ],
+          ["salata", "povrce", "salata", "Salata su zeleni jestivi listovi istoimene biljke."],
+          ["mrkva", "povrce", "mrkva", "Mrkva je jestivi vretenasti narančasti ili žuti korijen istoimene biljke."],
+          ["luk", "povrce", "luk", "Luk je višegodišnja zeljasta povrtnica s podzemnom stabljikom u obliku lukovice."],
+          ["bundeva", "povrce", "bundeva",
+            "Bundeva je jednogodišnja biljka velikih žutih cvjetova kojoj se stabljika povija po tlu."
+          ],
+          ["grašak", "povrce", "grasak", "Grašak su male okrugle zelene sjemenke istoimene biljke."],
+          ["krastavac", "povrce", "krastavac",
+            "Krastavac je duguljasti zeleni mesnati jestivi plod istoimene biljke."
+          ],
+          ["kupus", "povrce", "kupus", "Kupus je lisnata zelenkasta ili ljubičasta glavica istoimene biljke."],
+          ["rajčica", "povrce", "rajcica", "Rajčica je jestiv sočan mesnat okrugao crven plod istoimene biljke."],
+          ["krumpir", "povrce", "krumpir",
+            "Krumpir je jestiv ovalan ili okrugao gomolj istoimene biljke u kožastome smećkastom ovoju."
+          ],
+
+          ["blitva", "povrce", "blitva", "Blitva su zeleni jestivi listovi te biljke."],
+          ["celer", "povrce", "celer", "Celer je bijeli mirisni jestivi korijen i zeleno lišće te biljke."],
+          ["kelj", "povrce", "kelj", "Kelj je glavica koju oblikuju listovi te biljke."],
+          //["koraba", "povrće", "koraba", "Koraba je zadebljali jestivi bijeli korijen istoimene kupusnjače koji ima ljubičastu ili zelenkastu koru."],
+          ["paprika", "povrce", "paprika", "Paprika je svjetlozeleno, tamnozeleno ili crveno povrće duguljastog ili oblika roga s prazninom u unutrašnjosti."],
+          ["peršin", "povrce", "persin", "Peršin je bjelkasti aromatični vretenasti jestivi korijen istoimene biljke."],
+          ["poriluk", "povrce", "poriluk", "Poriluk su jestiva produžena valjkasta mesnata bijela lukovica i dugački plosnati sivi i zeleni listovi istoimene biljke."],
+          ["špinat", "povrce", "spinat", "Špinat su zeleni jestivi listovi istoimene biljke."],
+          ["cikla", "povrce", "cikla", "Cikla je tamnocrveni jestivi korijen te biljke."],
+          ["grah", "povrce", "grah", "Grah je malo smeđe, bijelo, crveno, zeleno ili crno povrće ovalnoga oblika."],
+          ["češnjak", "povrce", "cesnjak", "Češnjak je malo bijelo ljuto povrće koje se puno koristi pri kuhanju, a sirovo za imunitet."],
+          ["brokula", "povrce", "brokula", "Brokula su zelene mesnate glavice te biljke."],
+          ["feferon", "povrce", "feferon", "Feferon je mali jestivi mesnati duguljasti ljuti plod istoimene biljke."]
+
+        ]
+        povrce = shuffle(povrce)
+
+        povrce=povrce.slice(0,10)
+
+       
+        hrana= povrce.concat(voce)
+
+
+        hrana = shuffle(hrana)
+
+        for (x = 0; x < hrana.length; x++) {
+          $(".planets_container__planets").append("<div class='planet_wrap'><div class='planet' data-adresa='" + hrana[
+              x][2] + "' data-planet='" + hrana[x][1] + "' data-naziv='" + hrana[x][0] + "' data-definicija='" +
+            hrana[x][3] + " '><img src='slike/" + hrana[x][2] + ".png'></div><span class='naziv'>" + hrana[x][0] +
+            "</span> </div>")
+
+        }
+      </script>
+      <div class='planets_container__quiz'>
+
+
+        <div class="section group">
+          <div class="col span_1_of_2">
+            <h2>povrće</h2>
+            <div class='planet_holder zemlja' data-planet='povrce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='povrce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='povrce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='povrce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='povrce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='povrce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='povrce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='povrce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='povrce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='povrce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+          </div>
+          <div class="col span_1_of_2">
+            <h2>voće</h2>
+
+            <div class='planet_holder zemlja' data-planet='voce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='voce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='voce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='voce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='voce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='voce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='voce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='voce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='voce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='voce'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

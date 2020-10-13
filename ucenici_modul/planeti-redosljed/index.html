@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Planeti Sunčeva sustava</title>
+  <meta name="description" content="Igra u kojoj trebate poredati planete po točnomu redoslijedu. Za savki poredani planet dobijete infromaciju o njemu.">
+  <meta name="keywords" content="planeti, učenje">
+  <meta name="author" content="Josip Mihaljević">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <script src='js/jquery.min.js'></script>
+  <script src='js/jquery-ui.min.js'></script>
+</head>
+
+<audio preload="none" id="zvuk">
+  <source src="zvukovi/planeti.mp3" type="audio/mpeg">
+</audio> 
+
+<body>
+
+  <div class='overlay'></div>
+  <div class='timer'>0 sekundi</div>
+  <div class='intro modal'>
+    <div class='intro modal_inner'>
+      <div class='intro modal_inner__close c_modal st'>
+        x
+      </div>
+      <div class='intro modal_inner__title'>
+        <h2 class="naslov">Planeti Sunčeva sustava</h2>
+      </div>
+      <div class='intro modal_inner__text'>
+        <p class="opis">Poredaj planete po točnom redoslijedu.</p>
+      </div>
+      <div class='intro modal_inner__image' style="width: 100%;">
+        <img class="slika_planeta" src='planeti.gif'>
+      </div>
+      <div class='intro modal_inner__cta c_modal'>
+        <button class='st igraj'>IGRAJ</button>
+      </div>
+    </div>
+  </div>
+  <div class='winner modal'>
+    <div class='winner modal_inner'>
+      <div class='winner modal_inner__title'>
+        <h2>
+          Čestitam. Završili ste igru unutar
+          <span class='t'>10.00</span>
+        </h2>
+      </div>
+      <div class='winner modal_inner__text'>
+        <p></p>
+      </div>
+      <div class='winner modal_inner__cta'>
+        <button class='fb'>
+          Podijeli rezultata na Facebooku.
+        </button>
+        <button onclick="window.location.reload()">
+          Igraj novu igru!
+        </button>
+      </div>
+      <div class='winner modal_inner__restart'>
+      </div>
+    </div>
+  </div>
+  <div class='planets'>
+    <div class='planets_stars'></div>
+    <div class='planets_container'>
+      <div class='planets_container__title'>
+        <h1>Planeti Sunčeva sustava</h1>
+      </div>
+      <div class='planets_container__title'>
+        <h3>Poredaj planete po točnom redoslijedu.</h3>
+      </div>
+      <div class='planets_container__planets'>
+      
+      </div>
+
+      <script>
+        planeti=["venera","zemlja","saturn","neptun","uran","merkur","mars","jupiter"]
+        planet=planeti.sort(function() { return 0.5 - Math.random() });
+        
+        for (var x=0; x <  planeti.length; x++){
+        
+          $(".planets_container__planets").append("<div class='planet_wrap'><div class='planet' data-planet='"+planeti[x]+"'><img src='planeti/"+planeti[x]+".png'></div><span class='naziv'>"+planeti[x]+"</span> </div>")
+        }
+        </script>
+      <div class='planets_container__quiz'>
+        <div class='planet_holder sun null' data-planet='sun'>
+          <span>?</span>
+          <div class='planet_answer sunce'>
+            <img src='planeti/sunce.png'>
+            <span class="naziv">Sunce</span>
+          </div>
+        </div>
+        <div class='planet_holder merkur' data-planet='merkur'>
+          <span>?</span>
+          <div class='planet_answer'>
+            <img src='planeti/merkur.png'>
+          </div>
+        </div>
+        <div class='planet_holder venera' data-planet='venera'>
+          <span>?</span>
+          <div class='planet_answer'>
+            <img src='planeti/venera.png'>
+          </div>
+        </div>
+        <div class='planet_holder zemlja' data-planet='zemlja'>
+          <span>?</span>
+          <div class='planet_answer'>
+            <img src='planeti/zemlja.png'>
+          </div>
+        </div>
+        <div class='planet_holder mars' data-planet='mars'>
+          <span>?</span>
+          <div class='planet_answer'>
+            <img src='planeti/mars.png'>
+          </div>
+        </div>
+        <div class='planet_holder jupiter' data-planet='jupiter'>
+          <span>?</span>
+          <div class='planet_answer'>
+            <img src='planeti/jupiter.png'>
+          </div>
+        </div>
+        <div class='planet_holder saturn' data-planet='saturn'>
+          <span>?</span>
+          <div class='planet_answer'>
+            <img src='planeti/saturn.png'>
+          </div>
+        </div>
+        <div class='planet_holder uran' data-planet='uran'>
+          <span>?</span>
+          <div class='planet_answer'>
+            <img src='planeti/uran.png'>
+          </div>
+        </div>
+        <div class='planet_holder neptun' data-planet='neptun'>
+          <span>?</span>
+          <div class='planet_answer'>
+            <img src='planeti/neptun.png'>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

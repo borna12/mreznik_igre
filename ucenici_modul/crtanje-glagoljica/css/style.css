@@ -1,0 +1,130 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: sans-serif;
+
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+body,
+html {
+	overflow: hidden;
+}
+
+#canvas {
+	padding: 0;
+	margin: 0;
+	width: inherit;
+	cursor: crosshair;
+}
+
+#toolbar {
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	background: #2f2f2f;
+	color: white;
+}
+
+.radcontrol {
+	width: 30px;
+	height: 30px;
+	background: #4f4f4f;
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+}
+
+#rad {
+	float: left;
+}
+
+#colors {
+
+	overflow: auto;
+	white-space: nowrap;
+	text-align: right;
+
+}
+
+.swatch {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 2px 2px rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.swatch.active {
+	border: 2px solid white;
+	box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#clear {
+	float: left;
+	margin-left: 20px;
+	height: 30px;
+	padding: 8px;
+	background: #434343;
+}
+
+.mcs-horizontal-example {
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.mcs-horizontal-example a {
+	display: inline-block;
+}
+
+
+#clear:hover {
+	background: #818181;
+	cursor: pointer;
+}
+
+div.scrollmenu {
+	background-color: #333;
+	overflow: auto;
+	white-space: nowrap;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+div.scrollmenu a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+	background-color: #777;
+}
+
+.sivo {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+	transition: all 0.5s ease;
+}
+
+.mujo {
+	background: #ED1C24
+}
+div.scrollmenu a.mujo:hover{background-color: rgb(163, 30, 30);}
+.sivo:hover {
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+

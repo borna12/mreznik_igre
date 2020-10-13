@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Igra iz drveća</title>
+  <meta name="description" content="Igra u kojoj trebate poredati planete po točnomu redosljedu. Za savki poredani planet dobijete infromaciju o njemu.">
+  <meta name="keywords" content="planeti, učenje">
+  <meta name="author" content="Josip Mihaljević">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <script src='js/jquery.min.js'></script>
+  <script src='js//jquery-ui.min.js'></script>
+</head>
+
+<audio preload="none" id="zvuk">
+  <source src="zvukovi/planeti.mp3" type="audio/mpeg">
+</audio>
+
+<body>
+
+  <div class='overlay'></div>
+  <div class='timer'>0 sekundi</div>
+  <div class='intro modal'>
+    <div class='intro modal_inner'>
+      <div class='intro modal_inner__close c_modal st'>
+        x
+      </div>
+      <div class='intro modal_inner__title'>
+        <h2 class="naslov">
+Razvrstaj drveće na bjelogoricu i crnogoricu.
+</h2>
+      </div>
+      <div class='intro modal_inner__text'>
+        <div class="opis">
+          <ul>
+            <li>Bjelogorica je listopadno grmlje i drveće kojemu u hladnijemu dijelu godine otpada lišće.</li>
+            <li>Crnogorica je vazdazeleno igličasto grmlje i drveće kojemu u hladnijemu dijelu godine ne otpadaju
+              iglice.</li>
+          </ul>
+        </div>
+      </div>
+      <div class='intro modal_inner__image' style="width: 100%;">
+          <img class="slika_planeta" src='planeti.gif' style="display:none">
+
+      </div>
+      <div class='intro modal_inner__cta c_modal'>
+        <button class='st igraj'>IGRAJ</button>
+      </div>
+    </div>
+  </div>
+  <div class='winner modal'>
+    <div class='winner modal_inner'>
+      <div class='winner modal_inner__title'>
+        <h2>
+          Čestitam. Završili ste igru unutar
+          <span class='t'>10.00</span>
+        </h2>
+      </div>
+      <div class='winner modal_inner__text'>
+        <p></p>
+      </div>
+      <div class='winner modal_inner__cta'>
+        <button class='fb'>
+          Podijeli rezultata na Facebooku.
+        </button>
+        <button onclick="window.location.reload()">
+          Igraj novu igru!
+        </button>
+      </div>
+      <div class='winner modal_inner__restart'>
+      </div>
+    </div>
+  </div>
+  <div class='planets'>
+    <div class='planets_stars'></div>
+    <div class='planets_container'>
+      <div class='planets_container__title'>
+        <h1>
+          Razvrstaj drveće na bjelogorično i crnogorično.
+            </h1>
+      </div>
+      
+      <div class='planets_container__planets'>
+
+      </div>
+
+      <script>
+        hrana = [
+          ["bor", "crnogorica", "bor",
+            "Bor je visoko vazdazeleno drvo dugih iglica. Bor je božićno drvce."
+          ],
+          ["čempres", "crnogorica", "cempres",
+            "Čempres je vazdazeleno vitko i visoko drvo."
+          ],
+          ["jela", "crnogorica", "jela",
+            "Jela je visoko i tanko vazdazeleno drvo s češerom koji raste uvis."
+          ],
+          ["smreka", "crnogorica", "smreka",
+            "Smreka je visoko vazdazeleno drvo s češerom koji visi."
+          ],
+          ["breza", "bjelogorica", "breza",
+            "Breza je listopadno drvo bijele kore i rijetke krošnje."
+          ],
+          ["bukva", "bjelogorica", "bukva",
+            "Bukva je visoko listopadno drvo sivkaste kore."
+          ],
+          ["hrast", "bjelogorica", "hrast",
+            "Hrast je visoko listopadno drvo, a plod mu je žir."
+          ],
+          ["jablan", "bjelogorica", "jablan",
+            "Jablan je veoma visoko listopadno drvo uske krošnje koje se sadi u parkovima i drvoredima."
+          ],
+          ["kesten", "bjelogorica", "kesten",
+            "Kesten je visoko listopadno drvo bujne krošnje i glatke sivosmeđe kore. Kesten je također plod toga drveta tvrdoga bijelog mesa i smeđe kore. "
+          ],
+          ["vrba", "bjelogorica", "vrba",
+            "Vrba je listopadno drvo ili grm koji raste uz vodu i ima izdužene listove."
+          
+          ],
+          ["lijeska", "bjelogorica", "lijeska",
+            "Lijeska je listopadni drvenasti grm koji se uzgaja radi ploda s jestivom jezgrom."
+          ]
+        ]
+
+
+        hrana = hrana.sort(function () {
+          return .5 - Math.random();
+        });
+
+        for (x = 0; x < hrana.length; x++) {
+          $(".planets_container__planets").append("<div class='planet_wrap'><div class='planet' data-adresa='" + hrana[
+              x][2] + "' data-planet='" + hrana[x][1] + "' data-naziv='" + hrana[x][0] + "' data-definicija='" +
+            hrana[x][3] + " '><img src='slike/" + hrana[x][2] + ".png'></div><span class='naziv'>" + hrana[x][0] +
+            "</span> </div>")
+
+        }
+      </script>
+      <div class='planets_container__quiz'>
+
+
+        <div class="section group">
+          <div class="col span_1_of_2">
+            <h2>crnogorica</h2>
+            <div class='planet_holder zemlja' data-planet='crnogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='crnogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='crnogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='crnogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='crnogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='crnogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='crnogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='crnogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='crnogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='crnogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+          </div>
+          <div class="col span_1_of_2">
+            <h2>bjelogorica</h2>
+
+            <div class='planet_holder zemlja' data-planet='bjelogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='bjelogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='bjelogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='bjelogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='bjelogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='bjelogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='bjelogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='bjelogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='bjelogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+            <div class='planet_holder zemlja' data-planet='bjelogorica'>
+              <span>?</span>
+              <div class='planet_answer'>
+                <img class="placeholder" src='planeti/zemlja.png'>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

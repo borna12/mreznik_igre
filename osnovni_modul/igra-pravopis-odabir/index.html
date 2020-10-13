@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pravopisna igre (č/ć, dž/đ, ije/je)</title>
+    <meta charset="utf-8">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="description" content="Igra u kojoj možete učiti kako se pišu riječi koje sadrže č/ć, dž/đ te ije/je.">
+    <meta name="author" content="Josip Mihaljević">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Flamenco|Asap:400,700'
+        rel='stylesheet' type='text/css'>
+    <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src='js/jquery.min.js'></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <meta property="og:title" content="Pravopisna igre (č/ć, dž/đ, ije/je)" />
+    <meta property="og:description"
+        content="Igra u kojoj možete učiti kako se pišu riječi koje sadrže č/ć, dž/đ te ije/je." />
+    <meta property="og:image" content="og-slika.jpg" />
+
+
+</head>
+
+<body>
+
+    <audio class="audios" id="tocno" preload="none">
+        <source src="zvuk/tocno.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="audios" id="pogresno" preload="none">
+        <source src="zvuk/krivo.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="audios" id="zvono" preload="none">
+        <source src="zvuk/zvono.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="init-page">
+        <div class="container container2">
+            <h1 class="init-page__title">Pravilno pisanje riječi</h1>
+            <p id="opis">odaberi sadržaj za učenje</p><br>
+            <!--<img src="slike/uvodna.png" style="width: 100%; margin-left: auto; display: block; margin-right: auto; margin-top:20px" />-->
+            <button class="btn sadrzaj" id="ije">ije/je</button>
+            <button class="btn sadrzaj" id="cc">č/ć</button>
+            <button class="btn sadrzaj" id="dz">dž/đ</button>
+            <button class="btn sadrzaj" id="mijesano">miješano</button>
+
+            <button class="btn kategorija" id="stranci" style="display:none">stranci</button>
+            <button class="btn kategorija" id="djeca" style="display:none">djeca</button>
+            <button class="btn kategorija" id="osnovni" style="display:none">osnovni</button>
+
+            <button class="btn broj" id="20pitanja" style="display:none">20 pitanja</button>
+            <button class="btn broj" id="50pitanja" style="display:none">50 pitanja</button>
+            <button class="btn broj" id="100pitanja" style="display:none">100 pitanja</button>
+
+
+            <button class="init-page__btn btn" id="bez" style="display:none">igra bez vremenskog ograničenja</button>
+            <button class="init-page__btn btn" id="5" style="display:none">5 sekundi po pitanju</button>
+            <button class="init-page__btn btn" id="10" style="display:none">10 sekundi po pitanju</button>
+            <button class="init-page__btn btn" id="20" style="display:none">20 sekundi po pitanju</button>
+
+        </div>
+    </div>
+    <div class="questions-page ">
+        <div class="container container2">
+            <h2 class="questions-page__question"></h2>
+           <!-- <img class="init-page__icon slikica" src="/slike/uvodna.png" />-->
+         
+            
+
+            <h3 id="oblik"></h3>
+
+            <ul class="questions-page__answer-list">
+                <!--  Letter A  -->
+                <!--  Answer div  -->
+
+                <div class="questions-page__answer-div questions-page__answer-div-a">
+                    <!--  Selector div  -->
+                    <div class="questions-page__selection-div"></div>
+                    <!--  Feedback div -->
+                    <div class="questions-page__feedback-div"></div>
+                    <!--  Answer -->
+                    <li class="questions-page__answer-line"> <span
+                            class="questions-page__answer-span questions-page__answer-A"></span></li>
+                </div>
+
+                <!--  Letter B  -->
+                <!--  Answer div  -->
+                <div class="questions-page__answer-div questions-page__answer-div-b">
+                    <!--  Selector div  -->
+                    <div class="questions-page__selection-div"></div>
+                    <!--  Feedback div -->
+                    <div class="questions-page__feedback-div"></div>
+                    <!--  Answer -->
+                    <li class="questions-page__answer-line"> <span
+                            class="questions-page__answer-span questions-page__answer-B"></span></li>
+                </div>
+            </ul>
+            <div class="row begin-countdown">
+                <div class="col-md-12 text-center vrijeme">
+                </div>
+            </div>
+            <!--  ICON NAMES: x is   ion-close-round  , check is   ion-checkmark-round-->
+            <div class="btn-holder">
+                <button class="questions-page__submit-btn btn mrzim">potvrdi odgovor</button>
+                <button class="questions-page__continue-btn btn">nastavi</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="results-page">
+        <div class="container" style="top: 60%;
+    position: relative;
+    transition: translate (-50%);
+    transform: translateY(-50%);">
+            <h3 class="results-page__info2">Hvala Vam na sudjelovanju u kvizu!</h3><br>
+            <p class="results-page__info">Odgovorili ste točno na <span class="results-page__score">100%</span>
+                postavljenih pitanja.</p>
+            <br>
+            <p class="results-page__info">S obzirom na količinu točnih odgovora i vrijeme ostvraili ste idući broj
+                bodova:</p>
+            <h3 class="results-page__bodovi">postavljenih pitanja!</h3>
+            <button id="pogreske" style="display: none;" class="btn">provjerite svoje pogreške</button>
+
+            <br>
+
+            <p>
+            <form target="_self" id="bootstrapForm" method="POST" style="display:none">
+                <fieldset>
+                    <h2>igra pravopis ije/je<br><small></small></h2>
+                </fieldset>
+
+
+                <!-- Field type: "paragraph" id: "395803251" -->
+                <fieldset>
+                    <legend for="395803251">pogreske</legend>
+                    <div class="form-group">
+                        <textarea id="491430551" name="entry.491430551" class="form-control"></textarea>
+                    </div>
+                </fieldset>
+
+                <input type="hidden" name="fvv" value="1">
+                <input type="hidden" name="fbzx" value="4565638457985934205">
+                <!--
+        CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+        This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+        Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+        We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+    -->
+                <input type="hidden" name="pageHistory" value="0">
+
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+            </form>
+            <button class="btn" onclick="location.reload()">nova igra</button>
+            <script src="js/emoji.js" charset="utf-8"></script>
+            <script src="js/jquery.form.js"></script>
+            <script src="js/index.js"></script>
+            <script>
+                $('#bootstrapForm').submit(function (event) {
+                    event.preventDefault()
+                    var extraData = {}
+                    $('#bootstrapForm').ajaxSubmit({
+                        data: extraData,
+                        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+                        error: function () {
+                            // Submit of form should be successful but JSONP callback will fail because Google Forms
+                            // does not support it, so this is handled as a failure.
+                            console.log('Form Submitted. Thanks.')
+                            // You can also redirect the user to a custom thank-you page:
+                            // window.location = 'http://www.mydomain.com/thankyoupage.html'
+                        }
+                    })
+                })
+            </script>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

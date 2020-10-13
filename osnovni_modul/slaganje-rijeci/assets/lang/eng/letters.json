@@ -1,0 +1,33 @@
+{
+    "description": "Tile distribution and points for the English-language edition of Scrabble",
+    "letters":
+    {
+	"a": { "points":  2, "tiles":  9 },
+	"b": { "points":  18, "tiles":  2 },
+	"c": { "points":  19, "tiles":  2 },
+	"č": { "points":  17, "tiles":  2 },
+	"ć": { "points":  25, "tiles":  2 },
+	"d": { "points":  14, "tiles":  4 },
+	"đ": { "points":  27, "tiles":  4 },
+	"e": { "points":  6, "tiles": 12 },
+	"f": { "points":  26, "tiles":  2 },
+	"g": { "points":  20, "tiles":  3 },
+	"h": { "points":  24, "tiles":  2 },
+	"i": { "points":  1, "tiles":  9 },
+	"j": { "points":  11, "tiles":  1 },
+	"k": { "points":  9, "tiles":  1 },
+	"l": { "points":  10, "tiles":  4 },
+	"m": { "points":  16, "tiles":  2 },
+	"n": { "points":  5, "tiles":  6 },
+	"o": { "points":  3, "tiles":  8 },
+	"p": { "points":  13, "tiles":  2 },
+	"r": { "points":  7, "tiles":  6 },
+	"s": { "points":  8, "tiles":  4 },
+	"š": { "points":  22, "tiles":  4 },
+	"t": { "points":  4, "tiles":  6 },
+	"u": { "points":  15, "tiles":  4 },
+	"v": { "points":  12, "tiles":  2 },
+	"z": { "points": 21, "tiles":  1 },
+	"ž": { "points": 23, "tiles":  1 }
+    }
+}

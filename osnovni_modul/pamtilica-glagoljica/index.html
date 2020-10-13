@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Igra u kojoj se povezujete glagoljska i latinična slova. Igra je nastala sa svrhom da nauči ljude glagoljicu. Moguće je prepoznati koja slova se trebaju povezati s pomoću boja, a iskusni igrači mogu odbarati igru gdje nemaju pomoć pobojanih slova.  Svaka igra bilježi se rezultatom koji je tablično prikazan.">
+    <meta name="keywords" content="memori, pamtilica, igra, latinica, glagoljica">
+    <meta name="author" content="Josip Mihaljević">
+    <title>Glagoljica pamtilica</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Glagoljica pamtilica" />
+    <meta property="og:description" content="Igra u kojoj se povezuju glagoljična i latinična slova. Igra je nastala  kako bi olakšala učenje glagoljice. Moguće je prepoznati koja se slova trebaju povezati s pomoću boja, a iskusni igrači mogu odbarati igru u kojoj im ne pomažu obojena slova. Rezultat svake igre bilježi se u tablici." />
+    <meta property="og:image" content="og-slika.png" />
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Anton'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/animate.css">
+    <script src="js/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <script src="https://rawgit.com/theraot/emoji/master/emoji.js"
+    charset="utf-8"></script>
+</head>
+
+<body>
+
+    <audio class="audios" id="okretanje" preload="none"> 
+        <source src="zvuk/okretanje_karte.mp3" type="audio/mpeg">
+     </audio>
+     <audio class="audios" id="okret" preload="none"> 
+        <source src="zvuk/okret.mp3" type="audio/mpeg">
+     </audio>
+
+     <audio class="audios" id="win" preload="none"> 
+        <source src="zvuk/win.mp3" type="audio/mpeg">
+     </audio>
+
+     
+
+    <div class="wrap">
+        <div class="game"></div>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <h2 class="winner">Glagoljica pamtilica</h2><hr>
+                <p class="time">odaberi vrstu igre</p>
+                <button class="boje ">povezivanje s bojama ✨</button>
+                <button class="uglata ">povezivanje bez boja <span style="filter: grayscale (100%);
+
+-webkit-filter: grayscale(100%);
+
+filter: grayscale(100%);">✨</span></button>
+                <a href="http://ihjj.hr/"><img src="slike/logo-ihjj.png" class="centriraj sivo"></a>
+            </div>
+        </div>
+        <footer>
+            <p class="disclaimer"><a href="index.html">pokreni novu igru</a></p>
+        </footer>
+
+    </div>
+    <!-- End Wrap -->
+    <script src='js/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

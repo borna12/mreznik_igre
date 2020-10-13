@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pišem glagoljicom</title>
+    <meta name="description" content="Odaberite jedno slovo iz donjeg izbornika te ga precrtajte koristeći miš ili ekran na dodir. ">
+    <meta name="keywords" content="crtanje, glagoljica, uglata">
+    <meta name="author" content="Josip Mihaljević">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Pišem glagoljicom" />
+    <meta property="og:description" content="Odaberi jedno slovo iz donjega izbornika te ga precrtaj koristeći se mišem ili dodirnim zaslonom. Precrtaj slovo prateći pomoćne strelice." />
+    <meta property="og:image" content="og-slika.png" />
+    <script src='js/jquery-1.7.2.min.js'></script>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <script src='js/jquery.mCustomScrollbar.concat.min.js'></script>
+    <script src='js/sweetalert2.min.js'></script>
+</head>
+
+<body style="margin: 0">
+
+
+    <div id="toolbar">
+        <div id="rad">
+            kist: <span id="radval">10</span>
+            <div id="decrad" class="radcontrol">-</div>
+            <div id="incrad" class="radcontrol">+</div>
+        </div>
+        <div id="clear">očisti</div>
+
+        <div id="colors" class="mcs-horizontal-example"></div>
+    </div>
+    <canvas id='canvas' style="display: block;">
+        Instalirajte noviji mrežni preglednik kako bi se mogli služiti ovom stranicom.
+    </canvas>
+    <div class="scrollmenu mcs-horizontal-example">
+        <a href="#" onclick="slova('a')" id="a">a</a>
+        <a href="#" onclick="slova('b')" id="b">b</a>
+        <a href="#" onclick="slova('v')" id="v">v</a>
+        <a href="#" onclick="slova('g')" id="g">g</a>
+        <a href="#" onclick="slova('d')" id="d">d</a>
+        <a href="#" onclick="slova('e')" id="e">e</a>
+        <a href="#" onclick="slova('ž')" id="ž">ž</a>
+        <a href="#" onclick="slova('z')" id="z">z</a>
+        <a href="#" onclick="slova('iže')" id="iže">iže</a>
+        <a href="#" onclick="slova('i')" id="i">i</a>
+        <a href="#" onclick="slova('j')" id="j">j</a>
+        <a href="#" onclick="slova('đ')" id="đ">đ</a>
+        <a href="#" onclick="slova('k')" id="k">k</a>
+        <a href="#" onclick="slova('l')" id="l">l</a>
+        <a href="#" onclick="slova('m')" id="m">m</a>
+        <a href="#" onclick="slova('n')" id="n">n</a>
+        <a href="#" onclick="slova('o')" id="o">o</a>
+        <a href="#" onclick="slova('p')" id="p">p</a>
+        <a href="#" onclick="slova('r')" id="r">r</a>
+        <a href="#" onclick="slova('s')" id="s">s</a>
+        <a href="#" onclick="slova('t')" id="t">t</a>
+        <a href="#" onclick="slova('u')" id="u">u</a>
+        <a href="#" onclick="slova('f')" id="f">f</a>
+        <a href="#" onclick="slova('h')" id="h">h</a>
+        <a href="#" onclick="slova('Ō')" id="Ō">Ō</a>
+        <a href="#" onclick="slova('ć')" id="ć">ć</a>
+        <a href="#" onclick="slova('c')" id="c">c</a>
+        <a href="#" onclick="slova('č')" id="č">č</a>
+        <a href="#" onclick="slova('š')" id="š">š</a>
+        <a href="#" onclick="slova('dz')" id="dz">dz</a>
+                <a href="#" onclick="slova('jer')" id="jer">jer</a>
+        <a href="#" onclick="slova('jat')" id="jat">jat</a>
+        <a href="#" onclick="slova('ju')" id="ju">ju</a>
+    </div>
+
+    <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
