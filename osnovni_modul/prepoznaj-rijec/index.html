@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Pravopisna igra (č/ć, dž/đ, ije/je)</title>
+    <title>Prepoznaj riječ</title>
     <meta charset="utf-8">
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    <meta name="description" content="Igra u kojoj možete učiti kako se pišu riječi koje sadrže č/ć, dž/đ te ije/je.">
+    <meta name="description" content="Igra u kojoj morate prepoznati riječ na temelju definicije.">
     <meta name="author" content="Josip Mihaljević">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -35,9 +35,9 @@
     <script src='js/jquery.min.js'></script>
     <script src="js/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="css/sweetalert2.min.css">
-    <meta property="og:title" content="Pravopisna igra (č/ć, dž/đ, ije/je)" />
+    <meta property="og:title" content="Prepoznaj riječ" />
     <meta property="og:description"
-        content="Igra u kojoj možete učiti kako se pišu riječi koje sadrže č/ć, dž/đ te ije/je." />
+        content="Igra u kojoj morate prepoznati riječ na temelju definicije." />
     <meta property="og:image" content="og-slika.jpg" />
 
 
@@ -57,12 +57,13 @@
 
     <div class="init-page">
         <div class="container container2">
-            <h1 class="init-page__title">Pravilno pisanje riječi</h1>
-            <p id="opis">odaberi sadržaj za učenje</p><br>
+            <h1 class="init-page__title">Prepoznaj riječ na temelju definicije</h1>
+            <p id="opis">odaberi riječi za učenje</p><br>
             <!--<img src="slike/uvodna.png" style="width: 100%; margin-left: auto; display: block; margin-right: auto; margin-top:20px" />-->
-            <button class="btn sadrzaj" id="ije">ije/je</button>
-            <button class="btn sadrzaj" id="cc">č/ć</button>
-            <button class="btn sadrzaj" id="dz">dž/đ</button>
+            <button class="btn sadrzaj" id="imenice">imenice</button>
+            <button class="btn sadrzaj" id="glagoli">
+                glagoli</button>
+            <button class="btn sadrzaj" id="pridjevi">pridjevi</button>
             <button class="btn sadrzaj" id="mijesano">miješano</button>
 
             <button class="btn kategorija" id="stranci" style="display:none">stranci</button>
@@ -75,8 +76,6 @@
 
 
             <button class="init-page__btn btn" id="bez" style="display:none">igra bez vremenskog ograničenja</button>
-            <button class="init-page__btn btn" id="5" style="display:none">5 sekundi po pitanju</button>
-            <button class="init-page__btn btn" id="10" style="display:none">10 sekundi po pitanju</button>
             <button class="init-page__btn btn" id="20" style="display:none">20 sekundi po pitanju</button>
 
         </div>
@@ -85,10 +84,10 @@
         <div class="container container2">
             <h2 class="questions-page__question"></h2>
            <!-- <img class="init-page__icon slikica" src="/slike/uvodna.png" />-->
+           <h3 id="oblik"></h3>
+
             <div class="popuni">
-                <h2 id="glagol"></h2><br>
-                <h3 id="oblik"></h3>
-                <p class="ispunjavanje"> <span id="osnova"></span><input type="text" id="odgovor" placeholder="..."
+                <p class="ispunjavanje"> <input type="text" id="odgovor" placeholder="..."
                         onkeyup="if (event.keyCode == 13 && $('.mrzim').is(':visible')){$('.mrzim').click()}"
                         autofocus><span id="osnova2"></span>
                 </p>
@@ -97,60 +96,6 @@
                 <div class="col-md-12 text-center vrijeme">
                 </div>
             </div>
-
-
-            <ul class="questions-page__answer-list">
-                <!--  Letter A  -->
-                <!--  Answer div  -->
-
-                <div class="questions-page__answer-div questions-page__answer-div-a">
-                    <!--  Selector div  -->
-                    <div class="questions-page__selection-div"></div>
-                    <!--  Feedback div -->
-                    <div class="questions-page__feedback-div"></div>
-                    <!--  Answer -->
-                    <li class="questions-page__answer-line">• <span
-                            class="questions-page__answer-span questions-page__answer-A"></span></li>
-                </div>
-
-                <!--  Letter B  -->
-                <!--  Answer div  -->
-                <div class="questions-page__answer-div questions-page__answer-div-b">
-                    <!--  Selector div  -->
-                    <div class="questions-page__selection-div"></div>
-                    <!--  Feedback div -->
-                    <div class="questions-page__feedback-div"></div>
-                    <!--  Answer -->
-                    <li class="questions-page__answer-line">• <span
-                            class="questions-page__answer-span questions-page__answer-B"></span></li>
-                </div>
-
-
-
-                <!--  Letter C  -->
-                <!--  Answer div  -->
-                <div class="questions-page__answer-div questions-page__answer-div-c">
-                    <!--  Selector div  -->
-                    <div class="questions-page__selection-div"></div>
-                    <!--  Feedback div -->
-                    <div class="questions-page__feedback-div"></div>
-                    <!--  Answer -->
-                    <li class="questions-page__answer-line">• <span
-                            class="questions-page__answer-span questions-page__answer-C"></span></li>
-                </div>
-
-                <!--  Letter D  -->
-                <!--  Answer div  -->
-                <div class="questions-page__answer-div questions-page__answer-div-d">
-                    <!--  Selector div  -->
-                    <div class="questions-page__selection-div"></div>
-                    <!--  Feedback div -->
-                    <div class="questions-page__feedback-div"></div>
-                    <!--  Answer -->
-                    <li class="questions-page__answer-line">• <span
-                            class="questions-page__answer-span questions-page__answer-D"></span></li>
-                </div>
-            </ul>
 
             <!--  ICON NAMES: x is   ion-close-round  , check is   ion-checkmark-round-->
             <div class="btn-holder">
