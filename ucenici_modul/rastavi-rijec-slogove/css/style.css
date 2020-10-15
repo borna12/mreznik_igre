@@ -14,24 +14,102 @@ body {
     margin: 0px;
 }
 
+.begin-countdown {
+    display: none
+}
+.w3-display-topleft {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 1;
+    color:rgb(104, 0, 2);
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    line-height: 0.5;
+    font-weight: 600;
+    cursor:pointer;
+}
+.w3-display-topleft:hover{color: black;}
+
+.slicica {
+    max-height: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.mrzim {
+    padding: 10px;
+    margin-top: 40px;
+}
+
 body {
     font-size: 1rem;
-    font-family: Open Sans, sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: rgba(0, 0, 0, 0.87);
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 480px;
     transition: background-color 1000ms linear;
-
+    background-image: url(pozadina.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: 50% 50%;
+}
+body::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: -moz-linear-gradient(top left, rgb(198, 201, 247), rgba(240, 227, 224, 0.9));
+    background-image: -ms-linear-gradient(top left, rgb(198, 201, 247), rgba(240, 227, 224, 0.9));
+    background-image: -webkit-linear-gradient(top left, rgb(198, 201, 247), rgba(240, 227, 224, 0.9));
+    background-image: -o-linear-gradient(top left, rgba(241, 247, 251, 1), rgb-o-linear-gradient(top left, rgb(198, 201, 247), rgba(240, 227, 224, 0.9)));
+    background-image: linear-gradient(to bottom right, 
+rgb(198, 201, 247),
+    rgba(240, 227, 224, 0.9));
+    background-size: auto;
+}
+p {
+    font-size: 18px
 }
 
-#progressBar{position: absolute; top:0; right:0;padding: 20px}
+#progressBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px
+}
 
-.questions-page__continue-btn{display: none!important} 
-.questions-page__question{padding-top: 20px}
+.questions-page__continue-btn {
+    display: none!important
+}
+
+.questions-page__question {
+    padding-top: 20px
+}
+
 #opis {
     text-align: center
+}
+
+
+
+.oznaceno::before{
+    content: "-";
+}
+
+.rijec {
+    font-size: 36px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.nastavak{font-family: "Comic Sans MS", cursive, sans-serif;}
+.rijec span {
+    cursor: pointer;
 }
 
 h1,
@@ -44,22 +122,36 @@ div,
 p,
 i {
     margin: 0;
-    
 }
 
 form {
     margin-top: 20px;
 }
 
-.popuni{display: none;  text-align: center}
+.popuni {
+    display: none;
+    text-align: center
+}
+
+
 /* Container divs*/
 
-#odgovor{width: 20px;
-    border-radius: 5px;}
+#odgovor {
+    width: 100%;
+    border-radius: 5px;
+}
+
 .init-page,
 .questions-page,
 .results-page {
     height: 100%;
+}
+
+.zvuk {
+    width: 50px;
+    cursor: pointer;
+    height: 50px;
+    padding-top: 20px
 }
 
 .container {
@@ -69,17 +161,34 @@ form {
     margin: 0 auto;
     text-align: center;
     justify-content: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    align-items: center;
 }
 
 .container2 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 
 /* Button */
 
-.btn, #form-submit {
+.btn,
+#form-submit {
     margin: 1rem auto 0;
     display: block;
     width: 100%;
@@ -90,9 +199,9 @@ form {
     color: white;
     border-radius: 5px;
     transition: background-color 0.5s ease;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-
-
 
 .senka {
     box-shadow: 2px 2px 5px #888888;
@@ -100,12 +209,17 @@ form {
     margin-bottom: 30px;
 }
 
-.btn:hover,#form-submit:hover {
+.btn:hover,
+#form-submit:hover {
     cursor: pointer;
     background: #D72503;
 }
 
-.odgov:hover{background: rgb(110, 153, 85);}
+.odgov:hover {
+    background: rgb(110, 153, 85);
+}
+
+
 /* TITLE PAGE */
 
 .init-page__title {
@@ -119,7 +233,12 @@ form {
     margin: 0;
 }
 
-#pitanje{padding-top: 10px;padding-bottom: 10px;}
+#pitanje {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
 /* QUESTIONS PAGE*/
 
 .questions-page__question {
@@ -205,11 +324,10 @@ form {
 }
 
 .results-page__bodovi {
-   font-size: 5rem;
+    font-size: 5rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
-
 
 .results-page__spanish-btn {
     margin-top: 3rem;
@@ -227,16 +345,33 @@ form {
     margin-top: 20px;
 }
 
-.tocno_bod{color: #4CAF50; font-size: 23px;}
-.odgov{background: rgba(211, 224, 207, 0.8); border: 1px black solid;color:black}
+.tocno_bod {
+    color: #4CAF50;
+    font-size: 23px;
+}
 
-.swal-fix{min-height: initial!important}
+.odgov {
+    background: rgba(211, 224, 207, 0.8);
+    border: 1px black solid;
+    color: black
+}
 
-.dodatak{text-align:center; font-size:23px}
+.swal-fix {
+    min-height: initial!important
+}
+
+.dodatak {
+    text-align: center;
+    font-size: 23px
+}
+
 
 /* ----------------------------
 MEDIA QUERIES
 ---------------------------- */
+
+@media screen and (max-width: 680px) {.w3-display-topleft{font-size: 26px;}
+}
 
 @media screen and (min-width: 480px) {
     html {
@@ -251,6 +386,7 @@ MEDIA QUERIES
     .slikica {
         max-height: 300px;
     }
+
 }
 
 @media screen and (min-width: 1680px) {
@@ -264,8 +400,6 @@ MEDIA QUERIES
         max-height: 600px;
     }
 }
-
-
 
 #glass {
     position: absolute;
@@ -287,19 +421,32 @@ footer {
 .slikica2 {
     margin-top: 20px;
     max-width: 100%;
-    max-height: 500px;
+    max-height: 400px;
     display: block;
     margin: auto;
 }
-#pageBeginCountdownText{font-size: 15px}
-.begin-countdown{padding-top: 60px}
-#oblik{padding-bottom: 20px}
 
-.ispunjavanje{font-size:22px}
+#pageBeginCountdownText {
+    font-size: 15px
+}
 
-.nastavak{color: rgb(235, 73, 71)}
-legend{margin: auto;}
+.begin-countdown {
+    padding-top: 60px
+}
 
-.vrime{color:#EB4947; font-weight: 900}
+#oblik {
+    padding-bottom: 60px
+}
 
-.swal2-content b{color:#EB4947}
+.ispunjavanje {
+    font-size: 22px
+}
+
+legend {
+    margin: auto;
+}
+
+.vrime {
+    color: #EB4947;
+    font-weight: 900
+}

@@ -363,7 +363,7 @@ $(document).ready(function () {
         }
         clearInterval(countdownTimer);
         if (document.getElementById("pageBeginCountdown").value == "0" && iskljuci_v == 0) {
-            pogreske.push(prezent[questionCounter].correctAnswer[0] + prezent[questionCounter].definicija)
+            pogreske.push("<strong>"+prezent[questionCounter].correctAnswer[0]+"</strong>" + prezent[questionCounter].definicija)
             bodovi -= 10;
             $("#zvono")[0].play();
             if (prezent[questionCounter].correctAnswer[1].length == 0) {
@@ -442,7 +442,7 @@ $(document).ready(function () {
                 })
 
             } else {
-                pogreske.push(prezent[questionCounter].correctAnswer[0] + prezent[questionCounter].definicija)
+                pogreske.push("<b>"+prezent[questionCounter].correctAnswer[0]+"</b>" + prezent[questionCounter].definicija)
                 bodovi -= 10;
                 if (prezent[questionCounter].correctAnswer[1].length == 0) {
                     $("#odgovor").val('')
@@ -518,7 +518,7 @@ $(document).ready(function () {
             // Display user score as a percentage
             userScore.text(Math.floor((correctAnswersCounter / prezent.length) * 100) + "%");
             prikazBodova.text(bodovi);
-
+            //obrazac za pohranu
             if (kategorija == "djeca") {
                 if (sadrzaj1 == "p1") { $("#bootstrapForm").attr("action", "https://docs.google.com/forms/d/e/1FAIpQLScU9cmcOTYJPvbSuogJlEb5pUZjWi8FECpth09BUau_krvFKQ/formResponse") }
                 else if (sadrzaj1 == "p2") { $("#bootstrapForm").attr("action", "https://docs.google.com/forms/d/e/1FAIpQLSeKAHLyXWZMuaiEA__KtfQ1Et4N4sbM4RaiWO8KKsyMylKiDg/formResponse") }
@@ -536,7 +536,7 @@ $(document).ready(function () {
                 }
             }
             else if (kategorija == "osnovni") {
-                if (sadrzaj1 == "p1") { $("#bootstrapForm").attr("action", "https://docs.google.com/forms/d/e/1FAIpQLSc_pzew7N5MGwXj2DDlpBJVU7WMna9cg96X8TKwiM4Zmeld6A/formResponse") }
+                if (sadrzaj1 == "p1") { $("#bootstrapForm").attr("action", "https://docs.google.com/forms/d/e/1FAIpQLSdyDp3bGU_e-vvkdYNE-cn7WMmd0nOnGqIXTnW0q3N6hUy1-w/formResponse") }
                 else if (sadrzaj1 == "p2") { $("#bootstrapForm").attr("action", "https://docs.google.com/forms/d/e/1FAIpQLSeJVyCRIM5NEDn5Wy8z22HJx_VFs5tNausfikHIqRjsdJ7foQ/formResponse") }
                 else if (sadrzaj1 == "p3") { $("#bootstrapForm").attr("action", "https://docs.google.com/forms/d/e/1FAIpQLSc9-P2JrOcid-DmclLnBDukCPzyd7lrDF7b1NRViCZhxQk1IQ/formResponse") }
                 else if (sadrzaj1 == "p3.concat(p1).concat(p2)") {
@@ -547,14 +547,14 @@ $(document).ready(function () {
 
             if (pogreske.length != 0) {
                 $("#pogreske").show()
-                $("textarea").val(pogreske.join("\n"))
+                $("textarea").val(pogreske.join("\n").replace("<b>", '').replace("</b>", ''))
                 $("#bootstrapForm").submit();
                 $("#bootstrapForm").remove();
             }
             $("#pogreske").click(function () {
                 swal({
                     title: "riječi koje ste pogriješili u igri:",
-                    html: "" + pogreske.join(", "),
+                    html: "" + pogreske.join("<br>"),
                     showCloseButton: true,
                     confirmButtonText: ' zatvori ',
                     backdrop: false,
