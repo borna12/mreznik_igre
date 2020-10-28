@@ -66,8 +66,8 @@
     display: block;
     margin-right: auto; margin-top:20px" />-->
             <button class="init-page__btn btn" id="bez">igra bez vremenskog ograničenja</button>
-            <button class="init-page__btn btn" id="40">igra s ograničenjem od 20 sekundi po pitanju</button>
-            <button class="init-page__btn btn" id="20">igra s ograničenjem od 10 sekundi po pitanju</button>
+            <button class="init-page__btn btn" id="20">igra s ograničenjem od 20 sekundi po pitanju</button>
+            <button class="init-page__btn btn" id="10">igra s ograničenjem od 10 sekundi po pitanju</button>
 
         </div>
     </div>
@@ -78,7 +78,7 @@
         <div class="container container2">
             <h2 class="questions-page__question"></h2>
             <br>
-            <img class="init-page__icon zvuk" src="slike/zvuk.png" />
+           <!-- <img class="init-page__icon zvuk" src="slike/zvuk.png" />-->
             <img class="slicica" src="">
 
             <div class="popuni">
@@ -116,6 +116,8 @@
                 bodova:</p>
             <h3 class="results-page__bodovi">postavljenih pitanja!</h3>
             <br>
+            <button id="pogreske" style="display: none;" class="btn">provjerite svoje pogreške</button>
+            <button id="pogreske" style="display: none;" class="btn">provjerite svoje pogreške</button>
             <p>
             <form class="jedan"
                 action="https://docs.google.com/forms/d/e/1FAIpQLSe3V_eHV3E_sqUqCUlKMUbJ1E1HLu1QdcJiB-rtgIe8MPApSw/formResponse"
@@ -146,12 +148,33 @@
                             We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
                         -->
                 <input type="hidden" name="pageHistory" value="0"><button class="btn" type="submit"
-                    id="predaj">predaj<br>ارسال</button>
+                    id="predaj">predaj</button>
 
             </form>
 
-            <button class="results-page__retake-btn btn" onclick="location.reload();">ponovi kviz<br>
-                كرر الاختبار</button>
+
+            <form target="_self" id="bootstrapFormP" method="POST" style="display:none" action="https://docs.google.com/forms/d/e/1FAIpQLScUIt4bY4mdKMbNdIpoCm-vo7vhPgHkVr_VGOLnt07NXAUw9w/formResponse"
+            target="_self">
+                <fieldset>
+                    <h2>igra pravopis ije/je<br><small></small></h2>
+                </fieldset>
+
+
+                <!-- Field type: "paragraph" id: "395803251" -->
+                <fieldset>
+                    <legend for="395803251">pogreske</legend>
+                    <div class="form-group">
+                        <textarea id="491430551" name="entry.491430551" class="form-control"></textarea>
+                    </div>
+                </fieldset>
+
+                <input type="hidden" name="fvv" value="1">
+                <input type="hidden" name="fbzx" value="4565638457985934205">
+                <input type="hidden" name="pageHistory" value="0">
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+
+            <button class="results-page__retake-btn btn" onclick="location.reload();">ponovi kviz</button>
             <script src="js/emoji.js" charset="utf-8"></script>
             <script src="js/jquery.form.js"></script>
             <script src="js/index.js"></script>
@@ -202,7 +225,25 @@
                         }
                     })
                 })
-            </script>
+                $('#bootstrapFormP').submit(function (event) {
+                    event.preventDefault()
+                    var extraData = {}
+                    $('#bootstrapFormP').ajaxSubmit({
+                        data: extraData,
+                        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+                        error: function () {
+                            // Submit of form should be successful but JSONP callback will fail because Google Forms
+                            // does not support it, so this is handled as a failure.
+                            console.log('Form Submitted. Thanks.')
+                            // You can also redirect the user to a custom thank-you page:
+                            // window.location = 'http://www.mydomain.com/thankyoupage.html'
+                        }
+                    })
+                })
+                
+                
+                
+                </script>
         </div>
     </div>
 

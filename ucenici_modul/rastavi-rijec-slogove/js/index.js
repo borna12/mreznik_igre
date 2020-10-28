@@ -49,7 +49,7 @@ var initPage,
     slikica, brb,
     clearHighlightsAndFeedback, r1,
     prekidac, countdownTimer, bodovi = 0,
-    vrijeme = 0,
+    vrijeme = 0,pogreske = [],
     randomslovo,
     nalog = 0,
     moze = 0;
@@ -130,11 +130,7 @@ $(document).ready(function () {
         while (predmet == tekst || predmet == tekst2 || predmet == tekst3);
         return predmet
     }
-
-
-
     // shuffle(pitanja)
-
     // FUNCTION DECLARATIONS ------
     $.fn.declasse = function (re) {
         return this.each(function () {
@@ -153,11 +149,9 @@ $(document).ready(function () {
         questionCounter = 0;
         // Set the total correct answers counter to 0
         correctAnswersCounter = 0;
-
         // Hide other pages of the app
         questionsPage.hide();
         resultsPage.hide();
-
     };
     Array.prototype.multiIndexOf = function (el) {
         var idxs = [];
@@ -168,35 +162,28 @@ $(document).ready(function () {
         }
         return idxs;
     };
+    index = 0;
     // Load the next question and set of answers
     generateQuestionAndAnswers = function () {
-        $(".begin-countdown").hide(300)
-
+        moze=1
         question.html("<span style='font-size: 1.3rem;'>" + (questionCounter + 1) + "/" + pitanja.length + ".</span> <br>");
         $("#odgovor").val('')
         $(".popuni").show();
         $(".questions-page__answer-list").hide()
         $("#opis").html("<em>" + 20 + "</em>")
         $(".vrijeme").html('<progress value="' + tajming + '" max="' + tajming + '" id="pageBeginCountdown"></progress><p><span id="pageBeginCountdownText">' + tajming + '</span></p>')
-
         //$("#osnova").text(pitanja[questionCounter].osnova)
-
-
-        random_br = Math.floor(Math.random() * pitanja.length)
-        rijec = pitanja[random_br]
-
+        rijec = pitanja[index]
         //slova = rijec.replace(/[\[\]&]+|-/g, '');
         rijeci = rijec.split("")
         crtice = rijeci.multiIndexOf("-");
         crtice.forEach(x => rijeci[x] = "-" + rijeci[x + 1])
-
         for (x = 0; x < rijeci.length; x++) {
             if (rijeci[x][0] == "-") {
                 rijeci[x+1]=""
             } 
         }
         rijeci=rijeci.filter(n => n);
-
         html = ""
         for (x = 0; x < rijeci.length; x++) {
             if (rijeci[x][0].toLowerCase() == "-") {
@@ -210,17 +197,17 @@ $(document).ready(function () {
         $(".oznaci").on("click", function () {
             if (moze == 1) {
                 $(this).toggleClass("oznaceno")
-                if ($('.oznaceno').length > 0) {
-                    submitBtn.show(300)
-                } else {
-                    submitBtn.hide(300)
-                }
             } else {
-
             }
         })
-
-
+        if (nalog == 0) {
+            moze = 1;
+            if (iskljuci_v == 1) { return } 
+            else {
+                ProgressCountdown(tajming, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => odgovor());
+            }
+            nalog = 1
+        }
     };
 
     // Store the correct answer of a given question
@@ -296,36 +283,31 @@ $(document).ready(function () {
 
     // Clicking on start button:
     startBtn.on('click', function () {
+        pogreske = []
         if ($(this).attr('id') == "bez") {
             iskljuci_v = 1;
-            tajming = 10;
             $(".vrijeme").hide()
-            $('form').attr('action', 'https://docs.google.com/forms/d/e/1FAIpQLSe3V_eHV3E_sqUqCUlKMUbJ1E1HLu1QdcJiB-rtgIe8MPApSw/formResponse');
+            $('.jedan').attr('action', 'https://docs.google.com/forms/d/e/1FAIpQLSdpEXeFcEbz0QTId1zTAVlqvuqLBR4nce4PQjz3w_U3U60FZA/formResponse');
             r1 = 1
 
         } else if ($(this).attr('id') == "20") {
-            tajming = 10;
-            $('form').attr('action', 'https://docs.google.com/forms/d/e/1FAIpQLSefk6kGZKlELaNR3FmctUePAGPTF3w803oq69TnSgUnqOdz2Q/formResponse');
-            r1 = 2
-        } else if ($(this).attr('id') == "40") {
             tajming = 20;
-            $('form').attr('action', 'https://docs.google.com/forms/d/e/1FAIpQLSfqRcPON2jVXDYxCNrJs4WBxRavQB-KExciQK51hBwQflSf2w/formResponse');
+            $('.jedan').attr('action', 'https://docs.google.com/forms/d/e/1FAIpQLSeF-qsOk5UFs8yO8caTRRSBiBQeMKxD7iQRGNs8bLhnygsWWQ/formResponse');
+            r1 = 2
+        } else if ($(this).attr('id') == "10") {
+            tajming = 10;
+            $('.jedan').attr('action', 'https://docs.google.com/forms/d/e/1FAIpQLSfpZUZd2tyJdzr1QK4Mbz5Ko4zkapd9vOTz9bq5y_w-FPivSw/formResponse');
             r1 = 3
         }
         // Advance to questions page
         initPage.hide();
         questionsPage.show(300);
-
         // Load question and answers
         generateQuestionAndAnswers();
-
         // Store the correct answer in a variable
         getCorrectAnswer();
-
         // Hide the submit and continue buttons
-        submitBtn.hide();
         continueBtn.hide();
-
     });
 
     /* --- PAGE 2/3 --- */
@@ -333,7 +315,6 @@ $(document).ready(function () {
     // Clicking on an answer:
     answerDiv.on('click', function () {
         // Make the submit button visible
-        submitBtn.show(300);
         // Remove pointer from any answer that already has it
         deselectAnswer();
         // Put pointer on clicked answer
@@ -344,11 +325,11 @@ $(document).ready(function () {
         getSelectedAnswerDivs(this);
     });
     moze = 1
-    $(".zvuk").on("click", function () {
-        if (!playing) {
-            var element = $(this);
-            var elementID = event.target.id;
-            if (randomslovo == "č") {
+    //$(".zvuk").on("click", function () {
+      //  if (!playing) {
+           // var element = $(this);
+           // var elementID = event.target.id;
+           /* if (randomslovo == "č") {
                 var oggVar = ("../audio/cc.mp3");
             } else if (randomslovo == "ć") {
                 var oggVar = ("../audio/ccc.mp3");
@@ -362,16 +343,10 @@ $(document).ready(function () {
 
             var audioElement = $('#izgovor')[0];
             audioElement.setAttribute('src', oggVar);
-            audioElement.play();
-            if (nalog == 0) {
-                moze = 1;
-                if (iskljuci_v == 1) { return } else {
-                    ProgressCountdown(tajming, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => odgovor());
-                }
-                nalog = 1
-            }
-        }
-    })
+            audioElement.play();*/
+            
+        //}
+    //})
     $('body').on("keyup", function () {
 
         if ($('.oznaceno').length > 0) {
@@ -409,60 +384,55 @@ $(document).ready(function () {
             ide = 0
         }
         clearInterval(countdownTimer);
-
-
-        if (document.getElementById("pageBeginCountdown").value == "0") {
+        if (document.getElementById("pageBeginCountdown").value == "0" && iskljuci_v==0) {
+            pogreske.push($(".rijec").html())
             $(".rijec").find("span").removeClass("oznaceno")
-            $(".tocno").css({ "color": "#388E3C" })
+            $(".tocno").addClass('crta');
             bodovi -= 10;
             $("#zvono")[0].play();
             swal({
                 title: "Vrijeme je isteklo.",
-                html: "<p class='dodatak'><strong>Točan odgovor je: <span class='nastavak'>" + $(".rijec").html() + "</span><img src='slike/vrijeme.png'class='slikica2'/>",
+                html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + $(".rijec").html() + "</span><img src='slike/vrijeme.png'class='slikica2'/>",
                 showCloseButton: true,
                 confirmButtonText: ' dalje',
                 backdrop: false,
                 allowOutsideClick: false,
                 allowEscapeKey: false,
             })
-
             $(".swal2-confirm").unbind("click").click(function () {
                 $(".nastavak").empty()
                 clearInterval(countdownTimer)
                 nastavi()
-
             })
             $(".swal2-close").unbind("click").click(function () {
                 $(".nastavak").empty()
-
                 clearInterval(countdownTimer)
                 nastavi()
-
             })
         } else {
-
             //nastavi rad
             var testimonialElements = $(".oznaceno");
             for (var i = 0; i < testimonialElements.length; i++) {
                 var element = testimonialElements.eq(i);
                 //do something with element
-                if (element.text().toLowerCase() == randomslovo) {
+               
+                if (element.hasClass("tocno")) {
                     brojka++
                 } else {
                     netocno = 1;
                     break
                 }
             }
-
             if (netocno != 1 && $(".tocno").length == brojka) {
+                if(iskljuci_v == 1)
+                {vrijeme=0; }
                 correctAnswersCounter++;
                 bodovi += 10;
                 bodovi += vrijeme
                 broj = 10 + vrijeme
-
                 $("#tocno")[0].play();
                 swal({
-                    title: "<h2>Točno!<h2> <h2 dir='ltr'>صحيح</h2>",
+                    title: "<h2>Točno!<h2>",
                     html: "<p  class='dodatak'><span class='povrt'>+ <span class='tocno_bod'>" + broj + "</span></span></p><br><img src='slike/tocno.png' class='slikica2'/>",
                     showCloseButton: true,
                     confirmButtonText: ' dalje',
@@ -473,71 +443,53 @@ $(document).ready(function () {
 
                 $(".swal2-confirm").unbind("click").click(function () {
                     $(".nastavak").empty()
-
                     clearInterval(countdownTimer)
                     $(".swal2-modal").removeClass("swal-fix")
                     nastavi()
-
                 })
                 $(".swal2-close").unbind("click").click(function () {
                     $(".nastavak").empty()
-
                     clearInterval(countdownTimer)
                     $(".swal2-modal").removeClass("swal-fix")
-
                     nastavi()
-
-
                 })
-
-
-                submitBtn.hide(300);
                 continueBtn.show(300);
             } else {
                 if (netocno == 1) {
+                    pogreske.push($(".rijec").html())
                     bodovi -= 10;
                     $("#pogresno")[0].play();
                     $(".rijec").find("span").removeClass("oznaceno")
-                    $(".tocno").css({ "color": "#388E3C" })
-
+                    $(".tocno").addClass('crta');
                     swal({
                         title: "<h2>Netočno!</h2>",
-                        html: "<p class='dodatak'><strong>Točan odgovor je: <span class='nastavak'>" + $(".rijec").html() + "</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
+                        html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + $(".rijec").html() + "</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
                         showCloseButton: true,
                         confirmButtonText: ' dalje',
                         backdrop: false,
                         allowOutsideClick: false,
                         allowEscapeKey: false,
-
                     });
-
 
                     $(".swal2-confirm").unbind("click").click(function () {
                         $(".nastavak").empty()
-
                         clearInterval(countdownTimer)
                         nastavi()
-
-
                     })
                     $(".swal2-close").unbind("click").click(function () {
                         $(".nastavak").empty()
-
                         clearInterval(countdownTimer)
                         nastavi()
-
-
                     })
                     netocno = 0
                     brojka = 0
                 } else {
                     $(".rijec").find("span").removeClass("oznaceno")
                     $("#pogresno")[0].play();
-
-                    $(".tocno").css({ "color": "#388E3C" })
+                    $(".tocno").addClass('crta');
                     swal({
                         title: "<h2>Niste označili sve odgovore!</h2>",
-                        html: "<p class='dodatak'><strong>Točan odgovor je: <span class='nastavak'>" + $(".rijec").html() + "</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
+                        html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + $(".rijec").html() + "</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
                         showCloseButton: true,
                         confirmButtonText: ' dalje',
                         backdrop: false,
@@ -545,22 +497,15 @@ $(document).ready(function () {
                         allowEscapeKey: false,
 
                     });
-
-
                     $(".swal2-confirm").unbind("click").click(function () {
                         $(".nastavak").empty()
                         clearInterval(countdownTimer)
                         nastavi()
-
-
                     })
                     $(".swal2-close").unbind("click").click(function () {
                         $(".nastavak").empty()
-
                         clearInterval(countdownTimer)
                         nastavi()
-
-
                     })
                     netocno = 0
                     brojka = 0
@@ -576,8 +521,8 @@ $(document).ready(function () {
 
 
     function nastavi() {
+        index++;
         // Increment question number until there are no more questions, then advance to the next page
-        $(".mrzim").hide()
         if (questionCounter < pitanja.length - 1) {
             questionCounter++;
         } else {
@@ -587,9 +532,7 @@ $(document).ready(function () {
             postotak = Math.floor((correctAnswersCounter / pitanja.length) * 100)
             userScore.text(postotak + " %");
             prikazBodova.text(bodovi);
-
             $("#60656686").attr("value", bodovi)
-
             if (postotak >= 90) {
                 ocjena = 5
             } else if (postotak >= 80) {
@@ -602,23 +545,34 @@ $(document).ready(function () {
                 ocjena = 1
             }
             $("#1487903547").attr("value", ocjena)
-
+            if (pogreske.length != 0) {
+                $("#pogreske").show()
+                $("#491430551").val(pogreske.join("\n"))
+                $("#bootstrapFormP").submit();
+                $("#bootstrapFormP").remove();
+            }
+            $("#pogreske").click(function () {
+                swal({
+                    title: "slogovi koje ste pogriješili u igri:",
+                    html: "" + pogreske.join(", "),
+                    showCloseButton: true,
+                    confirmButtonText: ' zatvori ',
+                    backdrop: false,
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                });
+            })
         }
-
+   
         // Load the next question and set of answers
         generateQuestionAndAnswers();
-
         // Store the correct answer in a variable
         getCorrectAnswer();
-
         // Remove all selections, highlighting, and feedback
         deselectAnswer();
         clearHighlightsAndFeedback();
-
-
         // Hide the continue button
         continueBtn.hide(300);
-
         // Enable ability to select an answer
         answerDiv.on('click', function () {
             // Make the submit button visible
@@ -657,7 +611,6 @@ $(document).ready(function () {
         // Store the correct answer in a variable
         getCorrectAnswer();
         // Hide the submit and continue buttons
-        submitBtn.hide();
         continueBtn.hide();
     });
 

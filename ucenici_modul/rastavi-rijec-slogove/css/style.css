@@ -350,6 +350,8 @@ form {
     font-size: 23px;
 }
 
+.crta::before{content: '-';}
+
 .odgov {
     background: rgba(211, 224, 207, 0.8);
     border: 1px black solid;
@@ -431,7 +433,7 @@ footer {
 }
 
 .begin-countdown {
-    padding-top: 60px
+    padding-top: 20px
 }
 
 #oblik {
