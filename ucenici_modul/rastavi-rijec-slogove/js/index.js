@@ -51,7 +51,7 @@ var initPage,
     prekidac, countdownTimer, bodovi = 0,
     vrijeme = 0,pogreske = [],
     randomslovo,
-    nalog = 0,
+    nalog = 0,rijeci,
     moze = 0;
 
 function ProgressCountdown(timeleft, bar, text) {
@@ -385,7 +385,7 @@ $(document).ready(function () {
         }
         clearInterval(countdownTimer);
         if (document.getElementById("pageBeginCountdown").value == "0" && iskljuci_v==0) {
-            pogreske.push($(".rijec").html())
+            pogreske.push(rijeci.join(""))
             $(".rijec").find("span").removeClass("oznaceno")
             $(".tocno").addClass('crta');
             bodovi -= 10;
@@ -456,7 +456,7 @@ $(document).ready(function () {
                 continueBtn.show(300);
             } else {
                 if (netocno == 1) {
-                    pogreske.push($(".rijec").html())
+                    pogreske.push(rijeci.join(""))
                     bodovi -= 10;
                     $("#pogresno")[0].play();
                     $(".rijec").find("span").removeClass("oznaceno")
