@@ -4,7 +4,6 @@ $(document).ready(function () {
         maxWidth: 500,
         speed: 300,
         interactive: true,
-
         animation: 'grow',
         trigger: 'click'
     });

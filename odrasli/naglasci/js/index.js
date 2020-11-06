@@ -49,33 +49,24 @@ var initPage,
     slikica, brb,
     clearHighlightsAndFeedback, r1,
     prekidac, countdownTimer, bodovi = 0,
-    vrijeme = 0, pogreske = [],
+    vrijeme = 0,
+    pogreske = [],
     randomslovo,
-    nalog = 0, rijeci, 
-    moze = 0;
-slova_akcenti = {
-    "a": "àáâãäåāȁ",
-    "b": "àáâãäåāȁ",
-    "c": "àáâãäåāȁ",
-    "d": "àáâãäåāȁ",
-    "e": "àáâãäåāȁ",
-    "f": "àáâãäåāȁ",
-    "g": "àáâãäåāȁ",
-    "h": "àáâãäåāȁ",
-    "i": "ìíîïīȋȉ",
-    "j": "àáâãäåāȁ",
-    "k": "àáâãäåāȁ",
-    "l": "àáâãäåāȁ",
-    "m": "àáâãäåāȁ",
-    "n": "àáâãäåāȁ",
-    "o": "òóôõöøōȍ",
-    "p": "àáâãäåāȁ",
-    "r": "ȑŕ",
-    "s": "àáâãäåāȁ",
-    "z": "àáâãäåāȁ",
-    "v": "àáâãäåāȁ",
-    "u": "ùúûüūȕȗ",
-}
+    nalog = 0,
+    rijeci,
+    moze = 0,
+    akcenti = ["ȁ", "à", "â", "á", "ā", "ȅ", "è", "ê", "é", "ē", "ȍ", "ò", "ȏ", "ó", "ō", "ȕ", "ù", "û", "ú", "ū", "ȑ", "r̀", "r̂", "ŕ", "r̄", "ȉ", "ì", "ȋ", "í", "ī"],
+    slova_akcenti = {
+        "a": "ȁàâáā",
+        "e": "ȅèêéē",
+        "i": "ȉìȋíī",
+        "o": "ȍòȏóō",
+        "r": "ȑr̀r̂ŕr̄",
+        "u": "ȕùûúū",
+    }
+
+
+
 function ProgressCountdown(timeleft, bar, text) {
     $(".begin-countdown").show(300)
     return new Promise((resolve, reject) => {
@@ -93,18 +84,37 @@ function ProgressCountdown(timeleft, bar, text) {
 
 }
 
-$(document).ready(function () {
-    p1=[]
-    $.get('natuknice.txt', function (data) {
-        p1.push(data.split("\n"));
-        
-    }, 'text');
-    alert(p1)
+function removeAccents(string) {
+    const accents =
+        "ÀÁÂÃÄÅàáâãäåāȁßÒÓÔÕÕÖØòóôõöøōȍÈÉÊËèéêëēȅÇçÐÌÍÎÏìíîïīȋȉÙÚÛÜùúûüūȕȗÑñŠšŸÿýŽžȑr̀r̂ŕr̄";
+    const accentsOut =
+        "AAAAAAaaaaaaaaBOOOOOOOooooooooEEEEeeeeeeCcDIIIIiiiiiiiUUUUuuuuuuuNnSsYyyZzrrrrr";
+    return string
+        .split("")
+        .map((letter, index) => {
+            const accentIndex = accents.indexOf(letter);
+            return accentIndex !== -1 ? accentsOut[accentIndex] : letter;
+        })
+        .join("");
+}
+
+function ContainsAny(str, items) {
+    for (var i in items) {
+        var item = items[i];
+        if (str.indexOf(item) > -1) {
+            return true;
+        }
+    }
+    return false;
+}
+
+$(document).ready(function() {
+
     function shuffle(array) { //izmješaj pitanja
         var i = 0,
             j = 0,
             temp = null
-    
+
         for (i = array.length - 1; i > 0; i -= 1) {
             j = Math.floor(Math.random() * (i + 1))
             temp = array[i]
@@ -112,14 +122,15 @@ $(document).ready(function () {
             array[j] = temp
         }
     }
-    
+setTimeout(
+  function() 
+  {
     pitanja = p1
     shuffle(pitanja)
     pitanja = pitanja.slice(0, 20)
-
-
-
-    $('body').on('keydown', function (event) {
+  }, 1000);
+    
+    $('body').on('keydown', function(event) {
         var x = event.which;
         if (x === 13) {
             event.preventDefault();
@@ -179,17 +190,17 @@ $(document).ready(function () {
     }
     // shuffle(pitanja)
     // FUNCTION DECLARATIONS ------
-    $.fn.declasse = function (re) {
-        return this.each(function () {
-            var c = this.classList
-            for (var i = c.length - 1; i >= 0; i--) {
-                var classe = "" + c[i]
-                if (classe.match(re)) c.remove(classe)
-            }
-        })
-    }
-    // Start the quiz
-    newQuiz = function () {
+    $.fn.declasse = function(re) {
+            return this.each(function() {
+                var c = this.classList
+                for (var i = c.length - 1; i >= 0; i--) {
+                    var classe = "" + c[i]
+                    if (classe.match(re)) c.remove(classe)
+                }
+            })
+        }
+        // Start the quiz
+    newQuiz = function() {
         prekidac = 1;
         bodovi = 0;
         // Set the question counter to 0
@@ -200,7 +211,7 @@ $(document).ready(function () {
         questionsPage.hide();
         resultsPage.hide();
     };
-    Array.prototype.multiIndexOf = function (el) {
+    Array.prototype.multiIndexOf = function(el) {
         var idxs = [];
         for (var i = this.length - 1; i >= 0; i--) {
             if (this[i] === el) {
@@ -210,8 +221,9 @@ $(document).ready(function () {
         return idxs;
     };
     index = 0;
+
     // Load the next question and set of answers
-    generateQuestionAndAnswers = function () {
+    generateQuestionAndAnswers = function() {
         moze = 1
         question.html("<span style='font-size: 1.3rem;'>" + (questionCounter + 1) + "/" + pitanja.length + ".</span> <br>");
         $("#odgovor").val('')
@@ -219,44 +231,50 @@ $(document).ready(function () {
         $(".questions-page__answer-list").hide()
         $("#opis").html("<em>" + 20 + "</em>")
         $(".vrijeme").html('<progress value="' + tajming + '" max="' + tajming + '" id="pageBeginCountdown"></progress><p><span id="pageBeginCountdownText">' + tajming + '</span></p>')
-        //$("#osnova").text(pitanja[questionCounter].osnova)
+            //$("#osnova").text(pitanja[questionCounter].osnova)
+        pitanja = pitanja.filter(function(element) {
+            return element !== undefined;
+        });
         rijec = pitanja[index]
-        //slova = rijec.replace(/[\[\]&]+|-/g, '');
-        rijeci = rijec.split("")
-        crtice = rijeci.multiIndexOf("-");
-        crtice.forEach(x => rijeci[x] = "-" + rijeci[x + 1])
-        for (x = 0; x < rijeci.length; x++) {
-            if (rijeci[x][0] == "-") {
-                rijeci[x + 1] = ""
-            }
+            //slova = rijec.replace(/[\[\]&]+|-/g, '');
+        if (rijec.length > 1) {
+            rijeci = rijec.split("")
         }
         rijeci = rijeci.filter(n => n);
         html = ""
-        akcenti = '<span class="akcenti">´</span> <span class="akcenti">˝</span> <span class="akcenti">`</span> <span class="akcenti"> ̏</span> <span class="akcenti">ˆ</span> <span class="akcenti">ˇ</span> <span class="akcenti">˘</span>'
+
         for (x = 0; x < rijeci.length; x++) {
-            if (rijeci[x][0].toLowerCase() == "-") {
-                html += "<span class='oznaci tocno tooltip' title='" + akcenti + "'>" + rijeci[x].slice(1) + "</span>"
+            if (ContainsAny(rijeci[x], akcenti)) {
+                title=slova_akcenti[removeAccents(rijeci[x])].split("")
+                odabir=""
+                for (y = 0; y < title.length; y++){
+                    odabir+="<button>"+title[y]+"</button>"
+                }
+                html += "<span class='oznaci tocno tooltip' title='"+odabir+"'>" + removeAccents(rijeci[x]) + "</span>"
             } else {
-                html += "<span class='oznaci netocno tooltip' title='" + akcenti + "'>" + rijeci[x] + "</span>"
+                html += "<span class='oznaci netocno tooltip' title='nema akcenta'>" + rijeci[x] + "</span>"
             }
         }
-        $.getScript("js/tooltip.js", function (data, textStatus, jqxhr) {
+
+
+        $(".rijec").html(html)
+        $(".oznaci").on("click", function() {
+            if (moze == 1) {
+                $(this).toggleClass("oznaceno")
+
+            } else {}
+        })
+        $.getScript("js/tooltip.js", function(data, textStatus, jqxhr) {
             console.log(data); //data returned
             console.log(textStatus); //success
             console.log(jqxhr.status); //200
             console.log('Load was performed.');
         });
-        $(".rijec").html(html)
-        $(".oznaci").on("click", function () {
-            if (moze == 1) {
-                $(this).toggleClass("oznaceno")
-            } else {
-            }
-        })
         if (nalog == 0) {
             moze = 1;
-            if (iskljuci_v == 1) { return }
-            else {
+            if (iskljuci_v == 1) {
+                return
+            } else {
                 ProgressCountdown(tajming, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => odgovor());
             }
             nalog = 1
@@ -264,23 +282,23 @@ $(document).ready(function () {
     };
 
     // Store the correct answer of a given question
-    getCorrectAnswer = function () {
+    getCorrectAnswer = function() {
         correctAnswer = randomslovo;
     };
 
     // Store the user's selected (clicked) answer
-    getUserAnswer = function (target) {
+    getUserAnswer = function(target) {
         userSelectedAnswer = $(target).find(answerSpan).text();
     };
 
     // Add the pointer to the clicked answer
-    selectAnswer = function (target) {
+    selectAnswer = function(target) {
         $(target).find(selectionDiv).addClass('ion-chevron-right');
         $(target).addClass("odabir")
     };
 
     // Remove the pointer from any answer that has it
-    deselectAnswer = function () {
+    deselectAnswer = function() {
         if (selectionDiv.hasClass('ion-chevron-right')) {
             selectionDiv.removeClass('ion-chevron-right');
             selectionDiv.parent().removeClass("odabir")
@@ -288,13 +306,13 @@ $(document).ready(function () {
     };
 
     // Get the selected answer's div for highlighting purposes
-    getSelectedAnswerDivs = function (target) {
+    getSelectedAnswerDivs = function(target) {
         toBeHighlighted = $(target);
         toBeMarked = $(target).find(feedbackDiv);
     };
 
     // Make the correct answer green and add checkmark
-    highlightCorrectAnswerGreen = function (target) {
+    highlightCorrectAnswerGreen = function(target) {
         if (correctAnswer === answerA.text()) {
             answerDivA.addClass('questions-page--correct');
             answerDivA.find(feedbackDiv).addClass('ion-checkmark-round');
@@ -314,13 +332,13 @@ $(document).ready(function () {
     };
 
     // Make the incorrect answer red and add X
-    highlightIncorrectAnswerRed = function () {
+    highlightIncorrectAnswerRed = function() {
         toBeHighlighted.addClass('questions-page--incorrect');
         toBeMarked.addClass('ion-close-round');
     };
 
     // Clear all highlighting and feedback
-    clearHighlightsAndFeedback = function () {
+    clearHighlightsAndFeedback = function() {
         answerDiv.removeClass('questions-page--correct');
         answerDiv.removeClass('questions-page--incorrect');
         feedbackDiv.removeClass('ion-checkmark-round');
@@ -335,7 +353,7 @@ $(document).ready(function () {
     newQuiz();
 
     // Clicking on start button:
-    startBtn.on('click', function () {
+    startBtn.on('click', function() {
         pogreske = []
         if ($(this).attr('id') == "bez") {
             iskljuci_v = 1;
@@ -366,7 +384,7 @@ $(document).ready(function () {
     /* --- PAGE 2/3 --- */
 
     // Clicking on an answer:
-    answerDiv.on('click', function () {
+    answerDiv.on('click', function() {
         // Make the submit button visible
         // Remove pointer from any answer that already has it
         deselectAnswer();
@@ -378,29 +396,29 @@ $(document).ready(function () {
         getSelectedAnswerDivs(this);
     });
     moze = 1
-    //$(".zvuk").on("click", function () {
-    //  if (!playing) {
-    // var element = $(this);
-    // var elementID = event.target.id;
-    /* if (randomslovo == "č") {
-         var oggVar = ("../audio/cc.mp3");
-     } else if (randomslovo == "ć") {
-         var oggVar = ("../audio/ccc.mp3");
-     } else if (randomslovo == "š") {
-         var oggVar = ("../audio/ss.mp3");
-     } else if (randomslovo == "đ") {
-         var oggVar = ("../audio/dd.mp3");
-     } else if (randomslovo == "ž") {
-         var oggVar = ("../audio/zz.mp3");
-     } else { var oggVar = ("../audio/" + randomslovo + ".mp3"); }
+        //$(".zvuk").on("click", function () {
+        //  if (!playing) {
+        // var element = $(this);
+        // var elementID = event.target.id;
+        /* if (randomslovo == "č") {
+             var oggVar = ("../audio/cc.mp3");
+         } else if (randomslovo == "ć") {
+             var oggVar = ("../audio/ccc.mp3");
+         } else if (randomslovo == "š") {
+             var oggVar = ("../audio/ss.mp3");
+         } else if (randomslovo == "đ") {
+             var oggVar = ("../audio/dd.mp3");
+         } else if (randomslovo == "ž") {
+             var oggVar = ("../audio/zz.mp3");
+         } else { var oggVar = ("../audio/" + randomslovo + ".mp3"); }
 
-     var audioElement = $('#izgovor')[0];
-     audioElement.setAttribute('src', oggVar);
-     audioElement.play();*/
+         var audioElement = $('#izgovor')[0];
+         audioElement.setAttribute('src', oggVar);
+         audioElement.play();*/
 
     //}
     //})
-    $('body').on("keyup", function () {
+    $('body').on("keyup", function() {
 
         if ($('.oznaceno').length > 0) {
             submitBtn.click()
@@ -410,11 +428,11 @@ $(document).ready(function () {
 
     var playing = false;
 
-    $('#izgovor').on('playing', function () {
+    $('#izgovor').on('playing', function() {
         playing = true;
         $('.zvuk').attr("src", "slike/n_zvuk.png")
     });
-    $('#izgovor').on('ended', function () {
+    $('#izgovor').on('ended', function() {
         playing = false;
         $('.zvuk').attr("src", "slike/zvuk.png")
     });
@@ -429,7 +447,7 @@ $(document).ready(function () {
         netocno = 0
         prekidac = 0;
         var ide = 0
-        // Disable ability to select an answer
+            // Disable ability to select an answer
         answerDiv.off('click');
         if (questionCounter != pitanja.length - 1) {
             ide = 1
@@ -452,12 +470,12 @@ $(document).ready(function () {
                 allowOutsideClick: false,
                 allowEscapeKey: false,
             })
-            $(".swal2-confirm").unbind("click").click(function () {
+            $(".swal2-confirm").unbind("click").click(function() {
                 $(".nastavak").empty()
                 clearInterval(countdownTimer)
                 nastavi()
             })
-            $(".swal2-close").unbind("click").click(function () {
+            $(".swal2-close").unbind("click").click(function() {
                 $(".nastavak").empty()
                 clearInterval(countdownTimer)
                 nastavi()
@@ -477,7 +495,9 @@ $(document).ready(function () {
                 }
             }
             if (netocno != 1 && $(".tocno").length == brojka) {
-                if (iskljuci_v == 1) { vrijeme = 0; }
+                if (iskljuci_v == 1) {
+                    vrijeme = 0;
+                }
                 correctAnswersCounter++;
                 bodovi += 10;
                 bodovi += vrijeme
@@ -493,13 +513,13 @@ $(document).ready(function () {
                     allowEscapeKey: false,
                 });
 
-                $(".swal2-confirm").unbind("click").click(function () {
+                $(".swal2-confirm").unbind("click").click(function() {
                     $(".nastavak").empty()
                     clearInterval(countdownTimer)
                     $(".swal2-modal").removeClass("swal-fix")
                     nastavi()
                 })
-                $(".swal2-close").unbind("click").click(function () {
+                $(".swal2-close").unbind("click").click(function() {
                     $(".nastavak").empty()
                     clearInterval(countdownTimer)
                     $(".swal2-modal").removeClass("swal-fix")
@@ -523,12 +543,12 @@ $(document).ready(function () {
                         allowEscapeKey: false,
                     });
 
-                    $(".swal2-confirm").unbind("click").click(function () {
+                    $(".swal2-confirm").unbind("click").click(function() {
                         $(".nastavak").empty()
                         clearInterval(countdownTimer)
                         nastavi()
                     })
-                    $(".swal2-close").unbind("click").click(function () {
+                    $(".swal2-close").unbind("click").click(function() {
                         $(".nastavak").empty()
                         clearInterval(countdownTimer)
                         nastavi()
@@ -549,12 +569,12 @@ $(document).ready(function () {
                         allowEscapeKey: false,
 
                     });
-                    $(".swal2-confirm").unbind("click").click(function () {
+                    $(".swal2-confirm").unbind("click").click(function() {
                         $(".nastavak").empty()
                         clearInterval(countdownTimer)
                         nastavi()
                     })
-                    $(".swal2-close").unbind("click").click(function () {
+                    $(".swal2-close").unbind("click").click(function() {
                         $(".nastavak").empty()
                         clearInterval(countdownTimer)
                         nastavi()
@@ -567,7 +587,7 @@ $(document).ready(function () {
         } // Clicking on the submit button:
     }
 
-    submitBtn.on('click', function () {
+    submitBtn.on('click', function() {
         odgovor();
     });
 
@@ -603,7 +623,7 @@ $(document).ready(function () {
                 $("#bootstrapFormP").submit();
                 $("#bootstrapFormP").remove();
             }
-            $("#pogreske").click(function () {
+            $("#pogreske").click(function() {
                 swal({
                     title: "slogovi koje ste pogriješili u igri:",
                     html: "" + pogreske.join(", "),
@@ -626,7 +646,7 @@ $(document).ready(function () {
         // Hide the continue button
         continueBtn.hide(300);
         // Enable ability to select an answer
-        answerDiv.on('click', function () {
+        answerDiv.on('click', function() {
             // Make the submit button visible
             submitBtn.show(300);
             // Remove pointer from any answer that already has it
@@ -642,17 +662,17 @@ $(document).ready(function () {
     }
 
     // Clicking on the continue button:
-    continueBtn.on('click', function () {
+    continueBtn.on('click', function() {
 
     });
 
-    $(".questions-page__answer-div").dblclick(function () {
-        odgovor()
-    })
-    /* --- PAGE 3/3 --- */
+    $(".questions-page__answer-div").dblclick(function() {
+            odgovor()
+        })
+        /* --- PAGE 3/3 --- */
 
     // Clicking on the retake button:
-    retakeBtn.on('click', function () {
+    retakeBtn.on('click', function() {
         // Go to the first page
         // Start the quiz over
         newQuiz();
@@ -667,7 +687,7 @@ $(document).ready(function () {
     });
 
     // Clicking on the spanish button:
-    
+
 
 });
 
@@ -698,7 +718,7 @@ function touchHandler(event) {
     simulatedEvent.initMouseEvent(type, true, true, window, 1,
         first.screenX, first.screenY,
         first.clientX, first.clientY, false,
-        false, false, false, 0 /*left*/, null);
+        false, false, false, 0 /*left*/ , null);
 
     first.target.dispatchEvent(simulatedEvent);
     event.preventDefault();
