@@ -239,6 +239,7 @@ $(document).ready(function() {
             return element !== undefined;
         });
         rijec = pitanja[index]
+        tocan_odg = rijec
             //slova = rijec.replace(/[\[\]&]+|-/g, '');
         if (rijec.length > 1) {
             rijeci = rijec.split("")
@@ -467,7 +468,6 @@ $(document).ready(function() {
         if (document.getElementById("pageBeginCountdown").value == "0" && iskljuci_v == 0) {
             pogreske.push(rijeci.join(""))
             $(".rijec").find("span").removeClass("oznaceno")
-            $(".tocno").addClass('crta');
             bodovi -= 10;
             $("#zvono")[0].play();
             swal({
@@ -491,19 +491,13 @@ $(document).ready(function() {
             })
         } else {
             //nastavi rad
-            var testimonialElements = $(".oznaceno");
-            for (var i = 0; i < testimonialElements.length; i++) {
-                var element = testimonialElements.eq(i);
-                //do something with element
+            var spanovi = [];
+            $('.oznaci').each(function() {
+                spanovi.push(this.innerHTML);
+            });
 
-                if (element.hasClass("tocno")) {
-                    brojka++
-                } else {
-                    netocno = 1;
-                    break
-                }
-            }
-            if (netocno != 1 && $(".tocno").length == brojka) {
+            odg = spanovi.join("")
+            if (tocan_odg == odg) {
                 if (iskljuci_v == 1) {
                     vrijeme = 0;
                 }
@@ -536,61 +530,33 @@ $(document).ready(function() {
                 })
                 continueBtn.show(300);
             } else {
-                if (netocno == 1) {
-                    pogreske.push(rijeci.join(""))
-                    bodovi -= 10;
-                    $("#pogresno")[0].play();
-                    $(".rijec").find("span").removeClass("oznaceno")
-                    $(".tocno").addClass('crta');
-                    swal({
-                        title: "<h2>Netočno!</h2>",
-                        html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + $(".rijec").html() + "</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
-                        showCloseButton: true,
-                        confirmButtonText: ' dalje',
-                        backdrop: false,
-                        allowOutsideClick: false,
-                        allowEscapeKey: false,
-                    });
+                pogreske.push(rijeci.join(""))
+                bodovi -= 10;
+                $("#pogresno")[0].play();
+                $(".rijec").find("span").removeClass("oznaceno")
+                swal({
+                    title: "<h2>Netočno!</h2>",
+                    html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + tocan_odg + "</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
+                    showCloseButton: true,
+                    confirmButtonText: ' dalje',
+                    backdrop: false,
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                });
 
-                    $(".swal2-confirm").unbind("click").click(function() {
-                        $(".nastavak").empty()
-                        clearInterval(countdownTimer)
-                        nastavi()
-                    })
-                    $(".swal2-close").unbind("click").click(function() {
-                        $(".nastavak").empty()
-                        clearInterval(countdownTimer)
-                        nastavi()
-                    })
-                    netocno = 0
-                    brojka = 0
-                } else {
-                    $(".rijec").find("span").removeClass("oznaceno")
-                    $("#pogresno")[0].play();
-                    $(".tocno").addClass('crta');
-                    swal({
-                        title: "<h2>Niste označili sve odgovore!</h2>",
-                        html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + $(".rijec").html() + "</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
-                        showCloseButton: true,
-                        confirmButtonText: ' dalje',
-                        backdrop: false,
-                        allowOutsideClick: false,
-                        allowEscapeKey: false,
+                $(".swal2-confirm").unbind("click").click(function() {
+                    $(".nastavak").empty()
+                    clearInterval(countdownTimer)
+                    nastavi()
+                })
+                $(".swal2-close").unbind("click").click(function() {
+                    $(".nastavak").empty()
+                    clearInterval(countdownTimer)
+                    nastavi()
+                })
+                netocno = 0
+                brojka = 0
 
-                    });
-                    $(".swal2-confirm").unbind("click").click(function() {
-                        $(".nastavak").empty()
-                        clearInterval(countdownTimer)
-                        nastavi()
-                    })
-                    $(".swal2-close").unbind("click").click(function() {
-                        $(".nastavak").empty()
-                        clearInterval(countdownTimer)
-                        nastavi()
-                    })
-                    netocno = 0
-                    brojka = 0
-                }
             }
 
         } // Clicking on the submit button:
