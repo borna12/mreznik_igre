@@ -122,20 +122,21 @@ $(document).ready(function() {
             array[j] = temp
         }
     }
-setTimeout(
-  function() 
-  {
-    pitanja = p1
-    shuffle(pitanja)
-    pitanja = pitanja.slice(0, 20)
-  }, 1000);
-    
+    setTimeout(
+        function() {
+            pitanja = p1
+            shuffle(pitanja)
+            pitanja = pitanja.slice(0, 20)
+        }, 1000);
+
     $('body').on('keydown', function(event) {
         var x = event.which;
         if (x === 13) {
             event.preventDefault();
         }
     });
+
+
     // DOM SELECTION ------
 
     // App pages
@@ -188,6 +189,8 @@ setTimeout(
         while (predmet == tekst || predmet == tekst2 || predmet == tekst3);
         return predmet
     }
+
+
     // shuffle(pitanja)
     // FUNCTION DECLARATIONS ------
     $.fn.declasse = function(re) {
@@ -245,12 +248,12 @@ setTimeout(
 
         for (x = 0; x < rijeci.length; x++) {
             if (ContainsAny(rijeci[x], akcenti)) {
-                title=slova_akcenti[removeAccents(rijeci[x])].split("")
-                odabir=""
-                for (y = 0; y < title.length; y++){
-                    odabir+="<button>"+title[y]+"</button>"
+                title = slova_akcenti[removeAccents(rijeci[x])].split("")
+                odabir = ""
+                for (y = 0; y < title.length; y++) {
+                    odabir += '<a class="zamjena" href="#' + title[y] + '">' + title[y] + '</a>'
                 }
-                html += "<span class='oznaci tocno tooltip' title='"+odabir+"'>" + removeAccents(rijeci[x]) + "</span>"
+                html += "<span class='oznaci tocno tooltip' title='" + odabir + "'>" + removeAccents(rijeci[x]) + "</span>"
             } else {
                 html += "<span class='oznaci netocno tooltip' title='nema akcenta'>" + rijeci[x] + "</span>"
             }
@@ -261,15 +264,17 @@ setTimeout(
         $(".oznaci").on("click", function() {
             if (moze == 1) {
                 $(this).toggleClass("oznaceno")
-
             } else {}
         })
+
         $.getScript("js/tooltip.js", function(data, textStatus, jqxhr) {
             console.log(data); //data returned
             console.log(textStatus); //success
             console.log(jqxhr.status); //200
             console.log('Load was performed.');
+
         });
+
         if (nalog == 0) {
             moze = 1;
             if (iskljuci_v == 1) {
