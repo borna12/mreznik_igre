@@ -55,14 +55,14 @@ var initPage,
     nalog = 0,
     rijeci,
     moze = 0,
-    akcenti = ["ȁ", "à", "â", "á", "ā", "ȅ", "è", "ê", "é", "ē", "ȍ", "ò", "ȏ", "ó", "ō", "ȕ", "ù", "û", "ú", "ū", "ȑ", "r̀", "r̂", "ŕ", "r̄", "ȉ", "ì", "ȋ", "í", "ī"],
+    akcenti = ["ȁ", "à", "â", "á", "ā", "ȅ", "è", "ê", "é", "ē", "ȍ", "ò", "ȏ", "ó", "ō", "ȕ", "ù", "ȗ", "ú", "ū", "ȑ", "r̀", "r̂", "ŕ", "r̄", "ȉ", "ì", "ȋ", "í", "ī"],
     slova_akcenti = {
         "a": "ȁàâáā",
         "e": "ȅèêéē",
         "i": "ȉìȋíī",
         "o": "ȍòȏóō",
         "r": "ȑr̀r̂ŕr̄",
-        "u": "ȕùûúū",
+        "u": "ȕùȗúū",
     }
 
 
@@ -258,10 +258,14 @@ $(document).ready(function() {
                 html += "<span class='oznaci netocno tooltip' title='nema akcenta'>" + rijeci[x] + "</span>"
             }
         }
-
+        $(window).on('hashchange', function() {
+            hash = decodeURIComponent(window.location.hash).substr(1)
+            $(".oznaceno").html(hash)
+        });
 
         $(".rijec").html(html)
         $(".oznaci").on("click", function() {
+            $(".oznaci").removeClass("oznaceno");
             if (moze == 1) {
                 $(this).toggleClass("oznaceno")
             } else {}
