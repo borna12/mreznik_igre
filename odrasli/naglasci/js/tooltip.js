@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    window.location.hash=""
     $('.tooltip').tooltipster({
         delay: 100,
         maxWidth: 500,
@@ -16,6 +17,7 @@ $(document).ready(function () {
         if ($.trim(target) != '') {
             if ($("." + target) != inside) {
                 $('.tooltipster-base').hide()
+                window.location.hash=""
             }
         }
     });

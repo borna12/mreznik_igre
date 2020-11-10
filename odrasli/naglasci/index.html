@@ -134,7 +134,7 @@ transform: translateY(-50%);">
             <h3 class="results-page__bodovi">postavljenih pitanja!</h3>
             <br>
             <button id="pogreske" style="display: none;" class="btn">provjerite svoje pogreške</button>
-            <button id="pogreske" style="display: none;" class="btn">provjerite svoje pogreške</button>
+            <br>
             <p>
             <form class="jedan"
                 action="https://docs.google.com/forms/d/e/1FAIpQLSe3V_eHV3E_sqUqCUlKMUbJ1E1HLu1QdcJiB-rtgIe8MPApSw/formResponse"
@@ -192,7 +192,7 @@ transform: translateY(-50%);">
 
                 var p1 = [];
                 $.get('natuknice.txt', function (data) {
-                    p1 = data.split("\n");
+                    p1 = data.split("\r\n");
                 }, 'text');
             </script>
             <script src="js/emoji.js" charset="utf-8"></script>
