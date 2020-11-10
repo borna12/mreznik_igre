@@ -11,7 +11,8 @@
     <meta name="author" content="Josip Mihaljević">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Flamenco|Asap:400,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Flamenco|Asap:400,700'
+        rel='stylesheet' type='text/css'>
     <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -54,6 +55,11 @@
 </head>
 
 <body>
+    <div class="preloader-wrapper">
+        <div class="preloader">
+            <img src="preloader.gif" alt="NILA">
+        </div>
+    </div>
     <span onclick="location.href='../index.html'" class="w3-button w3-display-topleft home">
         <i class="fa fa-home"></i> </span>
     <audio class="audios" id="tocno" preload="none">
@@ -117,137 +123,144 @@ transform: translateY(-50%);">
             <h3 class="results-page__info2">Hvala Vam na sudjelovanju u kvizu!</h3>
             </h3>
             <br>
-            <p class="results-page__info">Odgovorili ste točno na <span class="results-page__score">100%</span> postavljenih pitanja.</p>
+            <p class="results-page__info">Odgovorili ste točno na <span class="results-page__score">100%</span>
+                postavljenih pitanja.</p>
 
 
             <br>
-            <p class="results-page__info">S obzirom na broj točnih odgovora i vrijeme ostvarili ste sljedeći broj bodova:
+            <p class="results-page__info">S obzirom na broj točnih odgovora i vrijeme ostvarili ste sljedeći broj
+                bodova:
             </p>
             <h3 class="results-page__bodovi">postavljenih pitanja!</h3>
             <br>
             <button id="pogreske" style="display: none;" class="btn">provjerite svoje pogreške</button>
             <button id="pogreske" style="display: none;" class="btn">provjerite svoje pogreške</button>
             <p>
-                <form class="jedan" action="https://docs.google.com/forms/d/e/1FAIpQLSe3V_eHV3E_sqUqCUlKMUbJ1E1HLu1QdcJiB-rtgIe8MPApSw/formResponse" target="_self" id="bootstrapForm" method="POST">
-                    <legend for="736982347">
-                        <select id="ikona" style="height:30px"></select> Ime:
-                        <input id="312289462" type="text" name="entry.312289462" class="form-control" required id="input-q1" style="height:30px">
-                    </legend>
+            <form class="jedan"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSe3V_eHV3E_sqUqCUlKMUbJ1E1HLu1QdcJiB-rtgIe8MPApSw/formResponse"
+                target="_self" id="bootstrapForm" method="POST">
+                <legend for="736982347">
+                    <select id="ikona" style="height:30px"></select> Ime:
+                    <input id="312289462" type="text" name="entry.312289462" class="form-control" required id="input-q1"
+                        style="height:30px">
+                </legend>
 
 
-                    <!-- Field type: "short" id: "418434893" -->
-                    <div class="form-group" style="display:none">
-                        <input id="60656686" type="text" name="entry.60656686" class="form-control" required>
+                <!-- Field type: "short" id: "418434893" -->
+                <div class="form-group" style="display:none">
+                    <input id="60656686" type="text" name="entry.60656686" class="form-control" required>
+                </div>
+
+
+                <!-- Field type: "short" id: "1111196490" -->
+                <div class="form-group" style="display:none">
+                    <input id="1487903547" type="text" name="entry.1487903547" class="form-control" required>
+                </div>
+
+                <input type="hidden" name="fvv" value="1">
+                <input type="hidden" name="fbzx" value="-2538308583737878367">
+                <input type="hidden" name="pageHistory" value="0">
+                <button class="btn" type="submit" id="predaj">predaj</button>
+
+            </form>
+
+
+            <form target="_self" id="bootstrapFormP" method="POST" style="display:none"
+                action="https://docs.google.com/forms/d/e/1FAIpQLScUIt4bY4mdKMbNdIpoCm-vo7vhPgHkVr_VGOLnt07NXAUw9w/formResponse"
+                target="_self">
+                <fieldset>
+                    <h2>igra pravopis ije/je<br><small></small></h2>
+                </fieldset>
+
+
+                <!-- Field type: "paragraph" id: "395803251" -->
+                <fieldset>
+                    <legend for="395803251">pogreske</legend>
+                    <div class="form-group">
+                        <textarea id="491430551" name="entry.491430551" class="form-control"></textarea>
                     </div>
+                </fieldset>
 
+                <input type="hidden" name="fvv" value="1">
+                <input type="hidden" name="fbzx" value="4565638457985934205">
+                <input type="hidden" name="pageHistory" value="0">
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
 
-                    <!-- Field type: "short" id: "1111196490" -->
-                    <div class="form-group" style="display:none">
-                        <input id="1487903547" type="text" name="entry.1487903547" class="form-control" required>
-                    </div>
+            <button class="results-page__retake-btn btn" onclick="location.reload();">ponovi kviz</button>
+            <script>
 
-                    <input type="hidden" name="fvv" value="1">
-                    <input type="hidden" name="fbzx" value="-2538308583737878367">
-                    <input type="hidden" name="pageHistory" value="0">
-                    <button class="btn" type="submit" id="predaj">predaj</button>
+                var p1 = [];
+                $.get('natuknice.txt', function (data) {
+                    p1 = data.split("\n");
+                }, 'text');
+            </script>
+            <script src="js/emoji.js" charset="utf-8"></script>
+            <script src="js/jquery.form.js"></script>
+            <script src="js/index.js"></script>
+            <script>
+                var target = document.getElementById("ikona");
+                var emojiCount = emoji.length;
+                for (var index = 0; index < emojiCount; index++) {
+                    addEmoji(emoji[index]);
+                }
 
-                </form>
+                function addEmoji(code) {
+                    var option = document.createElement('option');
+                    option.innerHTML = code;
+                    option.value = code;
+                    target.appendChild(option);
+                }
 
+                if (localStorage.getItem("ime") != null) {
+                    $('#312289462').val(localStorage.getItem("ime"))
+                    $('#ikona').val(localStorage.getItem("ikona"))
+                }
 
-                <form target="_self" id="bootstrapFormP" method="POST" style="display:none" action="https://docs.google.com/forms/d/e/1FAIpQLScUIt4bY4mdKMbNdIpoCm-vo7vhPgHkVr_VGOLnt07NXAUw9w/formResponse" target="_self">
-                    <fieldset>
-                        <h2>igra pravopis ije/je<br><small></small></h2>
-                    </fieldset>
-
-
-                    <!-- Field type: "paragraph" id: "395803251" -->
-                    <fieldset>
-                        <legend for="395803251">pogreske</legend>
-                        <div class="form-group">
-                            <textarea id="491430551" name="entry.491430551" class="form-control"></textarea>
-                        </div>
-                    </fieldset>
-
-                    <input type="hidden" name="fvv" value="1">
-                    <input type="hidden" name="fbzx" value="4565638457985934205">
-                    <input type="hidden" name="pageHistory" value="0">
-                    <input class="btn btn-primary" type="submit" value="Submit">
-                </form>
-
-                <button class="results-page__retake-btn btn" onclick="location.reload();">ponovi kviz</button>
-                <script>
-                    var p1 = [];
-                    $.get('natuknice.txt', function(data) {
-                        p1 = data.split("\n");
-                    }, 'text');
-                </script>
-                <script src="js/emoji.js" charset="utf-8"></script>
-                <script src="js/jquery.form.js"></script>
-                <script src="js/index.js"></script>
-                <script>
-                    var target = document.getElementById("ikona");
-                    var emojiCount = emoji.length;
-                    for (var index = 0; index < emojiCount; index++) {
-                        addEmoji(emoji[index]);
-                    }
-
-                    function addEmoji(code) {
-                        var option = document.createElement('option');
-                        option.innerHTML = code;
-                        option.value = code;
-                        target.appendChild(option);
-                    }
-
-                    if (localStorage.getItem("ime") != null) {
-                        $('#312289462').val(localStorage.getItem("ime"))
-                        $('#ikona').val(localStorage.getItem("ikona"))
-                    }
-
-                    $('#bootstrapForm').submit(function(event) {
-                        localStorage.setItem("ime", $('#312289462').val())
-                        localStorage.setItem("ikona", $('#ikona').val())
-                        localStorage.setItem('pokrenuto', "da")
-                        event.preventDefault()
-                        $('#312289462').val(
-                            document.getElementById("ikona").value + document.getElementById("312289462").value
-                        )
-                        $("#predaj").hide(300)
-                        event.preventDefault()
-                        var extraData = {}
-                        $('#bootstrapForm').ajaxSubmit({
-                            data: extraData,
-                            dataType: 'jsonp', // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
-                            error: function() {
-                                // Submit of form should be successful but JSONP callback will fail because Google Forms
-                                // does not support it, so this is handled as a failure.
-                                if (r1 == 1) {
-                                    window.open("rez.html", "_self");
-                                } else if (r1 == 2) {
-                                    window.open("rez2.html", "_self");
-                                } else {
-                                    window.open("rez3.html", "_self");
-                                }
+                $('#bootstrapForm').submit(function (event) {
+                    localStorage.setItem("ime", $('#312289462').val())
+                    localStorage.setItem("ikona", $('#ikona').val())
+                    localStorage.setItem('pokrenuto', "da")
+                    event.preventDefault()
+                    $('#312289462').val(
+                        document.getElementById("ikona").value + document.getElementById("312289462").value
+                    )
+                    $("#predaj").hide(300)
+                    event.preventDefault()
+                    var extraData = {}
+                    $('#bootstrapForm').ajaxSubmit({
+                        data: extraData,
+                        dataType: 'jsonp', // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+                        error: function () {
+                            // Submit of form should be successful but JSONP callback will fail because Google Forms
+                            // does not support it, so this is handled as a failure.
+                            if (r1 == 1) {
+                                window.open("rez.html", "_self");
+                            } else if (r1 == 2) {
+                                window.open("rez2.html", "_self");
+                            } else {
+                                window.open("rez3.html", "_self");
                             }
-                        })
+                        }
                     })
-                    $('#bootstrapFormP').submit(function(event) {
-                        event.preventDefault()
-                        var extraData = {}
-                        $('#bootstrapFormP').ajaxSubmit({
-                            data: extraData,
-                            dataType: 'jsonp', // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
-                            error: function() {
-                                // Submit of form should be successful but JSONP callback will fail because Google Forms
-                                // does not support it, so this is handled as a failure.
-                                console.log('Form Submitted. Thanks.')
-                                    // You can also redirect the user to a custom thank-you page:
-                                    // window.location = 'http://www.mydomain.com/thankyoupage.html'
-                            }
-                        })
+                })
+                $('#bootstrapFormP').submit(function (event) {
+                    event.preventDefault()
+                    var extraData = {}
+                    $('#bootstrapFormP').ajaxSubmit({
+                        data: extraData,
+                        dataType: 'jsonp', // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+                        error: function () {
+                            // Submit of form should be successful but JSONP callback will fail because Google Forms
+                            // does not support it, so this is handled as a failure.
+                            console.log('Form Submitted. Thanks.')
+                            // You can also redirect the user to a custom thank-you page:
+                            // window.location = 'http://www.mydomain.com/thankyoupage.html'
+                        }
                     })
-                </script>
+                })
+            </script>
         </div>
     </div>
 </body>
-
 </html>

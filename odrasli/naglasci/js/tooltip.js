@@ -5,7 +5,19 @@ $(document).ready(function () {
         speed: 300,
         interactive: true,
         animation: 'grow',
-        trigger: 'click'
+        trigger: 'click',
+        autoClose: 'true',
+    });
+
+    $(document).click(function(evt) {
+        var target = evt.target.className;
+        var inside = $(".tooltipster-base");
+        //alert($(target).html());
+        if ($.trim(target) != '') {
+            if ($("." + target) != inside) {
+                $('.tooltipster-base').hide()
+            }
+        }
     });
 });
  (function ($, window, document, undefined) {

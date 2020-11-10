@@ -55,17 +55,15 @@ var initPage,
     nalog = 0,
     rijeci,
     moze = 0,
-    akcenti = ["ȁ", "à", "â", "á", "ā", "ȅ", "è", "ê", "é", "ē", "ȍ", "ò", "ȏ", "ó", "ō", "ȕ", "ù", "ȗ", "ú", "ū", "ȑ", "r̀", "r̂", "ŕ", "r̄", "ȉ", "ì", "ȋ", "í", "ī"],
+    akcenti = ["ȁ", "à", "ȃ", "á", "ā", "ȅ", "è", "ȇ", "é", "ē", "ȍ", "ò", "ȏ", "ó", "ō", "ȕ", "ù", "ȗ", "ú", "ū", "ȑ", "r̀", "ȓ", "r̄", "ȉ", "ì", "ȋ", "í", "ī"],
     slova_akcenti = {
-        "a": "ȁàâáā",
-        "e": "ȅèêéē",
+        "a": "ȁàȃáā",
+        "e": "ȅèȇéē",
         "i": "ȉìȋíī",
         "o": "ȍòȏóō",
-        "r": "ȑr̀r̂ŕr̄",
+        "r": "ȑr̀ȓŕr̄",
         "u": "ȕùȗúū",
     }
-
-
 
 function ProgressCountdown(timeleft, bar, text) {
     $(".begin-countdown").show(300)
@@ -78,7 +76,6 @@ function ProgressCountdown(timeleft, bar, text) {
                 clearInterval(countdownTimer);
                 resolve(true);
             }
-
         }, 1000);
     });
 
@@ -86,9 +83,9 @@ function ProgressCountdown(timeleft, bar, text) {
 
 function removeAccents(string) {
     const accents =
-        "ÀÁÂÃÄÅàáâãäåāȁßÒÓÔÕÕÖØòóôõöøōȍÈÉÊËèéêëēȅÇçÐÌÍÎÏìíîïīȋȉÙÚÛÜùúûüūȕȗÑñŠšŸÿýŽžȑr̀r̂ŕr̄";
+        "ÀÁÂÃÄÅàáȃâãäåāȁßÒÓÔÕÕÖØòóôõöøȏōȍÈÉÊËèéêȇëēȅÇçÐÌÍÎÏìíîïīȋȉÙÚÛÜùúûüūȕȗÑñŠšŸÿýŽžȑȓr̀r̂ŕr̄";
     const accentsOut =
-        "AAAAAAaaaaaaaaBOOOOOOOooooooooEEEEeeeeeeCcDIIIIiiiiiiiUUUUuuuuuuuNnSsYyyZzrrrrr";
+        "AAAAAAaaaaaaaaaBOOOOOOOoooooooooEEEEeeeeeeeCcDIIIIiiiiiiiUUUUuuuuuuuNnSsYyyZzrrrrrr";
     return string
         .split("")
         .map((letter, index) => {
@@ -109,7 +106,8 @@ function ContainsAny(str, items) {
 }
 
 $(document).ready(function() {
-
+    var Body = $('body');
+    Body.addClass('preloader-site');
     function shuffle(array) { //izmješaj pitanja
         var i = 0,
             j = 0,
@@ -124,6 +122,8 @@ $(document).ready(function() {
     }
     setTimeout(
         function() {
+            $('.preloader-wrapper').fadeOut();
+            $('body').removeClass('preloader-site');
             pitanja = p1
             shuffle(pitanja)
             pitanja = pitanja.slice(0, 20)
@@ -273,11 +273,6 @@ $(document).ready(function() {
         })
 
         $.getScript("js/tooltip.js", function(data, textStatus, jqxhr) {
-            console.log(data); //data returned
-            console.log(textStatus); //success
-            console.log(jqxhr.status); //200
-            console.log('Load was performed.');
-
         });
 
         if (nalog == 0) {
@@ -429,7 +424,6 @@ $(document).ready(function() {
     //}
     //})
     $('body').on("keyup", function() {
-
         if ($('.oznaceno').length > 0) {
             submitBtn.click()
         }
@@ -600,7 +594,7 @@ $(document).ready(function() {
             }
             $("#pogreske").click(function() {
                 swal({
-                    title: "slogovi koje ste pogriješili u igri:",
+                    title: "riječi koje ste pogriješili u igri:",
                     html: "" + pogreske.join(", "),
                     showCloseButton: true,
                     confirmButtonText: ' zatvori ',
@@ -660,10 +654,7 @@ $(document).ready(function() {
         // Hide the submit and continue buttons
         continueBtn.hide();
     });
-
     // Clicking on the spanish button:
-
-
 });
 
 function touchHandler(event) {
@@ -683,8 +674,6 @@ function touchHandler(event) {
         default:
             return;
     }
-
-
     // initMouseEvent(type, canBubble, cancelable, view, clickCount, 
     //                screenX, screenY, clientX, clientY, ctrlKey, 
     //                altKey, shiftKey, metaKey, button, relatedTarget);
