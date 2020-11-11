@@ -6,11 +6,6 @@ html {
     font-size: 60%;
 }
 
-.mrzim {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
 html,
 body {
     width: 100%;
@@ -490,4 +485,8 @@ legend {
 .vrime {
     color: #EB4947;
     font-weight: 900
+}
+.mrzim {
+    padding-left: 5px;
+    padding-right: 5px;
 }
