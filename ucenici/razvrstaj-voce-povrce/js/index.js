@@ -136,9 +136,11 @@ $('body').on('click', '.tw', function () {
   twShare('https://codepen.io/jcoulterdesign/pen/fe65b4a77c18330f405702ce4205824e', 'I just completed the Planet Quiz on @codepen in ' + time + ', can you beat it? https://bit.ly/20zZ7wq %23codepen %23planetQuiz', 520, 350);
 });
 
+adresa=window.location.href
+
 $('.fb').click(function () {
   t = time;
-  window.open('https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/jcoulterdesign/pen/fe65b4a77c18330f405702ce4205824e&picture=http://www.jamiecoulter.co.uk/Untitled-3.png&title=Planet+quiz+on+Codepen&description=I just completed the Planet Quiz on @codepen in ' + t + ', can you beat it? https://bit.ly/20zZ7wq', 'targetWindow', 'toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250');
+  window.open('https://www.facebook.com/sharer/sharer.php?u='+adresa+'&picture='+adresa.replace('index.html', 'og_slika.jpg')+'&description=Igra u kojoj trebate razvrstati voće i povrće. O svakome ćete voću i povrću dobiti informacije nakon što ga pravilno razvrstate.', 'targetWindow', 'toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250');
 })
 
 
