@@ -485,6 +485,7 @@
 
           if (document.getElementById("pageBeginCountdown").value == "0") {
               bodovi -= 10;
+              $("#krivo")[0].play();
 
               swal({
                   title: "Isteklo je vrijeme.",
@@ -510,6 +511,7 @@
           } else {
               // Evaluate if the user got the answer right or wrong
               if (userSelectedAnswer === correctAnswer) {
+                $("#tocno")[0].play();
 
                   // Increment the total correct answers counter
                   correctAnswersCounter++;
@@ -542,8 +544,10 @@
               } else {
                   highlightIncorrectAnswerRed();
                   bodovi -= 10;
+                  $("#krivo")[0].play();
+
                   swal({
-                      title: "Netočno",
+                      title: "<span style='color:rgb(235, 73, 71)'>Netočno</span>",
                       html: "<p style='text-align:center'><strong>Točan odgovor je: " + quiz[questionCounter].correctAnswer + "</strong></p><br><em>" + quiz[questionCounter].opis + "</em><br><br><img src='" + quiz[questionCounter].slika + " 'class='slikica2'/>",
                       showCloseButton: true,
                       confirmButtonText: ' dalje',
