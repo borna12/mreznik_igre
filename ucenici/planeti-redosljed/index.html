@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Planeti Sunčeva sustava</title>
-  <meta name="description" content="Igra u kojoj trebate poredati planete po točnomu redoslijedu. Za savki poredani planet dobijete infromaciju o njemu.">
+  <meta name="description" content="Igra u kojoj trebate poredati planete točnim redoslijedom. Za svaki poredani planet dobit ćete informacije o njemu.">
   <meta name="keywords" content="planeti, učenje">
   <meta name="author" content="Josip Mihaljević">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,26 @@
   <link rel="stylesheet" href="css/style.css">
   <script src='js/jquery.min.js'></script>
   <script src='js/jquery-ui.min.js'></script>
+    <meta property="og:title" content="Planeti Sunčeva sustava" />
+    <meta property="og:description" content="Igra u kojoj trebate poredati planete točnim redoslijedom. Za svaki poredani planet dobit ćete informacije o njemu." />
+<meta property="og:image" content="og_slika.jpg" />
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 </head>
 
 <audio preload="none" id="zvuk">
@@ -21,7 +41,7 @@
 <body>
 
   <div class='overlay'></div>
-  <div class='timer'>0 sekundi</div>
+  <div class='timer'>0</div>
   <div class='intro modal'>
     <div class='intro modal_inner'>
       <div class='intro modal_inner__close c_modal st'>
@@ -31,7 +51,7 @@
         <h2 class="naslov">Planeti Sunčeva sustava</h2>
       </div>
       <div class='intro modal_inner__text'>
-        <p class="opis">Poredaj planete po točnom redoslijedu.</p>
+        <p class="opis">Poredaj planete točnim redoslijedom.</p>
       </div>
       <div class='intro modal_inner__image' style="width: 100%;">
         <img class="slika_planeta" src='planeti.gif'>
@@ -45,7 +65,7 @@
     <div class='winner modal_inner'>
       <div class='winner modal_inner__title'>
         <h2>
-          Čestitam. Završili ste igru unutar
+          Čestitam. Broj sekunda potrebnih za završetak igre: 
           <span class='t'>10.00</span>
         </h2>
       </div>
@@ -71,7 +91,7 @@
         <h1>Planeti Sunčeva sustava</h1>
       </div>
       <div class='planets_container__title'>
-        <h3>Poredaj planete po točnom redoslijedu.</h3>
+        <h3>Poredaj planete točnim redoslijedom.</h3>
       </div>
       <div class='planets_container__planets'>
       
