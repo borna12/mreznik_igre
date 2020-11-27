@@ -588,7 +588,8 @@
           if (questionCounter < quiz.length - 1) {
               questionCounter++;
           } else {
-document.getElementsByClassName('questions-page')[0].style.display = "none"
+              document.getElementsByClassName('questions-page')[0].style.display = "none"
+              document.getElementsByClassName('results-page')[0].style.display = "block"
 
               // Display user score as a percentage
               userScore.text(Math.floor((correctAnswersCounter / quiz.length) * 100) + "%");
