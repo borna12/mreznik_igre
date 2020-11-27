@@ -80,6 +80,8 @@ function hide_modal(modal) {
 }
 
 function start_timer() {
+    $(".objasnjenje").hide()
+    $(".slika_planeta").show()
   var start = new Date;
   timer = setInterval(function () {
     sekunde += 1
@@ -97,7 +99,6 @@ function pauza() {
   $(".naslov").text(naziv)
   $(".opis").text(definicija)
   $(".slika_planeta").attr("src", "slike/" + adresa_slike + ".jpg");
-
 }
 
 // Show intro modal
@@ -123,22 +124,17 @@ $('.ta').click(function () {
   $('.planet_holder').css('border', '2px dashed rgba(255, 255, 255, 0.22)')
 })
 
-var shareUrl = 'https://codepen.io/jcoulterdesign/pen/eJGoOx';
-
-function twShare(url, title, winWidth, winHeight) {
-  var winTop = 100;
-  var winLeft = 100;
-  window.open('https://twitter.com/intent/tweet?text=' + title, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
-}
 
 
 $('body').on('click', '.tw', function () {
   twShare('https://codepen.io/jcoulterdesign/pen/fe65b4a77c18330f405702ce4205824e', 'I just completed the Planet Quiz on @codepen in ' + time + ', can you beat it? https://bit.ly/20zZ7wq %23codepen %23planetQuiz', 520, 350);
 });
 
+adresa=window.location.href
+
 $('.fb').click(function () {
   t = time;
-  window.open('https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/jcoulterdesign/pen/fe65b4a77c18330f405702ce4205824e&picture=http://www.jamiecoulter.co.uk/Untitled-3.png&title=Planet+quiz+on+Codepen&description=I just completed the Planet Quiz on @codepen in ' + t + ', can you beat it? https://bit.ly/20zZ7wq', 'targetWindow', 'toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250');
+  window.open('https://www.facebook.com/sharer/sharer.php?u='+adresa+'&picture='+adresa.replace('index.html', 'og_slika.jpg')+'&description=Igra u kojoj trebate razvrstati životinje na domaće i divlje. O svakoj ćete životinji dobiti informacije nakon što je pravilno razvrstate.', 'targetWindow', 'toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250');
 })
 
 

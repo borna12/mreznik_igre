@@ -31,7 +31,6 @@ function RecurringTimer(callback, delay) {
       callback();
     }, remaining);
   };
-
   this.resume = resume;
   this.resume();
 }
@@ -80,6 +79,7 @@ function hide_modal(modal) {
 }
 
 function start_timer() {
+    $(".objasnjenje").hide()
   var start = new Date;
   timer = setInterval(function () {
     sekunde += 1
@@ -97,7 +97,6 @@ function pauza() {
   $(".naslov").text(naziv)
   $(".opis").text(definicija)
   $(".slika_planeta").attr("src", "slike/" + adresa_slike + ".jpg");
-
 }
 
 // Show intro modal

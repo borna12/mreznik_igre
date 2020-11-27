@@ -2,307 +2,332 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Razvrstaj životinje</title>
-  <meta name="description" content="Igra u kojoj trebate rasporediti voče i povrće.">
-  <meta name="keywords" content="planeti, učenje">
-  <meta name="author" content="Josip Mihaljević">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
-  <link rel="stylesheet" href="css/style.css">
-  <script src='js/jquery.min.js'></script>
-  <script src='js/jquery-ui.min.js'></script>
+    <meta charset="UTF-8">
+    <title>Razvrstaj životinje</title>
+    <meta name="description" content="Igra u kojoj trebate razvrstati životinje na domaće i divlje. O svakoj ćete životinji dobiti informacije nakon što je pravilno razvrstate.">
+    <meta name="keywords" content="životinje, učenje">
+    <meta name="author" content="Josip Mihaljević">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src='js/jquery.min.js'></script>
+    <script src='js/jquery-ui.min.js'></script>
+    <meta property="og:title" content="Razvrstaj životinje" />
+    <meta property="og:description" content="Igra u kojoj trebate razvrstati životinje na domaće i divlje. O svakoj ćete životinji dobiti informacije nakon što je pravilno razvrstate." />
+    <meta property="og:image" content="og_slika.jpg" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <audio preload="none" id="zvuk">
-  <source src="zvukovi/planeti.mp3" type="audio/mpeg">
+    <source src="zvukovi/planeti.mp3" type="audio/mpeg">
 </audio>
 
 <body>
 
-  <div class='overlay'></div>
-  <div class='timer'>0 sekundi</div>
-  <div class='intro modal'>
-    <div class='intro modal_inner'>
-      <div class='intro modal_inner__close c_modal st'>
-        x
-      </div>
-      <div class='intro modal_inner__title'>
-        <h2 class="naslov">Razvrstaj životinje</h2>
-      </div>
-      <div class='intro modal_inner__text'>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
- 
-      <div class='intro modal_inner__cta c_modal'>
-        <button class='st igraj'>IGRAJ</button>
-      </div>
+    <div class='overlay'></div>
+    <div class='timer'>0</div>
+    <div class='intro modal'>
+        <div class='intro modal_inner'>
+            <div class='intro modal_inner__close c_modal st'>
+                x
+            </div>
+            <div class='intro modal_inner__title'>
+                <h2 class="naslov">Razvrstaj životinje</h2>
+            </div>
+            <div class='intro modal_inner__text'>
+                <p class="opis"></p>
+                <ul class="objasnjenje">
+                    <li style="text-align:justify">Domaća životinja životinja je koja je pripitomljena i služi za rad, čuvanje kuće ili hranu.</li>
+                    <li style="text-align:justify">Divlja životinja životinja je koja živi slobodno u prirodi, koja nije pripitomljena.</li>
+                </ul>
+            </div>
+            <div class='intro modal_inner__image' style="width: 100%;">
+                    <img class="slika_planeta" src='planeti.gif' style="display:none">
+
+            </div>
+            <div class='intro modal_inner__cta c_modal'>
+                <button class='st igraj'>IGRAJ</button>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class='winner modal'>
-    <div class='winner modal_inner'>
-      <div class='winner modal_inner__title'>
-        <h2>
-          Čestitam. Broj sekundi za završetak igre
+    <div class='winner modal'>
+        <div class='winner modal_inner'>
+            <div class='winner modal_inner__title'>
+                <h2>
+          Čestitam. Broj sekunda potrebnih za završetak igre:
           <span class='t'>10.00</span>.
         </h2>
-      </div>
-      <div class='winner modal_inner__text'>
-        <p></p>
-      </div>
-      <div class='winner modal_inner__cta'>
-        <button class='fb'>
-          Podijeli rezultata na Facebooku.
-        </button>
-        <button onclick="window.location.reload()">
-          Igraj novu igru!
-        </button>
-      </div>
-      <div class='winner modal_inner__restart'>
-      </div>
-    </div>
-  </div>
-  <div class='planets'>
-    <div class='planets_stars'></div>
-    <div class='planets_container'>
-      <div class='planets_container__title'>
-        <h1>Razvrstaj životinje</h1>
-      </div>
-     
-      <div class='planets_container__planets'>
-
-      </div>
-
-      <script>
-          function shuffle(array) {
-            var currentIndex = array.length, temporaryValue, randomIndex;
-          
-            // While there remain elements to shuffle...
-            while (0 !== currentIndex) {
-          
-              // Pick a remaining element...
-              randomIndex = Math.floor(Math.random() * currentIndex);
-              currentIndex -= 1;
-          
-              // And swap it with the current element.
-              temporaryValue = array[currentIndex];
-              array[currentIndex] = array[randomIndex];
-              array[randomIndex] = temporaryValue;
-            }
-          
-            return array;
-          }
-          
-        divlje = [
-          ["jelen", "divlje", "jelen","Jeleni su porodica životinja iz skupine dvopapkara, šumski preživači čiji mužjaci imaju razgranato rogovlje koje svake godine ponovno raste."],
-          ["jež", "divlje", "jez","Jež je kukcožder zbijena tijela i gustih bodljika na leđnoj strani koje su preoblikovane dlake, hrani se kukcima, gujavicama i drugim malim životinjama te plodovima i ptičjim jajima, kad je ugrožen sklupča se u bodljikavu kuglu."],
-          ["košuta", "divlje", "kosuta","Košuta je ženka jelena."],
-          ["kuna", "divlje", "kuna",""],
-          ["lane", "divlje", "lane",""],
-          ["lav", "divlje", "lav",""],
-          ["lisica", "divlje", "lisica","Lisica je grabežljiva zvjer iz porodice pasa crvenkastosmeđe boje sa svijetlim trbuhom, duga i kitnjasta repa."],
-          ["majmun", "divlje", "majmun",""],
-          ["medvjed", "divlje", "medvjed",""],
-          ["miš", "divlje", "mis",""],
-          ["pantera", "divlje", "pantera",""],
-          ["slon", "divlje", "slon",""],
-          ["srna", "divlje", "srna",""],
-          ["tigar", "divlje", "tigar",""],
-          ["zebra", "divlje", "zebra",""],
-          ["žirafa", "divlje", "zirafa",""],
-          ["krokodil", "divlje", "krokodil",""]
-          
-        ]
-        divlje = shuffle(divlje)
-
-        divlje=divlje.slice(0,10)
-        
-        domace = [
-          ["bik", "domace", "bik",""],
-          ["janje", "domace", "janje",""],
-          ["jarac", "domace", "jarac",""],
-          ["kokos", "domace", "kokos",""],
-          ["konj", "domace", "konj",""],
-          ["koza", "domace", "koza",""],
-          ["krava", "domace", "krava",""],
-          ["mačka", "domace", "macka",""],
-          ["magarac", "domace", "magarac",""],
-          ["ovca", "domace", "ovca",""],
-          ["pas", "domace", "pas",""],
-          ["pijetao", "domace", "pijetao",""],
-          ["svinja", "domace", "svinja",""],
-          ["tele", "domace", "tele",""],
-          ["vol", "domace", "vol",""],
-          ["deva", "domace", "deva",""],
-          ["guska", "domace", "guska",""],
-          ["kunić", "domace", "zec",""],
-          ["patka", "domace", "patka",""]
-        ]
-        domace = shuffle(domace)
-
-        domace=domace.slice(0,10)
-
-       
-        zivotinje= divlje.concat(domace)
-
-
-        zivotinje = shuffle(zivotinje)
-
-        for (x = 0; x < zivotinje.length; x++) {
-          $(".planets_container__planets").append("<div class='planet_wrap'><div class='planet' data-adresa='" + zivotinje[
-              x][2] + "' data-planet='" + zivotinje[x][1] + "' data-naziv='" + zivotinje[x][0] + "' data-definicija='" +
-              zivotinje[x][3] + " '><img src='slike/" + zivotinje[x][2] + ".png'></div><span class='naziv'>" + zivotinje[x][0] +
-            "</span> </div>")
-
-        }
-      </script>
-      <div class='planets_container__quiz'>
-
-
-        <div class="section group">
-          <div class="col span_1_of_2">
-            <h2>domaće</h2>
-            <div class='planet_holder zemlja' data-planet='domace'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
             </div>
-            <div class='planet_holder zemlja' data-planet='domace'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
+            <div class='winner modal_inner__text'>
+                <p></p>
             </div>
-            <div class='planet_holder zemlja' data-planet='domace'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
+            <div class='winner modal_inner__cta'>
+                <button class='fb'>
+                    Podijeli rezultata na Facebooku.
+                </button>
+                <button onclick="window.location.reload()">
+                    Igraj novu igru!
+                </button>
             </div>
-            <div class='planet_holder zemlja' data-planet='domace'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
+            <div class='winner modal_inner__restart'>
             </div>
-            <div class='planet_holder zemlja' data-planet='domace'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='domace'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='domace'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='domace'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='domace'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='domace'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-          </div>
-          <div class="col span_1_of_2">
-            <h2>divlje</h2>
-
-            <div class='planet_holder zemlja' data-planet='divlje'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='divlje'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='divlje'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='divlje'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='divlje'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='divlje'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='divlje'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='divlje'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='divlje'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-            <div class='planet_holder zemlja' data-planet='divlje'>
-              <span>?</span>
-              <div class='planet_answer'>
-                <img class="placeholder" src='planeti/zemlja.png'>
-              </div>
-            </div>
-          </div>
         </div>
-
-
-
-
-      </div>
     </div>
-  </div>
+    <div class='planets'>
+        <div class='planets_stars'></div>
+        <div class='planets_container'>
+            <div class='planets_container__title'>
+                <h1>Razvrstaj životinje</h1>
+            </div>
+
+            <div class='planets_container__planets'>
+
+            </div>
+
+            <script>
+                function shuffle(array) {
+                    var currentIndex = array.length,
+                        temporaryValue, randomIndex;
+
+                    // While there remain elements to shuffle...
+                    while (0 !== currentIndex) {
+
+                        // Pick a remaining element...
+                        randomIndex = Math.floor(Math.random() * currentIndex);
+                        currentIndex -= 1;
+
+                        // And swap it with the current element.
+                        temporaryValue = array[currentIndex];
+                        array[currentIndex] = array[randomIndex];
+                        array[randomIndex] = temporaryValue;
+                    }
+
+                    return array;
+                }
+
+                divlje = [
+                    ["jelen", "divlje", "jelen", "Jeleni su porodica životinja iz skupine dvopapkara, šumski preživači čiji mužjaci imaju razgranato rogovlje koje svake godine ponovno raste."],
+                    ["jež", "divlje", "jez", "Jež je kukcožder zbijena tijela i gustih bodljika na leđnoj strani koje su preoblikovane dlake, hrani se kukcima, gujavicama i drugim malim životinjama te plodovima i ptičjim jajima, kad je ugrožen sklupča se u bodljikavu kuglu."],
+                    ["košuta", "divlje", "kosuta", "Košuta je ženka jelena."],
+                    ["kuna", "divlje", "kuna", "Kuna je malena divlja životinja koja ima dugo i vitko tijelo prekriveno skupocjenim krznom."],
+                    ["lane", "divlje", "lane", "Lane je mladunče srne ili košute."],
+                    ["lav", "divlje", "lav", "Lav je velika afrička mačka sa svijetlosmeđim krznom čiji mužjak ima veliku grivu."],
+                    ["lisica", "divlje", "lisica", "Lisica je grabežljiva zvjer iz porodice pasa crvenkastosmeđe boje sa svijetlim trbuhom, duga i kitnjasta repa."],
+                    ["majmun", "divlje", "majmun", "Majmun je divlja životinja kojoj je tijelo prekriveno dlakom, ima dugačke ruke i noge i obično dugačak rep."],
+                    ["medvjed", "divlje", "medvjed", "Medvjed je divlja životinja koja ima kratak rep i veliko tijelo prekriveno krznom."],
+                    ["miš", "divlje", "mis", "Miš je malena životinja sa šiljastom njuškom, dugim repom i smeđim ili sivim krznom."],
+                    ["pantera", "divlje", "pantera", "Pantera je rod životinja iz porodice mačaka, glasaju se rikom."],
+                    ["slon", "divlje", "slon", "Slon je vrlo velika divlja životinja sive boje koja ima surlu, velike uši i kljove."],
+                    ["srna", "divlje", "srna", "Srna je divlja životinja koja živi u šumi i ima vitko tijelo i duge noge te dlaku koja je zimi riđa, a ljeti sivkastosmeđa."],
+                    ["tigar", "divlje", "tigar", "Tigar je najveća mačka na svijetu, koja ima crvenkastožuto krzno s crnim prugama."],
+                    ["zebra", "divlje", "zebra", "Zebra je afrička divlja životinja s crno-bijelim prugastim krznom."],
+                    ["žirafa", "divlje", "zirafa", "Žirafa je afrički sisavac iz porodice papkara, duljih prednjih nogu i vrlo duga vrata"],
+                    ["krokodil", "divlje", "krokodil", "Krokodil je gmaz koji živi u vodi i sliči velikomu gušteru, a tijelo mu je prekriveno čvrstim ljuskama."]
+
+                ]
+                divlje = shuffle(divlje)
+
+                divlje = divlje.slice(0, 10)
+
+                domace = [
+                    ["bik", "domace", "bik", "Bik je odrasli mužjak goveda koji obično služi za razmnožavanje."],
+                    ["janje", "domace", "janje", "Janje je mladunče ovce."],
+                    ["jarac", "domace", "jarac", "Jarac je mužjak koze."],
+                    ["kokoš", "domace", "kokos", "Kokoš je domaća ptica koja se uzgaja radi jaja i mesa."],
+                    ["konj", "domace", "konj", "Konj je životinja koja ima četiri tanke noge s kopitima, dugačku grivu i dugačak rep."],
+                    ["koza", "domace", "koza", "Koza je domaća životinja s rogovima i bradicom."],
+                    ["krava", "domace", "krava", "Krava je ženka goveda koja se uzgaja kao domaća životinja radi mlijeka."],
+                    ["mačka", "domace", "macka", "Mačka je životinja s dugim repom i mekim krznom koja lovi miševe."],
+                    ["magarac", "domace", "magarac", "Magarac je domaća životinja koja ima duge uši, duge tanke noge i kopita."],
+                    ["ovca", "domace", "ovca", "Ovca je domaća životinja kojoj je tijelo prekriveno vunom."],
+                    ["pas", "domace", "pas", "Pas je domaća životinja koja ima četiri noge, šiljatu njušku, rep i tijelo prekriveno dlakom."],
+                    ["pijetao", "domace", "pijetao", "Pijetao je mužjak kokoši."],
+                    ["svinja", "domace", "svinja", "Svinja je domaća životinja koja ima široku ravnu njušku, četiri kratke noge, debelo tijelo i kovrčav rep."],
+                    ["tele", "domace", "tele", "Tele je mladunče goveda."],
+                    ["vol", "domace", "vol", "Vol je odrasli mužjak goveda koji obično služi za vuču tereta."],
+                    ["deva", "domace", "deva", "Deve su skupina papkara šupljorožaca pustinjskih i stepskih područja Bliskoga istoka i sjeverne Afrike te Južne Amerike, koji služe za teglenje i jahanje."],
+                    ["guska", "domace", "guska", "Guska je ptica koja živi uz vodu i ima duge noge i oštar kljun."],
+                    ["kunić", "domace", "zec", "Kunić je sisavac sličan zecu koji se uzgaja radi dobivanja mesa i krzna."],
+                    ["patka", "domace", "patka", "Patka je ptica koja živi uz vodu i ima širok plosnat kljun, kratak vrat i opne za plivanje među nožnim prstima."]
+                ]
+                domace = shuffle(domace)
+
+                domace = domace.slice(0, 10)
+
+
+                zivotinje = divlje.concat(domace)
+
+
+                zivotinje = shuffle(zivotinje)
+
+                for (x = 0; x < zivotinje.length; x++) {
+                    $(".planets_container__planets").append("<div class='planet_wrap'><div class='planet' data-adresa='" + zivotinje[
+                            x][2] + "' data-planet='" + zivotinje[x][1] + "' data-naziv='" + zivotinje[x][0] + "' data-definicija='" +
+                        zivotinje[x][3] + " '><img src='slike/" + zivotinje[x][2] + ".png'></div><span class='naziv'>" + zivotinje[x][0] +
+                        "</span> </div>")
+
+                }
+            </script>
+            <div class='planets_container__quiz'>
+
+
+                <div class="section group">
+                    <div class="col span_1_of_2">
+                        <h2>domaće</h2>
+                        <div class='planet_holder zemlja' data-planet='domace'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='domace'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='domace'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='domace'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='domace'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='domace'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='domace'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='domace'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='domace'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='domace'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span_1_of_2">
+                        <h2>divlje</h2>
+
+                        <div class='planet_holder zemlja' data-planet='divlje'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='divlje'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='divlje'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='divlje'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='divlje'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='divlje'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='divlje'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='divlje'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='divlje'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                        <div class='planet_holder zemlja' data-planet='divlje'>
+                            <span>?</span>
+                            <div class='planet_answer'>
+                                <img class="placeholder" src='planeti/zemlja.png'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
 
 
-  <script src="js/index.js"></script>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/index.js"></script>
 
 
 
