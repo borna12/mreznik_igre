@@ -125,6 +125,7 @@ $(document).ready(function () {
         function () {
             $('.preloader-wrapper').fadeOut();
             $('body').removeClass('preloader-site');
+          
             pitanja = p1
             shuffle(pitanja)
             pitanja = pitanja.slice(0, 20)

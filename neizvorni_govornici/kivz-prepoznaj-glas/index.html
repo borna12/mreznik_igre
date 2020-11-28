@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head> 
+<head>
     <meta charset="UTF-8">
     <title>Prepoznaj glas u riječi</title>
     <meta charset="utf-8">
@@ -40,28 +40,28 @@
 </head>
 
 <body>
-        
-
-
-
-
+    <div class="preloader-wrapper">
+        <div class="preloader">
+            <img src="preloader.gif" alt="NILA">
+        </div>
+    </div>
     <audio class="audios" id="tocno" preload="none">
-                <source src="zvuk/tocno.mp3" type="audio/mpeg">
-            </audio>
+        <source src="zvuk/tocno.mp3" type="audio/mpeg">
+    </audio>
     <audio class="audios" id="pogresno" preload="none">
-            <source src="zvuk/krivo.mp3" type="audio/mpeg">
-        </audio>
+        <source src="zvuk/krivo.mp3" type="audio/mpeg">
+    </audio>
     <audio class="audios" id="zvono" preload="none">
-                <source src="zvuk/zvono.mp3" type="audio/mpeg">
-            </audio>
+        <source src="zvuk/zvono.mp3" type="audio/mpeg">
+    </audio>
     <audio class="audios" id="izgovor" preload="none">
-                    <source src="" type="audio/mpeg">
-                </audio>
-
+        <source src="" type="audio/mpeg">
+    </audio>
     <div class="init-page">
         <div class="container container2">
             <h1 class="init-page__title">Prepoznaj glas u riječi</h1>
-            <p>Pritisni zvučnik da čuješ glas te nakon toga odaberi odgovarajuće slovo u riječi.</p><br>
+            <p>Pritisni zvučnik da čuješ glas te nakon toga odaberi odgovarajuće slovo u riječi.</p>
+            <br>
             <!-- <img src="slike/uvodna.png" style="width: 100%;
     margin-left: auto;
     display: block;
@@ -117,7 +117,9 @@
             <br>
             <p>
                 <form class="jedan" action="https://docs.google.com/forms/d/e/1FAIpQLSc_ay7kaOzdlWjVyE3IQ3xLaSEqFcCBT71duwTLSmk1S6OCAA/formResponse" target="_self" id="bootstrapForm" method="POST">
-                    <legend for="736982347"> <select id="ikona" style="height:30px"></select> Ime: <input id="312289462" type="text" name="entry.312289462" class="form-control" required id="input-q1" style="height:30px">
+                    <legend for="736982347">
+                        <select id="ikona" style="height:30px"></select> Ime:
+                        <input id="312289462" type="text" name="entry.312289462" class="form-control" required id="input-q1" style="height:30px">
                     </legend>
 
 
@@ -140,11 +142,12 @@
                             Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
                             We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
                         -->
-                    <input type="hidden" name="pageHistory" value="0"><button class="btn" type="submit" id="predaj">predaj</button>
+                    <input type="hidden" name="pageHistory" value="0">
+                    <button class="btn" type="submit" id="predaj">predaj</button>
 
                 </form>
-                
-                 <form target="_self" id="bootstrapFormP" method="POST" style="display:none" action="https://docs.google.com/forms/d/e/1FAIpQLSeiGUC1V6nVNLwqYG5-MNLyjypgWZI6x_w-cnIKTAzk4vKBcQ//formResponse" target="_self">
+
+                <form target="_self" id="bootstrapFormP" method="POST" style="display:none" action="https://docs.google.com/forms/d/e/1FAIpQLSeiGUC1V6nVNLwqYG5-MNLyjypgWZI6x_w-cnIKTAzk4vKBcQ//formResponse" target="_self">
                     <fieldset>
                         <h2>igra pravopis ije/je<br><small></small></h2>
                     </fieldset>
@@ -167,6 +170,12 @@
                 <button class="results-page__retake-btn btn" onclick="location.reload();">ponovi kviz</button>
                 <script src="js/emoji.js" charset="utf-8"></script>
                 <script src="js/jquery.form.js"></script>
+                <script>
+                    var p2 = [];
+                    $.get('stranci.txt', function(data) {
+                        p2 = data.split("\r\n");
+                    }, 'text');
+                </script>
                 <script src="js/index.js"></script>
                 <script>
                     var target = document.getElementById("ikona");
@@ -215,7 +224,7 @@
                             }
                         })
                     })
-                       $('#bootstrapFormP').submit(function(event) {
+                    $('#bootstrapFormP').submit(function(event) {
                         event.preventDefault()
                         var extraData = {}
                         $('#bootstrapFormP').ajaxSubmit({
