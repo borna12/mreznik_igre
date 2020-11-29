@@ -184,6 +184,14 @@ $(document).ready(function() {
 
     };
 
+    function randSlovo(arr, excludeNum, excludeNum2, excludeNum3) {
+        var randslovo = arr[Math.floor(Math.random() * arr.length)];
+        if (randslovo == excludeNum || randslovo == excludeNum2 || randslovo == excludeNum3) {
+            return randSlovo(arr, excludeNum, excludeNum2, excludeNum3);
+        } else {
+            return randslovo;
+        }
+    }
     // Load the next question and set of answers
     generateQuestionAndAnswers = function() {
         $(".begin-countdown").hide(300)
@@ -202,21 +210,33 @@ $(document).ready(function() {
 
         random_br = Math.floor(Math.random() * lista.length)
         rijec = lista[random_br]
-        slova = rijec.split("");
-        randomslovo = slova[Math.floor(Math.random() * slova.length)];
+        if (rijec.indexOf('lj') != -1) {
+            slova = rijec.split("lj")
+            slova = slova[0].split("") + ",lj," + slova[1].split("")
+            slova = slova.split(",")
+        } else if (rijec.indexOf('nj') != -1) {
+            slova = rijec.split("nj")
+            slova = slova[0].split("") + ",lj," + slova[1].split("")
+            slova = slova.split(",")
+        } else {
+            slova = rijec.split("")
+        }
+
+        randomslovo = randSlovo(slova, " ", ")", "(")
+            // randomslovo = slova[Math.floor(Math.random() * slova.length)];
         randomslovo = randomslovo.toLowerCase()
 
         html = ""
         for (x = 0; x < slova.length; x++) {
             if (slova[x].toLowerCase() == randomslovo) {
                 html += "<span class='oznaci tocno'>" + slova[x] + "</span>"
-            } else {
+            } else if (slova[x].toLowerCase() == " " || slova[x].toLowerCase() == "(" || slova[x].toLowerCase() == ")") { html += slova[x] } else {
                 html += "<span class='oznaci netocno'>" + slova[x] + "</span>"
             }
         }
         $(".rijec").html(html)
         $(".oznaci").on("click", function() {
-            if (moze == 1) {
+            if (moze == 1 && $(this).text() != " ") {
                 $(this).toggleClass("oznaceno")
                 if ($('.oznaceno').length > 0) {
                     submitBtn.show(300)
@@ -683,7 +703,7 @@ $(document).ready(function() {
     });
 
     // Clicking on the spanish button:
-   
+
 });
 
 function touchHandler(event) {
