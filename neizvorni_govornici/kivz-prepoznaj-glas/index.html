@@ -121,14 +121,10 @@
                         <select id="ikona" style="height:30px"></select> Ime:
                         <input id="312289462" type="text" name="entry.312289462" class="form-control" required id="input-q1" style="height:30px">
                     </legend>
-
-
                     <!-- Field type: "short" id: "418434893" -->
                     <div class="form-group" style="display:none">
                         <input id="60656686" type="text" name="entry.60656686" class="form-control" required>
                     </div>
-
-
                     <!-- Field type: "short" id: "1111196490" -->
                     <div class="form-group" style="display:none">
                         <input id="1487903547" type="text" name="entry.1487903547" class="form-control" required>
@@ -151,8 +147,6 @@
                     <fieldset>
                         <h2>igra pravopis ije/je<br><small></small></h2>
                     </fieldset>
-
-
                     <!-- Field type: "paragraph" id: "395803251" -->
                     <fieldset>
                         <legend for="395803251">pogreske</legend>
@@ -160,13 +154,11 @@
                             <textarea id="491430551" name="entry.491430551" class="form-control"></textarea>
                         </div>
                     </fieldset>
-
                     <input type="hidden" name="fvv" value="1">
                     <input type="hidden" name="fbzx" value="4565638457985934205">
                     <input type="hidden" name="pageHistory" value="0">
                     <input class="btn btn-primary" type="submit" value="Submit">
                 </form>
-
                 <button class="results-page__retake-btn btn" onclick="location.reload();">ponovi kviz</button>
                 <script src="js/emoji.js" charset="utf-8"></script>
                 <script src="js/jquery.form.js"></script>
@@ -183,19 +175,16 @@
                     for (var index = 0; index < emojiCount; index++) {
                         addEmoji(emoji[index]);
                     }
-
                     function addEmoji(code) {
                         var option = document.createElement('option');
                         option.innerHTML = code;
                         option.value = code;
                         target.appendChild(option);
                     }
-
                     if (localStorage.getItem("ime") != null) {
                         $('#312289462').val(localStorage.getItem("ime"))
                         $('#ikona').val(localStorage.getItem("ikona"))
                     }
-
                     $('#bootstrapForm').submit(function(event) {
                         localStorage.setItem("ime", $('#312289462').val())
                         localStorage.setItem("ikona", $('#ikona').val())

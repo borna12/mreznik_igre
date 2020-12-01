@@ -209,7 +209,7 @@ $(document).ready(function() {
         lista = pitanja
 
         random_br = Math.floor(Math.random() * lista.length)
-        rijec = lista[random_br]
+        rijec = lista[random_br].replace(/(\r\n|\n|\r)/gm, "")
         if (rijec.indexOf('lj') != -1) {
             slova = rijec.split("lj")
             slova = slova[0].split("") + ",lj," + slova[1].split("")
