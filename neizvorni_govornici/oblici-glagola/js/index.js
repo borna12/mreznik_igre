@@ -1029,6 +1029,42 @@ $(document).ready(function () {
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "cuvati.jpg"
+    },
+    {
+        "question": "popuni",
+        "hint": "dobiti (engl. to give)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "dobijem",
+            "dobiješ",
+            "dobije",
+            "dobijemo",
+            "dobijete",
+            "dobiju"
+        ],
+        "osnova": ["Nadamo se da","Nadaš se da","Nada se daa","Nadamo se da","Nadate se da","Nadaju se da"],
+        "osnova2": " na lotu.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "dobiju.jpg"
+    },
+    {
+        "question": "popuni",
+        "hint": "doći (engl. come, arrive)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "dođem",
+            "dođeš",
+            "dođe",
+            "dođemo",
+            "dođete",
+            "dođu"
+        ],
+        "osnova": ["Kada","Kada","Kada","Kada","Kada","Kada"],
+        "osnova2": " u kuću, ručak će biti gotov.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "doci.jpg"
     }
     ];
     prezent = p1
