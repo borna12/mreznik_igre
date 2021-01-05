@@ -1083,6 +1083,96 @@ $(document).ready(function () {
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "dogovarati.jpg"
+    },
+    {
+        "question": "popuni",
+        "hint": "dogovoriti (engl. to agree)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Dogovorim",
+            "Dogovoriš",
+            "Dogovori",
+            "Dogovorimo",
+            "Dogovorite",
+            "Dogovore"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " se s ostalim osobama u vezi s izletom.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "dogovoriti.jpg"
+    },
+    {
+        "question": "popuni",
+        "hint": "dolaziti (engl. come)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Dolazim",
+            "Dolaziš",
+            "Dolazi",
+            "Dolazimo",
+            "Dolazite",
+            "Dolaze"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " li na posao uvijek u isto vrijeme?",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "dolaziti.jpg"
+    },
+    {
+        "question": "popuni",
+        "hint": "donijeti (engl. bring)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "donesem",
+            "doneseš",
+            "donese",
+            "donesemo",
+            "donesete",
+            "donesu"
+        ],
+        "osnova": ["Kad ","Kad ","Kad ","Kad ","Kad ","Kad "],
+        "osnova2": " zadaću, ispravit ću ti greške.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "donijeti.jpg"
+    },
+    {
+        "question": "popuni",
+        "hint": "doručkovati (engl. have breakfast)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "doručkujem",
+            "doručkuješ",
+            "doručkuje",
+            "doručkujemo",
+            "doručkujete",
+            "doručkuju"
+        ],
+        "osnova": ["Ujutro obvezno ","Ujutro obvezno ","Ujutro obvezno ","Ujutro obvezno ","Ujutro obvezno ","Ujutro obvezno "],
+        "osnova2": " cjelovite žitarice ili voće.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "doruckovati.jpg"
+    },
+    {
+        "question": "popuni",
+        "hint": "družiti se (engl. hang out)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Družim se",
+            "Družiš se",
+            "Druži se",
+            "Družimo se",
+            "Družite se",
+            "Druže se"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " samo s prijateljima iz škole.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "druziti.jpg"
     }
     ];
     prezent = p1
