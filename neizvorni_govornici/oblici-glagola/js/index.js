@@ -1068,21 +1068,21 @@ $(document).ready(function () {
     },
     {
         "question": "popuni",
-        "hint": "dogovarati (engl. come, arrive)",
+        "hint": "dogovarati (engl. to negotiate, to arrange)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "dođem",
-            "dođeš",
-            "dođe",
-            "dođemo",
-            "dođete",
-            "dođu"
+            "Dogovaram",
+            "Dogovaraš",
+            "Dogovara",
+            "Dogovaramo",
+            "Dogovarate",
+            "Dogovaraju"
         ],
-        "osnova": ["Kada","Kada","Kada","Kada","Kada","Kada"],
-        "osnova2": " u kuću, ručak će biti gotov.",
+        "osnova": ["","","","","",""],
+        "osnova2": " poslove i sastanke.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "doci.jpg"
+        "slika": "dogovarati.jpg"
     }
     ];
     prezent = p1
