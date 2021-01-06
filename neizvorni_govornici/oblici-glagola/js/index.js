@@ -640,25 +640,6 @@ $(document).ready(function () {
     },
     {
         "question": "popuni",
-        "hint": "govoriti (engl. speak)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "Govorim",
-            "Govoriš",
-            "Govori",
-            "Govorimo",
-            "Govorite",
-            "Govore"
-        ],
-        "osnova": ["","","","","",""],
-        "osnova2": " o filmu koji je trenutačno u kinima.",
-       
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "govoriti.jpg"
-    },
-    {
-        "question": "popuni",
         "hint": "dati (engl. give)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
@@ -1173,6 +1154,279 @@ $(document).ready(function () {
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "druziti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "gleati (engl. to watch)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Gledam",
+            "Gledaš",
+            "Gleda",
+            "Gledamo",
+            "Gledate",
+            "Gledaju"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " serije na Netflixu.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "gledati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "govoriti (engl. speak)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "govorim",
+            "govoriš",
+            "govori",
+            "govorimo",
+            "govorite",
+            "govore"
+        ],
+        "osnova": ["Danas ","Danas ","Danas ","Danas ","Danas ","Danas "],
+        "osnova2": " o zaštiti okoliša.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "govoriti2.jpg"
+    },{
+        "question": "popuni",
+        "hint": "gurati (engl. push)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Guram",
+            "Guraš",
+            "Gura",
+            "Guramo",
+            "Gurate",
+            "Guraju"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " kolica u dućanu.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "gurati.jpg"
+    }
+    ,{
+        "question": "popuni",
+        "hint": "hodati (engl. walk)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Hodam",
+            "Hodaš",
+            "Hoda",
+            "Hodamo",
+            "Hodate",
+            "Hodaju"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " svaki dan radi zdarvlja",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "hodati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "htjeti (engl. want to, wish)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Hoću",
+            "Hoćeš",
+            "Hoće",
+            "Hoćemo",
+            "Hoćete",
+            "Hoće"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " novi stan i novi auto.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "htjeti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "igrati (engl. to play)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "igram",
+            "igraš",
+            "igra",
+            "igramo",
+            "igrate",
+            "igraju"
+        ],
+        "osnova": ["Cijelu večer ","Cijelu večer ","Cijelu večer ","Cijelu večer ","Cijelu večer ","Cijelu večer "],
+        "osnova2": " društvene igre.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "igrati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "imati (engl. to have)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Imam",
+            "Imaš",
+            "Ima",
+            "Imamo",
+            "Imate",
+            "Imaju"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " kuću na planini.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "imati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "ispeći (engl. to bake, to fry)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "ispečem",
+            "ispčeš",
+            "ispeče",
+            "ispečemo",
+            "ispečete",
+            "ispeku"
+        ],
+        "osnova": ["Za vikend ","Za vikend ","Za vikend ","Za vikend ","Za vikend ","Za vikend "],
+        "osnova2": " meso na ražnju.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "ispeci.jpg"
+    },{
+        "question": "popuni",
+        "hint": "izabrati (engl. to chose)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "izaberem",
+            "izabereš",
+            "izabere",
+            "izaberemo",
+            "izaberete",
+            "izaberu"
+        ],
+        "osnova": ["Za vikend ","Za vikend ","Za vikend ","Za vikend ","Za vikend ","Za vikend "],
+        "osnova2": " meso na ražnju.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "izabrati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "izabrati (engl. to chose)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "izaberem",
+            "izabereš",
+            "izabere",
+            "izaberemo",
+            "izaberete",
+            "izaberu"
+        ],
+        "osnova": ["Za vikend ","Za vikend ","Za vikend ","Za vikend ","Za vikend ","Za vikend "],
+        "osnova2": " meso na ražnju.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "izabrati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "izabrati (engl. to choose)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "izaberem",
+            "izabereš",
+            "izabere",
+            "izaberemo",
+            "izaberete",
+            "izaberu"
+        ],
+        "osnova": ["Večeras ","Večeras ","Večeras ","Večeras ","Večeras ","Večeras "],
+        "osnova2": " mjesto za izlazak.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "izabrati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "izaći (engl. go out)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Izađem",
+            "Izađeš",
+            "Izađe",
+            "Izađemo",
+            "Izađete",
+            "Izađu"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " iz stana u 7 ujutro.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "izaci.jpg"
+    },{
+        "question": "popuni",
+        "hint": "izgledati (engl. to look like)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Izgledam",
+            "Izgledaš",
+            "Izgleda",
+            "Izgledamo",
+            "Izgledate",
+            "Izgledaju"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " puno starije zbog brade i brkova.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "izgledati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "izlaziti (engl. to go out)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Izlazim",
+            "Izlaziš",
+            "Izlazi",
+            "Izlazimo",
+            "Izlazite",
+            "Izlaze"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " vikendom u noćne klubove.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "izlaziti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "ići (engl. to go)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Idem",
+            "Ideš",
+            "Ide",
+            "Idemo",
+            "Idete",
+            "Idu"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " u trgovački centar.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "ici.jpg"
+    },{
+        "question": "popuni",
+        "hint": "jesti (engl. to eat)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Jedem",
+            "Jedeš",
+            "Jede",
+            "Jedemo",
+            "Jedete",
+            "Jedu"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " zdravo i umjereno.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "jedem.jpg"
     }
     ];
     prezent = p1
