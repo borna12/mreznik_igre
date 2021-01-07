@@ -1427,6 +1427,193 @@ $(document).ready(function () {
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "jedem.jpg"
+    },{
+        "question": "popuni",
+        "hint": "kasniti (engl. to be late)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "kasnim",
+            "kasniš",
+            "kasni",
+            "kasnimo",
+            "kasnite",
+            "kasne"
+        ],
+        "osnova": ["Zašto opet ","Zašto opet ","Zašto opet ","Zašto opet ","Zašto opet ","Zašto opet "],
+        "osnova2": "?",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "kasniti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "kazati (engl. to tell)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Kažem",
+            "Kažeš",
+            "Kaže",
+            "Kažemo",
+            "Kažete",
+            "Kažu"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " da mudrost dolazi s godinama.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "kazati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "koristiti (engl. to use)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Koristim",
+            "Koristiš",
+            "Koristi",
+            "Koristimo",
+            "Koristite",
+            "Koriste"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " se bezglutenskim brašnom za kuhanje zbog celijakije.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "koristim.jpg"
+    },{
+        "question": "popuni",
+        "hint": "kuhati (engl. cook)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "kuham",
+            "kuhaš",
+            "kuha",
+            "kuhamo",
+            "kuhate",
+            "kuhaju"
+        ],
+        "osnova": ["Dobro ","Dobro ","Dobro ","Dobro ","Dobro ","Dobro "],
+        "osnova2": " punjene parike i sarmu.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "kuhati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "kupati (engl. bathe)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "kupam",
+            "kupaš",
+            "kupa",
+            "kupamo",
+            "kupate",
+            "kupaju"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " svoju malu bebu.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "kupati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "kupiti (engl. buy)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Kupim",
+            "Kupiš",
+            "Kupi",
+            "Kupimo",
+            "Kupite",
+            "Kupe"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " novi laptop.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "kupiti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "kupovati (engl. buy)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Kupujem",
+            "Kupuješ",
+            "Kupuje",
+            "Kupujemo",
+            "Kupujete",
+            "Kupuju"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " na crni petak na sniženjima.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "kupovati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "letjeti (engl. fly)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Letim",
+            "Letiš",
+            "Leti",
+            "Letimo",
+            "Letite",
+            "Lete"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " avionom u Irsku.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "letjeti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "ljetovati (engl. summering)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Ljetujem",
+            "Ljetuješ",
+            "Ljetuje",
+            "Ljetujemo",
+            "Ljetujete",
+            "Ljetuju"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "  na Jadranskome moru.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "ljetovati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "ljubiti (engl. to kiss)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Ljubim",
+            "Ljubiš",
+            "Ljube",
+            "Ljubimo",
+            "Ljubite",
+            "Ljube"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "  svoje dijete prije spavanja.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "ljubiti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "ljubiti (engl. to kiss)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Ljubim",
+            "Ljubiš",
+            "Ljube",
+            "Ljubimo",
+            "Ljubite",
+            "Ljube"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "  svoje dijete prije spavanja.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "ljubiti.jpg"
     }
     ];
     prezent = p1
