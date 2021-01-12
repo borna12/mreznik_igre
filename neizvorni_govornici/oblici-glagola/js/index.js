@@ -1614,6 +1614,108 @@ $(document).ready(function () {
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "ljubiti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "mijenjati (engl. to change)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "mijenjam",
+            "mijenjaš",
+            "mijenja",
+            "mijenjamo",
+            "mijenjate",
+            "mijenjaju"
+        ],
+        "osnova": ["Ja često ","Ti često ","Ona često ","Mi često ","Vi često ","Oni često "],
+        "osnova2": "  boju kose.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "mijenjati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "misliti (engl. to think)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Mislim",
+            "Misliš",
+            "Misli",
+            "Mislimo",
+            "Mislite",
+            "Misle"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "  da je svijet u ekološkoj opasnosti.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "misliti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "moći (engl. can)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "mogu",
+            "možeš",
+            "može",
+            "možemo",
+            "možete",
+            "mogu"
+        ],
+        "osnova": ["Ja ","Ti ","On ","Mi ","Vi ","Oni "],
+        "osnova2": " pomoći oko učenja hrvatskog jezika.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "moci.jpg"
+    },{
+        "question": "popuni",
+        "hint": "moliti (engl. pray, plead)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Molim",
+            "Moliš",
+            "Moli",
+            "Molimo",
+            "Molite",
+            "Mole"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " prijatelja da mi pomogne oko učenja.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "moliti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "morati (engl. must, have to)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Moram",
+            "Moraš",
+            "Mora",
+            "Moramo",
+            "Morate",
+            "Moraju"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " položiti obavezne ispite za upis u sljedeću godinu.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "morati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "mrziti (engl. to hate)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Mrzim",
+            "Mrziš",
+            "Mrzi",
+            "Mrzimo",
+            "Mrzite",
+            "Mrze"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " kućanske poslove i kuhanje.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "mrziti.jpg"
     }
     ];
     prezent = p1
