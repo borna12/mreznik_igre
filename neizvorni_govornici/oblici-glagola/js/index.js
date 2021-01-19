@@ -1716,6 +1716,74 @@ $(document).ready(function () {
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "mrziti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "naći (engl. to find)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Nađem",
+            "Nađeš",
+            "Nađe",
+            "Nađemo",
+            "Nađete",
+            "Nađu"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " novi stan.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "naci.jpg"
+    },{
+        "question": "popuni",
+        "hint": "nadati se (engl. to hope)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Nadam",
+            "Nadaš",
+            "Nada",
+            "Nadamo",
+            "Nadate",
+            "Nadaju"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " se lijepom vremenu.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "nadati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "nadati se (engl. to find, come across)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "nalazim",
+            "nalaziš",
+            "nalazi",
+            "nalazimo",
+            "nalazite",
+            "nalaze"
+        ],
+        "osnova": ["Svaki dan ","Svaki dan ","Svaki dan ","Svaki dan ","Svaki dan ","Svaki dan "],
+        "osnova2": "  puno reklama u pošti.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "nalaziti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "napisati (engl. to write)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Napišem",
+            "Napišeš",
+            "Napiše",
+            "Napišemo",
+            "Napišete",
+            "Napišu"
+        ],
+        "osnova": ["ti","","ti","","",""],
+        "osnova2": " poruku kad dođem.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "napisati.jpg"
     }
     ];
     prezent = p1
