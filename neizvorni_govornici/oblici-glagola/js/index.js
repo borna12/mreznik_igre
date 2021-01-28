@@ -1784,6 +1784,108 @@ $(document).ready(function () {
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "napisati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "naručiti (engl. to order)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Naručim",
+            "Naručiš",
+            "Naruči",
+            "Naručimo",
+            "Naručite",
+            "Naruče"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " pizzu za ručak.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "naruciti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "naručivati (engl. to order)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "naručujem",
+            "naručuješ",
+            "naručuje",
+            "naručujemo",
+            "naručujete",
+            "naručuju"
+        ],
+        "osnova": ["U knjižnici ","U knjižnici ","U knjižnici ","U knjižnici ","U knjižnici ","U knjižnici "],
+        "osnova2": " knjige preko knjižničarke.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "narucivati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "nazvati (engl. to call)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Nazovem",
+            "Nazoveš",
+            "Nazove",
+            "Nazovemo",
+            "Nazovete",
+            "Nazovu"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " prijatelje poslje posla.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "nazvati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "nemati (engl. do not have)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Nemam",
+            "Nemaš",
+            "Nema",
+            "Nemamo",
+            "Nemate",
+            "Nemaju"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " vremena za kavu.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "nemati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "nositi (engl. to carry)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "nosim",
+            "nosiš",
+            "nosi",
+            "nosimo",
+            "nosite",
+            "nose"
+        ],
+        "osnova": ["Zimi ","Zimi ","Zimi ","Zimi ","Zimi ","Zimi "],
+        "osnova2": " kapute, jakne, šalove, kape i rukavice.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "nositi.jpg"
+    },{
+        "question": "popuni",
+        "hint": "nuditi (engl. offer)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "Nudim",
+            "Nudiš",
+            "Nudi",
+            "Nudimo",
+            "Nudite",
+            "Nude"
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": " hranu i piće.",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "nuditi.jpg"
     }
     ];
     prezent = p1
