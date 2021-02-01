@@ -1886,6 +1886,1162 @@ $(document).ready(function () {
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "nuditi.jpg"
+    },{
+        "question": "popuni",
+        "hint": "objasniti (engl. explain)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "objasniti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "objašnjavati (engl. to explain)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "objasnjavati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "oblačiti (engl. to dress)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "oblaciti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "oblačiti (engl. to dress)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "oblaciti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "obući (engl. put on)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "obuci.jpg"
+    },{
+        "question": "popuni",
+        "hint": "očekivati (engl. to expect)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "ocekivati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "odgovarati (engl. to answer)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "odgovarati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "odgovoriti (engl. to answer)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "odgovoriti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "odgovoriti (engl. to answer)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "odgovoriti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "odlaziti (engl. to leave)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "odlaziti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "odlaziti (engl. to leave)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "odlaziti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "odlučiti (engl. to decide)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "odluciti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "odlučivati (engl. to decide)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "odlucivati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "odmarati (engl. rest)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "odmarati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "odmoriti (engl. geting rest)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "odmoriti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "odmoriti (engl. geting rest)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "odmoriti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "opisati (engl. describe)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "opisati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "opisivati (engl. describe)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "opisivati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "opisivati (engl. describe)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "opisivati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "oprostiti (engl. forgive)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "oprostiti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "osjećati (engl. feel)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "osjecati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "osjetiti (engl. feel)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "osjetiti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "otići (engl. leave)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "otici.jpg"
+    },{
+        "question": "popuni",
+        "hint": "otići (engl. leave)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "otici.jpg"
+    },{
+        "question": "popuni",
+        "hint": "otvoriti (engl. to open)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "otvoriti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "ovisiti (engl. depend)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "ovisiti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "padati (engl. fall)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "padati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "parkirati (se) (engl. to park)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "parkirati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pasti (engl. fall)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pasti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "paziti (engl. be careful)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "paziti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "peći (engl. to beak / to roast)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "peci.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pisati (engl. write)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pisati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pitati (engl. to ask)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pitati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "piti (engl. to drink)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "piti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pjevati (engl. to sing)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pjevati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "plaćati (engl. to pay)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "placati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "planinariti (engl. to hike)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "planinariti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "planirati (engl. to plan)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "planirati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "platiti (engl. to pay)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "platiti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "plesati (engl. to dance)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "plesati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "plivati (engl. swim)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "plivati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pogledati (engl. to watch)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pogledati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pojesti (engl. to eat)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pojesti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pokazati (engl. show/display)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pokazati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pokazivati (engl. show/display)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pokazivati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pokazivati (engl. show/display)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pokazivati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "poklanjati (engl. to give)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "poklanjati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pokloniti (engl. to bestow)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pokloniti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pomagati (engl. to help)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pomagati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pomoći (engl. help)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pomoci.jpg"
+    },{
+        "question": "popuni",
+        "hint": "ponavljati (engl. repeat)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "ponavljati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "ponoviti (engl. repeat)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "ponoviti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "ponuditi (engl. offer)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "ponuditi.jpg"
+    },{
+        "question": "popuni",
+        "hint": "popiti (engl. drink)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "popiti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "posjećivati (engl. visit)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "posjecivati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "posjetiti (engl. visit)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "posjetiti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "poslati (engl. send)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "poslati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "potpisati (engl. sign)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "potpisati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "potpisivati (engl. sign)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "potpisivati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "prati (se) (engl. wash)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "prati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pričati (engl. speak)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pricati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "probati (engl. to try)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "probati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pročitati (engl. to read)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "procitati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "prodati (engl. sell)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "prodati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "prodavati (engl. sell)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "prodavati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "change (engl. to change)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "change.jpg"
+    },{
+        "question": "popuni",
+        "hint": "pušiti (engl. smoke)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "pusiti.jpg"
+    },{
+        "question": "popuni",
+        "hint": "putovati (engl. travel)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+        "slika": "putovati.jpg"
     }
     ];
     prezent = p1
