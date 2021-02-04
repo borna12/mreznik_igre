@@ -1293,40 +1293,6 @@ $(document).ready(function () {
         "slika": "ispeci.jpg"
     },{
         "question": "popuni",
-        "hint": "izabrati (engl. to chose)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "izaberem",
-            "izabereš",
-            "izabere",
-            "izaberemo",
-            "izaberete",
-            "izaberu"
-        ],
-        "osnova": ["Za vikend ","Za vikend ","Za vikend ","Za vikend ","Za vikend ","Za vikend "],
-        "osnova2": " meso na ražnju.",
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "izabrati.jpg"
-    },{
-        "question": "popuni",
-        "hint": "izabrati (engl. to chose)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "izaberem",
-            "izabereš",
-            "izabere",
-            "izaberemo",
-            "izaberete",
-            "izaberu"
-        ],
-        "osnova": ["Za vikend ","Za vikend ","Za vikend ","Za vikend ","Za vikend ","Za vikend "],
-        "osnova2": " meso na ražnju.",
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "izabrati.jpg"
-    },{
-        "question": "popuni",
         "hint": "izabrati (engl. to choose)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
@@ -1500,12 +1466,12 @@ $(document).ready(function () {
         "hint": "kupati (engl. bathe)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "kupam",
-            "kupaš",
-            "kupa",
-            "kupamo",
-            "kupate",
-            "kupaju"
+            "Kupam",
+            "Kupaš",
+            "Kupa",
+            "Kupamo",
+            "Kupate",
+            "Kupaju"
         ],
         "osnova": ["","","","","",""],
         "osnova2": " svoju malu bebu.",
@@ -1891,66 +1857,32 @@ $(document).ready(function () {
         "hint": "objasniti (engl. explain)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Objasnim",
+            "Objasniš",
+            "Objasni",
+            "Objasnimo",
+            "Objasnite",
+            "Objasne"
         ],
         "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova2": " rješenje zadataka za zadaću.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "objasniti.jpg"
     },{
         "question": "popuni",
-        "hint": "objašnjavati (engl. to explain)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "objasnjavati.jpg"
-    },{
-        "question": "popuni",
         "hint": "oblačiti (engl. to dress)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Oblačim",
+            "Oblačiš",
+            "Oblači",
+            "Oblačimo",
+            "Oblačite",
+            "Oblače"
         ],
         "osnova": ["","","","","",""],
-        "osnova2": "",
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "oblaciti.jpg"
-    },{
-        "question": "popuni",
-        "hint": "oblačiti (engl. to dress)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova2": " svoje malo dijete.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "oblaciti.jpg"
@@ -1959,15 +1891,15 @@ $(document).ready(function () {
         "hint": "obući (engl. put on)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "obučem",
+            "obučeš",
+            "obuče",
+            "obučemo",
+            "obučete",
+            "obuku"
         ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova": ["Svaki dan ","Svaki dan ","Svaki dan ","Svaki dan ","Svaki dan ","Svaki dan "],
+        "osnova2": " čistu odjeću.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "obuci.jpg"
@@ -1976,15 +1908,15 @@ $(document).ready(function () {
         "hint": "očekivati (engl. to expect)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Očekujem",
+            "Očekuješ",
+            "Očekuje",
+            "Očekujemo",
+            "Očekujete",
+            "Očekuju"
         ],
         "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova2": " previše od svoje djece.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "ocekivati.jpg"
@@ -1993,83 +1925,32 @@ $(document).ready(function () {
         "hint": "odgovarati (engl. to answer)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Odgovaram",
+            "Odgovaraš",
+            "Odgovara",
+            "Odgovaramo",
+            "Odgovarate",
+            "Odgovaraju"
         ],
         "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova2": " na pitanja iz testa inteligencije.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "odgovarati.jpg"
     },{
         "question": "popuni",
-        "hint": "odgovoriti (engl. to answer)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "odgovoriti.jpg"
-    },{
-        "question": "popuni",
-        "hint": "odgovoriti (engl. to answer)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "odgovoriti.jpg"
-    },{
-        "question": "popuni",
         "hint": "odlaziti (engl. to leave)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Odlazim",
+            "Odlaziš",
+            "Odlazi",
+            "Odlazimo",
+            "Odlazite",
+            "Odlaze"
         ],
         "osnova": ["","","","","",""],
-        "osnova2": "",
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "odlaziti.jpg"
-    },{
-        "question": "popuni",
-        "hint": "odlaziti (engl. to leave)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova2": " iz Zagreba za vrijeme ljetnih praznika.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "odlaziti.jpg"
@@ -2078,151 +1959,67 @@ $(document).ready(function () {
         "hint": "odlučiti (engl. to decide)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            
+            "odlučim",
+            "odlučiš",
+            "odluči",
+            "odlučimo",
+            "odlučite",
+            "odluče",
         ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova": ["Kada ","Kada ","Kada ","Kada ","Kada ","Kada "],
+        "osnova2": " oko godišnjeg odmora dogovoriti ćemo sve.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "odluciti.jpg"
     },{
         "question": "popuni",
-        "hint": "odlučivati (engl. to decide)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "odlucivati.jpg"
-    },{
-        "question": "popuni",
         "hint": "odmarati (engl. rest)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "odmorim",
+            "odmoriš",
+            "odmori",
+            "odmorimo",
+            "odmorite",
+            "odmore"
         ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova": ["Kada se ","Kada se ","Kada se ","Kada se ","Kada se ","Kada se "],
+        "osnova2": ", nastavit će se s radom.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "odmarati.jpg"
-    },{
-        "question": "popuni",
-        "hint": "odmoriti (engl. geting rest)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "odmoriti.jpg"
-    },{
-        "question": "popuni",
-        "hint": "odmoriti (engl. geting rest)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "odmoriti.jpg"
-    },{
+    },,{
         "question": "popuni",
         "hint": "opisati (engl. describe)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Opišem",
+            "Opišeš",
+            "Opiše",
+            "Opišemo",
+            "Opišete",
+            "Opišu"
         ],
         "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova2": " jedan svoj radni dan.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "opisati.jpg"
     },{
         "question": "popuni",
-        "hint": "opisivati (engl. describe)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "opisivati.jpg"
-    },{
-        "question": "popuni",
-        "hint": "opisivati (engl. describe)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "opisivati.jpg"
-    },{
-        "question": "popuni",
         "hint": "oprostiti (engl. forgive)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Oprostim",
+            "Oprostiš",
+            "Oprosti",
+            "Oprostimo",
+            "Oprostite",
+            "Oproste"
         ],
         "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova2": " mu, nije bilo zlonamjerno.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "oprostiti.jpg"
@@ -2231,15 +2028,15 @@ $(document).ready(function () {
         "hint": "osjećati (engl. feel)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Osjećam ",
+            "Osjećaš ",
+            "Osjeća ",
+            "Osjećamo ",
+            "Osjećate ",
+            "Osjećaju "
         ],
         "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova2": " veliku tugu zbog smrti majke.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "osjecati.jpg"
@@ -2248,15 +2045,15 @@ $(document).ready(function () {
         "hint": "osjetiti (engl. feel)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Osjetim",
+            "Osjetiš",
+            "Osjeti",
+            "Osjetimo",
+            "Osjetite",
+            "Osjete"
         ],
         "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova2": " jaku bol u koljenu.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "osjetiti.jpg"
@@ -2265,32 +2062,15 @@ $(document).ready(function () {
         "hint": "otići (engl. leave)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "otiđem",
+            "otiđeš",
+            "otiđe",
+            "otiđemo",
+            "otiđete",
+            "otiđu"
         ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
-        "boja_pozadine": "#FCE4EC",
-        "time": 20,
-        "slika": "otici.jpg"
-    },{
-        "question": "popuni",
-        "hint": "otići (engl. leave)",
-        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-        "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova": ["Kada ","Kada ","Kada ","Kada ","Kada ","Kada "],
+        "osnova2": " u Irsku kupit ću ti lijep suvenir",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "otici.jpg"
@@ -2299,15 +2079,15 @@ $(document).ready(function () {
         "hint": "otvoriti (engl. to open)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Otvorim",
+            "Otvoriš",
+            "Otvori",
+            "Otvorimo",
+            "Otvorite",
+            "Otvore"
         ],
         "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova2": " kafiće u kvartu.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "otvoriti.jpg"
@@ -2316,15 +2096,15 @@ $(document).ready(function () {
         "hint": "ovisiti (engl. depend)",
         "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
         "correctAnswer": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Ovisim",
+            "Ovisiš",
+            "Ovisi",
+            "Ovisimo",
+            "Ovisite",
+            "Ovise"
         ],
         "osnova": ["","","","","",""],
-        "osnova2": "",
+        "osnova2": " o odluci roditelja.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
         "slika": "ovisiti.jpg"
