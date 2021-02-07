@@ -172,7 +172,6 @@ $(document).ready(function () {
         $("#osnova").text(prezent[questionCounter].osnova[randbroj])
         $("#osnova2").html(prezent[questionCounter].osnova2 +prezent[questionCounter].lica[randbroj].substr(prezent[questionCounter].lica[randbroj].length-18,prezent[questionCounter].lica[randbroj].length))
         $("#oblik").html(prezent[questionCounter].lica[randbroj].substr(0,prezent[questionCounter].lica[randbroj].length-18)+"<br><span class='vrime'>" + prezent[questionCounter].hint+ "</span>")
-        $(".slikica").attr("src", "slike/" + prezent[questionCounter].slika)
         var input = document.querySelector('input'); // get the input element
         input.addEventListener('input', resizeInput); // bind the "resizeInput" callback on "input" event
         resizeInput.call(input); // immediately call the function
@@ -484,7 +483,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pomagati.jpg"
     },
     {
         "question": "popuni",
@@ -503,7 +501,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "vjerujem.jpg"
     },
     {
         "question": "popuni",
@@ -522,7 +519,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "veseliti.jpg"
     },
     {
         "question": "popuni",
@@ -541,7 +537,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "zahvaljujem.jpg"
     },
     {
         "question": "popuni",
@@ -560,7 +555,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pokloniti.jpg"
     },
     {
         "question": "popuni",
@@ -579,7 +573,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "radujem.jpg"
     },
     {
         "question": "popuni",
@@ -598,7 +591,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "smijati.jpg"
     },
     {
         "question": "popuni",
@@ -617,7 +609,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "cuditi.jpg"
     },
     {
         "question": "popuni",
@@ -636,7 +627,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "prigovarati.jpg"
     },
     {
         "question": "popuni",
@@ -655,7 +645,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "dati.jpg"
     },
     {
         "question": "popuni",
@@ -674,7 +663,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "slati.jpg"
     },
     {
         "question": "popuni",
@@ -693,7 +681,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "priblizavati.jpg"
     },
     {
         "question": "popuni",
@@ -712,7 +699,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pisati.jpg"
     },
     {
         "question": "popuni",
@@ -731,7 +717,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "smetati.jpg"
     },
     {
         "question": "popuni",
@@ -750,7 +735,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "vjerovati.jpg"
     },
     {
         "question": "popuni",
@@ -769,7 +753,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "nada.jpg"
     },
     {
         "question": "popuni",
@@ -788,7 +771,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "diviti.jpg"
     },
     {
         "question": "popuni",
@@ -807,7 +789,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "birati.jpg"
     },
     {
         "question": "popuni",
@@ -826,7 +807,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "biti.jpg"
     },
     {
         "question": "popuni",
@@ -845,7 +825,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "brijati.jpg"
     },
     {
         "question": "popuni",
@@ -864,7 +843,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "buditi.jpg"
     },
     {
         "question": "popuni",
@@ -883,7 +861,6 @@ $(document).ready(function () {
        
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "crtati.jpg"
     },
     {
         "question": "popuni",
@@ -901,7 +878,6 @@ $(document).ready(function () {
         "osnova2": "?",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "cekati.jpg"
     },
     {
         "question": "popuni",
@@ -919,7 +895,6 @@ $(document).ready(function () {
         "osnova2": "autorima i svima koji su radili na knjizi.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "cestitati.jpg"
     },
     {
         "question": "popuni",
@@ -937,7 +912,6 @@ $(document).ready(function () {
         "osnova2": " dobro za sve.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "ciniti.jpg"
     },
     {
         "question": "popuni",
@@ -955,7 +929,6 @@ $(document).ready(function () {
         "osnova2": " knjigu navečer.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "citati.jpg"
     },
     {
         "question": "popuni",
@@ -973,7 +946,6 @@ $(document).ready(function () {
         "osnova2": " knjigu navečer.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "citati.jpg"
     },
     {
         "question": "popuni",
@@ -991,7 +963,6 @@ $(document).ready(function () {
         "osnova2": " dobro.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "cuti.jpg"
     },
     {
         "question": "popuni",
@@ -1009,7 +980,6 @@ $(document).ready(function () {
         "osnova2": " kuću od provale.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "cuvati.jpg"
     },
     {
         "question": "popuni",
@@ -1027,7 +997,6 @@ $(document).ready(function () {
         "osnova2": " na lotu.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "dobiju.jpg"
     },
     {
         "question": "popuni",
@@ -1045,7 +1014,6 @@ $(document).ready(function () {
         "osnova2": " u kuću, ručak će biti gotov.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "doci.jpg"
     },
     {
         "question": "popuni",
@@ -1063,7 +1031,6 @@ $(document).ready(function () {
         "osnova2": " poslove i sastanke.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "dogovarati.jpg"
     },
     {
         "question": "popuni",
@@ -1081,7 +1048,6 @@ $(document).ready(function () {
         "osnova2": " se s ostalim osobama u vezi s izletom.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "dogovoriti.jpg"
     },
     {
         "question": "popuni",
@@ -1099,7 +1065,6 @@ $(document).ready(function () {
         "osnova2": " li na posao uvijek u isto vrijeme?",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "dolaziti.jpg"
     },
     {
         "question": "popuni",
@@ -1117,7 +1082,6 @@ $(document).ready(function () {
         "osnova2": " zadaću, ispravit ću ti greške.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "donijeti.jpg"
     },
     {
         "question": "popuni",
@@ -1135,7 +1099,6 @@ $(document).ready(function () {
         "osnova2": " cjelovite žitarice ili voće.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "doruckovati.jpg"
     },
     {
         "question": "popuni",
@@ -1153,7 +1116,6 @@ $(document).ready(function () {
         "osnova2": " samo s prijateljima iz škole.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "druziti.jpg"
     },{
         "question": "popuni",
         "hint": "gleati (engl. to watch)",
@@ -1170,7 +1132,6 @@ $(document).ready(function () {
         "osnova2": " serije na Netflixu.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "gledati.jpg"
     },{
         "question": "popuni",
         "hint": "govoriti (engl. speak)",
@@ -1187,7 +1148,6 @@ $(document).ready(function () {
         "osnova2": " o zaštiti okoliša.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "govoriti2.jpg"
     },{
         "question": "popuni",
         "hint": "gurati (engl. push)",
@@ -1204,7 +1164,6 @@ $(document).ready(function () {
         "osnova2": " kolica u dućanu.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "gurati.jpg"
     }
     ,{
         "question": "popuni",
@@ -1222,7 +1181,6 @@ $(document).ready(function () {
         "osnova2": " svaki dan radi zdarvlja",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "hodati.jpg"
     },{
         "question": "popuni",
         "hint": "htjeti (engl. want to, wish)",
@@ -1239,7 +1197,6 @@ $(document).ready(function () {
         "osnova2": " novi stan i novi auto.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "htjeti.jpg"
     },{
         "question": "popuni",
         "hint": "igrati (engl. to play)",
@@ -1256,7 +1213,6 @@ $(document).ready(function () {
         "osnova2": " društvene igre.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "igrati.jpg"
     },{
         "question": "popuni",
         "hint": "imati (engl. to have)",
@@ -1273,7 +1229,6 @@ $(document).ready(function () {
         "osnova2": " kuću na planini.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "imati.jpg"
     },{
         "question": "popuni",
         "hint": "ispeći (engl. to bake, to fry)",
@@ -1290,7 +1245,6 @@ $(document).ready(function () {
         "osnova2": " meso na ražnju.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "ispeci.jpg"
     },{
         "question": "popuni",
         "hint": "izabrati (engl. to choose)",
@@ -1307,7 +1261,6 @@ $(document).ready(function () {
         "osnova2": " mjesto za izlazak.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "izabrati.jpg"
     },{
         "question": "popuni",
         "hint": "izaći (engl. go out)",
@@ -1324,7 +1277,6 @@ $(document).ready(function () {
         "osnova2": " iz stana u 7 ujutro.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "izaci.jpg"
     },{
         "question": "popuni",
         "hint": "izgledati (engl. to look like)",
@@ -1341,7 +1293,6 @@ $(document).ready(function () {
         "osnova2": " puno starije zbog brade i brkova.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "izgledati.jpg"
     },{
         "question": "popuni",
         "hint": "izlaziti (engl. to go out)",
@@ -1358,7 +1309,6 @@ $(document).ready(function () {
         "osnova2": " vikendom u noćne klubove.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "izlaziti.jpg"
     },{
         "question": "popuni",
         "hint": "ići (engl. to go)",
@@ -1375,7 +1325,6 @@ $(document).ready(function () {
         "osnova2": " u trgovački centar.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "ici.jpg"
     },{
         "question": "popuni",
         "hint": "jesti (engl. to eat)",
@@ -1392,7 +1341,6 @@ $(document).ready(function () {
         "osnova2": " zdravo i umjereno.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "jedem.jpg"
     },{
         "question": "popuni",
         "hint": "kasniti (engl. to be late)",
@@ -1409,7 +1357,6 @@ $(document).ready(function () {
         "osnova2": "?",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "kasniti.jpg"
     },{
         "question": "popuni",
         "hint": "kazati (engl. to tell)",
@@ -1426,7 +1373,6 @@ $(document).ready(function () {
         "osnova2": " da mudrost dolazi s godinama.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "kazati.jpg"
     },{
         "question": "popuni",
         "hint": "koristiti (engl. to use)",
@@ -1443,7 +1389,6 @@ $(document).ready(function () {
         "osnova2": " se bezglutenskim brašnom za kuhanje zbog celijakije.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "koristim.jpg"
     },{
         "question": "popuni",
         "hint": "kuhati (engl. cook)",
@@ -1460,7 +1405,6 @@ $(document).ready(function () {
         "osnova2": " punjene parike i sarmu.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "kuhati.jpg"
     },{
         "question": "popuni",
         "hint": "kupati (engl. bathe)",
@@ -1477,7 +1421,6 @@ $(document).ready(function () {
         "osnova2": " svoju malu bebu.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "kupati.jpg"
     },{
         "question": "popuni",
         "hint": "kupiti (engl. buy)",
@@ -1494,7 +1437,6 @@ $(document).ready(function () {
         "osnova2": " novi laptop.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "kupiti.jpg"
     },{
         "question": "popuni",
         "hint": "kupovati (engl. buy)",
@@ -1511,7 +1453,6 @@ $(document).ready(function () {
         "osnova2": " na crni petak na sniženjima.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "kupovati.jpg"
     },{
         "question": "popuni",
         "hint": "letjeti (engl. fly)",
@@ -1528,7 +1469,6 @@ $(document).ready(function () {
         "osnova2": " avionom u Irsku.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "letjeti.jpg"
     },{
         "question": "popuni",
         "hint": "ljetovati (engl. summering)",
@@ -1545,7 +1485,6 @@ $(document).ready(function () {
         "osnova2": "  na Jadranskome moru.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "ljetovati.jpg"
     },{
         "question": "popuni",
         "hint": "ljubiti (engl. to kiss)",
@@ -1562,7 +1501,6 @@ $(document).ready(function () {
         "osnova2": "  svoje dijete prije spavanja.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "ljubiti.jpg"
     },{
         "question": "popuni",
         "hint": "ljubiti (engl. to kiss)",
@@ -1579,7 +1517,6 @@ $(document).ready(function () {
         "osnova2": "  svoje dijete prije spavanja.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "ljubiti.jpg"
     },{
         "question": "popuni",
         "hint": "mijenjati (engl. to change)",
@@ -1596,7 +1533,6 @@ $(document).ready(function () {
         "osnova2": "  boju kose.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "mijenjati.jpg"
     },{
         "question": "popuni",
         "hint": "misliti (engl. to think)",
@@ -1613,7 +1549,6 @@ $(document).ready(function () {
         "osnova2": "  da je svijet u ekološkoj opasnosti.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "misliti.jpg"
     },{
         "question": "popuni",
         "hint": "moći (engl. can)",
@@ -1630,7 +1565,6 @@ $(document).ready(function () {
         "osnova2": " pomoći oko učenja hrvatskog jezika.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "moci.jpg"
     },{
         "question": "popuni",
         "hint": "moliti (engl. pray, plead)",
@@ -1647,7 +1581,6 @@ $(document).ready(function () {
         "osnova2": " prijatelja da mi pomogne oko učenja.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "moliti.jpg"
     },{
         "question": "popuni",
         "hint": "morati (engl. must, have to)",
@@ -1664,7 +1597,6 @@ $(document).ready(function () {
         "osnova2": " položiti obavezne ispite za upis u sljedeću godinu.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "morati.jpg"
     },{
         "question": "popuni",
         "hint": "mrziti (engl. to hate)",
@@ -1681,7 +1613,6 @@ $(document).ready(function () {
         "osnova2": " kućanske poslove i kuhanje.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "mrziti.jpg"
     },{
         "question": "popuni",
         "hint": "naći (engl. to find)",
@@ -1698,7 +1629,6 @@ $(document).ready(function () {
         "osnova2": " novi stan.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "naci.jpg"
     },{
         "question": "popuni",
         "hint": "nadati se (engl. to hope)",
@@ -1715,7 +1645,6 @@ $(document).ready(function () {
         "osnova2": " se lijepom vremenu.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "nadati.jpg"
     },{
         "question": "popuni",
         "hint": "nadati se (engl. to find, come across)",
@@ -1732,7 +1661,6 @@ $(document).ready(function () {
         "osnova2": "  puno reklama u pošti.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "nalaziti.jpg"
     },{
         "question": "popuni",
         "hint": "napisati (engl. to write)",
@@ -1749,7 +1677,6 @@ $(document).ready(function () {
         "osnova2": " poruku kad dođem.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "napisati.jpg"
     },{
         "question": "popuni",
         "hint": "naručiti (engl. to order)",
@@ -1766,7 +1693,6 @@ $(document).ready(function () {
         "osnova2": " pizzu za ručak.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "naruciti.jpg"
     },{
         "question": "popuni",
         "hint": "naručivati (engl. to order)",
@@ -1783,7 +1709,6 @@ $(document).ready(function () {
         "osnova2": " knjige preko knjižničarke.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "narucivati.jpg"
     },{
         "question": "popuni",
         "hint": "nazvati (engl. to call)",
@@ -1800,7 +1725,6 @@ $(document).ready(function () {
         "osnova2": " prijatelje poslje posla.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "nazvati.jpg"
     },{
         "question": "popuni",
         "hint": "nemati (engl. do not have)",
@@ -1817,7 +1741,6 @@ $(document).ready(function () {
         "osnova2": " vremena za kavu.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "nemati.jpg"
     },{
         "question": "popuni",
         "hint": "nositi (engl. to carry)",
@@ -1834,7 +1757,6 @@ $(document).ready(function () {
         "osnova2": " kapute, jakne, šalove, kape i rukavice.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "nositi.jpg"
     },{
         "question": "popuni",
         "hint": "nuditi (engl. offer)",
@@ -1851,7 +1773,6 @@ $(document).ready(function () {
         "osnova2": " hranu i piće.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "nuditi.jpg"
     },{
         "question": "popuni",
         "hint": "objasniti (engl. explain)",
@@ -1868,7 +1789,6 @@ $(document).ready(function () {
         "osnova2": " rješenje zadataka za zadaću.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "objasniti.jpg"
     },{
         "question": "popuni",
         "hint": "oblačiti (engl. to dress)",
@@ -1885,7 +1805,6 @@ $(document).ready(function () {
         "osnova2": " svoje malo dijete.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "oblaciti.jpg"
     },{
         "question": "popuni",
         "hint": "obući (engl. put on)",
@@ -1902,7 +1821,6 @@ $(document).ready(function () {
         "osnova2": " čistu odjeću.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "obuci.jpg"
     },{
         "question": "popuni",
         "hint": "očekivati (engl. to expect)",
@@ -1919,7 +1837,6 @@ $(document).ready(function () {
         "osnova2": " previše od svoje djece.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "ocekivati.jpg"
     },{
         "question": "popuni",
         "hint": "odgovarati (engl. to answer)",
@@ -1936,7 +1853,6 @@ $(document).ready(function () {
         "osnova2": " na pitanja iz testa inteligencije.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "odgovarati.jpg"
     },{
         "question": "popuni",
         "hint": "odlaziti (engl. to leave)",
@@ -1953,7 +1869,6 @@ $(document).ready(function () {
         "osnova2": " iz Zagreba za vrijeme ljetnih praznika.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "odlaziti.jpg"
     },{
         "question": "popuni",
         "hint": "odlučiti (engl. to decide)",
@@ -1971,7 +1886,6 @@ $(document).ready(function () {
         "osnova2": " oko godišnjeg odmora dogovoriti ćemo sve.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "odluciti.jpg"
     },{
         "question": "popuni",
         "hint": "odmarati (engl. rest)",
@@ -1988,7 +1902,6 @@ $(document).ready(function () {
         "osnova2": ", nastavit će se s radom.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "odmarati.jpg"
     },,{
         "question": "popuni",
         "hint": "opisati (engl. describe)",
@@ -2005,7 +1918,6 @@ $(document).ready(function () {
         "osnova2": " jedan svoj radni dan.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "opisati.jpg"
     },{
         "question": "popuni",
         "hint": "oprostiti (engl. forgive)",
@@ -2022,7 +1934,6 @@ $(document).ready(function () {
         "osnova2": " mu, nije bilo zlonamjerno.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "oprostiti.jpg"
     },{
         "question": "popuni",
         "hint": "osjećati (engl. feel)",
@@ -2039,7 +1950,6 @@ $(document).ready(function () {
         "osnova2": " veliku tugu zbog smrti majke.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "osjecati.jpg"
     },{
         "question": "popuni",
         "hint": "osjetiti (engl. feel)",
@@ -2056,7 +1966,6 @@ $(document).ready(function () {
         "osnova2": " jaku bol u koljenu.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "osjetiti.jpg"
     },{
         "question": "popuni",
         "hint": "otići (engl. leave)",
@@ -2073,7 +1982,6 @@ $(document).ready(function () {
         "osnova2": " u Irsku kupit ću ti lijep suvenir",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "otici.jpg"
     },{
         "question": "popuni",
         "hint": "otvoriti (engl. to open)",
@@ -2090,7 +1998,6 @@ $(document).ready(function () {
         "osnova2": " kafiće u kvartu.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "otvoriti.jpg"
     },{
         "question": "popuni",
         "hint": "ovisiti (engl. depend)",
@@ -2107,7 +2014,6 @@ $(document).ready(function () {
         "osnova2": " o odluci roditelja.",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "ovisiti.jpg"
     },{
         "question": "popuni",
         "hint": "padati (engl. fall)",
@@ -2124,7 +2030,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "padati.jpg"
     },{
         "question": "popuni",
         "hint": "parkirati (se) (engl. to park)",
@@ -2141,7 +2046,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "parkirati.jpg"
     },{
         "question": "popuni",
         "hint": "pasti (engl. fall)",
@@ -2158,7 +2062,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pasti.jpg"
     },{
         "question": "popuni",
         "hint": "paziti (engl. be careful)",
@@ -2175,7 +2078,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "paziti.jpg"
     },{
         "question": "popuni",
         "hint": "peći (engl. to beak / to roast)",
@@ -2192,7 +2094,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "peci.jpg"
     },{
         "question": "popuni",
         "hint": "pisati (engl. write)",
@@ -2209,7 +2110,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pisati.jpg"
     },{
         "question": "popuni",
         "hint": "pitati (engl. to ask)",
@@ -2226,7 +2126,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pitati.jpg"
     },{
         "question": "popuni",
         "hint": "piti (engl. to drink)",
@@ -2243,7 +2142,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "piti.jpg"
     },{
         "question": "popuni",
         "hint": "pjevati (engl. to sing)",
@@ -2260,7 +2158,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pjevati.jpg"
     },{
         "question": "popuni",
         "hint": "plaćati (engl. to pay)",
@@ -2277,7 +2174,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "placati.jpg"
     },{
         "question": "popuni",
         "hint": "planinariti (engl. to hike)",
@@ -2294,7 +2190,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "planinariti.jpg"
     },{
         "question": "popuni",
         "hint": "planirati (engl. to plan)",
@@ -2311,7 +2206,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "planirati.jpg"
     },{
         "question": "popuni",
         "hint": "platiti (engl. to pay)",
@@ -2328,7 +2222,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "platiti.jpg"
     },{
         "question": "popuni",
         "hint": "plesati (engl. to dance)",
@@ -2345,7 +2238,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "plesati.jpg"
     },{
         "question": "popuni",
         "hint": "plivati (engl. swim)",
@@ -2362,7 +2254,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "plivati.jpg"
     },{
         "question": "popuni",
         "hint": "pogledati (engl. to watch)",
@@ -2379,7 +2270,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pogledati.jpg"
     },{
         "question": "popuni",
         "hint": "pojesti (engl. to eat)",
@@ -2396,7 +2286,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pojesti.jpg"
     },{
         "question": "popuni",
         "hint": "pokazati (engl. show/display)",
@@ -2413,7 +2302,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pokazati.jpg"
     },{
         "question": "popuni",
         "hint": "pokazivati (engl. show/display)",
@@ -2430,7 +2318,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pokazivati.jpg"
     },{
         "question": "popuni",
         "hint": "pokazivati (engl. show/display)",
@@ -2447,7 +2334,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pokazivati.jpg"
     },{
         "question": "popuni",
         "hint": "poklanjati (engl. to give)",
@@ -2464,7 +2350,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "poklanjati.jpg"
     },{
         "question": "popuni",
         "hint": "pokloniti (engl. to bestow)",
@@ -2481,7 +2366,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pokloniti.jpg"
     },{
         "question": "popuni",
         "hint": "pomagati (engl. to help)",
@@ -2498,7 +2382,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pomagati.jpg"
     },{
         "question": "popuni",
         "hint": "pomoći (engl. help)",
@@ -2515,7 +2398,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pomoci.jpg"
     },{
         "question": "popuni",
         "hint": "ponavljati (engl. repeat)",
@@ -2532,7 +2414,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "ponavljati.jpg"
     },{
         "question": "popuni",
         "hint": "ponoviti (engl. repeat)",
@@ -2549,7 +2430,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "ponoviti.jpg"
     },{
         "question": "popuni",
         "hint": "ponuditi (engl. offer)",
@@ -2566,7 +2446,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "ponuditi.jpg"
     },{
         "question": "popuni",
         "hint": "popiti (engl. drink)",
@@ -2583,7 +2462,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "popiti.jpg"
     },{
         "question": "popuni",
         "hint": "posjećivati (engl. visit)",
@@ -2600,7 +2478,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "posjecivati.jpg"
     },{
         "question": "popuni",
         "hint": "posjetiti (engl. visit)",
@@ -2617,7 +2494,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "posjetiti.jpg"
     },{
         "question": "popuni",
         "hint": "poslati (engl. send)",
@@ -2634,7 +2510,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "poslati.jpg"
     },{
         "question": "popuni",
         "hint": "potpisati (engl. sign)",
@@ -2651,7 +2526,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "potpisati.jpg"
     },{
         "question": "popuni",
         "hint": "potpisivati (engl. sign)",
@@ -2668,7 +2542,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "potpisivati.jpg"
     },{
         "question": "popuni",
         "hint": "prati (se) (engl. wash)",
@@ -2685,7 +2558,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "prati.jpg"
     },{
         "question": "popuni",
         "hint": "pričati (engl. speak)",
@@ -2702,7 +2574,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pricati.jpg"
     },{
         "question": "popuni",
         "hint": "probati (engl. to try)",
@@ -2719,7 +2590,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "probati.jpg"
     },{
         "question": "popuni",
         "hint": "pročitati (engl. to read)",
@@ -2736,7 +2606,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "procitati.jpg"
     },{
         "question": "popuni",
         "hint": "prodati (engl. sell)",
@@ -2753,7 +2622,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "prodati.jpg"
     },{
         "question": "popuni",
         "hint": "prodavati (engl. sell)",
@@ -2770,7 +2638,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "prodavati.jpg"
     },{
         "question": "popuni",
         "hint": "change (engl. to change)",
@@ -2787,7 +2654,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "change.jpg"
     },{
         "question": "popuni",
         "hint": "pušiti (engl. smoke)",
@@ -2804,7 +2670,6 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "pusiti.jpg"
     },{
         "question": "popuni",
         "hint": "putovati (engl. travel)",
@@ -2821,7 +2686,502 @@ $(document).ready(function () {
         "osnova2": "",
         "boja_pozadine": "#FCE4EC",
         "time": 20,
-        "slika": "putovati.jpg"
+    },{
+        "question": "popuni",
+        "hint": "rađati (engl. to give birth)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "raditi (engl. to work)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "razgovarati (engl. to talk)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "razlikovati (engl. distinguish)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "razmisliti (engl. think)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "razumijeti (engl. to understand)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "reći (engl. say)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "roniti (engl. dive)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "ručati (engl. lunch)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "sanjati (engl. to dream)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "seliti (engl. to move out)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "sjećati se (engl. to remember)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "sjediti (engl. sit)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "sjetiti se (engl. to remember)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "slati (engl. send)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "slaviti (engl. celebrate)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "slikati (engl. paint)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "slikati (engl. paint)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "slušati (engl. to listen)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "smijati se (engl. to laugh)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "smjeti (engl. to be allowed)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "spavati (engl. sleep)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "spremati (engl. to save)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "spremiti (engl. to save)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "stanovati (engl. to leave in)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "stanovati (engl. to leave in)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "staviti (engl. to put on/place/set)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "stavljati (engl. put/place)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "studirati (engl. study)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "sviđati se (engl. like)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
+    },{
+        "question": "popuni",
+        "hint": "svirati (engl. play)",
+        "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
+        "correctAnswer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "osnova": ["","","","","",""],
+        "osnova2": "",
+        "boja_pozadine": "#FCE4EC",
+        "time": 20,
     }
     ];
     prezent = p1
