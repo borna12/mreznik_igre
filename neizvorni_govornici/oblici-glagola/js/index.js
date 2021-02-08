@@ -471,7 +471,7 @@ $(document).ready(function() {
     // Link takes user to Duolingo
     p1 = [{
             "question": "popuni",
-            "hint": "pomagati (engl. help)",
+            "hint": "pomagati (engl. to help)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Pomažem",
@@ -489,7 +489,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "vjerovati (engl. trust)",
+            "hint": "vjerovati (engl. to trust)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Vjerujem",
@@ -507,7 +507,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "veseliti se (engl. be happy)",
+            "hint": "veseliti se (engl. to be happy)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Veselim se",
@@ -525,7 +525,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "zahvaljivati (engl. be thankful)",
+            "hint": "zahvaljivati (engl. to be thankful)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Zahvaljujem",
@@ -543,7 +543,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "pokloniti (engl. to give, donate)",
+            "hint": "pokloniti (engl. to give, to donate)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Poklanjam",
@@ -561,7 +561,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "radovati se (engl. look forward to)",
+            "hint": "radovati se (engl. to look forward to)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Radujem se",
@@ -615,7 +615,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "prigovarati (engl. complain about)",
+            "hint": "prigovarati (engl. to complain about)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Prigovaram",
@@ -633,7 +633,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "dati (engl. give)",
+            "hint": "dati (engl. to give)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "dajem",
@@ -651,7 +651,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "slati (engl. send)",
+            "hint": "slati (engl. to send)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "šaljem",
@@ -687,7 +687,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "pisati (engl. write)",
+            "hint": "pisati (engl. to write)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Pišem",
@@ -705,7 +705,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "smetati (engl. bother)",
+            "hint": "smetati (engl. to bother)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Smetam",
@@ -723,7 +723,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "vjerovati (engl. belive)",
+            "hint": "vjerovati (engl. to belive)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Vjerujem",
@@ -741,7 +741,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "nadati se (engl. hope)",
+            "hint": "nadati se (engl. to hope)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Nadam se",
@@ -759,7 +759,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "diviti se (engl. admire)",
+            "hint": "diviti se (engl. to admire)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Divim se",
@@ -777,7 +777,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "birati (engl. choose)",
+            "hint": "birati (engl. to choose)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Biram",
@@ -813,7 +813,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "brijati se (engl. shave)",
+            "hint": "brijati se (engl. to shave)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Brijem se",
@@ -831,7 +831,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "buditi se (engl. wake up)",
+            "hint": "buditi se (engl. to wake up)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Budim se",
@@ -849,7 +849,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "crtati (engl. draw)",
+            "hint": "crtati (engl. to draw)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "crtam",
@@ -884,7 +884,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "čestitati (engl. congratulate)",
+            "hint": "čestitati (engl. to congratulate)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Čestitam",
@@ -918,7 +918,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "čitati (engl. read)",
+            "hint": "čitati (engl. to read)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Čitam",
@@ -935,24 +935,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "čitati (engl. read)",
-            "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-            "correctAnswer": [
-                "Čitam",
-                "Čitaš",
-                "Čita",
-                "Čitamo",
-                "Čitate",
-                "Čitaju"
-            ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": " knjigu navečer.",
-            "boja_pozadine": "#FCE4EC",
-            "time": 20,
-        },
-        {
-            "question": "popuni",
-            "hint": "čuti (engl. hear)",
+            "hint": "čuti (engl. to hear)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "čujem",
@@ -969,7 +952,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "čuvati (engl. protect)",
+            "hint": "čuvati (engl. to protect)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Čuvam",
@@ -1003,7 +986,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "doći (engl. come, arrive)",
+            "hint": "doći (engl. to come, to arrive)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "dođem",
@@ -1054,7 +1037,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "dolaziti (engl. come)",
+            "hint": "dolaziti (engl. to come)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Dolazim",
@@ -1071,7 +1054,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "donijeti (engl. bring)",
+            "hint": "donijeti (engl. to bring)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "donesem",
@@ -1088,7 +1071,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "doručkovati (engl. have breakfast)",
+            "hint": "doručkovati (engl. to have breakfast)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "doručkujem",
@@ -1105,7 +1088,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "družiti se (engl. hang out)",
+            "hint": "družiti se (engl. to hang out)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Družim se",
@@ -1137,7 +1120,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "govoriti (engl. speak)",
+            "hint": "govoriti (engl. to speak)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "govorim",
@@ -1153,7 +1136,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "gurati (engl. push)",
+            "hint": "gurati (engl. to push)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Guram",
@@ -1169,7 +1152,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "hodati (engl. walk)",
+            "hint": "hodati (engl. to walk)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Hodam",
@@ -1185,7 +1168,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "htjeti (engl. want to, wish)",
+            "hint": "htjeti (engl. to want, to wish)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Hoću",
@@ -1265,7 +1248,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "izaći (engl. go out)",
+            "hint": "izaći (engl. to go out)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Izađem",
@@ -1409,7 +1392,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "kupati (engl. bathe)",
+            "hint": "kupati (engl. to bathe)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Kupam",
@@ -1425,7 +1408,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "kupiti (engl. buy)",
+            "hint": "kupiti (engl. to buy)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Kupim",
@@ -1441,7 +1424,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "kupovati (engl. buy)",
+            "hint": "kupovati (engl. to buy)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Kupujem",
@@ -1457,7 +1440,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "letjeti (engl. fly)",
+            "hint": "letjeti (engl. to fly)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Letim",
@@ -1473,7 +1456,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "ljetovati (engl. summering)",
+            "hint": "ljetovati (engl. to spend the summer in)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Ljetujem",
@@ -1485,22 +1468,6 @@ $(document).ready(function() {
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "  na Jadranskome moru.",
-            "boja_pozadine": "#FCE4EC",
-            "time": 20,
-        }, {
-            "question": "popuni",
-            "hint": "ljubiti (engl. to kiss)",
-            "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-            "correctAnswer": [
-                "Ljubim",
-                "Ljubiš",
-                "Ljube",
-                "Ljubimo",
-                "Ljubite",
-                "Ljube"
-            ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": "  svoje dijete prije spavanja.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -1569,7 +1536,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "moliti (engl. pray, plead)",
+            "hint": "moliti (engl. to pray, to plead)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Molim",
@@ -1585,7 +1552,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "morati (engl. must, have to)",
+            "hint": "morati (engl. must, to have to)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Moram",
@@ -1649,7 +1616,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "nadati se (engl. to find, come across)",
+            "hint": "nadati se (engl. to find, to come across)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "nalazim",
@@ -1761,7 +1728,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "nuditi (engl. offer)",
+            "hint": "nuditi (engl. to offer)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Nudim",
@@ -1890,7 +1857,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "odmarati (engl. rest)",
+            "hint": "odmarati (engl. to rest)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "odmorim",
@@ -1906,7 +1873,7 @@ $(document).ready(function() {
             "time": 20,
         }, , {
             "question": "popuni",
-            "hint": "opisati (engl. describe)",
+            "hint": "opisati (engl. to describe)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Opišem",
@@ -1922,7 +1889,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "oprostiti (engl. forgive)",
+            "hint": "oprostiti (engl. to forgive)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Oprostim",
@@ -1938,7 +1905,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "osjećati (engl. feel)",
+            "hint": "osjećati (engl. to feel)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Osjećam ",
@@ -1954,7 +1921,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "osjetiti (engl. feel)",
+            "hint": "osjetiti (engl. to feel)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Osjetim",
@@ -1970,7 +1937,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "otići (engl. leave)",
+            "hint": "otići (engl. to leave)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "otiđem",
@@ -2002,7 +1969,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "ovisiti (engl. depend)",
+            "hint": "ovisiti (engl. to depend)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Ovisim",
@@ -2018,7 +1985,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "padati (engl. fall)",
+            "hint": "padati (engl. to fall)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2050,7 +2017,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "pasti (engl. fall)",
+            "hint": "pasti (engl. to fall)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2066,7 +2033,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "paziti (engl. be careful)",
+            "hint": "paziti (engl. to be careful)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2082,7 +2049,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "peći (engl. to beak / to roast)",
+            "hint": "peći (engl. to beak, to roast)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2098,7 +2065,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "pisati (engl. write)",
+            "hint": "pisati (engl. to write)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2242,7 +2209,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "plivati (engl. swim)",
+            "hint": "plivati (engl. to swim)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2290,7 +2257,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "pokazati (engl. show/display)",
+            "hint": "pokazati (engl. to show, to display)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2306,7 +2273,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "pokazivati (engl. show/display)",
+            "hint": "pokazivati (engl. to show, to display)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2322,7 +2289,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "pokazivati (engl. show/display)",
+            "hint": "pokazivati (engl. to show, to display)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2354,7 +2321,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "pokloniti (engl. to bestow)",
+            "hint": "pokloniti (engl. to give)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2386,7 +2353,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "pomoći (engl. help)",
+            "hint": "pomoći (engl. to help)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2402,7 +2369,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "ponavljati (engl. repeat)",
+            "hint": "ponavljati (engl. to repeat)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2418,7 +2385,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "ponoviti (engl. repeat)",
+            "hint": "ponoviti (engl. to repeat)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2434,7 +2401,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "ponuditi (engl. offer)",
+            "hint": "ponuditi (engl. to offer)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2450,7 +2417,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "popiti (engl. drink)",
+            "hint": "popiti (engl. to drink)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2466,7 +2433,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "posjećivati (engl. visit)",
+            "hint": "posjećivati (engl. to visit)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2482,7 +2449,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "posjetiti (engl. visit)",
+            "hint": "posjetiti (engl. to visit)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2498,7 +2465,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "poslati (engl. send)",
+            "hint": "poslati (engl. to send)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2514,7 +2481,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "potpisati (engl. sign)",
+            "hint": "potpisati (engl. to sign)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2530,7 +2497,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "potpisivati (engl. sign)",
+            "hint": "potpisivati (engl. to sign)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2546,7 +2513,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "prati (se) (engl. wash)",
+            "hint": "prati (se) (engl. to wash)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2562,7 +2529,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "pričati (engl. speak)",
+            "hint": "pričati (engl. to speak)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2610,7 +2577,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "prodati (engl. sell)",
+            "hint": "prodati (engl. to sell)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2658,7 +2625,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "pušiti (engl. smoke)",
+            "hint": "pušiti (engl. to smoke)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2674,7 +2641,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "putovati (engl. travel)",
+            "hint": "putovati (engl. to travel)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2738,7 +2705,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "razlikovati (engl. distinguish)",
+            "hint": "razlikovati (engl. to distinguish)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2754,7 +2721,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "razmisliti (engl. think)",
+            "hint": "razmisliti (engl. to think)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2786,7 +2753,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "reći (engl. say)",
+            "hint": "reći (engl. to say)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2802,7 +2769,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "roniti (engl. dive)",
+            "hint": "roniti (engl. to dive)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2818,7 +2785,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "ručati (engl. lunch)",
+            "hint": "ručati (engl. to lunch)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2850,7 +2817,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "seliti (engl. to move out)",
+            "hint": "seliti (engl. to move)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2882,7 +2849,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "sjediti (engl. sit)",
+            "hint": "sjediti (engl. to sit)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2914,7 +2881,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "slati (engl. send)",
+            "hint": "slati (engl. to send)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2930,7 +2897,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "slaviti (engl. celebrate)",
+            "hint": "slaviti (engl. to celebrate)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -2946,23 +2913,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "slikati (engl. paint)",
-            "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-            "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
-            "boja_pozadine": "#FCE4EC",
-            "time": 20,
-        }, {
-            "question": "popuni",
-            "hint": "slikati (engl. paint)",
+            "hint": "slikati (engl. to paint)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3026,7 +2977,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "spavati (engl. sleep)",
+            "hint": "spavati (engl. to sleep)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3074,7 +3025,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "stanovati (engl. to leave in)",
+            "hint": "stanovati (engl. to live in)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3090,7 +3041,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "stanovati (engl. to leave in)",
+            "hint": "stanovati (engl. to live in)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3106,7 +3057,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "staviti (engl. to put on/place/set)",
+            "hint": "staviti (engl. to put on, to place to)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3122,7 +3073,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "stavljati (engl. put/place)",
+            "hint": "stavljati (engl. to put on, to place on)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3138,7 +3089,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "studirati (engl. study)",
+            "hint": "studirati (engl. to study)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3154,7 +3105,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "sviđati se (engl. like)",
+            "hint": "sviđati se (engl. to like)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3170,7 +3121,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "svirati (engl. play)",
+            "hint": "svirati (engl. to play)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3202,7 +3153,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "šetati (engl. walk)",
+            "hint": "šetati (engl. to walk)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3218,7 +3169,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "štedjeti (engl. save/spare)",
+            "hint": "štedjeti (engl. to save, to spare)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3234,7 +3185,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "šutjeti (engl. keep quiet)",
+            "hint": "šutjeti (engl. to keep quiet)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3250,7 +3201,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "telefonirati (engl. phone)",
+            "hint": "telefonirati (engl. to phone)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3266,7 +3217,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "tražiti (engl. look for/seek)",
+            "hint": "tražiti (engl. to look for)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3282,7 +3233,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "trčati (engl. run)",
+            "hint": "trčati (engl. to run)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3298,7 +3249,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "trebati (engl. need)",
+            "hint": "trebati (engl. to need)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3330,7 +3281,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "trošiti (engl. spend)",
+            "hint": "trošiti (engl. to spend)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3346,7 +3297,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "tući (engl. beat)",
+            "hint": "tući (engl. to beat)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3362,7 +3313,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "ući (engl. enter)",
+            "hint": "ući (engl. to enter)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3394,7 +3345,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "učiti (engl. learn)",
+            "hint": "učiti (engl. to learn)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3426,7 +3377,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "upoznati (engl. meet)",
+            "hint": "upoznati (engl. to meet)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3442,7 +3393,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "upoznavati (engl. to get to know/acquaint)",
+            "hint": "upoznavati (engl. to get to know)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3458,7 +3409,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "ustajati (engl. geting up)",
+            "hint": "ustajati (engl. to get up)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3490,7 +3441,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "uzeti (engl. take)",
+            "hint": "uzeti (engl. to take)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3506,7 +3457,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "uzimati (engl. take)",
+            "hint": "uzimati (engl. to take)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3538,7 +3489,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "večerati (engl. dinner)",
+            "hint": "večerati (engl. to have dinner)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3570,7 +3521,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "vidjeti (engl. see)",
+            "hint": "vidjeti (engl. to see)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3682,7 +3633,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "vući (engl. drag)",
+            "hint": "vući (engl. to drag)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3698,7 +3649,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "zaboraviti (engl. forget)",
+            "hint": "zaboraviti (engl. to forget)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3810,7 +3761,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "značiti (engl. mean)",
+            "hint": "značiti (engl. to mean)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3842,7 +3793,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "zvati (engl. call)",
+            "hint": "zvati (engl. to call)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3858,7 +3809,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "žaliti (engl. regret)",
+            "hint": "žaliti (engl. to regret)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3874,7 +3825,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "željeti (engl. want)",
+            "hint": "željeti (engl. to want)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3890,7 +3841,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "živjeti (engl. too live)",
+            "hint": "živjeti (engl. to live)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
@@ -3906,7 +3857,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "žuriti se (engl. hurry up)",
+            "hint": "žuriti se (engl. to hurry)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "",
