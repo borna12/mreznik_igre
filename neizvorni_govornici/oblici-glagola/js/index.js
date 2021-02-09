@@ -1988,15 +1988,15 @@ $(document).ready(function() {
             "hint": "padati (engl. to fall)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "padam",
+                "padaš",
+                "pada",
+                "padamo",
+                "padate",
+                "padaju"
             ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova": ["Zbog glavobolje ", "Zbog glavobolje ", "Zbog glavobolje ", "Zbog glavobolje ", "Zbog glavobolje ", "Zbog glavobolje "],
+            "osnova2": " nakon ustajanja s kauča.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -2004,12 +2004,12 @@ $(document).ready(function() {
             "hint": "parkirati (se) (engl. to park)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "parkiram",
+                "parkiraš",
+                "parkira",
+                "parkiramo",
+                "parkirate",
+                "parkiraju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2020,12 +2020,12 @@ $(document).ready(function() {
             "hint": "pasti (engl. to fall)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "padnem",
+                "padneš",
+                "padne",
+                "padnemo",
+                "padnete",
+                "padnu"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
