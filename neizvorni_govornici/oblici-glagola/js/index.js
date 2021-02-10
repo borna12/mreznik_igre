@@ -2004,15 +2004,15 @@ $(document).ready(function() {
             "hint": "parkirati (se) (engl. to park)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "parkiram",
-                "parkiraš",
-                "parkira",
-                "parkiramo",
-                "parkirate",
-                "parkiraju"
+                "Parkiram",
+                "Parkiraš",
+                "Parkira",
+                "Parkiramo",
+                "Parkirate",
+                "Parkiraju"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " se u garaži.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -2020,15 +2020,15 @@ $(document).ready(function() {
             "hint": "pasti (engl. to fall)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "padnem",
-                "padneš",
-                "padne",
-                "padnemo",
-                "padnete",
-                "padnu"
+                "Padnem",
+                "Padneš",
+                "Padne",
+                "Padnemo",
+                "Padnete",
+                "Padnu"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " s ljuljačke.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -2036,15 +2036,15 @@ $(document).ready(function() {
             "hint": "paziti (engl. to be careful)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "Pazim",
+                "Paziš",
+                "Pazi",
+                "Pazimo",
+                "Pazite",
+                "Paze"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " na zdravlje baveći se sportom.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -2052,15 +2052,15 @@ $(document).ready(function() {
             "hint": "peći (engl. to beak, to roast)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "Pečem",
+                "Pečeš",
+                "Peče",
+                "Pečemo",
+                "Pečete",
+                "Peku"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " palačinke za svoju djecu.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -2068,15 +2068,15 @@ $(document).ready(function() {
             "hint": "pisati (engl. to write)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "pišem",
+                "pišeš",
+                "piše",
+                "pišemo",
+                "pišete",
+                "pišu"
             ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova": ["Danas ", "Danas ", "Danas ", "Danas ", "Danas ", "Danas "],
+            "osnova2": " test iz povijesti.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -2084,15 +2084,15 @@ $(document).ready(function() {
             "hint": "pitati (engl. to ask)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "Pitam",
+                "Pitaš",
+                "Pita",
+                "Pitamo",
+                "Pitate",
+                "Pitaju"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " prijatelja kako mu je bilo na poslu.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -2100,15 +2100,15 @@ $(document).ready(function() {
             "hint": "piti (engl. to drink)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "Pijem",
+                "Piješ",
+                "Pije",
+                "Pijemo",
+                "Pijete",
+                "Piju"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " 12 čaši vode dnevno.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -2116,12 +2116,12 @@ $(document).ready(function() {
             "hint": "pjevati (engl. to sing)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "pjevam",
+                "pjevaš",
+                "pjeva",
+                "pjevamo",
+                "pjevate",
+                "pjevaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2132,12 +2132,12 @@ $(document).ready(function() {
             "hint": "plaćati (engl. to pay)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "plaćam",
+                "plaćaš",
+                "plaća",
+                "plaćamo",
+                "plaćate",
+                "plaćaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2148,12 +2148,12 @@ $(document).ready(function() {
             "hint": "planinariti (engl. to hike)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "planinarim",
+                "planinariš",
+                "planinari",
+                "planinarimo",
+                "planinarite",
+                "planinare"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2164,12 +2164,12 @@ $(document).ready(function() {
             "hint": "planirati (engl. to plan)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "planiram",
+                "planiraš",
+                "planira",
+                "planiramo",
+                "planirate",
+                "planiraju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2180,12 +2180,12 @@ $(document).ready(function() {
             "hint": "platiti (engl. to pay)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "platim",
+                "platiš",
+                "plati",
+                "platimo",
+                "platite",
+                "plate"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2196,12 +2196,12 @@ $(document).ready(function() {
             "hint": "plesati (engl. to dance)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "plešem",
+                "plešeš",
+                "pleše",
+                "plešemo",
+                "plešete",
+                "plešu"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2212,12 +2212,12 @@ $(document).ready(function() {
             "hint": "plivati (engl. to swim)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "plivam",
+                "plivaš",
+                "pliva",
+                "plivamo",
+                "plivate",
+                "plivaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2228,12 +2228,12 @@ $(document).ready(function() {
             "hint": "pogledati (engl. to watch)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "pogledam",
+                "pogledaš",
+                "pogleda",
+                "pogledamo",
+                "pogledate",
+                "pogledaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2244,12 +2244,12 @@ $(document).ready(function() {
             "hint": "pojesti (engl. to eat)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "pojedem",
+                "pojedeš",
+                "pojede",
+                "pojedemo",
+                "pojedete",
+                "pojedu"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2260,12 +2260,12 @@ $(document).ready(function() {
             "hint": "pokazati (engl. to show, to display)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "pokažem",
+                "pokažeš",
+                "pokaže",
+                "pokažemo",
+                "pokažete",
+                "pokažu"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2276,44 +2276,28 @@ $(document).ready(function() {
             "hint": "pokazivati (engl. to show, to display)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "pokazujem",
+                "pokazuješ",
+                "pokazuje",
+                "pokazujemo",
+                "pokazujete",
+                "pokazuju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
-        }, {
-            "question": "popuni",
-            "hint": "pokazivati (engl. to show, to display)",
-            "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-            "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
-            "boja_pozadine": "#FCE4EC",
-            "time": 20,
-        }, {
+        },  {
             "question": "popuni",
             "hint": "poklanjati (engl. to give)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "poklanjam",
+                "poklanjaš",
+                "poklanja",
+                "poklanjamo",
+                "poklanjate",
+                "poklanjaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2324,12 +2308,12 @@ $(document).ready(function() {
             "hint": "pokloniti (engl. to give)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "poklonim",
+                "pokloniš",
+                "pokloni",
+                "poklonimo",
+                "poklonite",
+                "poklone"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2340,12 +2324,12 @@ $(document).ready(function() {
             "hint": "pomagati (engl. to help)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "pomažem",
+                "pomažeš",
+                "pomaže",
+                "pomažemo",
+                "pomažete",
+                "pomažu"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2356,12 +2340,12 @@ $(document).ready(function() {
             "hint": "pomoći (engl. to help)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "pomognem",
+                "pomogneš",
+                "pomogne",
+                "pomognemo",
+                "pomognete",
+                "pomognu"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2372,12 +2356,12 @@ $(document).ready(function() {
             "hint": "ponavljati (engl. to repeat)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "ponavljam",
+                "ponavljaš",
+                "ponavlja",
+                "ponavljamo",
+                "ponavljate",
+                "ponavljaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2388,12 +2372,12 @@ $(document).ready(function() {
             "hint": "ponoviti (engl. to repeat)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "ponovim",
+                "ponoviš",
+                "ponovi",
+                "ponovimo",
+                "ponovite",
+                "ponove"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2404,12 +2388,12 @@ $(document).ready(function() {
             "hint": "ponuditi (engl. to offer)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "ponudim",
+                "ponudiš",
+                "ponudi",
+                "ponudimo",
+                "ponudite",
+                "ponude"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2420,12 +2404,12 @@ $(document).ready(function() {
             "hint": "popiti (engl. to drink)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "popijem",
+                "popiješ",
+                "popije",
+                "popijemo",
+                "popijete",
+                "popiju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2436,12 +2420,12 @@ $(document).ready(function() {
             "hint": "posjećivati (engl. to visit)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "posjećujem",
+                "posjećuješ",
+                "posjećuje",
+                "posjećujemo",
+                "posjećujete",
+                "posjećivao"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2452,12 +2436,12 @@ $(document).ready(function() {
             "hint": "posjetiti (engl. to visit)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "posjetim",
+                "posjetiš",
+                "posjeti",
+                "posjetimo",
+                "posjetite",
+                "posjete"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2468,12 +2452,12 @@ $(document).ready(function() {
             "hint": "poslati (engl. to send)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "pošaljem",
+                "pošalješ",
+                "pošalje",
+                "pošaljemo",
+                "pošaljete",
+                "pošalju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2484,12 +2468,12 @@ $(document).ready(function() {
             "hint": "potpisati (engl. to sign)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "potpišem",
+                "potpišeš",
+                "potpiše",
+                "potpišemo",
+                "potpišete",
+                "potpišu"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2500,12 +2484,12 @@ $(document).ready(function() {
             "hint": "potpisivati (engl. to sign)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "potpisujem",
+                "potpisuješ",
+                "potpisuje",
+                "potpisujemo",
+                "potpisujete",
+                "potpisuju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2516,12 +2500,12 @@ $(document).ready(function() {
             "hint": "prati (se) (engl. to wash)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "perem",
+                "pereš",
+                "pere",
+                "peremo",
+                "perete",
+                "peru"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2532,12 +2516,12 @@ $(document).ready(function() {
             "hint": "pričati (engl. to speak)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "pričam",
+                "pričaš",
+                "priča",
+                "pričamo",
+                "pričate",
+                "pričaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2548,12 +2532,12 @@ $(document).ready(function() {
             "hint": "probati (engl. to try)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "probam",
+                "probaš",
+                "proba",
+                "probamo",
+                "probate",
+                "probaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2564,12 +2548,12 @@ $(document).ready(function() {
             "hint": "pročitati (engl. to read)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "pročitam",
+                "pročitaš",
+                "pročita",
+                "pročitamo",
+                "pročitate",
+                "pročitaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2580,12 +2564,12 @@ $(document).ready(function() {
             "hint": "prodati (engl. to sell)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "prodam",
+                "prodaš",
+                "proda",
+                "prodamo",
+                "prodate",
+                "prodaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2596,12 +2580,12 @@ $(document).ready(function() {
             "hint": "prodavati (engl. sell)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "prodajem",
+                "prodaješ",
+                "prodaje",
+                "prodajemo",
+                "prodajete",
+                "prodaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2609,15 +2593,15 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "change (engl. to change)",
+            "hint": "promijeniti (engl. to change)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "promijenim",
+                "promijeniš",
+                "promijeni",
+                "promijenimo",
+                "promijenite",
+                "promijene"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2628,12 +2612,12 @@ $(document).ready(function() {
             "hint": "pušiti (engl. to smoke)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "pušim",
+                "pušiš",
+                "puši",
+                "pušimo",
+                "pušite",
+                "puše"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2644,12 +2628,12 @@ $(document).ready(function() {
             "hint": "putovati (engl. to travel)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "putujem",
+                "putuješ",
+                "putuje",
+                "putujemo",
+                "putujete",
+                "putuju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2660,12 +2644,12 @@ $(document).ready(function() {
             "hint": "rađati (engl. to give birth)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "rađam",
+                "rađaš",
+                "rađa",
+                "rađamo",
+                "rađate",
+                "rađaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2676,12 +2660,12 @@ $(document).ready(function() {
             "hint": "raditi (engl. to work)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "radim",
+                "radiš",
+                "radi",
+                "radimo",
+                "radite",
+                "rade"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2692,12 +2676,12 @@ $(document).ready(function() {
             "hint": "razgovarati (engl. to talk)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "razgovaram",
+                "razgovaraš",
+                "razgovara",
+                "razgovaramo",
+                "razgovarate",
+                "razgovaraju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2708,12 +2692,12 @@ $(document).ready(function() {
             "hint": "razlikovati (engl. to distinguish)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "razlikujem",
+                "razlikuješ",
+                "razlikuje",
+                "razlikujemo",
+                "razlikujete",
+                "razlikuju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2724,12 +2708,12 @@ $(document).ready(function() {
             "hint": "razmisliti (engl. to think)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "razmislim",
+                "razmisliš",
+                "razmisli",
+                "razmislimo",
+                "razmislite",
+                "razmisle"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2740,12 +2724,12 @@ $(document).ready(function() {
             "hint": "razumijeti (engl. to understand)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "razumjevam",
+                "razumjevaš",
+                "razumjeva",
+                "razumjevamo",
+                "razumjevate",
+                "razumjevaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2756,12 +2740,12 @@ $(document).ready(function() {
             "hint": "reći (engl. to say)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "rečem",
+                "rečeš",
+                "reče",
+                "rečemo",
+                "rečete",
+                "reku"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2772,12 +2756,12 @@ $(document).ready(function() {
             "hint": "roniti (engl. to dive)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "ronim",
+                "roniš",
+                "roni",
+                "ronimo",
+                "ronite",
+                "rone"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2788,12 +2772,12 @@ $(document).ready(function() {
             "hint": "ručati (engl. to lunch)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "ručam",
+                "ručaš",
+                "ruča",
+                "ručamo",
+                "ručate",
+                "ručaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2804,12 +2788,12 @@ $(document).ready(function() {
             "hint": "sanjati (engl. to dream)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "sanjamo",
+                "sanjaš",
+                "sanja",
+                "sanjamo",
+                "sanjate",
+                "sanjaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2820,12 +2804,12 @@ $(document).ready(function() {
             "hint": "seliti (engl. to move)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "selim",
+                "seliš",
+                "seli",
+                "selimo",
+                "selite",
+                "sele"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2836,12 +2820,12 @@ $(document).ready(function() {
             "hint": "sjećati se (engl. to remember)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "sjećam se",
+                "sjećaš se",
+                "sjeća se",
+                "sjećamo se",
+                "sjećate se",
+                "sjećaju se"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2852,12 +2836,12 @@ $(document).ready(function() {
             "hint": "sjediti (engl. to sit)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "sjedim",
+                "sjediš",
+                "sjedi",
+                "sjedimo",
+                "sjedite",
+                "sjede"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2868,12 +2852,12 @@ $(document).ready(function() {
             "hint": "sjetiti se (engl. to remember)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "sjetim se",
+                "sjetiš se",
+                "sjeti se",
+                "sjetimo se",
+                "sjetite se",
+                "sjete se"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2884,12 +2868,12 @@ $(document).ready(function() {
             "hint": "slati (engl. to send)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "šaljem",
+                "šalješ",
+                "šalje",
+                "šaljemo",
+                "šaljete",
+                "šalju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2900,12 +2884,12 @@ $(document).ready(function() {
             "hint": "slaviti (engl. to celebrate)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "slavim",
+                "slaviš",
+                "slavi",
+                "slavimo",
+                "slavite",
+                "slave"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2916,12 +2900,12 @@ $(document).ready(function() {
             "hint": "slikati (engl. to paint)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "slikam",
+                "slikaš",
+                "slika",
+                "slikajmo",
+                "slikajte",
+                "slikaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2932,12 +2916,12 @@ $(document).ready(function() {
             "hint": "slušati (engl. to listen)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "slušam",
+                "slušaš",
+                "sluša",
+                "slušamo",
+                "slušate",
+                "slušaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2948,12 +2932,12 @@ $(document).ready(function() {
             "hint": "smijati se (engl. to laugh)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "smijem se",
+                "smiješ se",
+                "smije se",
+                "smijemo se",
+                "smijete se",
+                "smiju se"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2964,12 +2948,12 @@ $(document).ready(function() {
             "hint": "smjeti (engl. to be allowed)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "smijem",
+                "smiješ",
+                "smije",
+                "smijemo",
+                "smijete",
+                "smiju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2980,12 +2964,12 @@ $(document).ready(function() {
             "hint": "spavati (engl. to sleep)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "spavam",
+                "spavaš",
+                "spava",
+                "spavamo",
+                "spavate",
+                "spavaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -2996,12 +2980,12 @@ $(document).ready(function() {
             "hint": "spremati (engl. to save)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "spremam",
+                "spremaš",
+                "sprema",
+                "spremamo",
+                "spremate",
+                "spremaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3012,12 +2996,12 @@ $(document).ready(function() {
             "hint": "spremiti (engl. to save)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "spremam",
+                "spremiš",
+                "spremi",
+                "spremimo",
+                "spremite",
+                "spreme"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3028,44 +3012,28 @@ $(document).ready(function() {
             "hint": "stanovati (engl. to live in)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "stanujem",
+                "stanuješ",
+                "stanuje",
+                "stanujemo",
+                "stanujete",
+                "stanuju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
-        }, {
-            "question": "popuni",
-            "hint": "stanovati (engl. to live in)",
-            "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-            "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
-            "boja_pozadine": "#FCE4EC",
-            "time": 20,
-        }, {
+        },  {
             "question": "popuni",
             "hint": "staviti (engl. to put on, to place to)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "stavim",
+                "staviš",
+                "stavi",
+                "stavimo",
+                "stavite",
+                "stave"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3076,12 +3044,12 @@ $(document).ready(function() {
             "hint": "stavljati (engl. to put on, to place on)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "stavljam",
+                "stavljaš",
+                "stavlja",
+                "stavljamo",
+                "stavljate",
+                "stavljaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3092,12 +3060,12 @@ $(document).ready(function() {
             "hint": "studirati (engl. to study)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "studiram",
+                "studiraš",
+                "studira",
+                "studiramo",
+                "studirate",
+                "studiraju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3108,12 +3076,12 @@ $(document).ready(function() {
             "hint": "sviđati se (engl. to like)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "sviđa se",
+                "sviđaš se",
+                "sviđa se",
+                "sviđamo se",
+                "sviđate se",
+                "sviđaju se"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3124,12 +3092,12 @@ $(document).ready(function() {
             "hint": "svirati (engl. to play)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "sviram",
+                "sviraš",
+                "svira",
+                "sviramo",
+                "svirate",
+                "sviraju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3140,12 +3108,12 @@ $(document).ready(function() {
             "hint": "šaliti se (engl. to joke)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "šalim se",
+                "šališ se",
+                "šali se",
+                "šalimo se",
+                "šalite se",
+                "šale se"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3156,12 +3124,12 @@ $(document).ready(function() {
             "hint": "šetati (engl. to walk)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "šetam",
+                "šetaš",
+                "šeta",
+                "šetamo",
+                "šetate",
+                "šetaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3172,12 +3140,12 @@ $(document).ready(function() {
             "hint": "štedjeti (engl. to save, to spare)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "štedim",
+                "štediš",
+                "štedi",
+                "štedimo",
+                "štedite",
+                "štede"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3188,12 +3156,12 @@ $(document).ready(function() {
             "hint": "šutjeti (engl. to keep quiet)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "šutim",
+                "šutiš",
+                "šuti",
+                "šutimo",
+                "šutite",
+                "šute"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3204,12 +3172,12 @@ $(document).ready(function() {
             "hint": "telefonirati (engl. to phone)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "telefoniram",
+                "telefoniraš",
+                "telefonira",
+                "telefoniramo",
+                "telefonirate",
+                "telefoniraju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3220,12 +3188,12 @@ $(document).ready(function() {
             "hint": "tražiti (engl. to look for)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "tražim",
+                "tražiš",
+                "traži",
+                "tražimo",
+                "tražite",
+                "traže"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3236,12 +3204,12 @@ $(document).ready(function() {
             "hint": "trčati (engl. to run)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "trčim",
+                "trčiš",
+                "trči",
+                "trčimo",
+                "trčite",
+                "trče"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3252,12 +3220,12 @@ $(document).ready(function() {
             "hint": "trebati (engl. to need)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "trebam",
+                "trebaš",
+                "treba",
+                "trebamo",
+                "trebate",
+                "trebaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3268,12 +3236,12 @@ $(document).ready(function() {
             "hint": "trenirati (engl. to train)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "treniram",
+                "treniraš",
+                "trenira",
+                "treniramo",
+                "trenirate",
+                "treniraju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3284,12 +3252,12 @@ $(document).ready(function() {
             "hint": "trošiti (engl. to spend)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "trošim",
+                "trošiš",
+                "troši",
+                "trošimo",
+                "trošite",
+                "troše"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3300,12 +3268,12 @@ $(document).ready(function() {
             "hint": "tući (engl. to beat)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "tučem",
+                "tučeš",
+                "tuče",
+                "tučemo",
+                "tučete",
+                "tuku"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3316,12 +3284,12 @@ $(document).ready(function() {
             "hint": "ući (engl. to enter)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "uđem",
+                "uđeš",
+                "uđe",
+                "uđemo",
+                "uđete",
+                "uđu"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3332,12 +3300,12 @@ $(document).ready(function() {
             "hint": "učiniti (engl. to do)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "učinim",
+                "učiniš",
+                "učini",
+                "učinimo",
+                "učinite",
+                "učine"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3348,12 +3316,12 @@ $(document).ready(function() {
             "hint": "učiti (engl. to learn)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "učim",
+                "učiš",
+                "uči",
+                "učimo",
+                "učite",
+                "uče"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3364,12 +3332,12 @@ $(document).ready(function() {
             "hint": "ulaziti (engl. to enter)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "ulazim",
+                "ulaziš",
+                "ulazi",
+                "ulazimo",
+                "ulazite",
+                "ulaze"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3380,12 +3348,12 @@ $(document).ready(function() {
             "hint": "upoznati (engl. to meet)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "upoznam",
+                "upoznaš",
+                "upozna",
+                "upoznamo",
+                "upoznate",
+                "upoznaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3396,12 +3364,12 @@ $(document).ready(function() {
             "hint": "upoznavati (engl. to get to know)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "upoznajem",
+                "upoznaješ",
+                "upoznaje",
+                "upoznajemo",
+                "upoznajete",
+                "upoznaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3412,12 +3380,12 @@ $(document).ready(function() {
             "hint": "ustajati (engl. to get up)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "ustajem",
+                "ustaješ",
+                "ustaje",
+                "ustajemo",
+                "ustajete",
+                "ustaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3428,12 +3396,12 @@ $(document).ready(function() {
             "hint": "ustati (engl. to get up)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "ustanem",
+                "ustaneš",
+                "ustane",
+                "ustanemo",
+                "ustanete",
+                "ustanu"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3444,12 +3412,12 @@ $(document).ready(function() {
             "hint": "uzeti (engl. to take)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "uzmem",
+                "uzmeš",
+                "uzme",
+                "uzmemo",
+                "uzmete",
+                "uzmu"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3460,12 +3428,12 @@ $(document).ready(function() {
             "hint": "uzimati (engl. to take)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "uzimam",
+                "uzimaš",
+                "uzima",
+                "uzimamo",
+                "uzimate",
+                "uzimaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3476,12 +3444,12 @@ $(document).ready(function() {
             "hint": "uživati (engl. to enjoy)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "uživam",
+                "uživaš",
+                "uživa",
+                "uživamo",
+                "uživate",
+                "uživaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3492,12 +3460,12 @@ $(document).ready(function() {
             "hint": "večerati (engl. to have dinner)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "večeram",
+                "večeraš",
+                "večera",
+                "večeramo",
+                "večerate",
+                "večeraju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3508,12 +3476,12 @@ $(document).ready(function() {
             "hint": "veseliti (engl. to rejoice)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "veselim",
+                "veseliš",
+                "veseli",
+                "veselimo",
+                "veselite",
+                "vesele"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3524,12 +3492,12 @@ $(document).ready(function() {
             "hint": "vidjeti (engl. to see)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "vidim",
+                "vidiš",
+                "vidi",
+                "vidimo",
+                "vidite",
+                "vide"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3540,12 +3508,12 @@ $(document).ready(function() {
             "hint": "vjenčati (engl. to marry)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "vjenčam",
+                "vjenčaš",
+                "vjenča",
+                "vjenčamo",
+                "vjenčate",
+                "vjenčaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3556,12 +3524,12 @@ $(document).ready(function() {
             "hint": "vjerovati (engl. to believe)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "vjerujem",
+                "vjeruješ",
+                "vjeruje",
+                "vjerujemo",
+                "vjerujete",
+                "vjeruju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3588,12 +3556,12 @@ $(document).ready(function() {
             "hint": "voziti (engl. to drive)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "vozim",
+                "voziš",
+                "vozi",
+                "vozimo",
+                "vozite",
+                "voze"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3604,12 +3572,12 @@ $(document).ready(function() {
             "hint": "vraćati (engl. to return)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "vraćam",
+                "vraćaš",
+                "vraća",
+                "vraćamo",
+                "vraćate",
+                "vraćaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3620,12 +3588,12 @@ $(document).ready(function() {
             "hint": "vratiti (engl. return)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "vratim",
+                "vratiš",
+                "vrati",
+                "vratimo",
+                "vratite",
+                "vrate"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3636,12 +3604,12 @@ $(document).ready(function() {
             "hint": "vući (engl. to drag)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "vučem",
+                "vučeš",
+                "vuče",
+                "vučemo",
+                "vučete",
+                "vuku"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3652,12 +3620,12 @@ $(document).ready(function() {
             "hint": "zaboraviti (engl. to forget)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "zaboravim",
+                "zaboraviš",
+                "zaboravi",
+                "zaboravimo",
+                "zaboravite",
+                "zaborave"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3668,12 +3636,12 @@ $(document).ready(function() {
             "hint": "zaboravljati (engl. to forget)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "zaboravljam",
+                "zaboravljaš",
+                "zaboravlja",
+                "zaboravljamo",
+                "zaboravljate",
+                "zaboravljaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3684,34 +3652,18 @@ $(document).ready(function() {
             "hint": "zanimati (engl. interest)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "zanimam",
+                "zanimaš",
+                "zanima",
+                "zanimamo",
+                "zanimate",
+                "zanimaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
-        }, {
-            "question": "popuni",
-            "hint": "zatvarati (engl. to close)",
-            "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
-            "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
-            "boja_pozadine": "#FCE4EC",
-            "time": 20,
-        }, {
+        },  {
             "question": "popuni",
             "hint": "zatvoriti (engl. close)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
@@ -3732,12 +3684,12 @@ $(document).ready(function() {
             "hint": "završavati (engl. to finish)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "završavam",
+                "završavaš",
+                "završava",
+                "završavamo",
+                "završavate",
+                "završavaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3748,12 +3700,12 @@ $(document).ready(function() {
             "hint": "završiti (engl. to complete)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "završim",
+                "završiš",
+                "završi",
+                "završimo",
+                "završite",
+                "završe"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3764,12 +3716,12 @@ $(document).ready(function() {
             "hint": "značiti (engl. to mean)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "značim",
+                "značiš",
+                "znači",
+                "značimo",
+                "značite",
+                "znače"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3780,12 +3732,12 @@ $(document).ready(function() {
             "hint": "znati (engl. to know)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "znam",
+                "znaš",
+                "zna",
+                "znamo",
+                "znate",
+                "znaju"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3796,12 +3748,12 @@ $(document).ready(function() {
             "hint": "zvati (engl. to call)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "zovem",
+                "zoveš",
+                "zove",
+                "zovemo",
+                "zovete",
+                "zovu"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3812,12 +3764,12 @@ $(document).ready(function() {
             "hint": "žaliti (engl. to regret)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "žalim",
+                "žališ",
+                "žali",
+                "žalimo",
+                "žalite",
+                "žale"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3828,12 +3780,12 @@ $(document).ready(function() {
             "hint": "željeti (engl. to want)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "želim",
+                "želiš",
+                "želi",
+                "želimo",
+                "želite",
+                "žele"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3844,12 +3796,12 @@ $(document).ready(function() {
             "hint": "živjeti (engl. to live)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "živim",
+                "živiš",
+                "živi",
+                "živimo",
+                "živite",
+                "žive"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
@@ -3860,12 +3812,12 @@ $(document).ready(function() {
             "hint": "žuriti se (engl. to hurry)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "žurim se",
+                "žuriš se",
+                "žuri se",
+                "žurimo se",
+                "žurite se",
+                "žure se"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": "",
