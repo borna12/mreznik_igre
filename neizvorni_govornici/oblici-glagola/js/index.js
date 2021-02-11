@@ -3428,15 +3428,15 @@ $(document).ready(function() {
             "hint": "uživati (engl. to enjoy)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "uživam",
-                "uživaš",
-                "uživa",
-                "uživamo",
-                "uživate",
-                "uživaju"
+                "Uživam",
+                "Uživaš",
+                "Uživa",
+                "Uživamo",
+                "Uživate",
+                "Uživaju"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " na ljetnim preznicima.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
