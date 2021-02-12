@@ -3451,8 +3451,8 @@ $(document).ready(function() {
                 "večerate",
                 "večeraju"
             ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova": ["Što obično ", "Što obično ", "Što obično ", "Što obično ","Što obično ", "Što obično "],
+            "osnova2": "?",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3460,15 +3460,15 @@ $(document).ready(function() {
             "hint": "veseliti (engl. to rejoice)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "veselim",
-                "veseliš",
-                "veseli",
-                "veselimo",
-                "veselite",
-                "vesele"
+                "Veselim",
+                "Veseliš",
+                "Veseli",
+                "Veselimo",
+                "Veselite",
+                "Vesele"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " se suncu i moru.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3483,8 +3483,8 @@ $(document).ready(function() {
                 "vidite",
                 "vide"
             ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova": ["Ne ", "Ne ", "Ne ", "Ne ", "Ne ", "Ne "],
+            "osnova2": " dobro.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3492,15 +3492,15 @@ $(document).ready(function() {
             "hint": "vjenčati (engl. to marry)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "vjenčam",
-                "vjenčaš",
-                "vjenča",
-                "vjenčamo",
-                "vjenčate",
-                "vjenčaju"
+                "Vjenčam",
+                "Vjenčaš",
+                "Vjenča",
+                "Vjenčamo",
+                "Vjenčate",
+                "Vjenčaju"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " se iduće godine.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3508,15 +3508,15 @@ $(document).ready(function() {
             "hint": "vjerovati (engl. to believe)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "vjerujem",
-                "vjeruješ",
-                "vjeruje",
-                "vjerujemo",
-                "vjerujete",
-                "vjeruju"
+                "Vjerujem",
+                "Vjeruješ",
+                "Vjeruje",
+                "Vjerujemo",
+                "Vjerujete",
+                "Vjeruju"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": "li u Boga?",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3524,15 +3524,15 @@ $(document).ready(function() {
             "hint": "voljeti (engl. to love)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "Volim",
+                "Voliš",
+                "Voli",
+                "Volimo",
+                "Volite",
+                "Vole"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " pikantnu hranu.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3540,15 +3540,15 @@ $(document).ready(function() {
             "hint": "voziti (engl. to drive)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "vozim",
-                "voziš",
-                "vozi",
-                "vozimo",
-                "vozite",
-                "voze"
+                "Vozim",
+                "Voziš",
+                "Vozi",
+                "Vozimo",
+                "Vozite",
+                "Voze"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " veliki kamion.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3563,8 +3563,8 @@ $(document).ready(function() {
                 "vraćate",
                 "vraćaju"
             ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova": ["Upravo ", "Upravo ", "Upravo ", "Upravo ", "Upravo ", "Upravo "],
+            "osnova2": " bilješke s predavanja.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3572,15 +3572,15 @@ $(document).ready(function() {
             "hint": "vratiti (engl. return)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "vratim",
-                "vratiš",
-                "vrati",
-                "vratimo",
-                "vratite",
-                "vrate"
+                "Vratim",
+                "Vratiš",
+                "Vrati",
+                "Vratimo",
+                "Vratite",
+                "Vrate"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " knjige u knjižnicu na vrijeme.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3588,15 +3588,15 @@ $(document).ready(function() {
             "hint": "vući (engl. to drag)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "vučem",
-                "vučeš",
-                "vuče",
-                "vučemo",
-                "vučete",
-                "vuku"
+                "Vučem",
+                "Vučeš",
+                "Vuče",
+                "Vučemo",
+                "Vučete",
+                "Vuku"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " teške kofere po aerodromu.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3604,15 +3604,15 @@ $(document).ready(function() {
             "hint": "zaboraviti (engl. to forget)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "zaboravim",
-                "zaboraviš",
-                "zaboravi",
-                "zaboravimo",
-                "zaboravite",
-                "zaborave"
+                "Zaboravim",
+                "Zaboraviš",
+                "Zaboravi",
+                "Zaboravimo",
+                "Zaboravite",
+                "Zaborave"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " loše stvari.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3627,8 +3627,8 @@ $(document).ready(function() {
                 "zaboravljate",
                 "zaboravljaju"
             ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova": ["Nikad ne ", "Nikad ne ", "Nikad ne ", "Nikad ne ", "Nikad ne ", "Nikad ne "],
+            "osnova2": "svoje drage prijatelje.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3636,15 +3636,15 @@ $(document).ready(function() {
             "hint": "zanimati (engl. interest)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "zanimam",
-                "zanimaš",
-                "zanima",
-                "zanimamo",
-                "zanimate",
-                "zanimaju"
+                "Zanimam",
+                "Zanimaš",
+                "Zanima",
+                "Zanimamo",
+                "Zanimate",
+                "Zanimaju"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova2": " se za novi posao.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         },  {
@@ -3659,8 +3659,8 @@ $(document).ready(function() {
                 "zatvorite",
                 "zatvore"
             ],
-            "osnova": ["Kada ", "", "", "", "", ""],
-            "osnova2": "",
+            "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
+            "osnova2": " klub, ljudi će otići doma.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3708,7 +3708,7 @@ $(document).ready(function() {
                 "Znače"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " puno nama.",
+            "osnova2": " puno njima.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }, {
@@ -3804,7 +3804,7 @@ $(document).ready(function() {
                 "Žure se"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": "s projektom jer je deadline prekosutra.",
+            "osnova2": " s projektom jer je <em>deadline</em> prekosutra.",
             "boja_pozadine": "#FCE4EC",
             "time": 20,
         }
