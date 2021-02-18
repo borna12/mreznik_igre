@@ -76,7 +76,7 @@ form {
     flex-direction: column;
 }
 
-
+.glagol{ color: #0162F3; margin-bottom: 10px;}
 /* Button */
 
 .btn, #form-submit {
@@ -85,7 +85,7 @@ form {
     width: 100%;
     font-size: 1.5rem;
     padding: 1rem 0;
-    background: #EB4947;
+    background: #009DE0;
     border: none;
     color: white;
     border-radius: 5px;
@@ -102,7 +102,7 @@ form {
 
 .btn:hover,#form-submit:hover {
     cursor: pointer;
-    background: #D72503;
+    background: #0162F3;
 }
 
 .odgov:hover{background: rgb(110, 153, 85);}
@@ -301,8 +301,8 @@ footer {
 
 .ispunjavanje{font-size:22px}
 
-.nastavak{color: rgb(235, 73, 71)}
+.nastavak{color: #0162F3}
 legend{margin: auto;}
 
-.vrime{color:#EB4947; font-weight: 900}
-#osnova2 span{color:#EB4947;font-weight: 600;}
+.vrime{color:#0162F3; font-weight: 900}
+#osnova2 span{color:#0162F3;font-weight: 600;}

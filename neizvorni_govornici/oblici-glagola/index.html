@@ -55,13 +55,9 @@
         <div class="container container2">
             <h1 class="init-page__title">Upiši ispravan oblika glagola</h1>
             <p></p><br>
-            <img src="slike/uvodna.png" style="width: 100%;
-    margin-left: auto;
-    display: block;
-    margin-right: auto; margin-top:20px"
-                 />
+            
             <button class="init-page__btn btn" id="bez">igra bez vremenskog ograničenja</button>
-                        <button class="init-page__btn btn" id="40">igra s ograničenjem od 40 sekundi po pitanju</button>
+            <button class="init-page__btn btn" id="40">igra s ograničenjem od 40 sekundi po pitanju</button>
             <button class="init-page__btn btn" id="20">igra s ograničenjem od 20 sekundi po pitanju</button>
             <br>
             <p style="text-align: center;font-size: 1.5rem;padding-top: 20px;"> <a href="../index.html" style="text-decoration: none;">vrati se ↩</a></p>
@@ -154,75 +150,15 @@
             <p class="results-page__info">S obzirom na količinu točnih odgovora i vrijeme ostvarili ste idući broj
                 bodova:</p>
             <h3 class="results-page__bodovi">postavljenih pitanja!</h3>
-
+<p>Možete ponoviti igru jer zadatci će bit drukčiji.</p>
             <br>
-
             <p>
-                     <form class="jedan" action="https://docs.google.com/forms/d/e/1FAIpQLSfZAGfZbd555B--pkkOU2cZZwrOVEcC1lRRQwF4j58t5lP8yA/formResponse"
-                    target="_self" id="bootstrapForm" method="POST">
-                    <legend for="736982347"> <select id="ikona" style="height:30px"></select> Ime: <input id="312289462"
-                            type="text" name="entry.312289462" class="form-control" required id="input-q1" style="height:30px">
-                    </legend>
-                   <div class="form-group"> <input style="display:none" id="60656686" type="text"
-                            name="entry.60656686" class="form-control" required> </div><input type="hidden" name="fvv"
-                        value="1"> <input type="hidden" name="fbzx" value="4484478125650916779"><input type="hidden"
-                        name="pageHistory" value="0"><br><input class="btn" type="submit" id="predaj" value="predaj">
-                </form>
                 
-                <button class="results-page__retake-btn btn">ponovite kviz</button>
+                <button class="results-page__retake-btn btn">ponovite igru</button>
                 <script src="js/emoji.js" charset="utf-8"></script>
                 <script src="js/jquery.form.js"></script>
                   <script src="js/index.js"></script>
-                <script>
-
-                        var target = document.getElementById("ikona");
-                        var emojiCount = emoji.length;
-    
-                        for (var index = 0; index < emojiCount; index++) {
-                            addEmoji(emoji[index]);
-                        }
-    
-                        function addEmoji(code) {
-                            var option = document.createElement('option');
-                            option.innerHTML = code;
-                            option.value = code;
-                            target.appendChild(option);
-                        }
-    
-                        if (localStorage.getItem("ime") != null) {
-                            $('#312289462').val(localStorage.getItem("ime"))
-                            $('#ikona').val(localStorage.getItem("ikona"))
-                        }
-    
-    
-                        $('#bootstrapForm').submit(function (event) {
-                            localStorage.setItem("ime", $('#312289462').val())
-                            localStorage.setItem("ikona", $('#ikona').val())
-                            localStorage.setItem('pokrenuto', "da")
-                            event.preventDefault()
-                            $('#312289462').val(
-                                document.getElementById("ikona").value + document.getElementById("312289462").value
-                            )
-                            $("#predaj").hide(300)
-                            event.preventDefault()
-                            var extraData = {}
-                            $('#bootstrapForm').ajaxSubmit({
-                                data: extraData,
-                                dataType: 'jsonp', // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
-                                error: function () {
-                                    // Submit of form should be successful but JSONP callback will fail because Google Forms
-                                    // does not support it, so this is handled as a failure.
-                                    if(r1==1){ window.open("rez.html", "_self");}
-                                    else if(r1==2){window.open("rez2.html", "_self");}
-                                    else{window.open("rez3.html", "_self");}
-                                   
-                                }
-                            })
-                        })
-    
-    
-    
-                    </script>
+                
         </div>
     </div>
    
