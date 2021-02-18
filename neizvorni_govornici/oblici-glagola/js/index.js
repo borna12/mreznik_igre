@@ -324,9 +324,7 @@ $(document).ready(function() {
                     allowOutsideClick: false,
                     allowEscapeKey: false,
                 });
-                if (prezent[questionCounter].pin.length > 0) {
-                    $(".dodatak").append("<br><p>" + prezent[questionCounter].napomena + "</p>")
-                }
+               
                 $(".swal2-confirm").unbind("click").click(function() {
                     clearInterval(countdownTimer)
                     nastavi()
