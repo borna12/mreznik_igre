@@ -270,15 +270,11 @@ $(document).ready(function() {
         if ($(this).attr('id') == "bez") {
             iskljuci_v = 1;
             $(".vrijeme").hide()
-            r1 = 1
         } else if ($(this).attr('id') == "20") {
-            r1 = 2
             tajming = 20;
         } else if ($(this).attr('id') == "40") {
             tajming = 40;
-     
-            r1 = 3
-        }
+            }
         // Advance to questions page
         initPage.hide();
         questionsPage.show(300);
@@ -314,7 +310,7 @@ $(document).ready(function() {
     })
 
     function odgovor() {
-        if (document.getElementById("pageBeginCountdown").value != "0" && $('#odgovor').val().length == 0 || $('#odgovor').val().length == 0) {
+        if (document.getElementById("pageBeginCountdown").value != "0" && $('#odgovor').val().length == 0) {
             return
         }
         vrijeme = parseInt($("#pageBeginCountdownText").text())
@@ -357,6 +353,9 @@ $(document).ready(function() {
                     }
                 })
             } else {
+                if ($('#odgovor').val().length == 0) {
+                       return
+                }
                 if ($("#odgovor").val() == prezent[questionCounter].correctAnswer[randbroj]) {
                     // Increment the total correct answers counter
                     correctAnswersCounter++;
