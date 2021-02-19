@@ -253,7 +253,7 @@ $(document).ready(function () {
         $("#opis").html("<em>" + prezent[questionCounter].opis + "</em>")
         $(".vrijeme").html('<progress value="' + tajming + '" max="' + tajming + '" id="pageBeginCountdown"></progress><p><span id="pageBeginCountdownText">' + tajming + '</span>')
         $("body").css({
-            "background-color": prezent[questionCounter].boja_pozadine
+            "background-color": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)"
         })
         if (prekidac == 1) {
             ProgressCountdown(tajming, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => odgovor());
