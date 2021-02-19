@@ -51,7 +51,6 @@ var initPage,
     prekidac, countdownTimer, bodovi = 0,
     vrijeme = 0,
     randbroj = 0;
-
 function ProgressCountdown(timeleft, bar, text) {
     return new Promise((resolve, reject) => {
         countdownTimer = setInterval(() => {
@@ -65,13 +64,34 @@ function ProgressCountdown(timeleft, bar, text) {
         }, 1000);
     });
 }
+
 $(document).ready(function() {
     $('body').on('keydown', function(event) {
         var x = event.which;
         if (x === 13) {
+            
             event.preventDefault();
         }
     });
+
+    $(".broj").click(function () {
+     
+        pitanja = jQuery(this).attr("id")
+        if (pitanja == "20pitanja") {
+            shuffle(prezent)
+            prezent = prezent.slice(0, 20)
+        }
+        else if (pitanja == "50pitanja") {
+            shuffle(prezent)
+            prezent = prezent.slice(0, 50)
+        }
+        else if (pitanja == "100pitanja") {
+            shuffle(prezent)
+            prezent = prezent.slice(0, 100)
+        }
+        $(".broj").hide()
+        $(".init-page__btn").show();
+    })
     // DOM SELECTION ------
     // App pages
     // Page 1 - Initial
@@ -167,6 +187,7 @@ $(document).ready(function() {
         $(".vrijeme").html('<progress value="' + tajming + '" max="' + tajming + '" id="pageBeginCountdown"></progress><p><span id="pageBeginCountdownText">' + tajming + '</span></p>')
         $("body").css({
             "background-color": prezent[questionCounter].boja_pozadine
+            
         })
         if (prekidac == 1 && iskljuci_v == 0) {
             ProgressCountdown(tajming, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => odgovor());
@@ -284,6 +305,7 @@ $(document).ready(function() {
         getSelectedAnswerDivs(this);
     });
     $('#odgovor').on("keyup", function() {
+
         if ($("#odgovor").val().length == 0) {
             submitBtn.hide(300)
         } else {
@@ -292,7 +314,7 @@ $(document).ready(function() {
     })
 
     function odgovor() {
-        if (document.getElementById("pageBeginCountdown").value != "0" && $('#odgovor').val().length == 0) {
+        if (document.getElementById("pageBeginCountdown").value != "0" && $('#odgovor').val().length == 0 || $('#odgovor').val().length == 0) {
             return
         }
         vrijeme = parseInt($("#pageBeginCountdownText").text())
@@ -307,7 +329,7 @@ $(document).ready(function() {
         }
         clearInterval(countdownTimer);
         if (prezent[questionCounter].question == "popuni") {
-            if (document.getElementById("pageBeginCountdown").value == "0") {
+            if (document.getElementById("pageBeginCountdown").value == "0" && iskljuci_v!=1) {
                 bodovi -= 10;
                 $("#zvono")[0].play();
                 swal({
@@ -339,8 +361,12 @@ $(document).ready(function() {
                     // Increment the total correct answers counter
                     correctAnswersCounter++;
                     bodovi += 10;
+                    if (iskljuci_v!=1){
                     bodovi += vrijeme
-                    broj = 10 + vrijeme
+                    broj = 10 + vrijeme}
+                    else{
+                        broj=10
+                    }
                     $("#tocno")[0].play();
                     swal({
                         title: "Točno",
@@ -352,7 +378,9 @@ $(document).ready(function() {
                         allowEscapeKey: false,
                     });
                     $(".swal2-confirm").unbind("click").click(function() {
-                        clearInterval(countdownTimer)
+                        
+                        if (iskljuci_v!=1){
+                        clearInterval(countdownTimer)}
                         $(".swal2-modal").removeClass("swal-fix")
                         nastavi()
                         if (ide == 1 && iskljuci_v == 0) {
@@ -360,7 +388,7 @@ $(document).ready(function() {
                         }
                     })
                     $(".swal2-close").unbind("click").click(function() {
-                        clearInterval(countdownTimer)
+                        if (iskljuci_v!=1){clearInterval(countdownTimer)}
                         $(".swal2-modal").removeClass("swal-fix")
                         nastavi()
                         if (ide == 1 && iskljuci_v == 0) {
@@ -478,7 +506,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " starijim ljudima.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -496,7 +524,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " prijateljima.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -514,7 +542,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " filmu.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -532,7 +560,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " svojim kolegama na pomoći.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -550,7 +578,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " dar prijatelju.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -568,7 +596,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " ljetu.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -586,7 +614,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " vicu.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -604,7 +632,7 @@ $(document).ready(function() {
                "osnova": ["Ne ","Ne ","Ne ","Ne ","Ne ","Ne "],
                "osnova2": " što su građani zabrinuti.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -622,7 +650,7 @@ $(document).ready(function() {
                "osnova": "",
                "osnova2": " zbog loše hrane u kantini.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -640,7 +668,7 @@ $(document).ready(function() {
                "osnova": ["Poklon ", "Poklon ", "Poklon ", "Poklon ", "Poklon ", "Poklon "],
                "osnova2": " prijateljima za rođendan.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -658,7 +686,7 @@ $(document).ready(function() {
                "osnova": ["Poruke redovito ", "Poruke redovito ", "Poruke redovito ", "Poruke redovito ", "Poruke redovito ", "Poruke redovito "],
                "osnova2": " prijateljima.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -676,7 +704,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " Zagrebu.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -694,7 +722,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " knjigu.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -712,7 +740,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " studentima koji uče.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -730,7 +758,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " drugim ljudima.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -748,7 +776,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " da će hrvatska reprezentacija pobijediti.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -766,7 +794,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " lijepim slikama.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -784,7 +812,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " novog predsjednika ili novu predsjednicu.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -802,7 +830,7 @@ $(document).ready(function() {
                "osnova": ["Ja ", "Ti ", "On ", "Mi ", "Vi ", "Oni "],
                "osnova2": " doma.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -820,7 +848,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " svaki dan.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -838,7 +866,7 @@ $(document).ready(function() {
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " svaki dan u 7 sati.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -856,7 +884,7 @@ $(document).ready(function() {
                "osnova": ["Bojama ", "Bojama ", "Bojama ", "Bojama ", "Bojama ", "Bojama "],
                "osnova2": " na papiru.",
    
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -873,7 +901,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Koga ", "Koga ", "Koga ", "Koga ", "Koga ", "Koga "],
                "osnova2": "?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -890,7 +918,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " autorima i svima koji su radili na knjizi.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -907,7 +935,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Ja ", "Ti ", "Ona ", "Mi ", "Vi ", "Oni "],
                "osnova2": " dobro za sve.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -924,7 +952,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " knjigu navečer.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -941,7 +969,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Pojačaj zvuk da bolje ", "Pojačaj zvuk da bolje ", "Pojačaj zvuk da bolje ", "Pojačaj zvuk da bolje ", "Pojačaj zvuk da bolje ", "Pojačaj zvuk da bolje "],
                "osnova2": ".",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -958,7 +986,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " kuću od provale.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -975,7 +1003,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Svake godine ", "Svake godine ", "Svake godine ", "Svake godine ", "Svake godine ", "Svake godine "],
                "osnova2": " tortu za rođendan.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -992,7 +1020,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
                "osnova2": " u kuću, ručak će biti gotov.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -1009,7 +1037,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " poslove i sastanke.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -1026,7 +1054,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kada da ", "Kada da ", "Kada da ", "Kada da ", "Kada da ", "Kada da "],
                "osnova2": " izlet s prijateljima?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -1043,7 +1071,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " na posao uvijek u isto vrijeme.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -1060,7 +1088,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kad ", "Kad ", "Kad ", "Kad ", "Kad ", "Kad "],
                "osnova2": " zadaću, profesor će ispraviti greške.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -1077,7 +1105,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Ujutro obvezno ", "Ujutro obvezno ", "Ujutro obvezno ", "Ujutro obvezno ", "Ujutro obvezno ", "Ujutro obvezno "],
                "osnova2": " cjelovite žitarice ili voće.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },
            {
@@ -1094,7 +1122,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " samo s prijateljima iz škole.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1110,7 +1138,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " serije na Netflixu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1126,7 +1154,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Danas ", "Danas ", "Danas ", "Danas ", "Danas ", "Danas "],
                "osnova2": " o zaštiti okoliša.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1142,7 +1170,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " kolica u dućanu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1158,7 +1186,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " svaki dan radi zdravlja",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1174,7 +1202,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " novi stan i novi auto.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1190,7 +1218,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Cijelu večer ", "Cijelu večer ", "Cijelu večer ", "Cijelu večer ", "Cijelu večer ", "Cijelu večer "],
                "osnova2": " društvene igre.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1206,7 +1234,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " kuću na planini.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1222,7 +1250,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Nedjeljom najčešće ", "Nedjeljom najčešće ", "Nedjeljom najčešće ", "Nedjeljom najčešće ", "Nedjeljom najčešće ", "Nedjeljom najčešće "],
                "osnova2": " meso na ražnju.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1238,7 +1266,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Svaki petak ", "Svaki petak ", "Svaki petak ", "Svaki petak ", "Svaki petak ", "Svaki petak "],
                "osnova2": " mjesto za izlazak.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1254,7 +1282,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " iz stana u 7 ujutro.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1270,7 +1298,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " puno starije zbog brade i brkova.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1286,7 +1314,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " vikendom u noćne klubove.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1302,7 +1330,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " u trgovački centar.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1318,7 +1346,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " zdravo i umjereno.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1334,7 +1362,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Zašto opet ", "Zašto opet ", "Zašto opet ", "Zašto opet ", "Zašto opet ", "Zašto opet "],
                "osnova2": "?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1350,7 +1378,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " da mudrost dolazi s godinama.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1366,7 +1394,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " se bezglutenskim brašnom za kuhanje zbog celijakije.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1382,7 +1410,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Dobro ", "Dobro ", "Dobro ", "Dobro ", "Dobro ", "Dobro "],
                "osnova2": " punjene parike i sarmu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1398,7 +1426,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " svoju malu bebu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1414,7 +1442,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Ponekad ", "Ponekad ", "Ponekad ", "Ponekad ", "Ponekad ", "Ponekad "],
                "osnova2": " previše hrane.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1430,7 +1458,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " na crni petak.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1446,7 +1474,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " avionom u Irsku.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1462,7 +1490,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " na obali Jadranskog mora.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1478,7 +1506,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " svoje dijete prije spavanja.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1494,7 +1522,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Ja često ", "Ti često ", "Ona često ", "Mi često ", "Vi često ", "Oni često "],
                "osnova2": " boju kose.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1510,7 +1538,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " da je svijet u ekološkoj opasnosti.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1526,7 +1554,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Ja ", "Ti ", "On ", "Mi ", "Vi ", "Oni "],
                "osnova2": " pomoći oko učenja hrvatskog jezika.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1542,7 +1570,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " prijatelja za pomoć oko učenja.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1558,7 +1586,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " položiti obavezne ispite za upis u sljedeću godinu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1574,7 +1602,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " kućanske poslove i kuhanje.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1590,7 +1618,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kako da ", "Kako da ", "Kako da ", "Kako da ", "Kako da ", "Kako da "],
                "osnova2": " ključeve?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1606,7 +1634,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " se lijepom vremenu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1622,7 +1650,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan "],
                "osnova2": " puno reklama u pošti.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+")",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1638,7 +1666,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " zadaću odmah nakon nastave.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1654,7 +1682,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Subotom ", "Subotom ", "Subotom ", "Subotom ", "Subotom ", "Subotom "],
                "osnova2": " pizzu za ručak.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1670,7 +1698,7 @@ $(document).ready(function() {
                ],
                "osnova": ["U knjižnici ", "U knjižnici ", "U knjižnici ", "U knjižnici ", "U knjižnici ", "U knjižnici "],
                "osnova2": " knjige preko knjižničarke.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1686,7 +1714,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Vrijeme je da ", "Vrijeme je da ", "Vrijeme je da ", "Vrijeme je da ", "Vrijeme je da ", "Vrijeme je da "],
                "osnova2": " mamu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1702,7 +1730,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " vremena za kavu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1718,7 +1746,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Zimi ", "Zimi ", "Zimi ", "Zimi ", "Zimi ", "Zimi "],
                "osnova2": " kapute, jakne, šalove, kape i rukavice.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1734,7 +1762,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " hranu i piće.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1750,7 +1778,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kako da ", "Kako da ", "Kako da ", "Kako da ", "Kako da ", "Kako da "],
                "osnova2": " zadatak iz matematike?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1766,7 +1794,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " svoje dijete.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1782,7 +1810,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan "],
                "osnova2": " čistu odjeću.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1798,7 +1826,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " previše od svoje djece.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1814,7 +1842,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " na pitanja iz testa inteligencije.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1830,7 +1858,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " iz Zagreba za vrijeme ljetnih praznika.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1846,7 +1874,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
                "osnova2": " oko godišnjeg odmora, dogovoriti ćemo sve.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1862,7 +1890,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kada se ", "Kada se ", "Kada se ", "Kada se ", "Kada se ", "Kada se "],
                "osnova2": ", nastavit će se s radom.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, , {
                "question": "popuni",
@@ -1878,7 +1906,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Zadatak je da ", "Zadatak je da ", "Zadatak je da ", "Zadatak je da ", "Zadatak je da ", "Zadatak je da "],
                "osnova2": " jedan svoj radni dan.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1894,7 +1922,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Teško ", "Teško ", "Teško ", "Teško ", "Teško ", "Teško "],
                "osnova2": " nepravdu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1910,7 +1938,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " veliku tugu zbog smrti majke.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1926,7 +1954,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Ponekad ", "Ponekad ", "Ponekad ", "Ponekad ", "Ponekad ", "Ponekad "],
                "osnova2": " jaku bol u koljenu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1942,7 +1970,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Riješit ćemo to kada ", "Riješit ćemo to kada ", "Riješit ćemo to kada ", "Riješit ćemo to kada ", "Riješit ćemo to kada ", "Riješit ćemo to kada "],
                "osnova2": " u banku.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1958,7 +1986,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Vrijeme je da ", "Vrijeme je da ", "Vrijeme je da ", "Vrijeme je da ", "Vrijeme je da ", "Vrijeme je da "],
                "osnova2": " kafić u kvartu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1974,7 +2002,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " o odluci roditelja.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -1990,7 +2018,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Zbog loše pripreme, ", "Zbog loše pripreme, ", "Zbog loše pripreme, ", "Zbog loše pripreme, ", "Zbog loše pripreme, ", "Zbog loše pripreme, "],
                "osnova2": " ispit.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2006,7 +2034,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " se u garaži.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2022,7 +2050,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Često se događa da ", "Često se događa da ", "Često se događa da ", "Često se događa da ", "Često se događa da ", "Često se događa da "],
                "osnova2": " s bicikla.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2038,7 +2066,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " na zdravlje baveći se sportom.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2054,7 +2082,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " palačinke za svoju djecu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2070,7 +2098,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Danas ", "Danas ", "Danas ", "Danas ", "Danas ", "Danas "],
                "osnova2": " test iz povijesti.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2086,7 +2114,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Svakodnevno ", "Svakodnevno ", "Svakodnevno ", "Svakodnevno ", "Svakodnevno ", "Svakodnevno "],
                "osnova2": " prijatelja kako mu je bilo na poslu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2102,7 +2130,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " 12 čaša vode dnevno.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2118,7 +2146,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " u zboru.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2134,7 +2162,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " račune internetskim bankarstvom.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2150,7 +2178,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " sa specijalnom opremom.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2166,7 +2194,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Što ", "Što ", "Što ", "Što ", "Što ", "Što "],
                "osnova2": " za vikend?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2182,7 +2210,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " robu na automatskoj blagajni.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2198,7 +2226,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Na dočeku Nove godine ", "Na dočeku Nove godine ", "Na dočeku Nove godine ", "Na dočeku Nove godine ", "Na dočeku Nove godine ", "Na dočeku Nove godine "],
                "osnova2": " ulicama grada.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2214,7 +2242,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " prsnim stilom i kraulom.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2230,7 +2258,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Čim izađe, ", "Čim izađe, ", "Čim izađe, ", "Čim izađe, ", "Čim izađe, ", "Čim izađe, "],
                "osnova2": " novu epizodu serije.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2246,7 +2274,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " sve što je na tanjuru.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2262,7 +2290,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Jedva čekam da ", "", "", "", "", ""],
                "osnova2": " svoje znanje.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2278,7 +2306,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " studentima na karti najveće hrvatske gradove.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },  {
                "question": "popuni",
@@ -2294,7 +2322,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " djeci poklone za Božić.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2310,7 +2338,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Svake godine ", "", "", "", "", ""],
                "osnova2": " mami veliki buket ruža za rođendan.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2326,7 +2354,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " prijatelju graditi kuću.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2342,7 +2370,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kako da ", "Kako da ", "Kako da ", "Kako da ", "Kako da ", "Kako da "],
                "osnova2": " oko preuređenja stana?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2358,7 +2386,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Danas na hrvatskome ", "Danas na hrvatskome ", "Danas na hrvatskome ", "Danas na hrvatskome ", "Danas na hrvatskome ", "Danas na hrvatskome "],
                "osnova2": " padeže.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2374,7 +2402,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Ako povijest ", "Ako povijest ", "Ako povijest ", "Ako povijest ", "Ako povijest ", "Ako povijest "],
                "osnova2": " na vrijeme, ispit će bit lagan.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2390,7 +2418,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Uvijek ", "Uvijek ", "Uvijek ", "Uvijek ", "Uvijek ", "Uvijek "],
                "osnova2": " gostu kavu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2406,7 +2434,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Svako jutro ", "", "", "", "", ""],
                "osnova2": " zeleni čaj.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2422,7 +2450,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " napuštenu djecu u domu za siročad.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2438,7 +2466,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
                "osnova2": " susjedu, ona se veseli.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2454,7 +2482,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Rekao je da ", "Rekao je da ", "Rekao je da ", "Rekao je da ", "Rekao je da ", "Rekao je da "],
                "osnova2": " poruku na Gmail.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2470,7 +2498,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
                "osnova2": ", sve je dogovoreno.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2486,7 +2514,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kakav ugovor ", "Kakav ugovor ", "Kakav ugovor ", "Kakav ugovor ", "Kakav ugovor ", "Kakav ugovor "],
                "osnova2": " s bankama?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2502,7 +2530,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " prozore kada je vani sunčano.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2518,7 +2546,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Danas ", "Danas ", "Danas ", "Danas ", "Danas ", "Danas "],
                "osnova2": " s roditeljima na roditeljskom sastanku.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2534,7 +2562,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Da ", "Da ", "Da ", "Da ", "Da ", "Da "],
                "osnova2": " otpjevati pjesmu još jedanput?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2550,7 +2578,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kad ", "Kad ", "Kad ", "Kad ", "Kad ", "Kad "],
                "osnova2": " ovu knjigu, posudit će se nova.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2566,7 +2594,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Nikako da ", "Nikako da ", "Nikako da ", "Nikako da ", "Nikako da ", "Nikako da "],
                "osnova2": " svoj auto.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2582,7 +2610,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " nošenu odjeću u trgovini za rabljenu odjeću.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2598,7 +2626,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kažu da ", "Kažu da ", "Kažu da ", "Kažu da ", "Kažu da ", "Kažu da "],
                "osnova2": " svoju prehranu i životne navike.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2614,7 +2642,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " kutiju cigareta dnevno.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2630,7 +2658,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Avionom ", "Avionom ", "Avionom ", "Avionom ", "Avionom ", "Avionom "],
                "osnova2": " u New York.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2646,7 +2674,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kako da ", "Kako da ", "Kako da ", "Kako da ", "Kako da ", "Kako da "],
                "osnova2": " u ovim uvjetima?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2662,7 +2690,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Što da ", "Što da ", "Što da ","Što da ", "Što da ", "Što da "],
                "osnova2": " poslije posla?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2678,7 +2706,7 @@ $(document).ready(function() {
                ],
                "osnova": ["S prijateljima ", "S prijateljima ", "S prijateljima ", "S prijateljima ", "S prijateljima ", "S prijateljima "],
                "osnova2": " o poslu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2694,7 +2722,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " kvalitetno od nekvalitetnog vina.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2710,7 +2738,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Ponekad ", "Ponekad ", "Ponekad ", "Ponekad ", "Ponekad ", "Ponekad "],
                "osnova2": " o svojem ponašanju.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2726,7 +2754,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Ne ", "Ne ", "Ne ", "Ne ", "Ne ", "Ne "],
                "osnova2": " hrvatski.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2742,7 +2770,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Bit će kako ", "Bit će kako ", "Bit će kako ", "Bit će kako ", "Bit će kako ", "Bit će kako "],
                "osnova2": ".",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2758,7 +2786,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " na dah, bez kisika.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2774,7 +2802,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " u dva sata.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2790,7 +2818,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " o osvajanju prvenstva.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2806,7 +2834,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Sutra se ", "Sutra se ", "Sutra se ", "Sutra se ", "Sutra se ", "Sutra se "],
                "osnova2": " iz stana u kuću.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2822,7 +2850,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " svog prvog poljubca.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2838,7 +2866,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Cijelu večer ", "Cijelu večer ", "Cijelu večer ", "Cijelu večer ", "Cijelu večer ", "Cijelu večer "],
                "osnova2": " pred televizorom.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2854,7 +2882,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " svoje mladost.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2870,7 +2898,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan "],
                "osnova2": " životopise za posao.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2886,7 +2914,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " rođendan u petak.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2902,7 +2930,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Ja ", "Ti ", "Ona", "Mi", "Vi", "Oni"],
                "osnova2": " akvarele s motivima mora.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2918,7 +2946,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kakvu glazbu ", "Kakvu glazbu ", "Kakvu glazbu ", "Kakvu glazbu ", "Kakvu glazbu ", "Kakvu glazbu "],
                "osnova2": "?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2934,7 +2962,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " komičarima.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2950,7 +2978,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " li ovdje pušiti?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2966,7 +2994,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Svaku večer ", "Svaku večer ", "Svaku večer ", "Svaku večer ", "Svaku večer ", "Svaku večer "],
                "osnova2": " u isto vrijeme.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2982,7 +3010,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " stan svaki vikend.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -2998,7 +3026,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan "],
                "osnova2": " odjeću u ormar.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3014,7 +3042,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " na trinaestom katu nebodera u Novom Zagrebu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },  {
                "question": "popuni",
@@ -3030,7 +3058,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Ja ", "Ti ", "Ona ", "Mi ", "Vi ", "Oni "],
                "osnova2": " dva jaja u smjesu za palačinke.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3046,7 +3074,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " nove slike na zidove.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3062,7 +3090,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " kroatistiku i povijest.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3078,7 +3106,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " li gitaru?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3094,7 +3122,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " na 1. april.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3110,7 +3138,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Koliko puta na dan ", "Koliko puta na dan ", "Koliko puta na dan ", "Koliko puta na dan ", "Koliko puta na dan ", "Koliko puta na dan "],
                "osnova2": " psa?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3126,7 +3154,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " novac u banci.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3142,7 +3170,7 @@ $(document).ready(function() {
                ],
                "osnova": ["U knjižnici ", "U knjižnici ", "U knjižnici ", "U knjižnici ", "U knjižnici ", "U knjižnici "],
                "osnova2": " kako bi ostali mogli učiti.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3158,7 +3186,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Ne ", "Ne ", "Ne ", "Ne ", "Ne ", "Ne "],
                "osnova2": " unutar stranih zemalja jer je skuplje.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3174,7 +3202,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Još ", "Još ", "Još ", "Još ", "Još ", "Još "],
                "osnova2": " nestale čarape.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3190,7 +3218,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " na Savskom nasipu tri puta na tjedan.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3206,7 +3234,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " novi posao.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3222,7 +3250,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " košarku utorkom i četvrtkom.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3238,7 +3266,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " novac na cipele i torbe.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3254,7 +3282,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Mikserom ", "Mikserom ", "Mikserom ", "Mikserom ", "Mikserom ", "Mikserom "],
                "osnova2": " vrhnje.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3270,7 +3298,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
                "osnova2": " na fakultet, red za informacije je desno.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3286,7 +3314,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Što da ", "Što da ", "Što da ", "Što da ", "Što da ", "Što da "],
                "osnova2": " da se spase ozljeđeni u nesreći?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3302,7 +3330,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Jezik ", "Jezik ", "Jezik ", "Jezik ", "Jezik ", "Jezik "],
                "osnova2": " cijeli život.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3318,7 +3346,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " u vlak.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3334,7 +3362,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Čekam dan da ", "Čekam dan da ", "Čekam dan da ", "Čekam dan da ", "Čekam dan da ", "Čekam dan da "],
                "osnova2": " moje roditelje.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3350,7 +3378,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Na izletu ", "Na izletu ", "Na izletu ", "Na izletu ", "Na izletu ", "Na izletu "],
                "osnova2": " nove ljude.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3366,7 +3394,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan "],
                "osnova2": " u 7 sati.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3382,7 +3410,7 @@ $(document).ready(function() {
                ],
                "osnova": ["U srijedu ", "U srijedu ", "U srijedu ", "U srijedu ", "U srijedu ", "U srijedu "],
                "osnova2": " ranije.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3398,7 +3426,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Često sa sobom ", "Često sa sobom ", "Često sa sobom ", "Često sa sobom ", "Često sa sobom ", "Često sa sobom "],
                "osnova2": " kišobran u slučaju kiše.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3414,7 +3442,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " lijekove zbog prehlade.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3430,7 +3458,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " na ljetnim praznicima.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3446,7 +3474,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Što obično ", "Što obično ", "Što obično ", "Što obično ","Što obično ", "Što obično "],
                "osnova2": "?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3462,7 +3490,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " se suncu i moru.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3478,7 +3506,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Ne ", "Ne ", "Ne ", "Ne ", "Ne ", "Ne "],
                "osnova2": " dobro.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3494,7 +3522,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Jedva čekam da se ", "Jedva čekam da se ", "Jedva čekam da se ", "Jedva čekam da se ", "Jedva čekam da se ", "Jedva čekam da se "],
                "osnova2": ".",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3510,7 +3538,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": "li u Boga?",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3526,7 +3554,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " pikantnu hranu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3542,7 +3570,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " veliki kamion.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3558,7 +3586,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Upravo ", "Upravo ", "Upravo ", "Upravo ", "Upravo ", "Upravo "],
                "osnova2": " posuđenu olovku.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3574,7 +3602,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Uglavnom ", "Uglavnom ", "Uglavnom ", "Uglavnom ", "Uglavnom ", "Uglavnom "],
                "osnova2": " knjige u knjižnicu na vrijeme.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3590,7 +3618,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " teške kofere po aerodromu.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3606,7 +3634,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " loše stvari.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3622,7 +3650,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Nikad ne ", "Nikad ne ", "Nikad ne ", "Nikad ne ", "Nikad ne ", "Nikad ne "],
                "osnova2": " svoje drage prijatelje.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3638,7 +3666,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " se za novi posao.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            },  {
                "question": "popuni",
@@ -3654,7 +3682,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
                "osnova2": " klub, ljudi će otići doma.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3670,7 +3698,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " ručak.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3685,8 +3713,8 @@ $(document).ready(function() {
                    "završe"
                ],
                "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
-               "osnova2": "zadaću, što ćemo?",
-               "boja_pozadine": "#FCE4EC",
+               "osnova2": " zadaću, što ćemo?",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3702,7 +3730,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Njima puno ", "Njima puno ", "Njima puno ", "Njima puno ", "Njima puno ", "Njima puno "],
                "osnova2": ".",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3718,7 +3746,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " kuhati i pjevati.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3734,7 +3762,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan "],
                "osnova2": " majku.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3750,7 +3778,7 @@ $(document).ready(function() {
                ],
                "osnova": ["Stalno se ", "Stalno se ", "Stalno se ", "Stalno se ", "Stalno se ", "Stalno se "],
                "osnova2": "!",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3766,7 +3794,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " da ljudi više brinu o prirodi.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3782,7 +3810,7 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " dobro i sretno.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }, {
                "question": "popuni",
@@ -3798,13 +3826,12 @@ $(document).ready(function() {
                ],
                "osnova": ["", "", "", "", "", ""],
                "osnova2": " s projektom jer je <em>deadline</em> prekosutra.",
-               "boja_pozadine": "#FCE4EC",
+               "boja_pozadine": "rgba("+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+","+Math.floor((Math.random() * 256))+",0.2)",
                "time": 20,
            }
        ];
     prezent = p1
-    shuffle(prezent)
-    prezent=prezent.slice(0,20)
+
 });
 
 function touchHandler(event) {
