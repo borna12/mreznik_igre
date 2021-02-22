@@ -705,6 +705,7 @@ $(document).ready(function() {
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         },
+        /*nastavak */
         {
             "question": "popuni",
             "hint": "pisati (engl. to write)",
@@ -1016,7 +1017,7 @@ $(document).ready(function() {
                 "dođete",
                 "dođu"
             ],
-            "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
+            "osnova": ["Kad ", "Kad ", "Kad ", "Kad ", "Kad ", "Kad "],
             "osnova2": " u kuću, ručak će biti gotov.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -1438,7 +1439,7 @@ $(document).ready(function() {
                 "kupite",
                 "kupe"
             ],
-            "osnova": ["Ponekad ", "Ponekad ", "Ponekad ", "Ponekad ", "Ponekad ", "Ponekad "],
+            "osnova": ["Katkad ", "Katkad ", "Katkad ", "Katkad ", "Katkad ", "Katkad "],
             "osnova2": " previše hrane.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -1655,15 +1656,15 @@ $(document).ready(function() {
             "hint": "napisati (engl. to write)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "Napišem",
-                "Napišeš",
-                "Napiše",
-                "Napišemo",
-                "Napišete",
-                "Napišu"
+                "napišem",
+                "napišeš",
+                "napiše",
+                "napišemo",
+                "napišete",
+                "napišu"
             ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": " zadaću odmah nakon nastave.",
+            "osnova": ["Kad ", "Kad ", "Kad ", "Kad ", "Kad ", "Kad "],
+            "osnova2": " zadaću, nema više obveza.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -1950,7 +1951,7 @@ $(document).ready(function() {
                 "osjetite",
                 "osjete"
             ],
-            "osnova": ["Ponekad ", "Ponekad ", "Ponekad ", "Ponekad ", "Ponekad ", "Ponekad "],
+            "osnova": ["Katkad ", "Katkad ", "Katkad ", "Katkad ", "Katkad ", "Katkad "],
             "osnova2": " jaku bol u koljenu.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -2366,8 +2367,8 @@ $(document).ready(function() {
                 "pomognete",
                 "pomognu"
             ],
-            "osnova": ["Kako da ", "Kako da ", "Kako da ", "Kako da ", "Kako da ", "Kako da "],
-            "osnova2": " oko preuređenja stana?",
+            "osnova": ["Kako da mu", "Kako da mu", "Kako da mu", "Kako da mu", "Kako da mu", "Kako da mu"],
+            "osnova2": " riješiti probleme?",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -2511,12 +2512,12 @@ $(document).ready(function() {
                 "potpisuju"
             ],
             "osnova": ["Kakav ugovor ", "Kakav ugovor ", "Kakav ugovor ", "Kakav ugovor ", "Kakav ugovor ", "Kakav ugovor "],
-            "osnova2": " s bankama?",
+            "osnova2": " s bankom?",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "prati (se) (engl. to wash)",
+            "hint": "prati (engl. to wash)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Perem",
@@ -2734,7 +2735,7 @@ $(document).ready(function() {
                 "razmislite",
                 "razmisle"
             ],
-            "osnova": ["Ponekad ", "Ponekad ", "Ponekad ", "Ponekad ", "Ponekad ", "Ponekad "],
+            "osnova": ["Katkad ", "Katkad ", "Katkad ", "Katkad ", "Katkad ", "Katkad "],
             "osnova2": " o svojem ponašanju.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -3071,7 +3072,7 @@ $(document).ready(function() {
                 "Stavljaju"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " nove slike na zidove.",
+            "osnova2": " nove slike na zid.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -3215,7 +3216,7 @@ $(document).ready(function() {
                 "Trče"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " na Savskom nasipu tri puta na tjedan.",
+            "osnova2": " Savskim nasipom triput tjedno.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -3791,7 +3792,7 @@ $(document).ready(function() {
                 "Žele"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " da ljudi više brinu o prirodi.",
+            "osnova2": " da se ljudi više brinu o prirodi.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
