@@ -51,6 +51,7 @@ var initPage,
     pogreske = [],
     vrijeme = 0;
 
+
 function ProgressCountdown(timeleft, bar, text) {
     return new Promise((resolve, reject) => {
         countdownTimer = setInterval(() => {
@@ -75,42 +76,11 @@ $(document).ready(function() {
         }
     });
 
-    $(".sadrzaj").click(function() {
-        sadrzaj = jQuery(this).attr("id")
-        if (sadrzaj == "imenice") { sadrzaj1 = "p1" } else if (sadrzaj == "glagoli") { sadrzaj1 = "p2" } else if (sadrzaj == "pridjevi") { sadrzaj1 = "p3" } else if (sadrzaj == "mijesano") { sadrzaj1 = "p3.concat(p1).concat(p2)" }
-        $(".sadrzaj").hide()
-        $("#opis").text("odaberi vokabular")
-        $(".kategorija").show()
-    })
-    $(".kategorija").click(function() {
-        kategorija = jQuery(this).attr("id")
-        let myScript = document.createElement("script");
-        myScript.setAttribute("src", "js/" + kategorija + "_" + sadrzaj + ".js");
-        document.body.prepend(myScript);
-        $("#opis").text("odaberi broj pitanja")
-        $(".kategorija").hide()
-        $(".broj").show()
-        if (kategorija == "stranci" && sadrzaj1 == "p3") {
-            $("#100pitanja").hide();
-            $("#50pitanja").hide()
-        }
-        if (kategorija == "stranci" && sadrzaj1 == "p1") { $("#100pitanja").hide(); }
-        if (kategorija == "djeca" && sadrzaj1 == "p3") {
-            $("#100pitanja").hide();
-            $("#50pitanja").hide()
-        }
-    })
+
+
 
     $(".broj").click(function() {
-        if (sadrzaj1 == "p1") { prezent = p1 } else if (sadrzaj1 == "p2") { prezent = p1 } else if (sadrzaj1 == "p3") { prezent = p1 } else if (sadrzaj1 == "p3.concat(p1).concat(p2)") {
-            shuffle(p1)
-            p1 = p1.slice(0, 50)
-            shuffle(p2)
-            p2 = p2.slice(0, 50)
-            shuffle(p3)
-            p3 = p3.slice(0, 50)
-            prezent = p3.concat(p1).concat(p2)
-        }
+        prezent = p1
         pitanja = jQuery(this).attr("id")
         if (pitanja == "20pitanja") {
             shuffle(prezent)
@@ -239,12 +209,15 @@ $(document).ready(function() {
         if (prekidac == 1 && iskljuci_v == 0) {
             ProgressCountdown(tajming, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => odgovor());
         }
-        $("#osnova2").text(prezent[questionCounter].definicija)
 
-        if (prezent[questionCounter].correctAnswer[0].length > 2) {
-            $("#oblik").html("<br> prvo slovo odgovora je: " + prezent[questionCounter].correctAnswer[0][0].toLowerCase() + "<br>broj slova: " + prezent[questionCounter].correctAnswer[0].length)
+
+
+        $("#osnova2").text(prezent[questionCounter].split(" = ")[0])
+
+        if (prezent[questionCounter].split(" = ")[1].length > 2) {
+            $("#oblik").html("<br> prvo slovo odgovora je: " + prezent[questionCounter].split(" = ")[1][0].toLowerCase() + "<br>broj slova: " + prezent[questionCounter].split(" = ")[1].length)
         } else {
-            $("#oblik").html("broj slova: " + prezent[questionCounter].correctAnswer[0].length)
+            $("#oblik").html("broj slova: " + prezent[questionCounter].split(" = ")[1].length)
         }
         //$(".slikica").attr("src", "slike/" + prezent[questionCounter].slika)
 
@@ -261,7 +234,7 @@ $(document).ready(function() {
 
     // Store the correct answer of a given question
     getCorrectAnswer = function() {
-        correctAnswer = prezent[questionCounter].correctAnswer;
+        correctAnswer = prezent[questionCounter].split(" = ")[1];
     };
 
     // Store the user's selected (clicked) answer
@@ -361,31 +334,18 @@ $(document).ready(function() {
         }
         clearInterval(countdownTimer);
         if (document.getElementById("pageBeginCountdown").value == "0" && iskljuci_v == 0) {
-            pogreske.push("<strong>" + prezent[questionCounter].correctAnswer[0] + "</strong>" + prezent[questionCounter].definicija)
+            pogreske.push("<strong>" + prezent[questionCounter].split(" = ")[1] + "</strong>" + prezent[questionCounter].split(" = ")[0])
             bodovi -= 10;
             $("#zvono")[0].play();
-            if (prezent[questionCounter].correctAnswer[1].length == 0) {
-                swal({
-                    title: "Isteklo je vrijeme.",
-                    html: "<p class='dodatak'><strong>Točan odgovor je: <span class='nastavak'>" + prezent[questionCounter].correctAnswer[0] + "</span></strong>" + prezent[questionCounter].definicija + "<br></p><br><img src='slike/vrijeme.png'class='slikica2'/>",
-                    showCloseButton: true,
-                    confirmButtonText: ' dalje',
-                    backdrop: false,
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                });
-            } else {
-                swal({
-                    title: "Isteklo je vrijeme.",
-                    html: "<p class='dodatak'><strong>Točani odgovori su: <span class='nastavak'>" + prezent[questionCounter].correctAnswer[0] + "</span> " + prezent[questionCounter].definicija + ", <span class='nastavak'>" + prezent[questionCounter].correctAnswer[1] + " </strong>" + prezent[questionCounter].definicija + "<br></p><br><img src='slike/vrijeme.png'class='slikica2'/>",
-                    showCloseButton: true,
-                    confirmButtonText: ' dalje',
-                    backdrop: false,
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                });
-            }
-
+            swal({
+                title: "Isteklo je vrijeme.",
+                html: "<p class='dodatak'><strong>Točan odgovor je: <span class='nastavak'>" + prezent[questionCounter].split(" = ")[1] + "</span></strong> = " + prezent[questionCounter].split(" = ")[0] + "<br></p><br><img src='slike/vrijeme.png'class='slikica2'/>",
+                showCloseButton: true,
+                confirmButtonText: ' dalje',
+                backdrop: false,
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+            });
 
             $(".swal2-confirm").unbind("click").click(function() {
                 clearInterval(countdownTimer)
@@ -402,7 +362,7 @@ $(document).ready(function() {
                 }
             })
         } else {
-            if ($("#odgovor").val().toLowerCase() == prezent[questionCounter].correctAnswer[0].toLowerCase() || $("#odgovor").val().toLowerCase() == prezent[questionCounter].correctAnswer[1].toLowerCase()) {
+            if ($("#odgovor").val().toLowerCase() == prezent[questionCounter].split(" = ")[1].toLowerCase()) {
                 // Increment the total correct answers counter
                 correctAnswersCounter++;
                 bodovi += 10;
@@ -440,36 +400,22 @@ $(document).ready(function() {
                 })
 
             } else {
-                pogreske.push("<b>" + prezent[questionCounter].correctAnswer[0] + "</b>" + prezent[questionCounter].definicija)
+                pogreske.push("<b>" + prezent[questionCounter].split(" = ")[1] + "</b>" + prezent[questionCounter].split(" = ")[0])
                 bodovi -= 10;
-                if (prezent[questionCounter].correctAnswer[1].length == 0) {
-                    $("#odgovor").val('')
+                $("#odgovor").val('')
 
-                    $("#pogresno")[0].play()
-                    swal({
-                        title: "Netočno",
-                        html: "<p class='dodatak'><strong>Točan odgovor je: <span class='nastavak'>" + prezent[questionCounter].correctAnswer[0] + "</span>" + prezent[questionCounter].definicija + "</strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
-                        showCloseButton: true,
-                        confirmButtonText: ' dalje',
-                        backdrop: false,
-                        allowOutsideClick: false,
-                        allowEscapeKey: false,
+                $("#pogresno")[0].play()
+                swal({
+                    title: "Netočno",
+                    html: "<p class='dodatak'><strong>Točan odgovor je: <span class='nastavak'>" + prezent[questionCounter].split(" = ")[1] + "</span> = " + prezent[questionCounter].split(" = ")[0] + "</strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
+                    showCloseButton: true,
+                    confirmButtonText: ' dalje',
+                    backdrop: false,
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
 
-                    });
-                } else {
-                    $("#odgovor").val('')
+                });
 
-                    swal({
-                        title: "Netočno",
-                        html: "<p class='dodatak'><strong>Točni odgovori mogu biti: <span class='nastavak'>" + prezent[questionCounter].correctAnswer[0] + "</span>" + prezent[questionCounter].definicija + ", <span class='nastavak'>" + prezent[questionCounter].correctAnswer[1] + "</span>" + prezent[questionCounter].definicija + "</strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
-                        showCloseButton: true,
-                        confirmButtonText: ' dalje',
-                        backdrop: false,
-                        allowOutsideClick: false,
-                        allowEscapeKey: false,
-
-                    });
-                }
 
 
 
