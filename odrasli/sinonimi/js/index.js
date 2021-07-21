@@ -339,7 +339,7 @@ $(document).ready(function() {
             $("#zvono")[0].play();
             swal({
                 title: "Isteklo je vrijeme.",
-                html: "<p class='dodatak'><strong>Točan odgovor je: <span class='nastavak'>" + prezent[questionCounter].split(" = ")[1] + "</span></strong> = " + prezent[questionCounter].split(" = ")[0] + "<br></p><br><img src='slike/vrijeme.png'class='slikica2'/>",
+                html: "<p class='dodatak'>Točan odgovor je: <span class='nastavak'>" + prezent[questionCounter].split(" = ")[1] + "</span> = " + prezent[questionCounter].split(" = ")[0] + "<br></p><br><img src='slike/vrijeme.png'class='slikica2'/>",
                 showCloseButton: true,
                 confirmButtonText: ' dalje',
                 backdrop: false,
@@ -407,7 +407,7 @@ $(document).ready(function() {
                 $("#pogresno")[0].play()
                 swal({
                     title: "Netočno",
-                    html: "<p class='dodatak'><strong>Točan odgovor je: <span class='nastavak'>" + prezent[questionCounter].split(" = ")[1] + "</span> = " + prezent[questionCounter].split(" = ")[0] + "</strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
+                    html: "<p class='dodatak'>Točan odgovor je: <span class='nastavak'>" + prezent[questionCounter].split(" = ")[1] + "</span> = " + prezent[questionCounter].split(" = ")[0] + "<br></p><br><img src='slike/krivo.png' class='slikica2'/>",
                     showCloseButton: true,
                     confirmButtonText: ' dalje',
                     backdrop: false,
