@@ -621,7 +621,7 @@ $(document).ready(function () {
             }
             $("#pogreske").click(function () {
                 swal({
-                    title: "riječi koje ste pogriješili u igri:",
+                    title: "pogreške:",
                     html: "" + pogreske.join(", "),
                     showCloseButton: true,
                     confirmButtonText: ' zatvori ',

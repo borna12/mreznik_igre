@@ -607,7 +607,7 @@ $(document).ready(function() {
             questionsPage.hide();
             resultsPage.show(300);
             // Display user score as a percentage
-            userScore.text(Math.floor((correctAnswersCounter / prezent.length) * 100) + "%");
+            userScore.text(Math.floor((correctAnswersCounter / prezent.length) * 100) + " %");
             prikazBodova.text(bodovi);
 
             $("#60656686").attr("value", bodovi)

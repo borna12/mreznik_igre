@@ -215,7 +215,7 @@ $(document).ready(function() {
         $("#osnova2").text(prezent[questionCounter].split(" = ")[0])
 
         if (prezent[questionCounter].split(" = ")[1].length > 2) {
-            $("#oblik").html("<br> prvo slovo odgovora je: " + prezent[questionCounter].split(" = ")[1][0].toLowerCase() + "<br>broj slova: " + prezent[questionCounter].split(" = ")[1].length)
+            $("#oblik").html("<br> Prvo slovo odgovora: " + prezent[questionCounter].split(" = ")[1][0].toLowerCase() + "<br>broj slova: " + prezent[questionCounter].split(" = ")[1].length)
         } else {
             $("#oblik").html("broj slova: " + prezent[questionCounter].split(" = ")[1].length)
         }
@@ -334,7 +334,7 @@ $(document).ready(function() {
         }
         clearInterval(countdownTimer);
         if (document.getElementById("pageBeginCountdown").value == "0" && iskljuci_v == 0) {
-            pogreske.push("<strong>" + prezent[questionCounter].split(" = ")[1] + "</strong>" + prezent[questionCounter].split(" = ")[0])
+            pogreske.push("<strong>" + prezent[questionCounter].split(" = ")[1] + "</strong> = " + prezent[questionCounter].split(" = ")[0])
             bodovi -= 10;
             $("#zvono")[0].play();
             swal({
@@ -400,7 +400,7 @@ $(document).ready(function() {
                 })
 
             } else {
-                pogreske.push("<b>" + prezent[questionCounter].split(" = ")[1] + "</b>" + prezent[questionCounter].split(" = ")[0])
+                pogreske.push("<strong>" + prezent[questionCounter].split(" = ")[1] + "</strong> = " + prezent[questionCounter].split(" = ")[0])
                 bodovi -= 10;
                 $("#odgovor").val('')
 
@@ -460,7 +460,7 @@ $(document).ready(function() {
             questionsPage.hide();
             resultsPage.show(300);
             // Display user score as a percentage
-            userScore.text(Math.floor((correctAnswersCounter / prezent.length) * 100) + "%");
+            userScore.text(Math.floor((correctAnswersCounter / prezent.length) * 100) + " %");
             prikazBodova.text(bodovi);
             //obrazac za pohranu
             if (kategorija == "djeca") {
@@ -486,7 +486,7 @@ $(document).ready(function() {
             }
             $("#pogreske").click(function() {
                 swal({
-                    title: "riječi koje ste pogriješili u igri:",
+                    title: "pogreške:",
                     html: "" + pogreske.join("<br>"),
                     showCloseButton: true,
                     confirmButtonText: ' zatvori ',

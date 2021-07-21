@@ -628,7 +628,7 @@ $(document).ready(function () {
             questionsPage.hide();
             resultsPage.show(300);
             // Display user score as a percentage
-            userScore.text(Math.floor((correctAnswersCounter / prezent.length) * 100) + "%");
+            userScore.text(Math.floor((correctAnswersCounter / prezent.length) * 100) + " %");
             prikazBodova.text(bodovi);
             
             if(kategorija=="djeca"){
@@ -665,7 +665,7 @@ $(document).ready(function () {
             }
             $("#pogreske").click(function () {
                 swal({
-                    title: "riječi koje ste pogriješili u igri:",
+                    title: "pogreške:",
                     html: "" + pogreske.join(", "),
                     showCloseButton: true,
                     confirmButtonText: ' zatvori ',

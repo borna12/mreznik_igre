@@ -242,7 +242,7 @@ $(document).ready(function() {
         $("#osnova2").text(prezent[questionCounter].definicija)
 
         if (prezent[questionCounter].correctAnswer[0].length > 2) {
-            $("#oblik").html("<br> prvo slovo odgovora je: " + prezent[questionCounter].correctAnswer[0][0].toLowerCase() + "<br>broj slova: " + prezent[questionCounter].correctAnswer[0].length)
+            $("#oblik").html("<br> Prvo slovo odgovora: " + prezent[questionCounter].correctAnswer[0][0].toLowerCase() + "<br>broj slova: " + prezent[questionCounter].correctAnswer[0].length)
         } else {
             $("#oblik").html("broj slova: " + prezent[questionCounter].correctAnswer[0].length)
         }
@@ -514,7 +514,7 @@ $(document).ready(function() {
             questionsPage.hide();
             resultsPage.show(300);
             // Display user score as a percentage
-            userScore.text(Math.floor((correctAnswersCounter / prezent.length) * 100) + "%");
+            userScore.text(Math.floor((correctAnswersCounter / prezent.length) * 100) + " %");
             prikazBodova.text(bodovi);
             //obrazac za pohranu
             if (kategorija == "djeca") {
@@ -540,7 +540,7 @@ $(document).ready(function() {
             }
             $("#pogreske").click(function() {
                 swal({
-                    title: "riječi koje ste pogriješili u igri:",
+                    title: "pogreške:",
                     html: "" + pogreske.join("<br>"),
                     showCloseButton: true,
                     confirmButtonText: ' zatvori ',
