@@ -7,11 +7,10 @@
     <meta charset="utf-8">
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     <meta name="description" content="Upiši ispravan nastavak za osnovu glagola na temlju zadanog oblika.">
-    <meta name="author" content="Josip Mihaljević, Mario Marković">
+    <meta name="author" content="Josip Mihaljević">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Flamenco|Asap:400,700' rel='stylesheet'
-        type='text/css'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Flamenco|Asap:400,700' rel='stylesheet' type='text/css'>
     <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -41,13 +40,13 @@
 </head>
 
 <body>
-      <audio class="audios" id="tocno" preload="none">
+    <audio class="audios" id="tocno" preload="none">
                 <source src="zvuk/tocno.mp3" type="audio/mpeg">
             </audio>
-        <audio class="audios" id="pogresno" preload="none">
+    <audio class="audios" id="pogresno" preload="none">
             <source src="zvuk/krivo.mp3" type="audio/mpeg">
         </audio>
-        <audio class="audios" id="zvono" preload="none">
+    <audio class="audios" id="zvono" preload="none">
                 <source src="zvuk/zvono.mp3" type="audio/mpeg">
             </audio>
 
@@ -67,21 +66,21 @@
         </div>
     </div>
     <div class="questions-page ">
-          
+
         <div class="container container2">
             <h2 class="questions-page__question"></h2>
-            <img class="init-page__icon slikica" src="/slike/uvodna.png"/>
+            <img class="init-page__icon slikica" src="/slike/uvodna.png" />
             <div class="popuni">
-                    <h2 id="glagol"></h2><br>
-                    <h3 id="oblik"></h3>
-                   <p class="ispunjavanje"> <span id="osnova"></span><input type="text" id="odgovor" placeholder="..." onkeyup = "if (event.keyCode == 13){ $('.mrzim').click();}" autofocus><span id="osnova2"></span></p>
-                </div>
+                <h2 id="glagol"></h2><br>
+                <h3 id="oblik"></h3>
+                <p class="ispunjavanje"> <span id="osnova"></span><input type="text" id="odgovor" placeholder="..." onkeyup="if (event.keyCode == 13){ $('.mrzim').click();}" autofocus><span id="osnova2"></span></p>
+            </div>
             <div class="row begin-countdown">
                 <div class="col-md-12 text-center vrijeme">
                 </div>
             </div>
 
-            
+
             <ul class="questions-page__answer-list">
                 <!--  Letter A  -->
                 <!--  Answer div  -->
@@ -146,24 +145,23 @@
     transition: translate (-50%);
     transform: translateY(-50%);">
             <h3 class="results-page__info2">Hvala Vam na sudjelovanju u kvizu!</h3><br>
-            <p class="results-page__info">Odgovorili ste točno na <span class="results-page__score">100%</span>
-                postavljenih pitanja.</p>
+            <p class="results-page__info">Odgovorili ste točno na <span class="results-page__score">100%</span> postavljenih pitanja.</p>
             <br>
-            <p class="results-page__info">S obzirom na količinu točnih odgovora i vrijeme ostvarili ste idući broj
-                bodova:</p>
+            <p class="results-page__info">S obzirom na količinu točnih odgovora i vrijeme ostvarili ste idući broj bodova:
+            </p>
             <h3 class="results-page__bodovi">postavljenih pitanja!</h3>
-<p>Možete ponoviti igru jer zadatci će bit drukčiji.</p>
+            <p>Možete ponoviti igru jer zadatci će bit drukčiji.</p>
             <br>
             <p>
-                
+
                 <button class="results-page__retake-btn btn">ponovite igru</button>
                 <script src="js/emoji.js" charset="utf-8"></script>
                 <script src="js/jquery.form.js"></script>
-                  <script src="js/index.js"></script>
-                
+                <script src="js/index.js"></script>
+
         </div>
     </div>
-   
+
 
 
 </body>

@@ -527,7 +527,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "veseliti se (engl. to be happy)",
+            "hint": "veseliti se (engl. to be happy, to look forward to)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Veselim se",
@@ -545,7 +545,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "zahvaljivati (engl. to be thankful)",
+            "hint": "zahvaljivati (engl. to thank)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Zahvaljujem",
@@ -563,7 +563,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "pokloniti (engl. to give, to donate)",
+            "hint": "pokloniti (engl. to give)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Poklanjam",
@@ -581,7 +581,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "radovati se (engl. to look forward to)",
+            "hint": "radovati se (engl. to be happy, to look forward to)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Radujem se",
@@ -617,7 +617,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "čuditi se (engl. to wonder)",
+            "hint": "čuditi se (engl. to be surprised)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "čudim se",
@@ -681,8 +681,8 @@ $(document).ready(function() {
                 "šaljete",
                 "šalju"
             ],
-            "osnova": ["Poruke redovito ", "Poruke redovito ", "Poruke redovito ", "Poruke redovito ", "Poruke redovito ", "Poruke redovito "],
-            "osnova2": " prijateljima.",
+            "osnova": ["Redovito ", "Redovito ", "Redovito ", "Redovito ", "Redovito ", "Redovito "],
+            "osnova2": " poruke prijateljima.",
 
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -726,7 +726,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "smetati (engl. to bother)",
+            "hint": "smetati (engl. to disturb)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Smetam",
@@ -744,7 +744,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "vjerovati (engl. to belive)",
+            "hint": "vjerovati (engl. to believe)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Vjerujem",
@@ -827,43 +827,43 @@ $(document).ready(function() {
                 "su"
             ],
             "osnova": ["Ja ", "Ti ", "On ", "Mi ", "Vi ", "Oni "],
-            "osnova2": " doma.",
+            "osnova2": " kod kuće.",
 
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         },
         {
             "question": "popuni",
-            "hint": "brijati se (engl. to shave)",
+            "hint": "brijati (se) (engl. to shave)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "Brijem se",
-                "Briješ se",
-                "Brije se",
-                "Brijemo se",
-                "Brijete se",
-                "Briju se"
+                "Brijem",
+                "Briješ",
+                "Brije",
+                "Brijemo",
+                "Brijete",
+                "Briju"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " svaki dan.",
+            "osnova2": " se svakog dana.",
 
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         },
         {
             "question": "popuni",
-            "hint": "buditi se (engl. to wake up)",
+            "hint": "buditi (se) (engl. to wake up)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "Budim se",
-                "Budiš se",
-                "Budi se",
-                "Budimo se",
-                "Budite se",
-                "Bude se"
+                "budim",
+                "budiš",
+                "budi",
+                "budimo",
+                "budite",
+                "bude"
             ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": " svaki dan u 7 sati.",
+            "osnova": ["Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana "],
+            "osnova2": " se u 7 sati.",
 
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -881,7 +881,7 @@ $(document).ready(function() {
                 "crtaju"
             ],
             "osnova": ["Bojama ", "Bojama ", "Bojama ", "Bojama ", "Bojama ", "Bojama "],
-            "osnova2": " na papiru.",
+            "osnova2": " po papiru.",
 
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -942,15 +942,15 @@ $(document).ready(function() {
             "hint": "čitati (engl. to read)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "Čitam",
-                "Čitaš",
-                "Čita",
-                "Čitamo",
-                "Čitate",
-                "Čitaju"
+                "čitam",
+                "čitaš",
+                "čita",
+                "čitamo",
+                "čitate",
+                "čitaju"
             ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": " knjigu navečer.",
+            "osnova": ["Navečer ", "Navečer ", "Navečer ", "Navečer ", "Navečer ", "Navečer "],
+            "osnova2": " knjigu.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         },
@@ -990,7 +990,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "dobiti (engl. to give)",
+            "hint": "dobiti (engl. to get)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "dobijem",
@@ -1018,13 +1018,13 @@ $(document).ready(function() {
                 "dođu"
             ],
             "osnova": ["Kad ", "Kad ", "Kad ", "Kad ", "Kad ", "Kad "],
-            "osnova2": " u kuću, ručak će biti gotov.",
+            "osnova2": " kući, ručak će biti gotov.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         },
         {
             "question": "popuni",
-            "hint": "dogovarati (engl. to negotiate, to arrange)",
+            "hint": "dogovarati (engl. to arrange)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Dogovaram",
@@ -1041,7 +1041,7 @@ $(document).ready(function() {
         },
         {
             "question": "popuni",
-            "hint": "dogovoriti (engl. to agree)",
+            "hint": "dogovoriti (engl. to arrange)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "dogovorim",
@@ -1086,7 +1086,7 @@ $(document).ready(function() {
                 "donesu"
             ],
             "osnova": ["Kad ", "Kad ", "Kad ", "Kad ", "Kad ", "Kad "],
-            "osnova2": " zadaću, profesor će ispraviti greške.",
+            "osnova2": " zadaću, profesor će ispraviti pogreške.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         },
@@ -1125,7 +1125,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "gleati (engl. to watch)",
+            "hint": "gledati (engl. to watch)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Gledam",
@@ -1184,7 +1184,7 @@ $(document).ready(function() {
                 "Hodaju"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " svaki dan radi zdravlja",
+            "osnova2": " svakog dana radi zdravlja.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -1263,21 +1263,21 @@ $(document).ready(function() {
                 "izaberete",
                 "izaberu"
             ],
-            "osnova": ["Svaki petak ", "Svaki petak ", "Svaki petak ", "Svaki petak ", "Svaki petak ", "Svaki petak "],
+            "osnova": ["Svakog petka ", "Svakog petka ", "Svakog petka ", "Svakog petka ", "Svakog petka ", "Svakog petka "],
             "osnova2": " mjesto za izlazak.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "izaći (engl. to go out)",
+            "hint": "izići (engl. to go out)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "Izađem",
-                "Izađeš",
-                "Izađe",
-                "Izađemo",
-                "Izađete",
-                "Izađu"
+                "Iziđem",
+                "Iziđeš",
+                "Iziđe",
+                "Iziđemo",
+                "Iziđete",
+                "Iziđu"
             ],
             "osnova": ["", "", "", "", "", ""],
             "osnova2": " iz stana u 7 ujutro.",
@@ -1304,15 +1304,15 @@ $(document).ready(function() {
             "hint": "izlaziti (engl. to go out)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "Izlazim",
-                "Izlaziš",
-                "Izlazi",
-                "Izlazimo",
-                "Izlazite",
-                "Izlaze"
+                "izlazim",
+                "izlaziš",
+                "izlazi",
+                "izlazimo",
+                "izlazite",
+                "izlaze"
             ],
-            "osnova": ["", "", "", "", "", ""],
-            "osnova2": " vikendom u noćne klubove.",
+            "osnova": ["Vikendom ", "Vikendom ", "Vikendom ", "Vikendom ", "Vikendom ", "Vikendom "],
+            "osnova2": " u noćne klubove.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -1365,7 +1365,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "kazati (engl. to tell)",
+            "hint": "kazati (engl. to say)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Kažem",
@@ -1381,7 +1381,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "koristiti (engl. to use)",
+            "hint": "koristiti (se) (engl. to use)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Koristim",
@@ -1408,7 +1408,7 @@ $(document).ready(function() {
                 "kuhaju"
             ],
             "osnova": ["Dobro ", "Dobro ", "Dobro ", "Dobro ", "Dobro ", "Dobro "],
-            "osnova2": " punjene parike i sarmu.",
+            "osnova2": " punjenu papriku i sarmu.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -1445,7 +1445,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "kupovati (engl. to buy)",
+            "hint": "kupovati (engl. to go shopping)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Kupujem",
@@ -1519,7 +1519,7 @@ $(document).ready(function() {
                 "mijenjate",
                 "mijenjaju"
             ],
-            "osnova": ["Ja često ", "Ti često ", "Ona često ", "Mi često ", "Vi često ", "Oni često "],
+            "osnova": ["Često ", "Često ", "Često ", "Često ", "Često ", "Često "],
             "osnova2": " boju kose.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -1544,20 +1544,20 @@ $(document).ready(function() {
             "hint": "moći (engl. can)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "mogu",
-                "možeš",
-                "može",
-                "možemo",
-                "možete",
-                "mogu"
+                "Mogu",
+                "Možeš",
+                "Može",
+                "Možemo",
+                "Možete",
+                "Mogu"
             ],
-            "osnova": ["Ja ", "Ti ", "On ", "Mi ", "Vi ", "Oni "],
-            "osnova2": " pomoći oko učenja hrvatskog jezika.",
+            "osnova": ["", "", "", "", "", ""],
+            "osnova2": " joj pomoći s učenjem hrvatskog jezika.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "moliti (engl. to pray, to plead)",
+            "hint": "moliti (engl. to ask for)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Molim",
@@ -1568,7 +1568,7 @@ $(document).ready(function() {
                 "Mole"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " prijatelja za pomoć oko učenja.",
+            "osnova2": " prijatelja za pomoć s učenjem.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -1624,20 +1624,20 @@ $(document).ready(function() {
             "hint": "nadati se (engl. to hope)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "Nadam",
-                "Nadaš",
-                "Nada",
-                "Nadamo",
-                "Nadate",
-                "Nadaju"
+                "Nadam se",
+                "Nadaš se",
+                "Nada se",
+                "Nadamo se",
+                "Nadate se",
+                "Nadaju se"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " se lijepom vremenu.",
+            "osnova2": " lijepom vremenu.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "nadati se (engl. to find, to come across)",
+            "hint": "nalaziti (engl. to find, to come across)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "nalazim",
@@ -1647,7 +1647,7 @@ $(document).ready(function() {
                 "nalazite",
                 "nalaze"
             ],
-            "osnova": ["Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan "],
+            "osnova": ["Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana "],
             "osnova2": " puno reklama u pošti.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ")",
             "time": 20,
@@ -1680,7 +1680,7 @@ $(document).ready(function() {
                 "naruče"
             ],
             "osnova": ["Subotom ", "Subotom ", "Subotom ", "Subotom ", "Subotom ", "Subotom "],
-            "osnova2": " pizzu za ručak.",
+            "osnova2": " <em>pizzu</em> za ručak.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -1695,8 +1695,8 @@ $(document).ready(function() {
                 "naručujete",
                 "naručuju"
             ],
-            "osnova": ["U knjižnici ", "U knjižnici ", "U knjižnici ", "U knjižnici ", "U knjižnici ", "U knjižnici "],
-            "osnova2": " knjige preko knjižničarke.",
+            "osnova": ["Često ", "Često ", "Često ", "Često ", "Često ", "Često "],
+            "osnova2": " knjige preko Amazona.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -1717,7 +1717,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "nemati (engl. do not have)",
+            "hint": "nemati (engl. to not have)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Nemam",
@@ -1733,7 +1733,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "nositi (engl. to carry)",
+            "hint": "nositi (engl. to wear)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "nosim",
@@ -1807,7 +1807,7 @@ $(document).ready(function() {
                 "obučete",
                 "obuku"
             ],
-            "osnova": ["Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan "],
+            "osnova": ["Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana "],
             "osnova2": " čistu odjeću.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -1871,13 +1871,13 @@ $(document).ready(function() {
                 "odlučite",
                 "odluče",
             ],
-            "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
-            "osnova2": " oko godišnjeg odmora, dogovoriti ćemo sve.",
+            "osnova": ["Kad ", "Kad ", "Kad ", "Kad ", "Kad ", "Kad "],
+            "osnova2": " kamo ćemo otići na godišnji odmor, o svemu ćemo se dogovoriti.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "odmarati (engl. to rest)",
+            "hint": "odmoriti se (engl. to rest)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "odmorim",
@@ -1887,7 +1887,7 @@ $(document).ready(function() {
                 "odmorite",
                 "odmore"
             ],
-            "osnova": ["Kada se ", "Kada se ", "Kada se ", "Kada se ", "Kada se ", "Kada se "],
+            "osnova": ["Kad se ", "Kad se ", "Kad se ", "Kad se ", "Kad se ", "Kad se "],
             "osnova2": ", nastavit će se s radom.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -1967,7 +1967,7 @@ $(document).ready(function() {
                 "otiđete",
                 "otiđu"
             ],
-            "osnova": ["Riješit ćemo to kada ", "Riješit ćemo to kada ", "Riješit ćemo to kada ", "Riješit ćemo to kada ", "Riješit ćemo to kada ", "Riješit ćemo to kada "],
+            "osnova": ["Riješit ćemo to kad ", "Riješit ćemo to kad ", "Riješit ćemo to kad ", "Riješit ćemo to kad ", "Riješit ćemo to kad ", "Riješit ćemo to kad "],
             "osnova2": " u banku.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -2015,7 +2015,7 @@ $(document).ready(function() {
                 "padate",
                 "padaju"
             ],
-            "osnova": ["Zbog loše pripreme, ", "Zbog loše pripreme, ", "Zbog loše pripreme, ", "Zbog loše pripreme, ", "Zbog loše pripreme, ", "Zbog loše pripreme, "],
+            "osnova": ["Zbog loše pripreme ", "Zbog loše pripreme ", "Zbog loše pripreme ", "Zbog loše pripreme ", "Zbog loše pripreme ", "Zbog loše pripreme "],
             "osnova2": " ispit.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -2069,7 +2069,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "peći (engl. to beak, to roast)",
+            "hint": "peći (engl. to bake)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Pečem",
@@ -2255,7 +2255,7 @@ $(document).ready(function() {
                 "pogledate",
                 "pogledaju"
             ],
-            "osnova": ["Čim izađe, ", "Čim izađe, ", "Čim izađe, ", "Čim izađe, ", "Čim izađe, ", "Čim izađe, "],
+            "osnova": ["Čim iziđe, ", "Čim iziđe, ", "Čim iziđe, ", "Čim iziđe, ", "Čim iziđe, ", "Čim iziđe, "],
             "osnova2": " novu epizodu serije.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -2277,7 +2277,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "pokazati (engl. to show, to display)",
+            "hint": "pokazati (engl. to show)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "pokažem",
@@ -2287,13 +2287,13 @@ $(document).ready(function() {
                 "pokažete",
                 "pokažu"
             ],
-            "osnova": ["Jedva čekam da ", "", "", "", "", ""],
+            "osnova": ["Jedva čekam da ", "Jedva čekam da ", "Jedva čekam da ", "Jedva čekam da ", "Jedva čekam da ", "Jedva čekam da "],
             "osnova2": " svoje znanje.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "pokazivati (engl. to show, to display)",
+            "hint": "pokazivati (engl. to show)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Pokazujem",
@@ -2304,7 +2304,7 @@ $(document).ready(function() {
                 "Pokazuju"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " studentima na karti najveće hrvatske gradove.",
+            "osnova2": " studentima najveće hrvatske gradove na karti.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -2335,8 +2335,8 @@ $(document).ready(function() {
                 "poklonite",
                 "poklone"
             ],
-            "osnova": ["Svake godine ", "", "", "", "", ""],
-            "osnova2": " mami veliki buket ruža za rođendan.",
+            "osnova": ["Svake godine ", "Svake godine ", "Svake godine ", "Svake godine ", "Svake godine ", "Svake godine "],
+            "osnova2": " mami velik buket ruža za rođendan.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -2383,7 +2383,7 @@ $(document).ready(function() {
                 "ponavljate",
                 "ponavljaju"
             ],
-            "osnova": ["Danas na hrvatskome ", "Danas na hrvatskome ", "Danas na hrvatskome ", "Danas na hrvatskome ", "Danas na hrvatskome ", "Danas na hrvatskome "],
+            "osnova": ["Danas na hrvatskom ", "Danas na hrvatskom ", "Danas na hrvatskom ", "Danas na hrvatskom ", "Danas na hrvatskom ", "Danas na hrvatskom "],
             "osnova2": " padeže.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -2400,7 +2400,7 @@ $(document).ready(function() {
                 "ponove"
             ],
             "osnova": ["Ako povijest ", "Ako povijest ", "Ako povijest ", "Ako povijest ", "Ako povijest ", "Ako povijest "],
-            "osnova2": " na vrijeme, ispit će bit lagan.",
+            "osnova2": " na vrijeme, ispit će biti lagan.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -2431,7 +2431,7 @@ $(document).ready(function() {
                 "popijete",
                 "popiju"
             ],
-            "osnova": ["Svako jutro ", "", "", "", "", ""],
+            "osnova": ["Svakog jutra ", "Svakog jutra ", "Svakog jutra ", "Svakog jutra ", "Svakog jutra ", "Svakog jutra "],
             "osnova2": " zeleni čaj.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -2463,7 +2463,7 @@ $(document).ready(function() {
                 "posjetite",
                 "posjete"
             ],
-            "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
+            "osnova": ["Kad ", "Kad ", "Kad ", "Kad ", "Kad ", "Kad "],
             "osnova2": " susjedu, ona se veseli.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -2495,8 +2495,8 @@ $(document).ready(function() {
                 "potpišete",
                 "potpišu"
             ],
-            "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
-            "osnova2": ", sve je dogovoreno.",
+            "osnova": ["Kad ", "Kad ", "Kad ", "Kad ", "Kad ", "Kad "],
+            "osnova2": " ugovor, sve je dogovoreno.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -2528,23 +2528,23 @@ $(document).ready(function() {
                 "Peru"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " prozore kada je vani sunčano.",
+            "osnova2": " prozore kad je vani sunčano.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "pričati (engl. to speak)",
+            "hint": "pričati (engl. to tell)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "pričam",
-                "pričaš",
-                "priča",
-                "pričamo",
-                "pričate",
-                "pričaju"
+                "Pričam",
+                "Pričaš",
+                "Priča",
+                "Pričamo",
+                "Pričate",
+                "Pričaju"
             ],
-            "osnova": ["Danas ", "Danas ", "Danas ", "Danas ", "Danas ", "Danas "],
-            "osnova2": " s roditeljima na roditeljskom sastanku.",
+            "osnova": ["", "", "", "", "", ""],
+            "osnova2": " djetetu priču.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -2576,7 +2576,7 @@ $(document).ready(function() {
                 "pročitaju"
             ],
             "osnova": ["Kad ", "Kad ", "Kad ", "Kad ", "Kad ", "Kad "],
-            "osnova2": " ovu knjigu, posudit će se nova.",
+            "osnova2": " ovu knjigu, trebat će posuditi novu.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -2584,12 +2584,12 @@ $(document).ready(function() {
             "hint": "prodati (engl. to sell)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "Prodam",
-                "Prodaš",
-                "Proda",
-                "Prodamo",
-                "Prodate",
-                "Prodaju"
+                "prodam",
+                "prodaš",
+                "proda",
+                "prodamo",
+                "prodate",
+                "prodaju"
             ],
             "osnova": ["Nikako da ", "Nikako da ", "Nikako da ", "Nikako da ", "Nikako da ", "Nikako da "],
             "osnova2": " svoj auto.",
@@ -2677,7 +2677,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "raditi (engl. to work)",
+            "hint": "raditi (engl. to do)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "radim",
@@ -2741,7 +2741,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "razumijeti (engl. to understand)",
+            "hint": "razumjeti (engl. to understand)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "razumijem",
@@ -2757,18 +2757,18 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "reći (engl. to say)",
+            "hint": "razmišljati (engl. to think)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "rečem",
-                "rečeš",
-                "reče",
-                "rečemo",
-                "rečete",
-                "reku"
+                "razmišljam",
+                "razmišljaš",
+                "razmišlja",
+                "razmišljamo",
+                "razmišljate",
+                "razmišljaju"
             ],
-            "osnova": ["Bit će kako ", "Bit će kako ", "Bit će kako ", "Bit će kako ", "Bit će kako ", "Bit će kako "],
-            "osnova2": ".",
+            "osnova": ["Već dugo ", "Već dugo ", "Već dugo ", "Već dugo ", "Već dugo ", "Već dugo "],
+            "osnova2": " o promjeni posla.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -2789,7 +2789,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "ručati (engl. to lunch)",
+            "hint": "ručati (engl. to have lunch)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Ručam",
@@ -2821,7 +2821,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "seliti (engl. to move)",
+            "hint": "seliti se (engl. to move)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "selim",
@@ -2863,7 +2863,7 @@ $(document).ready(function() {
                 "sjedite",
                 "sjede"
             ],
-            "osnova": ["Cijelu večer ", "Cijelu večer ", "Cijelu večer ", "Cijelu večer ", "Cijelu večer ", "Cijelu večer "],
+            "osnova": ["Cijele večeri ", "Cijele večeri ", "Cijele večeri ", "Cijele večeri ", "Cijele večeri ", "Cijele večeri "],
             "osnova2": " pred televizorom.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -2880,7 +2880,7 @@ $(document).ready(function() {
                 "Sjete se"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " svoje mladost.",
+            "osnova2": " svoje mladosti.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -2895,8 +2895,8 @@ $(document).ready(function() {
                 "šaljete",
                 "šalju"
             ],
-            "osnova": ["Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan "],
-            "osnova2": " životopise za posao.",
+            "osnova": ["Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana "],
+            "osnova2": " prijave za posao.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -2920,14 +2920,14 @@ $(document).ready(function() {
             "hint": "slikati (engl. to paint)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "slikam",
-                "slikaš",
-                "slika",
-                "slikajmo",
-                "slikajte",
-                "slikaju"
+                "Slikam",
+                "Slikaš",
+                "Slika",
+                "Slikamo",
+                "Slikate",
+                "Slikaju"
             ],
-            "osnova": ["Ja ", "Ti ", "Ona", "Mi", "Vi", "Oni"],
+            "osnova": ["", "", "", "", "", ""],
             "osnova2": " akvarele s motivima mora.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -2991,13 +2991,13 @@ $(document).ready(function() {
                 "spavate",
                 "spavaju"
             ],
-            "osnova": ["Svaku večer ", "Svaku večer ", "Svaku večer ", "Svaku večer ", "Svaku večer ", "Svaku večer "],
+            "osnova": ["Svake večeri ", "Svake večeri ", "Svake večeri ", "Svake večeri ", "Svake večeri ", "Svake večeri "],
             "osnova2": " u isto vrijeme.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "spremati (engl. to save)",
+            "hint": "spremati (engl. to tidy up)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Spremam",
@@ -3008,12 +3008,12 @@ $(document).ready(function() {
                 "Spremaju"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " stan svaki vikend.",
+            "osnova2": " stan svakog vikenda.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "spremiti (engl. to save)",
+            "hint": "spremiti (engl. to put in place)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "spremim",
@@ -3023,7 +3023,7 @@ $(document).ready(function() {
                 "spremite",
                 "spreme"
             ],
-            "osnova": ["Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan "],
+            "osnova": ["Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana "],
             "osnova2": " odjeću u ormar.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -3045,23 +3045,23 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "staviti (engl. to put on, to place to)",
+            "hint": "staviti (engl. to put, to place)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "stavim",
-                "staviš",
-                "stavi",
-                "stavimo",
-                "stavite",
-                "stave"
+                "Stavim",
+                "Staviš",
+                "Stavi",
+                "Stavimo",
+                "Stavite",
+                "Stave"
             ],
-            "osnova": ["Ja ", "Ti ", "Ona ", "Mi ", "Vi ", "Oni "],
+            "osnova": ["", "", "", "", "", ""],
             "osnova2": " dva jaja u smjesu za palačinke.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "stavljati (engl. to put on, to place on)",
+            "hint": "stavljati (engl. to put, to place)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Stavljam",
@@ -3184,7 +3184,7 @@ $(document).ready(function() {
                 "telefoniraju"
             ],
             "osnova": ["Ne ", "Ne ", "Ne ", "Ne ", "Ne ", "Ne "],
-            "osnova2": " unutar stranih zemalja jer je skuplje.",
+            "osnova2": " u stranim zemljama jer je to skupo.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -3295,7 +3295,7 @@ $(document).ready(function() {
                 "uđete",
                 "uđu"
             ],
-            "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
+            "osnova": ["Kad ", "Kad ", "Kad ", "Kad ", "Kad ", "Kad "],
             "osnova2": " na fakultet, red za informacije je desno.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -3312,7 +3312,7 @@ $(document).ready(function() {
                 "Učine"
             ],
             "osnova": ["Što da ", "Što da ", "Što da ", "Što da ", "Što da ", "Što da "],
-            "osnova2": " da se spase ozljeđeni u nesreći?",
+            "osnova2": " da se spase ozlijeđeni u nesreći?",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -3359,8 +3359,8 @@ $(document).ready(function() {
                 "upoznate",
                 "upoznaju"
             ],
-            "osnova": ["Čekam dan da ", "Čekam dan da ", "Čekam dan da ", "Čekam dan da ", "Čekam dan da ", "Čekam dan da "],
-            "osnova2": " moje roditelje.",
+            "osnova": ["Jedva čekam da ", "Jedva čekam da ", "Jedva čekam da ", "Jedva čekam da ", "Jedva čekam da ", "Jedva čekam da "],
+            "osnova2": " novu učenicu.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -3391,7 +3391,7 @@ $(document).ready(function() {
                 "ustajete",
                 "ustaju"
             ],
-            "osnova": ["Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan "],
+            "osnova": ["Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana "],
             "osnova2": " u 7 sati.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
@@ -3416,15 +3416,15 @@ $(document).ready(function() {
             "hint": "uzeti (engl. to take)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "Uzmem",
-                "Uzmeš",
-                "Uzme",
-                "Uzmemo",
-                "Uzmete",
-                "Uzmu"
+                "uzmem",
+                "uzmeš",
+                "uzme",
+                "uzmemo",
+                "uzmete",
+                "uzmu"
             ],
             "osnova": ["Često sa sobom ", "Često sa sobom ", "Često sa sobom ", "Često sa sobom ", "Često sa sobom ", "Često sa sobom "],
-            "osnova2": " kišobran u slučaju kiše.",
+            "osnova2": " kišobran za slučaj kiše.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -3461,7 +3461,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "večerati (engl. to have dinner)",
+            "hint": "večerati (engl. to have for dinner)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "večeram",
@@ -3477,18 +3477,18 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "veseliti (engl. to rejoice)",
+            "hint": "veseliti se (engl. to be happy, to look forward to)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "Veselim",
-                "Veseliš",
-                "Veseli",
-                "Veselimo",
-                "Veselite",
-                "Vesele"
+                "Veselim se",
+                "Veseliš se",
+                "Veseli se",
+                "Veselimo se",
+                "Veselite se",
+                "Vesele se"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " se suncu i moru.",
+            "osnova2": " suncu i moru.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -3509,7 +3509,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "vjenčati (engl. to marry)",
+            "hint": "vjenčati se (engl. to marry)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "vjenčam",
@@ -3568,7 +3568,7 @@ $(document).ready(function() {
                 "Voze"
             ],
             "osnova": ["", "", "", "", "", ""],
-            "osnova2": " veliki kamion.",
+            "osnova2": " velik kamion.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -3653,7 +3653,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "zanimati (engl. interest)",
+            "hint": "zanimati (se) (engl. to be interested in)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Zanimam",
@@ -3679,8 +3679,8 @@ $(document).ready(function() {
                 "zatvorite",
                 "zatvore"
             ],
-            "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
-            "osnova2": " klub, ljudi će otići doma.",
+            "osnova": ["Kad ", "Kad ", "Kad ", "Kad ", "Kad ", "Kad "],
+            "osnova2": " klub, ljudi će otići kući.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
@@ -3711,13 +3711,13 @@ $(document).ready(function() {
                 "završite",
                 "završe"
             ],
-            "osnova": ["Kada ", "Kada ", "Kada ", "Kada ", "Kada ", "Kada "],
-            "osnova2": " zadaću, što ćemo?",
+            "osnova": ["Kad ", "Kad ", "Kad ", "Kad ", "Kad ", "Kad "],
+            "osnova2": " zadaću, što ćemo raditi?",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "značiti (engl. to mean)",
+            "hint": "značiti (engl. to mean, to be important)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "značim",
@@ -3733,7 +3733,7 @@ $(document).ready(function() {
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "znati (engl. to know)",
+            "hint": "znati (engl. to know, can)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "Znam",
@@ -3759,13 +3759,13 @@ $(document).ready(function() {
                 "zovete",
                 "zovu"
             ],
-            "osnova": ["Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan ", "Svaki dan "],
+            "osnova": ["Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana ", "Svakog dana "],
             "osnova2": " majku.",
             "boja_pozadine": "rgba(" + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + "," + Math.floor((Math.random() * 256)) + ",0.2)",
             "time": 20,
         }, {
             "question": "popuni",
-            "hint": "žaliti (engl. to regret)",
+            "hint": "žaliti (se) (engl. to complain)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
                 "žalim",
