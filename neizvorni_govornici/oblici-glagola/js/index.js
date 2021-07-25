@@ -355,7 +355,7 @@ $(document).ready(function() {
                 if ($('#odgovor').val().length == 0) {
                     return
                 }
-                if ($("#odgovor").val() == prezent[questionCounter].correctAnswer[randbroj]) {
+                if ($("#odgovor").val() == prezent[questionCounter].correctAnswer[randbroj].split("/")[0] || $("#odgovor").val() == prezent[questionCounter].correctAnswer[randbroj].split("/")[1]) {
                     // Increment the total correct answers counter
                     correctAnswersCounter++;
                     bodovi += 10;
@@ -3128,12 +3128,12 @@ $(document).ready(function() {
             "hint": "šetati (engl. to walk)",
             "lica": ["1. lice jd. (<span>ja</span>)", "2. lice jd. (<span>ti</span>)", "3. lice jd. (<span>on</span>)", "1. lice mn. (<span>mi</span>)", "2. lice mn. (<span>vi</span>)", "3. lice mn. (<span>oni</span>)"],
             "correctAnswer": [
-                "šetam",
-                "šetaš",
-                "šeta",
-                "šetamo",
-                "šetate",
-                "šetaju"
+                "šetam/šećem",
+                "šetaš/šećeš",
+                "šeta/šeće",
+                "šetamo/šećemo",
+                "šetate/šećete",
+                "šetaju/šeću"
             ],
             "osnova": ["Koliko puta na dan ", "Koliko puta na dan ", "Koliko puta na dan ", "Koliko puta na dan ", "Koliko puta na dan ", "Koliko puta na dan "],
             "osnova2": " psa?",
