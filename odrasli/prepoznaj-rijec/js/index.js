@@ -367,7 +367,7 @@ $(document).ready(function() {
             if (prezent[questionCounter].correctAnswer[1].length == 0) {
                 swal({
                     title: "Isteklo je vrijeme.",
-                    html: "<p class='dodatak'><strong>Točan odgovor je: <span class='nastavak'>" + prezent[questionCounter].correctAnswer[0] + "</span></strong>" + prezent[questionCounter].definicija + "<br></p><br><img src='slike/vrijeme.png'class='slikica2'/>",
+                    html: "<p class='dodatak'><strong>Točan odgovor: <span class='nastavak'>" + prezent[questionCounter].correctAnswer[0] + "</span></strong>" + prezent[questionCounter].definicija + "<br></p><br><img src='slike/vrijeme.png'class='slikica2'/>",
                     showCloseButton: true,
                     confirmButtonText: ' dalje',
                     backdrop: false,
@@ -448,7 +448,7 @@ $(document).ready(function() {
                     $("#pogresno")[0].play()
                     swal({
                         title: "Netočno",
-                        html: "<p class='dodatak'><strong>Točan odgovor je: <span class='nastavak'>" + prezent[questionCounter].correctAnswer[0] + "</span>" + prezent[questionCounter].definicija + "</strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
+                        html: "<p class='dodatak'><strong>Točan odgovor: <span class='nastavak'>" + prezent[questionCounter].correctAnswer[0] + "</span>" + prezent[questionCounter].definicija + "</strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
                         showCloseButton: true,
                         confirmButtonText: ' dalje',
                         backdrop: false,

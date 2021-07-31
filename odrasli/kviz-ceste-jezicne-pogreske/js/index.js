@@ -358,7 +358,7 @@
 
               swal({
                   title: "Isteklo je vrijeme.",
-                  html: "<p style='text-align:center'><strong>Točan odgovor je: <br><br>" + quiz[questionCounter].question + "</strong></p><br>" + quiz[questionCounter].napomena,
+                  html: "<p style='text-align:center'><strong>Točan odgovor: <br><br>" + quiz[questionCounter].question + "</strong></p><br>" + quiz[questionCounter].napomena,
                   showCloseButton: true,
                   confirmButtonText: ' dalje',
                   backdrop: false,
@@ -427,7 +427,7 @@
 
                   swal({
                       title: " <span style='color:#bb422a' >Netočno</span>",
-                      html: "<p style='text-align:center'><strong>Točan odgovor je: <br><br>" + quiz[questionCounter].question + "</strong></p><br>" + quiz[questionCounter].napomena,
+                      html: "<p style='text-align:center'><strong>Točan odgovor: <br><br>" + quiz[questionCounter].question + "</strong></p><br>" + quiz[questionCounter].napomena,
                       showCloseButton: true,
                       confirmButtonText: ' dalje',
                       backdrop: false,

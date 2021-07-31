@@ -45,7 +45,7 @@ function pocetak() {
     $(".slovo").html(quiz[broj_pitanja].question)
     $(".broj").html(broj_pitanja + 1 + "/" + quiz.length)
     $(".vrijeme").html('<progress value="15" max="15" id="pageBeginCountdown"></progress><p><span id="ostalo">ostalo</span> je još <span id="pageBeginCountdownText">15 </span> <span id="sekunde">sekunda</span> za odgovor</p>')
-    $(".tooltiptext").html('treba pritisnuti idući broj polja: '+quiz[broj_pitanja].broj_poteza)
+    $(".tooltiptext").html('treba pritisnuti sljedeći broj polja: '+quiz[broj_pitanja].broj_poteza)
     
     timer()
     return
@@ -198,7 +198,7 @@ function iduce_pitanje() {
         })
         return
     }
-    $(".tooltiptext").html('treba pritisnuti idući broj polja: '+quiz[broj_pitanja].broj_poteza)
+    $(".tooltiptext").html('treba pritisnuti sljedeći broj polja: '+quiz[broj_pitanja].broj_poteza)
 
     $(".krug").removeClass("aktivno")
     $(".slovo").html(quiz[broj_pitanja].question)
@@ -206,7 +206,7 @@ function iduce_pitanje() {
 }
 
 function hint(){
-    $(".hint").html("Za ovaj znak potrebno je popuniti idući broj polja: "+ quiz[broj_pitanja].broj_poteza)
+    $(".hint").html("Za ovaj znak potrebno je popuniti sljedeći broj polja: "+ quiz[broj_pitanja].broj_poteza)
     bodovi=bodovi-2
 }
 

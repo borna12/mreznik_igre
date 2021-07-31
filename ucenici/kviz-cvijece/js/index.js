@@ -131,140 +131,141 @@
       }
 
 
+     
       quiz = [{
-          question: "",
-          answers: ["ciklama", strava = stvori("ciklama"), strava2 = stvori("ciklama", strava), stvori("ciklama", strava, strava2)],
-          correctAnswer: "ciklama",
-          slika: "slike/ciklama.jpg",
-          opis: "Ciklama je šumska i ukrasna biljka s cvjetovima ugodna mirisa.",
-          boja_pozadine: "#FCE4EC"
-      }, {
-          question: "",
-          answers: ["đurđica", strava = stvori("đurđica"), strava2 = stvori("đurđica", strava), stvori("đurđica", strava, strava2)],
-          correctAnswer: "đurđica",
-          slika: "slike/durdica.jpg",
-          opis: "Đurđica je šumska i vrtna biljka s mirisnim cvjetićima u obliku zvončića.",
-          boja_pozadine: "#E8F5E9"
-      }, {
-          question: "",
-          answers: ["ivančica", strava = stvori("ivančica"), strava2 = stvori("ivančica", strava), stvori("ivančica", strava, strava2)],
-          correctAnswer: "ivančica",
-          slika: "slike/ivancica.jpg",
-          opis: "Ivančica je livadna i vrtna biljka koja ima bijele cvjetove.",
-          boja_pozadine: "#F1F8E9"
-      }, {
-          question: "",
-          answers: ["jaglac", strava = stvori("jaglac"), strava2 = stvori("jaglac", strava), stvori("jaglac", strava, strava2)],
-          correctAnswer: "jaglac",
-          slika: "slike/jaglac.jpg",
-          opis: "Jaglac je trajna zeljasta biljka šumskih i travnatih područja koja raste u malim grmovima.",
-          boja_pozadine: "#F9FBE7"
-      }, {
-          question: "",
-          answers: ["jorgovan", strava = stvori("jorgovan"), strava2 = stvori("jorgovan", strava), stvori("jorgovan", strava, strava2)],
-          correctAnswer: "jorgovan",
-          slika: "slike/jorgovan.jpg",
-          opis: "Jorgovan je plavi, ljubičasti ili bijeli cvijet te biljke. ",
-          boja_pozadine: "#F3E5F5"
-      }, {
-          question: "",
-          answers: ["kukurijek", strava = stvori("kukurijek"), strava2 = stvori("kukurijek", strava), stvori("kukurijek", strava, strava2)],
-          correctAnswer: "kukurijek",
-          slika: "slike/kukurijek.jpg",
-          opis: "Kukurijek je veliki svijetli ružičasti cvijet istoimene otrovne biljke.",
-          boja_pozadine: "#F9FBE7"
-      }, {
-          question: "",
-          answers: ["lopoč", strava = stvori("lopoč"), strava2 = stvori("lopoč", strava), stvori("lopoč", strava, strava2)],
-          correctAnswer: "lopoč",
-          slika: "slike/lopoc.jpg",
-          opis: "Lopoč je vodena biljka velikih listova i cvjetova koji plivaju na površini vode.",
-          boja_pozadine: "#E0F2F1"
-      }, {
-          question: "",
-          answers: ["ljiljan", strava = stvori("ljiljan"), strava2 = stvori("ljiljan", strava), stvori("ljiljan", strava, strava2)],
-          correctAnswer: "ljiljan",
-          slika: "slike/ljiljan.jpg",
-          opis: "Ljiljan je cvijet te biljke koji ima jak miris. ",
-          boja_pozadine: "#FFFDE7"
-      }, {
-          question: "",
-          answers: ["ljubica", strava = stvori("ljubica"), strava2 = stvori("ljubica", strava), stvori("ljubica", strava, strava2)],
-          correctAnswer: "ljubica",
-          slika: "slike/ljubica.jpg",
-          opis: "Ljubica je rana proljetna biljka, vjesnik proljeća.",
-          boja_pozadine: "#F3E5F5"
-      }, {
-          question: "",
-          answers: ["maćuhica", strava = stvori("maćuhica"), strava2 = stvori("maćuhica", strava), stvori("maćuhica", strava, strava2)],
-          correctAnswer: "maćuhica",
-          slika: "slike/macuhica.jpg",
-          opis: "Maćuhica je ukrasna biljka s cvjetovima različitih boja i bez mirisa.",
-          boja_pozadine: "#FFFDE7"
-      }, {
-          question: "",
-          answers: ["magnolija", strava = stvori("magnolija"), strava2 = stvori("magnolija", strava), stvori("magnolija", strava, strava2)],
-          correctAnswer: "magnolija",
-          slika: "slike/magnolija.jpg",
-          opis: "Magnolija je bijeli ili ružičasti cvijet istoimene biljke.",
-          boja_pozadine: "#F3E5F5"
-      }, {
-          question: "",
-          answers: ["maslačak", strava = stvori("maslačak"), strava2 = stvori("maslačak", strava), stvori("maslačak", strava, strava2)],
-          correctAnswer: "maslačak",
-          slika: "slike/maslacak.jpg",
-          opis: "Maslačak je žuti cvijet te biljke koji se pretvara u bijelu glavicu. ",
-          boja_pozadine: "#FFFDE7"
-      }, {
-          question: "",
-          answers: ["ruža", strava = stvori("ruža"), strava2 = stvori("ruža", strava), stvori("ruža", strava, strava2)],
-          correctAnswer: "ruža",
-          slika: "slike/ruza.jpg",
-          opis: "Ruža je ukrasna vrtna ili divlja šumska biljka s trnjem na granama.",
-          boja_pozadine: "#FBE9E7"
-      }, {
-          question: "",
-          answers: ["šafran", strava = stvori("safran"), strava2 = stvori("safran", strava), stvori("safran", strava, strava2)],
-          correctAnswer: "šafran",
-          slika: "slike/safran.jpg",
-          opis: "Šafran je bijeli, žuti ili ljubičasti cvijet te biljke.",
-          boja_pozadine: "#F3E5F5"
-      }, {
-          question: "",
-          answers: ["šumarica", strava = stvori("šumarica"), strava2 = stvori("šumarica", strava), stvori("šumarica", strava, strava2)],
-          correctAnswer: "šumarica",
-          slika: "slike/sumarica.jpg",
-          opis: "Šumarica je bijeli, žuti, ljubičasti ili crveni zvjezdasti cvijet istoimene biljke.",
-          boja_pozadine: "#FFFDE7"
-      }, {
-          question: "",
-          answers: ["sunovrat", strava = stvori("sunovrat"), strava2 = stvori("sunovrat", strava), stvori("sunovrat", strava, strava2)],
-          correctAnswer: "sunovrat",
-          slika: "slike/sunovrat.jpg",
-          opis: "Sunovrat je žuti ili bijeli cvijet te biljke.",
-          boja_pozadine: "#FFF8E1"
-      }, {
-          question: "",
-          answers: ["tratinčica", strava = stvori("tratinčica"), strava2 = stvori("tratinčica", strava), stvori("tratinčica", strava, strava2)],
-          correctAnswer: "tratinčica",
-          slika: "slike/tratincica.jpg",
-          opis: "Tratinčica je bijeli cvijet te biljke.",
-          boja_pozadine: "#FFFFFF"
-      }, {
-          question: "",
-          answers: ["visibaba", strava = stvori("visibaba"), strava2 = stvori("visibaba", strava), stvori("visibaba", strava, strava2)],
-          correctAnswer: "visibaba",
-          slika: "slike/visibaba.jpg",
-          opis: "Visibaba je rana proljetna biljka s cvjetovima u obliku zvončića, vjesnik proljeća.",
-          boja_pozadine: "#F1F8E9"
-      }, {
         question: "",
-        answers: ["kamilica", strava = stvori("kamilica"), strava2 = stvori("kamilica", strava), stvori("kamilica", strava, strava2)],
-        correctAnswer: "kamilica",
-        slika: "slike/kamilica.jpg",
-        opis: "Kamilica je ljekovita biljka koja ima žuto-bijeli cvijet ugodna mirisa.",
+        answers: ["ciklama", strava = stvori("ciklama"), strava2 = stvori("ciklama", strava), stvori("ciklama", strava, strava2)],
+        correctAnswer: "ciklama",
+        slika: "slike/ciklama.jpg",
+        opis: "Ciklama je ljubičasti ili bijeli cvijet istoimene šumske ili ukrasne biljke.",
+        boja_pozadine: "#FCE4EC"
+    }, {
+        question: "",
+        answers: ["đurđica", strava = stvori("đurđica"), strava2 = stvori("đurđica", strava), stvori("đurđica", strava, strava2)],
+        correctAnswer: "đurđica",
+        slika: "slike/durdica.jpg",
+        opis: "Đurđica je bijeli mirisni cvijet istoimene šumske i vrtne biljke koji ima oblik zvončića.",
+        boja_pozadine: "#E8F5E9"
+    }, {
+        question: "",
+        answers: ["ivančica", strava = stvori("ivančica"), strava2 = stvori("ivančica", strava), stvori("ivančica", strava, strava2)],
+        correctAnswer: "ivančica",
+        slika: "slike/ivancica.jpg",
+        opis: "Ivančica je cvijet istoimene livadne i vrtne biljke koji ima bijele latice i žutu sredinu.",
+        boja_pozadine: "#F1F8E9"
+    }, {
+        question: "",
+        answers: ["jaglac", strava = stvori("jaglac"), strava2 = stvori("jaglac", strava), stvori("jaglac", strava, strava2)],
+        correctAnswer: "jaglac",
+        slika: "slike/jaglac.jpg",
+        opis: "Jaglac je žuti cvijet istoimene šumske i livadne biljke koji ima srcolike latice.",
         boja_pozadine: "#F9FBE7"
-    }];
+    }, {
+        question: "",
+        answers: ["jorgovan", strava = stvori("jorgovan"), strava2 = stvori("jorgovan", strava), stvori("jorgovan", strava, strava2)],
+        correctAnswer: "jorgovan",
+        slika: "slike/jorgovan.jpg",
+        opis: "Jorgovan je plavi, ljubičasti ili bijeli cvijet istoimenoga ukrasnog grma koji raste u cvjetnim grozdovima.",
+        boja_pozadine: "#F3E5F5"
+    }, {
+        question: "",
+        answers: ["kukurijek", strava = stvori("kukurijek"), strava2 = stvori("kukurijek", strava), stvori("kukurijek", strava, strava2)],
+        correctAnswer: "kukurijek",
+        slika: "slike/kukurijek.jpg",
+        opis: "Kukurijek je veliki svijetli ružičasti cvijet istoimene otrovne šumske biljke.",
+        boja_pozadine: "#F9FBE7"
+    }, {
+        question: "",
+        answers: ["lopoč", strava = stvori("lopoč"), strava2 = stvori("lopoč", strava), stvori("lopoč", strava, strava2)],
+        correctAnswer: "lopoč",
+        slika: "slike/lopoc.jpg",
+        opis: "Lopoč je bijeli cvijet istoimene biljke čiji listovi i cvjetovi plutaju na površini vode.",
+        boja_pozadine: "#E0F2F1"
+    }, {
+        question: "",
+        answers: ["ljiljan", strava = stvori("ljiljan"), strava2 = stvori("ljiljan", strava), stvori("ljiljan", strava, strava2)],
+        correctAnswer: "ljiljan",
+        slika: "slike/ljiljan.jpg",
+        opis: "Ljiljan je cvijet istoimene ukrasne biljke koji ima jak miris.",
+        boja_pozadine: "#FFFDE7"
+    }, {
+        question: "",
+        answers: ["ljubica", strava = stvori("ljubica"), strava2 = stvori("ljubica", strava), stvori("ljubica", strava, strava2)],
+        correctAnswer: "ljubica",
+        slika: "slike/ljubica.jpg",
+        opis: "Ljubica je mali mirisni ljubičasti, tamnoplavi ili bijeli cvijet istoimene rane proljetne biljke, vjesnika proljeća.",
+        boja_pozadine: "#F3E5F5"
+    }, {
+        question: "",
+        answers: ["maćuhica", strava = stvori("maćuhica"), strava2 = stvori("maćuhica", strava), stvori("maćuhica", strava, strava2)],
+        correctAnswer: "maćuhica",
+        slika: "slike/macuhica.jpg",
+        opis: "Maćuhica je cvijet istoimene ukrasne biljke koji može biti različitih boja i nema mirisa.",
+        boja_pozadine: "#FFFDE7"
+    }, {
+        question: "",
+        answers: ["magnolija", strava = stvori("magnolija"), strava2 = stvori("magnolija", strava), stvori("magnolija", strava, strava2)],
+        correctAnswer: "magnolija",
+        slika: "slike/magnolija.jpg",
+        opis: "Magnolija je bijeli ili ružičasti cvijet istoimene drvenaste ukrasne biljke koja cvjeta u rano proljeće.",
+        boja_pozadine: "#F3E5F5"
+    }, {
+        question: "",
+        answers: ["maslačak", strava = stvori("maslačak"), strava2 = stvori("maslačak", strava), stvori("maslačak", strava, strava2)],
+        correctAnswer: "maslačak",
+        slika: "slike/maslacak.jpg",
+        opis: "Maslačak je žuti cvijet istoimene livadne biljke koji se pretvara u bijelu glavicu.",
+        boja_pozadine: "#FFFDE7"
+    }, {
+        question: "",
+        answers: ["ruža", strava = stvori("ruža"), strava2 = stvori("ruža", strava), stvori("ruža", strava, strava2)],
+        correctAnswer: "ruža",
+        slika: "slike/ruza.jpg",
+        opis: "Ruža je raskošni mirisni cvijet istoimene ukrasne vrtne ili divlje šumske biljke koja ima trnje na granama.",
+        boja_pozadine: "#FBE9E7"
+    }, {
+        question: "",
+        answers: ["šafran", strava = stvori("safran"), strava2 = stvori("safran", strava), stvori("safran", strava, strava2)],
+        correctAnswer: "šafran",
+        slika: "slike/safran.jpg",
+        opis: "Šafran je bijeli, žuti ili ljubičasti cvijet istoimene rane proljetne biljke, vjesnika proljeća.",
+        boja_pozadine: "#F3E5F5"
+    }, {
+        question: "",
+        answers: ["šumarica", strava = stvori("šumarica"), strava2 = stvori("šumarica", strava), stvori("šumarica", strava, strava2)],
+        correctAnswer: "šumarica",
+        slika: "slike/sumarica.jpg",
+        opis: "Šumarica je bijeli, žuti, ljubičasti ili crveni zvjezdasti cvijet istoimene ljekovite biljke.",
+        boja_pozadine: "#FFFDE7"
+    }, {
+        question: "",
+        answers: ["sunovrat", strava = stvori("sunovrat"), strava2 = stvori("sunovrat", strava), stvori("sunovrat", strava, strava2)],
+        correctAnswer: "sunovrat",
+        slika: "slike/sunovrat.jpg",
+        opis: "Sunovrat je žuti ili bijeli cvijet istoimene primorske proljetne biljke.",
+        boja_pozadine: "#FFF8E1"
+    }, {
+        question: "",
+        answers: ["tratinčica", strava = stvori("tratinčica"), strava2 = stvori("tratinčica", strava), stvori("tratinčica", strava, strava2)],
+        correctAnswer: "tratinčica",
+        slika: "slike/tratincica.jpg",
+        opis: "Tratinčica je sitni bijeli cvijet istoimene livadne biljke.",
+        boja_pozadine: "#FFFFFF"
+    }, {
+        question: "",
+        answers: ["visibaba", strava = stvori("visibaba"), strava2 = stvori("visibaba", strava), stvori("visibaba", strava, strava2)],
+        correctAnswer: "visibaba",
+        slika: "slike/visibaba.jpg",
+        opis: "Visibaba je bijeli cvijet u obliku zvončića istoimene rane proljetne biljke, vjesnika proljeća.",
+        boja_pozadine: "#F1F8E9"
+    }, {
+      question: "",
+      answers: ["kamilica", strava = stvori("kamilica"), strava2 = stvori("kamilica", strava), stvori("kamilica", strava, strava2)],
+      correctAnswer: "kamilica",
+      slika: "slike/kamilica.jpg",
+      opis: "Kamilica je žuto-bijeli cvijet istoimene ljekovite biljke koji ima ugodan miris.",
+      boja_pozadine: "#F9FBE7"
+  }];
 
 
       function shuffle(array) { //izmješaj pitanja
@@ -489,7 +490,7 @@
 
               swal({
                   title: "Isteklo je vrijeme.",
-                  html: "<p style='text-align:center'><strong>Točan odgovor je: " + quiz[questionCounter].correctAnswer + "</strong></p><br><em>" + quiz[questionCounter].opis + "</em><br><br><img src='" + quiz[questionCounter].slika + " 'class='slikica2'/>",
+                  html: "<p style='text-align:center'><strong>Točan odgovor: " + quiz[questionCounter].correctAnswer + "</strong></p><br><em>" + quiz[questionCounter].opis + "</em><br><br><img src='" + quiz[questionCounter].slika + " 'class='slikica2'/>",
                   showCloseButton: true,
                   confirmButtonText: ' dalje',
                   backdrop: false,
@@ -548,7 +549,7 @@
 
                   swal({
                       title: "<span style='color:rgb(235, 73, 71)'>Netočno</span>",
-                      html: "<p style='text-align:center'><strong>Točan odgovor je: " + quiz[questionCounter].correctAnswer + "</strong></p><br><em>" + quiz[questionCounter].opis + "</em><br><br><img src='" + quiz[questionCounter].slika + " 'class='slikica2'/>",
+                      html: "<p style='text-align:center'><strong>Točan odgovor: " + quiz[questionCounter].correctAnswer + "</strong></p><br><em>" + quiz[questionCounter].opis + "</em><br><br><img src='" + quiz[questionCounter].slika + " 'class='slikica2'/>",
                       showCloseButton: true,
                       confirmButtonText: ' dalje',
                       backdrop: false,
@@ -592,7 +593,7 @@
               document.getElementsByClassName('results-page')[0].style.display = "block"
 
               // Display user score as a percentage
-              userScore.text(Math.floor((correctAnswersCounter / quiz.length) * 100) + "%");
+              userScore.text(Math.floor((correctAnswersCounter / quiz.length) * 100) + " %");
               prikazBodova.text(bodovi);
 
               $("#input-q2").attr("value",bodovi)

@@ -90,23 +90,23 @@ function pauza() {
   $(".slika_planeta").attr("src", "planeti/" + naziv_planeta + ".png");
 
   if (naziv_planeta == "zemlja") {
-    $(".opis").html("Zemlja je unutrašnji planet Sunčeva sustava i treći po  udaljenosti od Sunca.")
+    $(".opis").html("Zemlja je unutrašnji planet Sunčeva sustava i treći po udaljenosti od Sunca.")
   } else if (naziv_planeta == "mars") {
-    $(".opis").html("Mars je unutrašnji planet Sunčeva sustava i četvrti po  udaljenosti od Sunca.")
+    $(".opis").html("Mars je unutrašnji planet Sunčeva sustava i četvrti po udaljenosti od Sunca.")
   } else if (naziv_planeta == "jupiter") {
-    $(".opis").html("Jupiter je vanjski planet Sunčeva sustava i peti po  udaljenosti od Sunca.")
+    $(".opis").html("Jupiter je vanjski planet Sunčeva sustava i peti po udaljenosti od Sunca.")
   } else if (naziv_planeta == "venera") {
-    $(".opis").html("Venera je unutrašnji planet Sunčeva sustava i drugi po  udaljenosti od Sunca.")
+    $(".opis").html("Venera je unutrašnji planet Sunčeva sustava i drugi po udaljenosti od Sunca.")
   } else if (naziv_planeta == "uran") {
-    $(".opis").html("Uran je vanjski planet Sunčeva sustava i sedmi po  udaljenosti od Sunca.")
+    $(".opis").html("Uran je vanjski planet Sunčeva sustava i sedmi po udaljenosti od Sunca.")
   } else if (naziv_planeta == "neptun") {
-    $(".opis").html("Neptun je vanjski planet Sunčeva sustava i osmi po  udaljenosti od Sunca.")
+    $(".opis").html("Neptun je vanjski planet Sunčeva sustava i osmi po udaljenosti od Sunca.")
   } else if (naziv_planeta == "pluton") {
     $(".opis").html("Pluton je patuljasti planet koji je do 2006. godine bio klasificiran kao planet.")
   } else if (naziv_planeta == "merkur") {
-    $(".opis").html("Merkur je unutrašnji planet Sunčeva sustava i prvi po  udaljenosti od Sunca.")
+    $(".opis").html("Merkur je unutrašnji planet Sunčeva sustava i prvi po udaljenosti od Sunca.")
   } else if (naziv_planeta == "saturn") {
-    $(".opis").html("Saturn je vanjski planet Sunčeva sustava i šesti po  udaljenosti od Sunca.")
+    $(".opis").html("Saturn je vanjski planet Sunčeva sustava i šesti po udaljenosti od Sunca.")
   }
 
 }
