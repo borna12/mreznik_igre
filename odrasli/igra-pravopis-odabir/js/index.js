@@ -83,7 +83,7 @@ $(document).ready(function () {
         else if (sadrzaj == "dz") { sadrzaj1 = "p3" }
         else if (sadrzaj == "mijesano") { sadrzaj1 = "p3.concat(p1).concat(p2)" }
         $(".sadrzaj").hide()
-        $("#opis").text("odaberi vokabular")
+        $("#opis").text("Odaberi modul.")
         $(".kategorija").show()
     })
     $(".kategorija").click(function () {
@@ -103,7 +103,7 @@ $(document).ready(function () {
             myScript.setAttribute("src", "js/osnovni.js");
             document.body.prepend(myScript);
         }
-        $("#opis").text("odaberi broj pitanja")
+        $("#opis").text("Odaberi broj pitanja.")
         $(".kategorija").hide()
         $(".broj").show()
         if (kategorija == "stranci" && sadrzaj1 == "p3") { $("#100pitanja").hide(); $("#50pitanja").hide() }
@@ -130,7 +130,7 @@ $(document).ready(function () {
             shuffle(prezent)
             prezent = prezent.slice(0, 100)
         }
-        $("#opis").text("odaberi vrijeme po zadataku")
+        $("#opis").text("Odaberi vrijeme rješavanja.")
         $(".broj").hide()
         $(".init-page__btn").show();
     })

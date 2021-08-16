@@ -1,4 +1,29 @@
-﻿anđelov
+﻿deterdžent
+džamija
+džem
+džemper
+džep
+džeparac
+džepić
+džez
+džip
+džul
+džungla
+fidžijski
+hodža
+kambodžanski
+maharadža
+menadžer
+menadžerica
+menadžeričin
+menadžerov
+menadžerski
+narudžba
+pandža
+patlidžan
+pidžama
+udžbenik
+anđelov
 anđeo
 anđeoski
 arkanđelov
@@ -9,8 +34,6 @@ događanje
 događati se
 dosađivati
 doviđenja
-đ
-đ
 đak
 đakovački
 đavao
@@ -101,3 +124,4 @@ uspoređivati
 vojvođanski
 žeđ
 žeđati
+
