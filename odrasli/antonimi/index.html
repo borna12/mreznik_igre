@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Nauči sinonime</title>
+    <title>Nauči antonime</title>
     <meta charset="utf-8">
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    <meta name="description" content="Napiši sinonim za zadanu riječ.">
+    <meta name="description" content="Napiši anatonim za zadanu riječ.">
     <meta name="author" content="Josip Mihaljević, Maja Matijević">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -34,8 +34,8 @@
     <script src='js/jquery.min.js'></script>
     <script src="js/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="css/sweetalert2.min.css">
-    <meta property="og:title" content="Nauči sinonime" />
-    <meta property="og:description" content="Napiši sinonim za zadanu riječ." />
+    <meta property="og:title" content="Nauči antonime" />
+    <meta property="og:description" content="Napiši antonim za zadanu riječ." />
     <meta property="og:image" content="og-slika.jpg" />
 </head>
 
@@ -53,7 +53,7 @@
 
     <div class="init-page">
         <div class="container container2">
-            <h1 class="init-page__title">Napiši sinonim za zadanu riječ</h1>
+            <h1 class="init-page__title">Napiši antonime za zadanu riječ</h1>
             <p id="opis">odaberi broj pitanja</p><br>
             <!--<img src="slike/uvodna.png" style="width: 100%; margin-left: auto; display: block; margin-right: auto; margin-top:20px" />-->
             <button class="btn broj" id="20pitanja">20 pitanja</button>
@@ -106,12 +106,12 @@
             <br>
 
             <p>
-                <form action="https://docs.google.com/forms/d/e/1FAIpQLSc5CqNAXdq8hSmT7emcnsJVynrXREY5KqWl3m_ILRw2YiJ2OA/formResponse"
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSeqFHu33V_jYYsnrg4E4kcN2WnwT7as5DkJLltZrhHFCu0AcQ/formResponse"
       target="_self"
       id="bootstrapForm"
       method="POST" style="display: none;">
     <fieldset>
-        <h2>pogreske sinonimi<br><small></small></h2>
+        <h2>pogreske antonimi<br><small></small></h2>
     </fieldset>
 
 
@@ -139,7 +139,7 @@
                 <button class="btn" onclick="location.reload()">nova igra</button>
                 <script>
                     var p1 = [];
-                    $.get('js/sinonimi_probrano.txt', function(data) {
+                    $.get('js/antonimi.txt', function(data) {
                         p1 = data.split("\n");
                     }, 'text');
                 </script>

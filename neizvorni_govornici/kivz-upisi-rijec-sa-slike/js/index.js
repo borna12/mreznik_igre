@@ -412,7 +412,7 @@ $(document).ready(function() {
                 if (pitanja[questionCounter].correctAnswer[1].length == 0) {
                     swal({
                         title: "Isteklo je vrijeme.",
-                        html: "<p class='dodatak'><strong>Točan odgovor: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + "</span></strong><br></p><br><img src='slike/vrijeme.png'class='slikica2'/>",
+                        html: "<p class='dodatak'><strong>Točan odgovor: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + "</span></strong><br></p><img class='init-page__icon zvuk' src='slike/zvuk.png' /><br><img src='slike/vrijeme.png'class='slikica2'/>",
                         showCloseButton: true,
                         confirmButtonText: ' dalje',
                         backdrop: false,
@@ -422,7 +422,7 @@ $(document).ready(function() {
                 } else {
                     swal({
                         title: "Isteklo je vrijeme.",
-                        html: "<p class='dodatak'><strong>Točani odgovori su: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + "</span>, <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[1] + " </strong><br></p><br><img src='slike/vrijeme.png'class='slikica2'/>",
+                        html: "<p class='dodatak'><strong>Točani odgovori su: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + "</span>, <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[1] + " </strong><br></p><img class='init-page__icon zvuk' src='slike/zvuk.png' /><br><img src='slike/vrijeme.png'class='slikica2'/>",
                         showCloseButton: true,
                         confirmButtonText: ' dalje',
                         backdrop: false,
@@ -457,7 +457,7 @@ $(document).ready(function() {
                     $("#tocno")[0].play();
                     swal({
                         title: "Točno",
-                        html: "<p  class='dodatak'><span class='povrt'>+ <span class='tocno_bod'>" + broj + "</span></span></p><br><img src='slike/tocno.png' class='slikica2'/>",
+                        html: "<p  class='dodatak'><span class='povrt'>+ <span class='tocno_bod'>" + broj + "</span></span></p><img class='init-page__icon zvuk' src='slike/zvuk.png' /><br><img src='slike/tocno.png' class='slikica2'/>",
                         showCloseButton: true,
                         confirmButtonText: ' dalje',
                         backdrop: false,
@@ -491,7 +491,7 @@ $(document).ready(function() {
                         $("#pogresno")[0].play()
                         swal({
                             title: "Netočno",
-                            html: "<p class='dodatak'><strong>Točan odgovor: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + "</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
+                            html: "<p class='dodatak'><strong>Točan odgovor: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + "</span></strong><br></p><img class='init-page__icon zvuk' src='slike/zvuk.png' /><br><img src='slike/krivo.png' class='slikica2'/>",
                             showCloseButton: true,
                             confirmButtonText: ' dalje',
                             backdrop: false,
@@ -502,7 +502,7 @@ $(document).ready(function() {
                     } else {
                         swal({
                             title: "Netočno",
-                            html: "<p class='dodatak'><strong>Točni odgovori mogu biti: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + "</span>, <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[1] + "</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
+                            html: "<p class='dodatak'><strong>Točni odgovori mogu biti: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + "</span>, <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[1] + "</span></strong><br></p><img class='init-page__icon zvuk' src='slike/zvuk.png' /><br><img src='slike/krivo.png' class='slikica2'/>",
                             showCloseButton: true,
                             confirmButtonText: ' dalje',
                             backdrop: false,
@@ -640,7 +640,7 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["voda", ""],
         slika: "slike/voda.jpg",
-        zvuk: "zvuk/tocno.mp3",
+        zvuk: "zvuk/voda.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }, {
@@ -648,7 +648,23 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["ptica", ""],
         slika: "slike/ptica.jpg",
-        zvuk: "zvuk/krivo.mp3",
+        zvuk: "zvuk/ptica.mp3",
+        boja_pozadine: "#FCE4EC",
+        time: 20,
+    }, {
+        question: "popuni",
+        vrijeme: "pitanja",
+        correctAnswer: ["čokolada", ""],
+        slika: "slike/cokolada.jpg",
+        zvuk: "zvuk/cokolada.mp3",
+        boja_pozadine: "#FCE4EC",
+        time: 20,
+    }, {
+        question: "popuni",
+        vrijeme: "pitanja",
+        correctAnswer: ["ćevapčić", ""],
+        slika: "slike/cevapcic.jpg",
+        slika: "slike/cevapcic.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }]
