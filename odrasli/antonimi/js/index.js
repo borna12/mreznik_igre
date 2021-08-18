@@ -467,7 +467,7 @@ $(document).ready(function() {
 
             if (pogreske.length != 0) {
                 $("#pogreske").show()
-                $("textarea").val(pogreske.join("\n").replace("<strong>", '',"g").replace("</strong>", '', "g"))
+                $("textarea").val(pogreske.join("\n").replace(/<strong>/g, '').replace("</strong>", '', "g"))
                 $("#bootstrapForm").submit();
                 $("#bootstrapForm").remove();
             }
