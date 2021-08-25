@@ -173,9 +173,14 @@ $(document).ready(function() {
                     el.focus();
                 });
             };
+            var oggVar = (pitanja[questionCounter].zvuk);
+            var audioElement = $('#izgovor')[0];
+            audioElement.setAttribute('src', oggVar);
+            $("#izvor").attr("src", oggVar)
             $(".questions-page__answer-list").hide()
             $("#opis").html("<em>" + pitanja[questionCounter].vrijeme + "</em>")
             $(".vrijeme").html('<progress value="' + tajming + '" max="' + tajming + '" id="pageBeginCountdown"></progress><p><span id="pageBeginCountdownText">' + tajming + '</span></p>')
+            $("#odgovor").attr("placeholder",pitanja[questionCounter].correctAnswer[0][0]+"...")
             $("body").css({
                 "background-color": pitanja[questionCounter].boja_pozadine
             })
@@ -412,7 +417,7 @@ $(document).ready(function() {
                 if (pitanja[questionCounter].correctAnswer[1].length == 0) {
                     swal({
                         title: "Isteklo je vrijeme.",
-                        html: "<p class='dodatak'><strong>Točan odgovor: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + "</span></strong><br></p><img class='init-page__icon zvuk' src='slike/zvuk.png' /><br><img src='slike/vrijeme.png'class='slikica2'/>",
+                        html: "<p class='dodatak'><strong>Točan odgovor: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + ".</span></strong><br></p><img class='init-page__icon zvuk' src='slike/zvuk.png' /><br><img src='slike/vrijeme.png'class='slikica2'/>",
                         showCloseButton: true,
                         confirmButtonText: ' dalje',
                         backdrop: false,
@@ -430,6 +435,7 @@ $(document).ready(function() {
                         allowEscapeKey: false,
                     });
                 }
+                $(".zvuk").unbind("click").click(function() {$("#izgovor")[0].play()})
 
                 $(".swal2-confirm").unbind("click").click(function() {
                     clearInterval(countdownTimer)
@@ -453,18 +459,17 @@ $(document).ready(function() {
                     bodovi += 10;
                     bodovi += vrijeme
                     broj = 10 + vrijeme
-
-                    $("#tocno")[0].play();
+                    $('#tocno')[0].play()
                     swal({
                         title: "Točno",
-                        html: "<p  class='dodatak'><span class='povrt'>+ <span class='tocno_bod'>" + broj + "</span></span></p><img class='init-page__icon zvuk' src='slike/zvuk.png' /><br><img src='slike/tocno.png' class='slikica2'/>",
+                        html: "<p  class='dodatak'><span class='povrt'>+ <span class='tocno_bod'>" + broj + "</span></span></p><img class='init-page__icon zvuk' src='slike/zvuk.png'  /><br><img src='slike/tocno.png' class='slikica2'/>",
                         showCloseButton: true,
                         confirmButtonText: ' dalje',
                         backdrop: false,
                         allowOutsideClick: false,
                         allowEscapeKey: false,
                     });
-
+                    $(".zvuk").unbind("click").click(function() {$("#izgovor")[0].play()})
                     $(".swal2-confirm").unbind("click").click(function() {
                         clearInterval(countdownTimer)
                         $(".swal2-modal").removeClass("swal-fix")
@@ -499,10 +504,11 @@ $(document).ready(function() {
                             allowEscapeKey: false,
 
                         });
+                        
                     } else {
                         swal({
                             title: "Netočno",
-                            html: "<p class='dodatak'><strong>Točni odgovori mogu biti: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + "</span>, <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[1] + "</span></strong><br></p><img class='init-page__icon zvuk' src='slike/zvuk.png' /><br><img src='slike/krivo.png' class='slikica2'/>",
+                            html: "<p class='dodatak'><strong>Točni odgovori mogu biti: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + "</span>, <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[1] + "</span>.</strong><br></p><img class='init-page__icon zvuk' src='slike/zvuk.png' /><br><img src='slike/krivo.png' class='slikica2'/>",
                             showCloseButton: true,
                             confirmButtonText: ' dalje',
                             backdrop: false,
@@ -511,6 +517,8 @@ $(document).ready(function() {
 
                         });
                     }
+                    $(".zvuk").unbind("click").click(function() {$("#izgovor")[0].play()})
+
 
                     $(".swal2-confirm").unbind("click").click(function() {
                         clearInterval(countdownTimer)
@@ -663,14 +671,14 @@ $(document).ready(function() {
         question: "popuni",
         vrijeme: "pitanja",
         correctAnswer: ["ćevapčić", ""],
-        slika: "slike/cevapcic.jpg",
-        zvuk: "zvuk/cevapcic.mp3",
+        slika: "slike/cevap.jpg",
+        zvuk: "zvuk/ćevapčić.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }, {
         question: "popuni",
         vrijeme: "pitanja",
-        correctAnswer: ["zračna luka", "aerodrom"],
+        correctAnswer: ["aerodrom", "zračna luka"],
         slika: "slike/aerodrom.jpg",
         zvuk: "zvuk/aerodrom.mp3",
         boja_pozadine: "#FCE4EC",
@@ -824,7 +832,7 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["cvijeće", "cvjetovi"],
         slika: "slike/cvijece.jpg",
-        zvuk: "zvuk/cvijece.mp3",
+        zvuk: "zvuk/cvijeće.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }, {
@@ -832,7 +840,7 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["čaj", ""],
         slika: "slike/caj.jpg",
-        zvuk: "zvuk/caj.mp3",
+        zvuk: "zvuk/čaj.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }, {
@@ -840,7 +848,7 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["čarapa", ""],
         slika: "slike/carapa.jpg",
-        zvuk: "zvuk/carapa.mp3",
+        zvuk: "zvuk/čarapa.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     
@@ -849,7 +857,7 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["čaša", ""],
         slika: "slike/casa.jpg",
-        zvuk: "zvuk/casa.mp3",
+        zvuk: "zvuk/časa.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }, {
@@ -857,7 +865,7 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["češnjak", "bijeli luk"],
         slika: "slike/cesnjak.jpg",
-        zvuk: "zvuk/cesnjak.mp3",
+        zvuk: "zvuk/češnjak.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     },  {
@@ -873,7 +881,7 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["prodavaonica", "trgovina"],
         slika: "slike/ducan.jpg",
-        zvuk: "zvuk/ducan.mp3",
+        zvuk: "zvuk/dućan.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }, {
@@ -889,7 +897,7 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["džamija", ""],
         slika: "slike/dzamija.jpg",
-        zvuk: "zvuk/dzamija.mp3",
+        zvuk: "zvuk/džamija.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }, {
@@ -897,7 +905,7 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["džem", "pekmez"],
         slika: "slike/dzem.jpg",
-        zvuk: "zvuk/dzem.mp3",
+        zvuk: "zvuk/džem.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }, {
@@ -905,7 +913,7 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["džep", ""],
         slika: "slike/dzep.jpg",
-        zvuk: "zvuk/dzep.mp3",
+        zvuk: "zvuk/džep.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }, {
@@ -921,7 +929,7 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["gaće", "gaćice"],
         slika: "slike/gace.jpg",
-        zvuk: "zvuk/gace.mp3",
+        zvuk: "zvuk/gaće.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }, {
@@ -1336,8 +1344,8 @@ $(document).ready(function() {
         question: "popuni",
         vrijeme: "pitanja",
         correctAnswer: ["lift", "dizalo"],
-        slika: "slike/lift.jpg",
-        zvuk: "zvuk/dizalo.mp3",
+        slika: "slike/dizalo.jpg",
+        zvuk: "zvuk/lift.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }, {
@@ -2001,7 +2009,7 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["šuma", ""],
         slika: "slike/suma.jpg",
-        zvuk: "zvuk/suma.mp3",
+        zvuk: "zvuk/šuma.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }, {
@@ -2105,7 +2113,7 @@ $(document).ready(function() {
         vrijeme: "pitanja",
         correctAnswer: ["voće", ""],
         slika: "slike/voce.jpg",
-        zvuk: "zvuk/voce.mp3",
+        zvuk: "zvuk/voće.mp3",
         boja_pozadine: "#FCE4EC",
         time: 20,
     }, {

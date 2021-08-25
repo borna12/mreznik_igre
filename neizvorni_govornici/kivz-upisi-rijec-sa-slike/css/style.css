@@ -15,7 +15,7 @@ body {
 }
 
 .mrzim{padding: 10px;}
-
+.hint{text-align: center;}
 body {
     font-size: 1rem;
     font-family: Open Sans, sans-serif;
@@ -71,7 +71,7 @@ form {
 /* Container divs*/
 
 #odgovor {
-width: 100%;    border-radius: 5px;
+width: 100%;    border-radius: 5px; padding: 5px;
 }
 
 .init-page,
