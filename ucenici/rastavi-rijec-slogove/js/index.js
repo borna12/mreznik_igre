@@ -349,9 +349,7 @@ $(document).ready(function () {
     //})
     $('body').on("keyup", function () {
 
-        if ($('.oznaceno').length > 0) {
-            submitBtn.click()
-        }
+       
     })
 
 
@@ -392,7 +390,7 @@ $(document).ready(function () {
             $("#zvono")[0].play();
             swal({
                 title: "Vrijeme je isteklo.",
-                html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + $(".rijec").html() + "</span><img src='slike/vrijeme.png'class='slikica2'/>",
+                html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + $(".rijec").html() + ".</span><img src='slike/vrijeme.png'class='slikica2'/>",
                 showCloseButton: true,
                 confirmButtonText: ' dalje',
                 backdrop: false,
@@ -439,6 +437,7 @@ $(document).ready(function () {
                     backdrop: false,
                     allowOutsideClick: false,
                     allowEscapeKey: false,
+                
                 });
 
                 $(".swal2-confirm").unbind("click").click(function () {
@@ -453,7 +452,7 @@ $(document).ready(function () {
                     $(".swal2-modal").removeClass("swal-fix")
                     nastavi()
                 })
-                continueBtn.show(300);
+                
             } else {
                 if (netocno == 1) {
                     pogreske.push(rijeci.join(""))
@@ -463,7 +462,7 @@ $(document).ready(function () {
                     $(".tocno").addClass('crta');
                     swal({
                         title: "<h2>Netočno!</h2>",
-                        html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + $(".rijec").html() + "</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
+                        html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + $(".rijec").html() + ".</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
                         showCloseButton: true,
                         confirmButtonText: ' dalje',
                         backdrop: false,
@@ -489,7 +488,7 @@ $(document).ready(function () {
                     $(".tocno").addClass('crta');
                     swal({
                         title: "<h2>Niste označili sve odgovore!</h2>",
-                        html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + $(".rijec").html() + "</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
+                        html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + $(".rijec").html() + ".</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
                         showCloseButton: true,
                         confirmButtonText: ' dalje',
                         backdrop: false,
