@@ -215,9 +215,9 @@ $(document).ready(function() {
         $("#osnova2").text(prezent[questionCounter].split(" = ")[0])
 
         if (prezent[questionCounter].split(" = ")[1].length > 2) {
-            $("#oblik").html("<br> Prvo slovo odgovora: " + prezent[questionCounter].split(" = ")[1][0].toLowerCase() + "<br>broj slova: " + prezent[questionCounter].split(" = ")[1].length)
+            $("#oblik").html("<br> Prvo slovo odgovora: " + prezent[questionCounter].split(" = ")[1][0].toLowerCase() + "<br>broj znakova: " + prezent[questionCounter].split(" = ")[1].length)
         } else {
-            $("#oblik").html("broj slova: " + prezent[questionCounter].split(" = ")[1].length)
+            $("#oblik").html("broj znakova: " + prezent[questionCounter].split(" = ")[1].length)
         }
         //$(".slikica").attr("src", "slike/" + prezent[questionCounter].slika)
 
@@ -339,7 +339,7 @@ $(document).ready(function() {
             $("#zvono")[0].play();
             swal({
                 title: "Isteklo je vrijeme.",
-                html: "<p class='dodatak'>Točan odgovor: <span class='nastavak'>" + prezent[questionCounter].split(" = ")[1] + "</span> = " + prezent[questionCounter].split(" = ")[0] + "<br></p><br><img src='slike/vrijeme.png'class='slikica2'/>",
+                html: "<p class='dodatak'>točan odgovor: <span class='nastavak'>" + prezent[questionCounter].split(" = ")[1] + "</span> = " + prezent[questionCounter].split(" = ")[0] + "<br></p><br><img src='slike/vrijeme.png'class='slikica2'/>",
                 showCloseButton: true,
                 confirmButtonText: ' dalje',
                 backdrop: false,
@@ -407,7 +407,7 @@ $(document).ready(function() {
                 $("#pogresno")[0].play()
                 swal({
                     title: "Netočno",
-                    html: "<p class='dodatak'>Točan odgovor: <span class='nastavak'>" + prezent[questionCounter].split(" = ")[1] + "</span> = " + prezent[questionCounter].split(" = ")[0] + "<br></p><br><img src='slike/krivo.png' class='slikica2'/>",
+                    html: "<p class='dodatak'>točan odgovor: <span class='nastavak'>" + prezent[questionCounter].split(" = ")[1] + "</span> = " + prezent[questionCounter].split(" = ")[0] + "<br></p><br><img src='slike/krivo.png' class='slikica2'/>",
                     showCloseButton: true,
                     confirmButtonText: ' dalje',
                     backdrop: false,
