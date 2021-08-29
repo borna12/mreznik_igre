@@ -660,7 +660,7 @@
       // Load the next question and set of answers
       generateQuestionAndAnswers = function () {
           $(".questions-page__answer-list").show()
-          question.html("<span style='font-size: 1.3rem;'>" + (questionCounter + 1) + "/" + quiz.length + ".</span> <br>");
+          question.html("<span style='font-size: 1.3rem;'>" + (questionCounter + 1) + "/" + quiz.length + "</span> <br>");
           shuffle(quiz[questionCounter].answers);
           answerA.text(quiz[questionCounter].answers[0]);
           if (answerA.html() == "" || null) {

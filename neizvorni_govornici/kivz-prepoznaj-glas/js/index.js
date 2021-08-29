@@ -196,7 +196,7 @@ $(document).ready(function() {
     generateQuestionAndAnswers = function() {
         $(".begin-countdown").hide(300)
 
-        question.html("<span style='font-size: 1.3rem;'>" + (questionCounter + 1) + "/" + pitanja.length + ".</span> <br>");
+        question.html("<span style='font-size: 1.3rem;'>" + (questionCounter + 1) + "/" + pitanja.length + "</span> <br>");
         $("#odgovor").val('')
         $(".popuni").show();
         $(".questions-page__answer-list").hide()

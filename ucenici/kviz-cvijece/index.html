@@ -150,70 +150,9 @@
 
             <p>
               
-                <form id='input-form' action='' method='POST' target='no-target'><br><select id="ikona">
-       
-
-</select><label for='ime'>Ime : </label><input
-                        id='input-q1' name='q1'><br> <input id='input-q2'
-                        placeholder='q2' name='q2' value='' disabled style='display:none'> <br><button id='form-submit' type='submit'disabled="true">predajte rezultat</button> </form>
-                <iframe src='#' id='no-target' name='no-target' style='visibility:hidden;display:none'></iframe><br>
-                <!--<button class="results-page__retake-btn btn">Ponovite kviz</button>
-                <button class="videoPoster js-videoPoster" style="background-image:url(http://i2.wp.com/www.cgmeetup.net/home/wp-content/uploads/2015/05/Avengers-Age-of-Ultron-UI-Reel-1.jpg);">Play video</button>
-            </div>-->
+  
                 <button class="results-page__retake-btn btn">ponovite kviz</button>
-                <script>
-                    
-                    var target = document.getElementById("ikona");
-var emojiCount = emoji.length;
 
-for(var index = 0; index < emojiCount; index++)
-{
-  addEmoji(emoji[index]);
-}
-
-function addEmoji(code)
-{
-  var option = document.createElement('option');
-  option.innerHTML =  code;
-    option.value=code;
-  target.appendChild(option);
-}
-                    
-                     if (localStorage.getItem("ime") != null) {
-                         $('#input-q1').val(localStorage.getItem("ime"))
-                         $('#ikona').val(localStorage.getItem("ikona"))
-                         $('#form-submit').prop('disabled', this.value == "true");
-                     }
-                         
-                    $('#input-form').one('submit', function () {
-                        localStorage.setItem('ikona', $('#ikona').val())
-                        localStorage.setItem('ime', $('#input-q1').val())
-                        localStorage.setItem('pokrenuto', "da")
-                        var inputq1 = encodeURIComponent($('#ikona').val()+" "+$('#input-q1').val());
-                        var inputq2 = encodeURIComponent($('#input-q2').val());
-                        var q1ID = "entry.412821582";
-                        var q2ID = "entry.902512960";
-
-                        var baseURL =
-                            'https://docs.google.com/forms/d/e/1FAIpQLSdSkT70SoQieYUJ4NkRx0oqTiG96iS364OHHfGhjW_YSZswaw/formResponse?';
-
-                        var submitRef = '&submit=970054585833720596';
-                        var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 +
-                            submitRef);
-                        console.log(submitURL);
-                        $(this)[0].action = submitURL;
-                        setTimeout(
-                            function () {
-                                window.location.href = 'rez.html';
-                            }, 1000);
-                    });
-                    
-                
-
-                    $(' #input-q1').keyup(function () {
-                        $('#form-submit').prop('disabled', this.value == "" ? true : false);
-                    })
-                </script>
         </div>
     </div>
     <script src='js/lightzoom.js'></script>

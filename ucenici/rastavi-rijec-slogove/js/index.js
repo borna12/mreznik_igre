@@ -166,7 +166,7 @@ $(document).ready(function () {
     // Load the next question and set of answers
     generateQuestionAndAnswers = function () {
         moze=1
-        question.html("<span style='font-size: 1.3rem;'>" + (questionCounter + 1) + "/" + pitanja.length + ".</span> <br>");
+        question.html("<span style='font-size: 1.3rem;'>" + (questionCounter + 1) + "/" + pitanja.length + "</span> <br>");
         $("#odgovor").val('')
         $(".popuni").show();
         $(".questions-page__answer-list").hide()
