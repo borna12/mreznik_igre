@@ -37,7 +37,7 @@
     <script src="js/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="css/sweetalert2.min.css">
     <meta property="og:title" content="Kviz znanja" />
-    <meta property="og:description" content="Označi glas koji ima naglasak i duljinu." />
+    <meta property="og:description" content="Odredi gdje se nalazi naglasak kod riječi te koji naglasak se koristi." />
     <meta property="og:image" content="og-slika.jpg" />
     <link rel="stylesheet" type="text/css" href="doc/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="doc/css/prettify.css" />
@@ -60,8 +60,7 @@
             <img src="preloader.gif" alt="NILA">
         </div>
     </div>
-    <span onclick="location.href='javascript:history.back()'" class="w3-button w3-display-topleft home">
-        <i class="fa fa-home"></i> </span>
+
     <audio class="audios" id="tocno" preload="none">
         <source src="zvuk/tocno.mp3" type="audio/mpeg">
     </audio>
@@ -84,8 +83,8 @@
 margin-left: auto;
 display: block;
 margin-right: auto; margin-top:20px" />-->
-            <span class="init-page__btn btn" id="bez">igra bez vremenskog ograničenja</span>
-            <span class="init-page__btn btn" id="20">igra s ograničenjem od 20 sekundi po pitanju</span>
+            <span class="init-page__btn btn" id="bez">igra bez vremenskoga ograničenja</span>
+            <span class="init-page__btn btn" id="20">igra s ograničenjem od 20 sekunda po pitanju</span>
         </div>
     </div>
 
@@ -137,7 +136,7 @@ transform: translateY(-50%);">
             <p>
             <form class="jedan"
                 action="https://docs.google.com/forms/d/e/1FAIpQLSe3V_eHV3E_sqUqCUlKMUbJ1E1HLu1QdcJiB-rtgIe8MPApSw/formResponse"
-                target="_self" id="bootstrapForm" method="POST">
+                target="_self" id="bootstrapForm" method="POST" style="display:none">
                 <legend for="736982347">
                     <select id="ikona" style="height:30px"></select> Ime:
                     <input id="312289462" type="text" name="entry.312289462" class="form-control" required id="input-q1"

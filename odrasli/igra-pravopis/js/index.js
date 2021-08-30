@@ -231,7 +231,7 @@ $(document).ready(function () {
 
     // Load the next question and set of answers
     generateQuestionAndAnswers = function () {
-        question.html("<span style='font-size: 1.3rem;'>" + (questionCounter + 1) + "/" + prezent.length + ".</span> <br>");
+        question.html("<span style='font-size: 1.3rem;'>" + (questionCounter + 1) + "/" + prezent.length + "</span> <br>");
         $(".questions-page__answer-list").show();
         $(".popuni").hide();
         tocan = prezent[questionCounter].osnova + prezent[questionCounter].correctAnswer[0] + prezent[questionCounter].osnova2

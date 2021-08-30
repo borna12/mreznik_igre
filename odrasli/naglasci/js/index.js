@@ -128,7 +128,7 @@ $(document).ready(function () {
           
             pitanja = p1
             shuffle(pitanja)
-            pitanja = pitanja.slice(0, 20)
+            pitanja = pitanja.slice(0, 15)
         }, 1000);
 
 
@@ -231,7 +231,7 @@ $(document).ready(function () {
     // Load the next question and set of answers
     generateQuestionAndAnswers = function () {
         moze = 1
-        question.html("<span style='font-size: 1.3rem;'>" + (questionCounter + 1) + "/" + pitanja.length + ".</span> <br>");
+        question.html("<span style='font-size: 1.3rem;'>" + (questionCounter + 1) + "/" + pitanja.length + "</span> <br>");
         $("#odgovor").val('')
         $(".popuni").show();
         $(".questions-page__answer-list").hide()
@@ -287,7 +287,7 @@ $(document).ready(function () {
                 }
                 html += "<span class='oznaci tocno tooltip' title='" + odabir + "'>" + removeAccents(rijeci[x]) + "</span>"
             } else {
-                html += "<span class='oznaci netocno tooltip' title='nema akcenta'>" + rijeci[x] + "</span>"
+                html += "<span class='oznaci netocno tooltip' title='nema naglaska'>" + rijeci[x] + "</span>"
             }
         }
         $(window).on('hashchange', function () {
@@ -497,7 +497,7 @@ $(document).ready(function () {
             $("#zvono")[0].play();
             swal({
                 title: "Vrijeme je isteklo.",
-                html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + tocan_odg + "</span><img src='slike/vrijeme.png'class='slikica2'/>",
+                html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + tocan_odg + "</span>.<img src='slike/vrijeme.png'class='slikica2'/>",
                 showCloseButton: true,
                 confirmButtonText: ' dalje',
                 backdrop: false,
@@ -558,7 +558,7 @@ $(document).ready(function () {
                 $(".rijec").find("span").removeClass("oznaceno")
                 swal({
                     title: "<h2>Netočno!</h2>",
-                    html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + tocan_odg + "</span></strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
+                    html: "<p class='dodatak'><strong>Točan je odgovor: <span class='nastavak'>" + tocan_odg + "</span>.</strong><br></p><br><img src='slike/krivo.png' class='slikica2'/>",
                     showCloseButton: true,
                     confirmButtonText: ' dalje',
                     backdrop: false,

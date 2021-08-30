@@ -53,7 +53,7 @@
 
     <div class="init-page">
         <div class="container container2">
-            <h1 class="init-page__title">Napiši antonime za zadanu riječ</h1>
+            <h1 class="init-page__title">Napiši antonim za zadanu riječ</h1>
             <p id="opis">odaberi broj pitanja</p><br>
             <!--<img src="slike/uvodna.png" style="width: 100%; margin-left: auto; display: block; margin-right: auto; margin-top:20px" />-->
             <button class="btn broj" id="20pitanja">20 pitanja</button>
@@ -61,8 +61,8 @@
             <button class="btn broj" id="100pitanja">100 pitanja</button>
 
 
-            <button class="init-page__btn btn" id="bez" style="display:none">igra bez vremenskog ograničenja</button>
-            <button class="init-page__btn btn" id="20" style="display:none">20 sekundi po pitanju</button>
+            <button class="init-page__btn btn" id="bez" style="display:none">igra bez vremenskoga ograničenja</button>
+            <button class="init-page__btn btn" id="20" style="display:none">20 sekunda po pitanju</button>
 
         </div>
     </div>
@@ -140,7 +140,7 @@
                 <script>
                     var p1 = [];
                     $.get('js/antonimi.txt', function(data) {
-                        p1 = data.split("\n");
+                        p1 = data.split("\r\n");
                     }, 'text');
                 </script>
                 <script src="js/emoji.js" charset="utf-8"></script>

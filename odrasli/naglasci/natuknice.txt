@@ -1,5 +1,3 @@
-a
-ȁ
 abecéda
 ȁbecēdnī
 adàpter
@@ -63,6 +61,7 @@ aktívnōst
 alegòrija
 alegòrījskī
 alfàbet
+ȁlfa-mȕžjāk
 algorìtam
 algorìtamskī
 àli
@@ -80,7 +79,7 @@ alkohòličārskī
 alpìnist
 alpìnistica
 alpìnističin
-alpinìstičkī
+alpinìstičk
 alpìnistkinja
 alpìnistkinjin
 alpìnistov
@@ -111,6 +110,7 @@ anglìstika
 ànglistov
 anglìzam
 àngōlskī
+anòsmija
 anténa
 àntēnskī
 antialkohòličār
@@ -139,7 +139,7 @@ argèntīnskī
 àrgōn
 arhìtekt
 arhìtektica
-arhìtektičin
+arhìtektiči
 arhitèktōnskī
 arhìtektov
 arhìtektskī
@@ -158,6 +158,7 @@ arhìvistov
 àrmēnskī
 àrsēn
 arsénov
+asimptòmatskī
 asonàncija
 asonàncījskī
 àstāt
@@ -225,7 +226,7 @@ bȃjka
 bajkòvit
 bajkòvito
 bajkòvitōst
-Bàjram
+bàjram
 bàjramskī
 bȁjt
 báka
@@ -289,7 +290,7 @@ bȁt
 batèrija
 batèrījskī
 bȁvarskī
-bȁvitise
+bȁviti se
 báza
 bàzēn
 bazènčić
@@ -395,6 +396,7 @@ biskùpija
 biskùpījskī
 bȉskupov
 bȉskupskī
+bȉstričkī
 bȉt
 bȉtan
 bȉti
@@ -455,7 +457,7 @@ bògato
 bògatstvo
 bòginje
 bòja
-bòjatise
+bòjati se
 bojàžljiv
 bojàžljivo
 bojàžljivōst
@@ -493,7 +495,7 @@ bȏr
 bòravak
 bòraviti
 bòrba
-bòritise
+bòriti se
 bòrov
 boróvnica
 bȏs
@@ -558,9 +560,9 @@ brigàdīrka
 brigàdīrkin
 brigadírov
 brigàdīrskī
-brȉjati(se)
+brȉjati (se)
 brijȇg
-brȉnutise
+brȉnuti se
 brìsāč
 brȉsati
 brìselskī
@@ -592,7 +594,7 @@ brònčanōst
 bronhìtis
 brȍnhoskop
 brȍš
-bšljan
+br̀šljan
 brȕh
 bȓz
 brzìna
@@ -627,7 +629,7 @@ budàlica
 budàličin
 budàlin
 bùdimpeškī
-búditi(se)
+búditi (se)
 bùdūćī
 budúćnōst
 bùdvanskī
@@ -661,7 +663,8 @@ cȁrina
 cȃrstvo
 cȅler
 cȅlerov
-cȇnta?cȅntar
+cȇnt
+cȅntar
 cèntilitar
 cèntimetar
 centrifúga
@@ -742,7 +745,7 @@ cŕtež
 cȑtica
 cȑtičnī
 cȓv
-cven
+cr̀ven
 crvèniti
 crvènjeti
 cȕpkati
@@ -789,7 +792,7 @@ cvrkùtati
 čȁša
 čȁvao
 čèčēnskī
-čegtāljka
+čegr̀tāljka
 čȅkānje
 čekaóna
 čekaònica
@@ -831,9 +834,9 @@ cvrkùtati
 četrdesetogòdišnjī
 četrdesetogòdišnjica
 četrdesetòrica
-četnaest
-četnaestero
-četnaestī
+četr̀naest
+četr̀naestero
+četr̀naestī
 četvèri
 čȅtvero
 četveròdijēlan
@@ -856,14 +859,15 @@ cvrkùtati
 čètvōrka
 čȅtvt
 četvŕtak
-četvtāš
+četvr̀tāš
 ćetvrtàšica
 čètvrtī
-četvtica
-četvtina
-četvtīnka
+četvr̀tica
+četvr̀tina
+četvr̀tīnka
 čȅznuti
 číčak
+číčkov
 čȉgra
 čìjī
 čìjīgod
@@ -875,7 +879,7 @@ cvrkùtati
 čȋn
 čìnele
 čìniti
-čìnitise
+čìniti se
 čȉnjenica
 čȉp
 čȉst
@@ -905,7 +909,7 @@ cvrkùtati
 čòvjek
 čúčati
 čȕčnuti
-čȕditise
+čȕditi se
 čȕdo
 čȕti
 čúvati
@@ -944,12 +948,15 @@ dàlton
 daltònist
 daltònistica
 daltònističin
+daltonìzam
 dȃljnjī
 dáma
 dámin
 dȃn
 dànas
 dànašnjī
+dànašnjica
+dànašnjōst
 dȃnskī
 dȃnjī
 dȃr
@@ -1047,16 +1054,22 @@ devetòmjesečnī
 devetòrica
 dȅvetstō
 dȅvetstōtī
-díčitise
+dezinfèkcija
+dezinficìjens
+dezinficírati
+díčiti se
 diftèrija
 digitalizácija
 digitalizírati
 dȉgitālnī
 dȉgnuti
 dijabètes
+dijagnosticírati
+dijagnóza
 dijàlog
 dijàspora
 dijéliti
+dijélom
 dijéljēnje
 dijéta
 dijéte
@@ -1072,10 +1085,12 @@ dȉnamometar
 dȉnja
 dȉo
 dȉonica
+dȉoničkī
 diòptrija
 diplóma
 diplòmat
 diplòmatkinja
+diplòmatov
 dìrektan
 dìrektor
 dìrektorica
@@ -1092,7 +1107,7 @@ diskèta
 diskotéka
 dȉv
 dȋvan
-dívitise
+díviti se
 dȉvkinja
 dȉvkinjin
 dìvljāk
@@ -1123,6 +1138,8 @@ djȅdovina
 djȅlatnōst
 djèlitelj
 djȅlo
+djȅlomicē
+djȅlomično
 djȅlotvōran
 djȅlotvōrno
 djelotvórnōst
@@ -1177,15 +1194,17 @@ dȍdīr
 dodjeljívati
 dȍgađāj
 dogáđānje
-dogáđatise
-dogòditise
+dogáđati se
+dogòditi se
 dogovárati
 dȍgovōr
 dogovòriti
 dòista
 dójam
 dȏjka
-dȍk?
+dȍk
+dòka
+dokàda
 dòkaz
 dòkoljenica
 dòkoljēnka
@@ -1195,7 +1214,8 @@ dȍktoričin
 doktorírati
 dȍktorov
 dȍktorskī
-dòkud?dòkuda
+dòku
+dòkuda
 dokùment
 dȍlār
 dòlazak
@@ -1224,7 +1244,9 @@ dopódnē
 dopódnēvnī
 dòručak
 dòručkovati
+dòsad
 dȍsada
+dosàda
 dȍsādan
 dosáditi
 dȍsādno
@@ -1237,6 +1259,10 @@ dòsljedno
 dòsljednōst
 dȍsta
 došášće
+dòtad
+dotàda
+dòtud
+dotùdā
 dòvesti
 doviđénja
 dȍvōljan
@@ -1270,20 +1296,21 @@ drȕgī
 drȕgī
 drùkčijī
 drùštven
+drùštvenī
 drùštveno
 drùštvenōst
 drùštvo
 drúžēnje
-drúžitise
+drúžiti se
 dŕvce
-dvēće
-dven
+dr̀vēće
+dr̀ven
 dȓvlje
 dȑvo
 dȑzak
-džati
-džava
-džāvnī
+dr̀žati
+dr̀žava
+dr̀žāvnī
 dubìna
 dubinòmjer
 dùbok
@@ -1387,6 +1414,7 @@ džùngla
 đȃk
 đȁkovačkī
 đȁvao
+đȃvlov
 đavólak
 đavólčev
 đavòlčić
@@ -1397,6 +1425,7 @@ džùngla
 đavòlskī
 đȍn
 đùmbīr
+đumbírov
 đúrđevačkī
 đùrđica
 ȇ-adrèsa
@@ -1432,6 +1461,14 @@ enèrgījskī
 enklìtika
 ȅno
 ȇp
+epidèmija
+epidèmījskī
+epidemiòlog
+epidemiològija
+epidemiòloginja
+epidemiòloginjin
+epidemiòlogov
+epidemiòloškī
 epìgram
 èpika
 epìtēt
@@ -1443,6 +1480,7 @@ erìtrējskī
 èsēj
 ȇ-spȍrt
 èstōnskī
+esvatìnījskī
 etànōl
 etáža
 ètāžnī
@@ -1475,6 +1513,7 @@ fȇn
 festìvāl
 fȉdžījskī
 figúra
+fȉjūk
 fijúkānje
 fijúkati
 fijúknuti
@@ -1511,6 +1550,7 @@ fotokopiraònica
 fotokopírati
 fràgment
 fragmentácija
+frȁgmentāran
 frȁgmentārnī
 fragmentírati
 fràncūskī
@@ -1621,7 +1661,7 @@ glagòljica
 glagòljičnī
 glȃs
 glàsati
-glàsatise
+glàsati se
 glàsnica
 glȁsovīr
 glȁsōvīrskī
@@ -1685,7 +1725,8 @@ gospòdārskī
 gospodàrstvo
 gospòdin
 gȍspođa
-gȍspođica?gȏst
+gȍspođic
+gȏst
 gostióna
 gostiònica
 gȍšća
@@ -1705,12 +1746,14 @@ gòzba
 grȁbilica
 grȁblje
 gràčačkī
+grȁčkī
 grȃd
 grȃd
 gradácija
 gràdačkī
 gràdilīšte
-gràdišćanskī?gráditi
+gràdišćansk
+gráditi
 grȁdīvo
 grádnja
 gradonáčēlnīk
@@ -1765,7 +1808,7 @@ grȗdnjāk
 grȕdskī
 grȕpa
 grȗzījskī
-gȕba
+gȕb
 gùbiti
 gugútati
 gùjavica
@@ -1870,7 +1913,7 @@ hrȋd
 hrípati
 hrípavac
 hròptati
-hpa
+hr̀pa
 hȑskati
 hrvàtačkī
 hr̀vātskī
@@ -1899,8 +1942,7 @@ hvalìsavōst
 hvȁlospjēv
 hvȃrskī
 hvȃt
-hvàtāljka
-ȉ
+hvàtāljk
 iàko
 ȉčijī
 ȉći
@@ -1954,8 +1996,10 @@ iluziònističin
 ȉndirektan
 indonèzījskī
 ìnduktor
+infèkcija
 ȉnfinitīv
 ȉnfinitīvnī
+infodèmija
 informácija
 informàtičār
 informàtičārev
@@ -1965,6 +2009,7 @@ informàtičkī
 informàtika
 informírati
 inicìjāl
+inkubácija
 inkùbātor
 inozémstvo
 instalírati
@@ -2002,7 +2047,9 @@ injèkcija
 ȋrskī
 iseljènica
 iseljèničin
+iseljènīčkī
 iseljènīk
+iseljeníkov
 ìskaz
 ìskaznica
 iskljúčiti
@@ -2063,8 +2110,8 @@ izàbrati
 ìzdājnīkov
 izdánje
 izdr̀žljiv
-izdžljivo
-izdžljivōst
+izdr̀žljivo
+izdr̀žljivōst
 ȉzglēd
 izglédati
 ȉzgovōr
@@ -2091,6 +2138,7 @@ iznenađívati
 ìznos
 iznòsiti
 iznòsiti
+izolácija
 izòlātor
 izòstanak
 izòstāvnīk
@@ -2128,9 +2176,9 @@ jàjačkī
 jáje
 jȃjnīk
 jȁjovōd
-jâk
+jȃk
 jàkna
-jâko
+jȃko
 jákōst
 jȁma
 jamàjačkī
@@ -2138,6 +2186,7 @@ jȁnje
 jȁnjećī
 jȁnjetina
 jȃnjevačkī
+jȃnjinskī
 jȁnjiti
 jàpānka
 jàpānskī
@@ -2161,6 +2210,7 @@ jávljati
 jȃvnī
 javnobìlježničkī
 jávnōst
+javnozdràvstvenī
 jȅcati
 jéčati
 jèdan
@@ -2249,6 +2299,7 @@ jòsipdōlskī
 jȍš
 jotácija
 jùčēr
+jučèrašnjī
 jùdējskī
 jȕg
 jȕgo
@@ -2261,6 +2312,7 @@ jùnāčkī
 jùnāk
 junàkinja
 junàkinjin
+junákov
 júne
 jùnećī
 jùnetina
@@ -2275,6 +2327,8 @@ južnoàfričkī
 južnoamèričkī
 kabànica
 kàbao
+kábel
+kábelskī
 kabína
 kȁbulskī
 kàciga
@@ -2289,7 +2343,7 @@ kàdgod
 kadìfica
 kàfīć
 kàirskī
-kȁjatise
+kȁjati se
 kàkao
 kàkav
 kàkavgod
@@ -2299,6 +2353,7 @@ kàko
 kàko
 kȃlcij
 kalèndār
+kalifòrnījskī
 kalìgram
 kȃlij
 kalkùlātor
@@ -2337,6 +2392,8 @@ kàpūt
 karakterìstika
 karakterizácija
 karànfīl
+karanténa
+kàraševskī
 kȁrat
 karcìnōm
 kardìnāl
@@ -2401,6 +2458,8 @@ kémija
 kȇnījskī
 kȅstēn
 kick-bȍks
+kȉjevskī
+kȉjivskī
 kikirìki
 kȉla
 kȉlogram
@@ -2434,9 +2493,10 @@ kȉšiti
 kȉšobrān
 kȉtica
 kȋvi
+kjȍtskī
 kladióna
 kladiònica
-klȁditise
+klȁditi se
 klȁpa
 klarìnēt
 klarinètist
@@ -2457,6 +2517,8 @@ kléčati
 klȅka
 klȅpēt
 klepètati
+klicònoša
+klicònoštvo
 klijéšta
 klȉkati
 klȉknuti
@@ -2523,6 +2585,7 @@ kȍkos
 kȍkōš
 kȍla
 kòlāč
+kolapsològija
 kòlāž
 koléga
 kolègica
@@ -2554,12 +2617,13 @@ komentírati
 kòmiškī
 komòda
 komòdōr
+komorbidìtēt
 kompànija
 kȍmparatīv
 kòmpas
 kompìlātor
-kòmpjutor
-kòmpjutorskī
+kòmpjuter
+kòmpjuterskī
 kòmpresor
 komunikácija
 komunikácījskī
@@ -2623,6 +2687,15 @@ kòrito
 kòrizma
 kòrmilo
 kòrnjača
+koróna
+koronabólnica
+koronafòbija
+koronahùmor
+kòronāš
+koronášev
+koronàšica
+koronàšičin
+koronavírus
 kòrov
 kȏs
 kòsa
@@ -2648,11 +2721,13 @@ kòtiti
 kotòrīpskī
 kòtorskī
 kotùrāljka
-kòvāč?kòvčeg
+kòvā
+kòvčeg
+kovidìot
 kòvina
 kovìtlati
-kovčav
-kovčavōst
+kovr̀čav
+kovr̀čavōst
 kòza
 kòzica
 kȍzle
@@ -2685,6 +2760,7 @@ krátak
 kràtica
 krȁva
 kravàta
+kravètina
 kȑckati
 kȑcnuti
 kŕčati
@@ -2705,6 +2781,7 @@ krílo
 krȉmskī
 krȉti
 krȋv
+krivòputskī
 kríza
 krȋž
 krìžāljka
@@ -2712,7 +2789,7 @@ kríževačkī
 krìžić
 kr̀kljati
 kr̀lētka
-kmača
+kr̀mača
 kròjāč
 krojáčev
 krojàčica
@@ -2752,7 +2829,7 @@ krúžiti
 krȗžnī
 krúžnica
 kȓv
-kzno
+kr̀zno
 ksȉlofōn
 ksilofònist
 ksilofònistica
@@ -2797,6 +2874,7 @@ kulminácija
 kùlōn
 kultúra
 kùltūran
+kùltūrnī
 kùltūrno
 kȗm
 kúma
@@ -2814,7 +2892,7 @@ kupaóna
 kupaònica
 kupaòničkī
 kupàōnskī
-kúpati(se)
+kúpati (se)
 kúpčev
 kùpina
 kúpiti
@@ -2823,6 +2901,7 @@ kupòvati
 kupòvina
 kùpreškī
 kùpus
+kȕrdskī
 kȕrsor
 kȗt
 kùtija
@@ -2841,7 +2920,7 @@ kvȃr
 kváriti
 kvȋz
 kvȍcati
-kvòcijent?
+kvòcijen
 làbīnskī
 làdica
 làdičār
@@ -2859,7 +2938,7 @@ làkomōst
 lȁkovjēran
 lȁkovjērno
 lakovjérnōst
-lakdija
+lakr̀dija
 lȁktometar
 lamàtati
 lámati
@@ -2900,6 +2979,8 @@ lepètati
 lepéza
 lèptīr
 lȇt
+lètālan
+letalìtēt
 lètjelica
 lètjeti
 lètōnskī
@@ -2980,11 +3061,11 @@ lȉstopādnī
 lȉstopādskī
 lȉšāj
 lišávānje
-lišávati(se)
+lišávati (se)
 líšce
 lȋšće
 lȋšenōst
-líšiti(se)
+líšiti (se)
 litànije
 lȉtavskī
 lȉterārnī
@@ -3090,6 +3171,7 @@ ljubìmica
 ljubìmičin
 ljúbiti
 ljùbljanskī
+ljùbuškī
 ljȗdi
 ljùdskī
 ljùljāčka
@@ -3109,7 +3191,7 @@ ljùtito
 ljùtitōst
 ljútnja
 ljȗto
-mácitise
+máciti se
 mȁč
 máčak
 mȁče
@@ -3392,6 +3474,7 @@ mòdēmskī
 mȍdēran
 mȍdērna
 mȍdērno
+mȏdnī
 mȍgūć
 mogúćnōst
 mȏj
@@ -3449,7 +3532,7 @@ mȑšav
 mȑšavo
 mȑšavōst
 mŕtav
-mtvac
+mr̀tvac
 mŕziti
 mŕžnja
 mȕcati
@@ -3469,18 +3552,19 @@ muslìmānka
 muškárac
 muškárčev
 mùškī
+muškòbanjast
 mȕšmula
 mùzēj
 mȗž
 mȗžev
 mȕžēvan
 mȕžjāk
-nȁcionālan
+nȁcionālnī
 nàcrtati
 náčin
 nȃći
 náda
-nádatise
+nádati se
 nȁdbiskup
 nádimak
 nadmàdrac
@@ -3502,7 +3586,7 @@ nȁīvan
 nȁīvno
 naívnōst
 najáviti
-nàjestise
+nàjesti se
 nàjlōnka
 nákit
 nákon
@@ -3518,6 +3602,7 @@ nȁmještāj
 nȁnometar
 nanoračùnalo
 nȁočāle
+naopàčkē
 nȁopāko
 nȁpa
 nápad
@@ -3530,6 +3615,7 @@ nȁpēto
 nȁpētōst
 napísati
 nȁpokōn
+napóse
 nȁprava
 nàpraviti
 nàprijēd
@@ -3542,6 +3628,7 @@ náredničin
 náredničkī
 nárednīk
 nárednīkov
+náročito
 národ
 narúčiti
 naručívati
@@ -3555,11 +3642,11 @@ nàsilu
 násīlje
 naslònjāč
 náslov
-nasmìjati(se)
+nasmìjati (se)
 nàsred
-nastljiv
-nastljivo
-nastljivōst
+nasr̀tljiv
+nasr̀tljivo
+nasr̀tljivōst
 nàstati
 nȁstava
 nástavak
@@ -3582,7 +3669,7 @@ natjècateljev
 natjecatèljica
 natjecatèljičin
 natjècateljskī
-nàtjecatise
+nàtjecati se
 nȁtječāj
 nȁtkoljēnka
 natpòručnica
@@ -3602,6 +3689,8 @@ navijàčičin
 navìjāčkī
 navíjati
 nàvika
+nàvlastito
+navòdit
 navòditi
 návodnīk
 návodno
@@ -3682,6 +3771,8 @@ nèplodan
 nèplodno
 nȅplodnōst
 nȅpobītan
+nȅpobītno
+nȅpobītnōst
 nepobjèdiv
 nepobjèdivo
 nepobjèdivōst
@@ -3760,7 +3851,6 @@ nezàposlen
 nezàposlenōst
 nèzgoda
 nȉ
-nȉ
 nȉčijī
 nìgērījskī
 nìgērskī
@@ -3785,7 +3875,6 @@ nȉzak
 nizòzēmskī
 nižèkratnīk
 nȍ
-nȍ
 nȏć
 nòćnī
 nòga
@@ -3801,6 +3890,7 @@ nȍkat
 nȍminatīv
 nȍminatīvnī
 nòrmālan
+nòrmālno
 nòrveškī
 nȏs
 nòsāč
@@ -3878,7 +3968,7 @@ objáviti
 òbjesiti
 ȍblāčan
 obláčiti
-obláčitise
+obláčiti se
 ȍblāčnī
 ȍblāk
 ȍblīk
@@ -3904,10 +3994,12 @@ obrazlòžiti
 òbrijati
 òbrok
 òbrt
-òbrtnica?òbrtnica
+òbrtnic
+òbrtnica
 òbrtničin
 òbrtničkī
 òbrtnīk
+òbrtnīkov
 ȍbrva
 òbuća
 òbūći
@@ -3999,9 +4091,11 @@ odréditi
 òdrēđen
 određívati
 òdrezak
-odžati
+odr̀žati
 održávānje
 održávati
+òdsad
+odsàda
 odùševljen
 odùševljeno
 odùševljenōst
@@ -4026,7 +4120,7 @@ oglèdalo
 ògrada
 ògrjev
 ògrlica
-ogtāč
+ogr̀tāč
 ȍgulīnskī
 ohláditi
 òhol
@@ -4042,10 +4136,10 @@ ohláditi
 òkomit
 òkomito
 òkomitōst
-okòristitise
+okòristiti se
 okòtiti
-okrénuti(se)
-òkretati(se)
+okrénuti (se)
+òkretati (se)
 òkrūgao
 òkrūglo
 ȍkrūtan
@@ -4058,7 +4152,7 @@ okùlist
 okùlistica
 okùlističin
 okùlistov
-okúpati(se)
+okúpati (se)
 òkus
 òkvīr
 òlōvka
@@ -4075,14 +4169,15 @@ omogućívati
 omogúćiti
 omogućívati
 òmot
-omòtati(se)
-omotávati(se)
+omòtati (se)
+omotávati (se)
 ȏn
 òna
 òna
 ònā
 ònāj
 onàkav
+onàko
 òndā
 òne
 òni
@@ -4112,9 +4207,11 @@ oporabljívati
 oprásiti
 opráštati
 ȍprema
+ȍprēz
 ȍprēzan
 ȍprēzno
-opréznōst?opròstiti
+opréznōs
+opròstiti
 optìmist
 optìmistica
 optìmističin
@@ -4155,7 +4252,8 @@ osàmnaestī
 osigùrāč
 osiguránje
 osigùrati
-òsim?òsip
+òsi
+òsip
 ȍsječkī
 ȍsjećāj
 ȍsjećājan
@@ -4164,8 +4262,8 @@ osjećájnōst
 òsjećati
 òsjet
 òsjetilo
-osjètljiv
 òsjetiti
+osjètljiv
 osjètljivo
 osjètljivōst
 oslobòditi
@@ -4189,6 +4287,7 @@ osnòvati
 òsnōvnī
 ȍsoba
 ȍsoban
+òsobito
 ȍsobno
 osóbnōst
 òsōjničkī
@@ -4208,6 +4307,8 @@ osvetoljùbivōst
 osvòjiti
 òšteniti
 òtac
+òtad
+otàda
 otápati
 otèliti
 òtīći
@@ -4233,6 +4334,8 @@ otprílikē
 otpùstiti
 otpúštati
 òtrov
+òtud
+otùdā
 otvàrāč
 otvárati
 òtvoren
@@ -4263,7 +4366,6 @@ oznáčiti
 oždrijébiti
 ožèniti
 òžujak
-pȁ
 pȁ
 pacìjent
 pacìjentica
@@ -4298,14 +4400,16 @@ pȁmetan
 pȁmetno
 pȃmtiti
 pàmuk
+pandèmija
+pandèmījskī
 pàndža
+pànika
 pȃpa
 pàpar
 pàpiga
 pàpīr
 pàprika
 pàpuča
-pȃr
 pȃr
 pȁra
 paralelògram
@@ -4315,13 +4419,11 @@ paranòja
 pàrīškī
 pȁrk
 parkíralīšte
-parkírati(se)
+parkírati (se)
 pàrtner
 pàrtnerica
 pàrtneričin
 pàrtnerskī
-pȁs
-pȃs
 pȁsīv
 pasíva
 pȁsīvan
@@ -4396,7 +4498,7 @@ pèlin
 pèlīnkovac
 pèlješkī
 pènjalica
-pènjatise
+pènjati se
 pepélnica
 pȅpeo
 pȅrād
@@ -4541,6 +4643,10 @@ plátno
 plȃv
 pláviti
 plávjeti
+plavòkos
+plàvuša
+plavùšan
+plàvušin
 pláža
 plemènit
 plemènito
@@ -4629,6 +4735,7 @@ pȍdstanārov
 pȍdstanārskī
 poduzéće
 pogáđati
+pòglavito
 pòglāvlje
 pȍglēd
 pògledati
@@ -4651,7 +4758,7 @@ pojàčalo
 pójam
 pȍjās
 pȍjās
-pojávitise
+pojáviti se
 pojedínac
 pojèdīnī
 pòjesti
@@ -4688,7 +4795,7 @@ policájčev
 polìcājka
 polìcājkin
 polìcija
-polijévati(se)
+polijévati (se)
 polìtičār
 polìtičārev
 polìtičārka
@@ -4698,7 +4805,7 @@ polìtičārskī
 polìtičkī
 polìtički
 polìtika
-pòliti(se)
+pòliti (se)
 pólnoćka
 polòvica
 polòvina
@@ -4715,6 +4822,7 @@ polusložèničkī
 pȍlje
 pòljīčkī
 poljoprìvreda
+poljoprìvrednī
 poljoprìvrednica
 poljoprìvredničin
 poljoprìvredničkī
@@ -4727,7 +4835,7 @@ pomágati
 pȍmōć
 pòmoći
 ponášānje
-ponášatise
+ponášati se
 ponávljati
 ponèdjeljak
 pònekad
@@ -4738,7 +4846,7 @@ pònetko
 pónōć
 pónoćnī
 pònos
-ponòsitise
+ponòsiti se
 ponòviti
 pònōvno
 pòntōn
@@ -4777,6 +4885,7 @@ pȍsada
 posáditi
 pòsao
 pòseban
+pòsebicē
 pòsebno
 pòsebnōst
 posjećívati
@@ -4902,7 +5011,7 @@ pòvrće
 pòvremeno
 pòvrh
 pòvršina
-pozàbavitise
+pozàbaviti se
 pȍzdrāv
 pòzdraviti
 pòzdravljati
@@ -4940,7 +5049,7 @@ praónica
 prȁporac
 prȁsak
 prȃse
-prásiti
+prásiti se
 prȁskati
 praslàvēnskī
 prȁsnuti
@@ -4948,7 +5057,7 @@ prášak
 pràšina
 prȁškī
 pràšuma
-prȁti(se)
+prȁti (se)
 prȁtiti
 pràvac
 prȃvda
@@ -5007,7 +5116,8 @@ prèdstāvnica
 prèdstāvničin
 prèdstāvničkī
 prèdstāvnīk
-prèdstāvnīkov?prȅdug
+prèdstāvnīko
+prȅdug
 prèdvōrje
 prégled
 préglednīk
@@ -5079,8 +5189,7 @@ prijatèljica
 prȉjateljičin
 prijatèljskī
 prȉjava
-prȉje?
-prijȇći
+prȉjeprijȇći
 prijédlog
 prijédložnī
 prijélaz
@@ -5258,6 +5367,8 @@ pròvesti
 provjerávati
 pròvjeriti
 provòditi
+pròvoz
+pròvoznī
 próza
 prȍzīran
 prozírno
@@ -5400,7 +5511,8 @@ rȁlo
 ramàzān
 rȁme
 rȁmskī
-rȁna?rànijē
+rȁn
+rànijē
 rȁno
 rȁnjenica
 rȁnjeničin
@@ -5503,6 +5615,9 @@ redòvitōst
 redòvnica
 redòvničin
 redòvnīčkī
+redòvnīčkī
+redòvnīk
+redovníkov
 rèduktor
 rȇgija
 rȅgionālnī
@@ -5595,11 +5710,13 @@ rȍk
 ròktati
 róla
 rólānje
+rólati se
 ròmān
 romanìzam
 rȍmb
 rȍmbičan
-rombòīdan?romòbīl
+rombòīda
+romòbīl
 rȍmōn
 romòniti
 rònilac
@@ -5626,7 +5743,7 @@ rúčati
 rȕče
 rȕčnīk
 rȗdnīk
-rúgatise
+rúgati se
 rȗjan
 rúka
 rùkāv
@@ -5639,7 +5756,7 @@ rukometàšičin
 rukomètāškī
 rȕkopīs
 rukòvati
-rȕkovatise
+rȕkovati se
 rukovòditi
 rȕm
 rùmen
@@ -5676,6 +5793,7 @@ sȃm
 sȁmo
 sȁmobōrskī
 samòglasnīk
+samoizolácija
 sȁmostālan
 sȁmostālno
 samostálnōst
@@ -5690,9 +5808,9 @@ sȃnjke
 saònice
 sàpūn
 sàrajevskī
-sàstajatise
+sàstajati se
 sàstanak
-sàstatise
+sàstati se
 sástav
 sástavak
 sàsvīm
@@ -5817,7 +5935,7 @@ sȋv
 síviti
 sívjeti
 sjȅcīšte
-sjȅćatise
+sjȅćati se
 sjȅći
 sjȅdalica
 sjȅdalo
@@ -5830,7 +5948,7 @@ sjemènīk
 sjèmēnka
 sjȅna
 sjȅsti
-sjȅtitise
+sjȅtiti se
 sjȅvēr
 sjȅvērnī
 sjeveroìstočnī
@@ -5951,23 +6069,27 @@ slȕčājan
 slȕčājno
 slučájnōst
 slúga
+slúgin
 slȗh
 slȕšalica
 slušaóna
 slušaònica
 slȕšati
 slȕškinja
+slȕškinjin
 slùžba
 slȕžben
+slȕžbenī
 slȕžbeno
 slúžiti
 sljèdēćī
 smánjiti
+smanjívati
 smátrati
 smèće
 smȅđ
 smétati
-smìjatise
+smìjati se
 smijȇh
 smijéšak
 smȉon
@@ -6039,6 +6161,7 @@ sóva
 spalióna
 spaliònica
 spáliti
+smaljívati
 spásiti
 spašávati
 spavàćica
@@ -6187,6 +6310,7 @@ stòlac
 stòlica
 stȏlnjāk
 stòljeće
+stòljetnī
 stomatòlog
 stomatòlogica
 stomatòlogičin
@@ -6211,7 +6335,6 @@ strànica
 strȃnka
 strànkinja
 strànkinjin
-strȃno
 strášan
 strȁšiti
 strášno
@@ -6233,7 +6356,7 @@ strȏj
 strojòvođa
 strȏncij
 strȍp
-strȍpnī
+strȍpn
 str̀pljiv
 str̀pljivo
 str̀pljivōst
@@ -6269,7 +6392,7 @@ sùbjekt
 sùbjektnī
 sùbota
 sùbotičkī
-sùbotnjī
+sùbotnj
 sùčēlje
 sȗd
 súdac
@@ -6295,6 +6418,7 @@ sȗmpor
 sȗnce
 sȕncobrān
 sùnčan
+sùnčanī
 sùnčano
 sȗnčati
 sȕnovrāt
@@ -6328,6 +6452,9 @@ sùtješkī
 sȕtkinja
 sȕtkinjin
 sȕtra
+sȕtrašnjī
+sȕtrašnjica
+sȕtrašnjōst
 suvènīr
 suvòzāč
 suvozáčev
@@ -6340,7 +6467,7 @@ svàdljiv
 svàdljivo
 svàdljivōst
 svàđa
-svȁđatise
+svȁđati se
 svȁkakav
 svȁkāko
 svȁkī
@@ -6364,8 +6491,8 @@ svètica
 svètičin
 sveùčilīšte
 svȋbanj
-svȉdjetise
-svíđatise
+svȉdjeti se
+svíđati se
 svijéća
 svijȇćnjāk
 svijȇst
@@ -6409,11 +6536,12 @@ svȗći
 šàhistica
 šàhističin
 šàhistov
+šàhovskī
 šȁka
 šȁl
 šála
 šȁlica
-šȁlītise
+šȁlīti se
 šàmpōn
 šàngājskī
 šȃnsa
@@ -6463,8 +6591,11 @@ svȗći
 šípak
 širìna
 šìrok
+šìroko
 širòko
 šìrokobrijēškī
+šȋrom
+šȋrom
 šìšmiš
 šíštati
 šȉti
@@ -6496,7 +6627,7 @@ svȗći
 šljȉva
 šljȉvovica
 šljúnak
-šmȋnkati(se)
+šmȋnkati (se)
 šòltānskī
 špágerica
 špànjōlskī
@@ -6533,7 +6664,7 @@ svȗći
 štràmplice
 štȑcāljka
 štrȍpōt
-štropòtati
+štropòtat
 šùbara
 šȗm
 šȕma
@@ -6557,6 +6688,7 @@ svȗći
 šúštati
 šútiti
 šútjeti
+šȕtkē
 švèdskī
 švȉcarskī
 tàblet
@@ -6570,7 +6702,7 @@ tàjlāndskī
 tȃjna
 tȃjnica
 tȃjničin
-tȃjničkī
+tȃjničk
 tȃjnīk
 tȃjnīkov
 tàkav
@@ -6589,6 +6721,7 @@ talióna
 taliònica
 táliti
 táma
+táman
 tàmbura
 tambùrāš
 tamburášev
@@ -6596,6 +6729,7 @@ tamburàšica
 tamburàšičin
 tambùrāškī
 tàmburica
+támno
 tȁmo
 tȁnak
 tȁnko
@@ -6626,6 +6760,7 @@ telègraf
 tȅlegram
 tȅlegramskī
 tȅlegramski
+tȅlenastava
 telenòvela
 teleprìnter
 tȅleskop
@@ -6668,7 +6803,7 @@ tétak
 tȅtanus
 tȇžak
 tȋ
-tícatise
+tícati se
 tìfus
 tȉgar
 tȉh
@@ -6869,7 +7004,7 @@ trubàčica
 trubàčičin
 trùbāčkī
 trúbiti
-trúditise
+trúditi se
 trudnòća
 trȗp
 trȕt
@@ -6886,6 +7021,8 @@ tȕča
 túčak
 tùčnjava
 tȗći
+tȕd
+tùdā
 tȗđ
 túga
 tugòvati
@@ -7003,9 +7140,9 @@ umirovljèničin
 umirovljènīčkī
 umirovljènīk
 umirovljeníkov
-ùmiti(se)
+ùmiti (se)
 umivaònīk
-umívati(se)
+umívati (se)
 ùmjeren
 ùmjereno
 ùmjerenōst
@@ -7110,6 +7247,7 @@ uvećànica
 ȕvijēk
 ùvjet
 ùvod
+ùvrh
 ȕzak
 uzbùdljiv
 uzbùdljivo
@@ -7456,7 +7594,7 @@ zàbavljati
 zabòraviti
 zabòravaljati
 zàbrinūt
-zàbrinutise
+zàbrinuti se
 zàbrinūto
 zàbrinūtōst
 zàdaća
@@ -7494,11 +7632,11 @@ zákon
 zàlazak
 zalijépiti
 záljev
-zaljúbitise
+zaljúbiti se
 zàljūbljen
 zàljūbljeno
 zàljūbljenōst
-zaljubljívatise
+zaljubljívati se
 zàmjena
 zámjenica
 zámjeničin
@@ -7547,6 +7685,7 @@ zȁšto
 zàtīm
 zàtō
 zàtreptati
+zatvárānje
 zatvárati
 zátvor
 zatvòriti
@@ -7694,7 +7833,7 @@ zvȗk
 žbȕkati
 ždèrati
 ždrijȇbe
-ždrijébitise
+ždrijébiti se
 ždrijélo
 žȇdan
 žȇđ
@@ -7708,6 +7847,7 @@ zvȗk
 žènēvskī
 žènin
 žȇnka
+žȅnskast
 žènskī
 žènstven
 žènstveno
@@ -7734,6 +7874,8 @@ zvȗk
 žìvot
 žȉvotan
 živòtinja
+žȉvotnī
+žȉvotn
 žȉvotno
 životòpis
 životòpisnī
@@ -7757,7 +7899,7 @@ zvȗk
 župànījskī
 žùpanov
 žùpanjskī
-žúritise
+žúriti se
 žȗt
 žùtica
 žútiti
