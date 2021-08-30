@@ -8124,9 +8124,7 @@
 "živa" :"&#381;iva je kemijski element (Hg), srebrnobijela kovina, pri sobnoj temperaturi jedina teku&#263;a kovina, a upotrebljava se za punjenje termometara i izradu ogledala.",
 "živac" :"&#381;ivac je vlaknasti organ koji prenosi podra&#382;aje od mozga u sve dijelove tijela.",
 "živjeti" :"&#381;ivjeti zna&#269;i biti &#382;iv.",
-"živkati" :"&#381;ivkati zna&#269;i glasati glasom koji podsje&#263;a na 
-<em>&#382;iv</em>.
-",
+"živkati" :"&#381;ivkati zna&#269;i glasati glasom koji podsje&#263;a na <em>&#382;iv</em>.",
 "živo" :"&#381;ivo zna&#269;i s mnogo energije i snage.",
 "živost" :"&#381;ivost je osobina onoga koji je pun energije, snage i aktivnosti, koji je stalno u pokretu.",
 "život" :"&#381;ivot je stanje bi&#263;a od ro&#273;enja do prestanka svih &#382;ivotnih funkcija organizma.",
