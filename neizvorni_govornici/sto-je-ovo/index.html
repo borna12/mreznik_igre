@@ -61,9 +61,16 @@
     margin-left: auto;
     display: block;
     margin-right: auto; margin-top:20px" />-->
-            <button class="init-page__btn btn" id="bez">igra bez vremenskoga ograničenja</button>
-            <button class="init-page__btn btn" id="40">igra s ograničenjem od 40 sekunda po pitanju</button>
-            <button class="init-page__btn btn" id="20">igra s ograničenjem od 20 sekunda po pitanju</button>
+
+
+    <button class="btn broj" id="20pitanja" >20 pitanja</button>
+    <button class="btn broj" id="50pitanja" >50 pitanja</button>
+    <button class="btn broj" id="100pitanja" >100 pitanja</button>
+    <button class="btn broj" id="svapitanja">sva pitanja (188)</button>
+
+            <button class="init-page__btn btn" id="bez" style="display:none">igra bez vremenskoga ograničenja</button>
+            <button class="init-page__btn btn" id="40" style="display:none">igra s ograničenjem od 40 sekunda po pitanju</button>
+            <button class="init-page__btn btn" id="20" style="display:none">igra s ograničenjem od 20 sekunda po pitanju</button>
 
         </div>
     </div>
@@ -107,7 +114,7 @@
             <h3 class="results-page__bodovi">postavljenih pitanja!</h3>
             <br>
             <p>
-                <form class="jedan" action="https://docs.google.com/forms/d/e/1FAIpQLSe3V_eHV3E_sqUqCUlKMUbJ1E1HLu1QdcJiB-rtgIe8MPApSw/formResponse" target="_self" id="bootstrapForm" method="POST">
+                <form class="jedan" action="https://docs.google.com/forms/d/e/1FAIpQLSe3V_eHV3E_sqUqCUlKMUbJ1E1HLu1QdcJiB-rtgIe8MPApSw/formResponse" target="_self" id="bootstrapForm" method="POST" style="display:none">
                     <legend for="736982347"> <select id="ikona" style="height:30px"></select> Ime: <input id="312289462"
                         type="text" name="entry.312289462" class="form-control" required id="input-q1" style="height:30px">
                 </legend>

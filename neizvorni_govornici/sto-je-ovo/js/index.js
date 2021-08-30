@@ -74,6 +74,25 @@ $(document).ready(function() {
             event.preventDefault();
         }
     });
+
+    $(".broj").click(function () {
+        broj_p = jQuery(this).attr("id")
+        if (broj_p == "20pitanja") {
+            pitanja = pitanja.slice(0, 20)
+        }
+        else if (broj_p == "50pitanja") {
+            pitanja = pitanja.slice(0, 50)
+        }
+        else if (broj_p == "100pitanja") {
+            pitanja = pitanja.slice(0, 100)
+        }
+        else{
+            pitanja=pitanja
+        }
+        $(".broj").hide()
+        $(".init-page__btn").show();
+
+    })
     // DOM SELECTION ------
 
     // App pages
@@ -180,7 +199,9 @@ $(document).ready(function() {
             $(".questions-page__answer-list").hide()
             $("#opis").html("<em>" + pitanja[questionCounter].vrijeme + "</em>")
             $(".vrijeme").html('<progress value="' + tajming + '" max="' + tajming + '" id="pageBeginCountdown"></progress><p><span id="pageBeginCountdownText">' + tajming + '</span></p>')
-            $("#odgovor").attr("placeholder",pitanja[questionCounter].correctAnswer[0][0]+"...")
+            if (pitanja[questionCounter].correctAnswer[0].substr(0, 2)=="lj" || pitanja[questionCounter].correctAnswer[0].substr(0, 2)=="nj" || pitanja[questionCounter].correctAnswer[0].substr(0, 2)=="dž"){
+            $("#odgovor").attr("placeholder",pitanja[questionCounter].correctAnswer[0].substr(0, 2)+"...")}
+            else{ $("#odgovor").attr("placeholder",pitanja[questionCounter].correctAnswer[0].substr(0, 1)+"...")}
             $("body").css({
                 "background-color": pitanja[questionCounter].boja_pozadine
             })
@@ -496,7 +517,7 @@ $(document).ready(function() {
                         $("#pogresno")[0].play()
                         swal({
                             title: "Netočno",
-                            html: "<p class='dodatak'><strong>Točan odgovor: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + "</span></strong><br></p><img class='init-page__icon zvuk' src='slike/zvuk.png' /><br><img src='slike/krivo.png' class='slikica2'/>",
+                            html: "<p class='dodatak'><strong>Točan odgovor: <span class='nastavak'>" + pitanja[questionCounter].correctAnswer[0] + ".</span></strong><br></p><img class='init-page__icon zvuk' src='slike/zvuk.png' /><br><img src='slike/krivo.png' class='slikica2'/>",
                             showCloseButton: true,
                             confirmButtonText: ' dalje',
                             backdrop: false,
@@ -627,18 +648,8 @@ $(document).ready(function() {
 
     // Clicking on the retake button:
     retakeBtn.on('click', function() {
-        // Go to the first page
-        // Start the quiz over
-        newQuiz();
-        resultsPage.hide();
-        questionsPage.show(300);
-        // Load question and answers
-        generateQuestionAndAnswers();
-        // Store the correct answer in a variable
-        getCorrectAnswer();
-        // Hide the submit and continue buttons
-        submitBtn.hide();
-        continueBtn.hide();
+        location.reload();
+
     });
 
     // Clicking on the spanish button:
@@ -670,7 +681,7 @@ $(document).ready(function() {
     }, {
         question: "popuni",
         vrijeme: "pitanja",
-        correctAnswer: ["ćevapčić", ""],
+        correctAnswer: ["ćevapčić", "ćevap"],
         slika: "slike/cevap.jpg",
         zvuk: "zvuk/ćevapčić.mp3",
         boja_pozadine: "#FCE4EC",
