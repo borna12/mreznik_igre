@@ -497,23 +497,23 @@ webpackJsonp([0],[
       titleLayout: [{
         x: 0,
         y: 0,
-        letter: 'L'
+        letter: 'M'
       }, {
         x: 1,
+        y: 0,
+        letter: 'R'
+      }, {
+        x: 2,
         y: 0,
         letter: 'E'
       }, {
         x: 2,
-        y: 0,
-        letter: 'T'
-      }, {
-        x: 2,
         y: 1,
-        letter: 'T'
+        letter: 'Ž'
       }, {
         x: 3,
         y: 1,
-        letter: 'R'
+        letter: 'N'
       }, {
         x: 4,
         y: 1,
@@ -521,7 +521,7 @@ webpackJsonp([0],[
       }, {
         x: 4,
         y: 2,
-        letter: 'S'
+        letter: 'K'
       }],
       tileLetterConfig: {
         font: '100px Roboto',
