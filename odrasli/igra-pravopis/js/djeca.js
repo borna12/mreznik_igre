@@ -330,7 +330,7 @@ p2 = [
     { "question": "popuni", "hint": "č/ć", "correctAnswer": ["č", "ć"], "osnova": "", "osnova2": "izma", "glagol": "", "pin": "", },
     { "question": "popuni", "hint": "č/ć", "correctAnswer": ["č", "ć"], "osnova": "", "osnova2": "okolada", "glagol": "", "pin": "", },
     { "question": "popuni", "hint": "č/ć", "correctAnswer": ["č", "ć"], "osnova": "", "osnova2": "ovjek", "glagol": "", "pin": "", },
-    { "question": "popuni", "hint": "č/ć", "correctAnswer": ["č", "ć"], "osnova": "", "osnova2": "u", "glagol": "", "pin": "", },
+    { "question": "popuni", "hint": "č/ć", "correctAnswer": ["ć", "č"], "osnova": "", "osnova2": "u", "glagol": "", "pin": "", },
     { "question": "popuni", "hint": "č/ć", "correctAnswer": ["č", "ć"], "osnova": "", "osnova2": "u", "glagol": "", "pin": "", },
     { "question": "popuni", "hint": "č/ć", "correctAnswer": ["č", "ć"], "osnova": "", "osnova2": "uditi se", "glagol": "", "pin": "", },
     { "question": "popuni", "hint": "č/ć", "correctAnswer": ["č", "ć"], "osnova": "", "osnova2": "udo", "glagol": "", "pin": "", },
